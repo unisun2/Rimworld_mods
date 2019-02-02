@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 4X4 Size -->
+
+  <PutIntoBioReactor.label>put into BioReactor</PutIntoBioReactor.label>
+  <PutIntoBioReactor.rulePack.rulesStrings.0>tale_noun->[CARRIER_nameDef] putting [SLEEPER_nameDef] into BioReactor</PutIntoBioReactor.rulePack.rulesStrings.0>
+  <PutIntoBioReactor.rulePack.rulesStrings.1>image->[CARRIER_nameFull] placing [SLEEPER_nameDef] inside a BioReactor [circumstance_group]</PutIntoBioReactor.rulePack.rulesStrings.1>
+  <PutIntoBioReactor.rulePack.rulesStrings.2>image->[CARRIER_nameFull] opening an empty BioReactor while supporting [SLEEPER_nameDef] [circumstance_group]</PutIntoBioReactor.rulePack.rulesStrings.2>
+  <PutIntoBioReactor.rulePack.rulesStrings.3>image->[CARRIER_nameFull] sealing [SLEEPER_nameDef] inside a BioReactor [circumstance_group]</PutIntoBioReactor.rulePack.rulesStrings.3>
+  <PutIntoBioReactor.rulePack.rulesStrings.4>image->[CARRIER_nameFull] walking away as [SLEEPER_nameDef] looks through the wall of a BioReactor [circumstance_group]</PutIntoBioReactor.rulePack.rulesStrings.4>
+  <PutIntoBioReactor.rulePack.rulesStrings.5>circumstance_phrase(p=3)->with a [AdjectiveAny] expression</PutIntoBioReactor.rulePack.rulesStrings.5>
+  <PutIntoBioReactor.rulePack.rulesStrings.6>circumstance_phrase->while consumed in thought</PutIntoBioReactor.rulePack.rulesStrings.6>
+  <PutIntoBioReactor.rulePack.rulesStrings.7>circumstance_phrase->while gazing at a faraway [TerrainFeature]</PutIntoBioReactor.rulePack.rulesStrings.7>
+  <PutIntoBioReactor.rulePack.rulesStrings.8>circumstance_phrase->with visible tension between the two</PutIntoBioReactor.rulePack.rulesStrings.8>
+  <PutIntoBioReactor.rulePack.rulesStrings.9>desc_sentence->[Quantity_adjphrase] [Animal]s rest near the scene.</PutIntoBioReactor.rulePack.rulesStrings.9>
+  <PutIntoBioReactor.rulePack.rulesStrings.10>desc_sentence->[Quantity_adjphrase] [Enemy]s approach the area.</PutIntoBioReactor.rulePack.rulesStrings.10>
+  <PutIntoBioReactor.rulePack.rulesStrings.11>desc_sentence->[CARRIER_nameDef] radiates determination.</PutIntoBioReactor.rulePack.rulesStrings.11>
+  <PutIntoBioReactor.rulePack.rulesStrings.12>desc_sentence->[SLEEPER_nameDef] is visibly wounded.</PutIntoBioReactor.rulePack.rulesStrings.12>
+  <PutIntoBioReactor.rulePack.rulesStrings.13>desc_sentence->[SLEEPER_nameDef] looks exhausted.</PutIntoBioReactor.rulePack.rulesStrings.13>
+  <PutIntoBioReactor.rulePack.rulesStrings.14>desc_sentence->[Quantity_adjphrase] filled BioReactor surround the scene.</PutIntoBioReactor.rulePack.rulesStrings.14>
+
+  <EnteredBioReactor.label>entered BioReactor</EnteredBioReactor.label>
+  <EnteredBioReactor.rulePack.rulesStrings.0>tale_noun->[PAWN_nameDef] entering BioReactor</EnteredBioReactor.rulePack.rulesStrings.0>
+  <EnteredBioReactor.rulePack.rulesStrings.1>image->[PAWN_nameFull] put in to BioReactor [circumstance_group]</EnteredBioReactor.rulePack.rulesStrings.1>
+  <EnteredBioReactor.rulePack.rulesStrings.2>image->[PAWN_nameFull] opening an empty BioReactor [circumstance_group]</EnteredBioReactor.rulePack.rulesStrings.2>
+  <EnteredBioReactor.rulePack.rulesStrings.3>image->[PAWN_nameFull] sealing themselves inside a BioReactor [circumstance_group]</EnteredBioReactor.rulePack.rulesStrings.3>
+  <EnteredBioReactor.rulePack.rulesStrings.4>image->[PAWN_nameFull] looking through the wall of a BioReactor at a world they're about to leave [circumstance_group]</EnteredBioReactor.rulePack.rulesStrings.4>
+  <EnteredBioReactor.rulePack.rulesStrings.5>circumstance_phrase->with a [AdjectiveAngsty] expression</EnteredBioReactor.rulePack.rulesStrings.5>
+  <EnteredBioReactor.rulePack.rulesStrings.6>circumstance_phrase->while consumed in thought</EnteredBioReactor.rulePack.rulesStrings.6>
+  <EnteredBioReactor.rulePack.rulesStrings.7>circumstance_phrase->while gazing at a faraway [TerrainFeature]</EnteredBioReactor.rulePack.rulesStrings.7>
+  <EnteredBioReactor.rulePack.rulesStrings.8>circumstance_phrase->and talking quietly to themselves</EnteredBioReactor.rulePack.rulesStrings.8>
+  <EnteredBioReactor.rulePack.rulesStrings.9>desc_sentence->[Quantity_adjphrase] [Animal]s rest near the scene.</EnteredBioReactor.rulePack.rulesStrings.9>
+  <EnteredBioReactor.rulePack.rulesStrings.10>desc_sentence->[Quantity_adjphrase] [Enemy]s approach the area.</EnteredBioReactor.rulePack.rulesStrings.10>
+  <EnteredBioReactor.rulePack.rulesStrings.11>desc_sentence->[PAWN_nameDef] radiates determination.</EnteredBioReactor.rulePack.rulesStrings.11>
+  <EnteredBioReactor.rulePack.rulesStrings.12>desc_sentence->[PAWN_nameDef] is visibly wounded.</EnteredBioReactor.rulePack.rulesStrings.12>
+  <EnteredBioReactor.rulePack.rulesStrings.13>desc_sentence->A [Color] aurora shines in the background.</EnteredBioReactor.rulePack.rulesStrings.13>
+  <EnteredBioReactor.rulePack.rulesStrings.14>desc_sentence->[Quantity_adjphrase] filled BioReactor surround the scene.</EnteredBioReactor.rulePack.rulesStrings.14>
+
+
+</LanguageData>

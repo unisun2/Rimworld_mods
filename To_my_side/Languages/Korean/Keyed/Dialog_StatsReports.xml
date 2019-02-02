@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<EnterBioReactor>바이오리액터 들어가기</EnterBioReactor>
+	<Histolysis>융해</Histolysis>
+	<HistolysisDesc>리액터 내부 살아있는 개체를 융해시켜 생체 연료로 환원시킵니다.</HistolysisDesc>
+	<CarryToBioReactor>{1_label}를 바이오 리액터애 넣기</CarryToBioReactor>
+	<CannotCarryToBioReactor>바이오 리액터로 옮길 수 없습니다.</CannotCarryToBioReactor>
+	<RefuelTitle>연료 필터</RefuelTitle>
+	<RefuelTab>필터 탭</RefuelTab>
+
+</LanguageData>

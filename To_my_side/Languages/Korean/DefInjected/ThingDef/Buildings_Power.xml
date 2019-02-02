@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 2X2 Size -->
+
+  <BioReactor.label>바이오리액터 (2X2)</BioReactor.label>
+  <BioReactor.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactor.description>
+  <BioReactor_Blueprint.label>바이오리액터 (2X2) (설계도)</BioReactor_Blueprint.label>
+  <BioReactor_Frame.label>바이오리액터 (2X2) (건설중)</BioReactor_Frame.label>
+  <BioReactor_Frame.description>생명체로부터 에너지를 추출하는 장치입니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactor_Frame.description>
+
+
+  <!-- 3X3 Size -->
+
+  <BioReactorCircleLarge.label>바이오리액터 (3X3)</BioReactorCircleLarge.label>
+  <BioReactorCircleLarge.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorCircleLarge.description>
+  <BioReactorCircleLarge_Blueprint.label>바이오리액터 (3X3) (설계도)</BioReactorCircleLarge_Blueprint.label>
+  <BioReactorCircleLarge_Frame.label>바이오리액터 (3X3) (건설중)</BioReactorCircleLarge_Frame.label>
+  <BioReactorCircleLarge_Frame.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorCircleLarge_Frame.description>
+
+
+  <!-- 4X4 Size -->
+
+  <BioReactorCircleEX.label>바이오리액터 (4X4)</BioReactorCircleEX.label>
+  <BioReactorCircleEX.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorCircleEX.description>
+  <BioReactorCircleEX_Blueprint.label>바이오리액터 (4X4) (설계도)</BioReactorCircleEX_Blueprint.label>
+  <BioReactorCircleEX_Frame.label>바이오리액터 (4X4) (건설중)</BioReactorCircleEX_Frame.label>
+  <BioReactorCircleEX_Frame.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorCircleEX_Frame.description>
+
+
+  <!-- 3X3 Size -->
+
+  <BioReactorBig.label>바이오리액터 (3X3)</BioReactorBig.label>
+  <BioReactorBig.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorBig.description>
+  <BioReactorBig_Blueprint.label>바이오리액터 (3X3) (설계도)</BioReactorBig_Blueprint.label>
+  <BioReactorBig_Frame.label>바이오리액터 (3X3) (건설중)</BioReactorBig_Frame.label>
+  <BioReactorBig_Frame.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorBig_Frame.description>
+
+
+  <!-- 4X4 Size -->
+
+  <BioReactorEx.label>바이오리액터 (4X4)</BioReactorEx.label>
+  <BioReactorEx.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorEx.description>
+  <BioReactorEx_Blueprint.label>바이오리액터 (4X4) (설계도)</BioReactorEx_Blueprint.label>
+  <BioReactorEx_Frame.label>바이오리액터 (4X4) (건설중)</BioReactorEx_Frame.label>
+  <BioReactorEx_Frame.description>생명체로부터 에너지를 추출하는 장치입니다. 생명체의 크기에 비례해 전력을 생산합니다. 인간개체의 경우 더 많은 전력량을 생산합니다. 살아있는 생명체가 죽지 않도록 에너지를 주입해야합니다.</BioReactorEx_Frame.description>
+
+
+</LanguageData>
