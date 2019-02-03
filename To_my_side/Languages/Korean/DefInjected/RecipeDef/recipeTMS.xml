@@ -10,8 +10,8 @@
   <CraftRunetwo.jobString>전문가의 룬을 제작중</CraftRunetwo.jobString>
   
   
-  <CraftRuneone.label>룬 제작</CraftRuneone.label>
-  <CraftRuneone.description>룬 제작</CraftRuneone.label>
-  <CraftRuneone.label>룬 제작</CraftRuneone.label>
+  <CraftRunethree.label>대가의 룬 제작</CraftRuneone.label>
+  <CraftRunethree.description>대가의 룬을 제작합니다.</CraftRuneone.label>
+  <CraftRunethree.label>대가의 룬 제작중</CraftRuneone.label>
   
 </LanguageData>

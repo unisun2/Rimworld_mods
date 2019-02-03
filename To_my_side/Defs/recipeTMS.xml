@@ -120,7 +120,7 @@
 	<RecipeDef>
 		<defName>CraftRunethree</defName>
 		<label>Craft Master's runestone</label>
-		<description>Great power comes great responsibility.</description>
+		<description>Great power needs great cost.</description>
 		<jobString>Crafting Master's runestone.</jobString>
         <workSkill>Crafting</workSkill>
         <effectWorking>BurnDrug</effectWorking>
