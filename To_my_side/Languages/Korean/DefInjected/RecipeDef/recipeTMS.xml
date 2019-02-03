@@ -2,7 +2,7 @@
 <LanguageData>
 
   <CraftRuneone.label>수습생의 룬 제작</CraftRuneone.label>
-  <CraftRuneone.description>수습생의 룬을 제작합니다.</CraftRuneone.label>
+  <CraftRuneone.description>수습생의 룬을 제작합니다.</CraftRuneone.description>
   <CraftRuneone.jobString>수습생의 룬을 제작중</CraftRuneone.jobString>
   
   <CraftRunetwo.label>전문가의 룬 제작</CraftRunetwo.label>
@@ -10,8 +10,8 @@
   <CraftRunetwo.jobString>전문가의 룬을 제작중</CraftRunetwo.jobString>
   
   
-  <CraftRunethree.label>대가의 룬 제작</CraftRuneone.label>
-  <CraftRunethree.description>대가의 룬을 제작합니다.</CraftRuneone.label>
-  <CraftRunethree.label>대가의 룬 제작중</CraftRuneone.label>
+  <CraftRunethree.label>대가의 룬 제작</CraftRunethree.label>
+  <CraftRunethree.description>대가의 룬을 제작합니다.</CraftRunethree.description>
+  <CraftRunethree.jobString>대가의 룬을 제작중</CraftRunethree.jobString>
   
 </LanguageData>

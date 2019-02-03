@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <To_my_sideone.label>Animal Companion</To_my_sideone.label>
+  <To_my_sideone.description>Apprentice's runestones can be created. Runstones are used by right clicking</To_my_sideone.description>
+
+  <To_my_sidetwo.label>To My Side!</To_my_sidetwo.label>
+  <To_my_sidetwo.description>Expert's runestones can be created.</To_my_sidetwo.description>
+
+  <To_my_sidethree.label>Call of Wild</To_my_sidethree.label>
+  <To_my_sidethree.description>Master's runestones can be created.</To_my_sidethree.description>
+
+
+</LanguageData>

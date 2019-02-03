@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TMSArtifactone.label>Apprentice's runestones</TMSArtifactone.label>
+  <TMSArtifactone.description>It gives little power to animals. Do not use to Humans!</TMSArtifactone.description>
+  <TMSArtifactone.comps.1.useLabel>Activate</TMSArtifactone.comps.1.useLabel>
+
+  <TMSArtifacttwo.label>Expert's runestones</TMSArtifacttwo.label>
+  <TMSArtifacttwo.description>It gives power to animals. Do not use to Humans!</TMSArtifacttwo.description>
+  <TMSArtifacttwo.comps.1.useLabel>Activate</TMSArtifacttwo.comps.1.useLabel>
+
+  <TMSArtifactthree.label>Master's runestones</TMSArtifactthree.label>
+  <TMSArtifactthree.description>It gives a Huge power to animals. Do not use to Humans!</TMSArtifactthree.description>
+  <TMSArtifactthree.comps.1.useLabel>Activate</TMSArtifactthree.comps.1.useLabel>
+
+
+</LanguageData>

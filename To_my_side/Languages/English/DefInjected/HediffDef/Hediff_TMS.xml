@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- buffs 1 -->
+
+  <TMS_armor_Sharp1.label>ArmorRating_Sharp</TMS_armor_Sharp1.label>
+  <TMS_armor_Sharp2.label>ArmorRating_Sharp</TMS_armor_Sharp2.label>
+  <TMS_armor_Sharp3.label>ArmorRating_Sharp</TMS_armor_Sharp3.label>
+  <TMS_armor_Sharp4.label>ArmorRating_Sharp</TMS_armor_Sharp4.label>
+  <TMS_armor_Sharp5.label>ArmorRating_Sharp</TMS_armor_Sharp5.label>
+  <TMS_armor_Blunt1.label>ArmorRating_Blunt</TMS_armor_Blunt1.label>
+  <TMS_armor_Blunt2.label>ArmorRating_Blunt</TMS_armor_Blunt2.label>
+  <TMS_armor_Blunt3.label>ArmorRating_Blunt</TMS_armor_Blunt3.label>
+  <TMS_armor_Blunt4.label>ArmorRating_Blunt</TMS_armor_Blunt4.label>
+  <TMS_armor_Blunt5.label>ArmorRating_Blunt</TMS_armor_Blunt5.label>
+  <TMS_armor_Heat1.label>ArmorRating_Heat</TMS_armor_Heat1.label>
+  <TMS_armor_Heat2.label>ArmorRating_Heat</TMS_armor_Heat2.label>
+  <TMS_armor_Heat3.label>ArmorRating_Heat</TMS_armor_Heat3.label>
+  <TMS_armor_Heat4.label>ArmorRating_Heat</TMS_armor_Heat4.label>
+  <TMS_armor_Heat5.label>ArmorRating_Heat</TMS_armor_Heat5.label>
+  <TMS_HungerRate1.label>HungerRateMultiplier</TMS_HungerRate1.label>
+  <TMS_HungerRate2.label>HungerRateMultiplier</TMS_HungerRate2.label>
+  <TMS_HungerRate3.label>HungerRateMultiplier</TMS_HungerRate3.label>
+  <TMS_HungerRate4.label>HungerRateMultiplier</TMS_HungerRate4.label>
+  <TMS_HungerRate5.label>HungerRateMultiplier</TMS_HungerRate5.label>
+  <TMS_MeleeDodgeChance1.label>MeleeDodgeChance</TMS_MeleeDodgeChance1.label>
+  <TMS_MeleeDodgeChance2.label>MeleeDodgeChance</TMS_MeleeDodgeChance2.label>
+  <TMS_MeleeDodgeChance3.label>MeleeDodgeChance</TMS_MeleeDodgeChance3.label>
+  <TMS_MeleeDodgeChance4.label>MeleeDodgeChance</TMS_MeleeDodgeChance4.label>
+  <TMS_MeleeDodgeChance5.label>MeleeDodgeChance</TMS_MeleeDodgeChance5.label>
+  <TMS_MoveSpeed1.label>MoveSpeed</TMS_MoveSpeed1.label>
+  <TMS_MoveSpeed2.label>MoveSpeed</TMS_MoveSpeed2.label>
+  <TMS_MoveSpeed3.label>MoveSpeed</TMS_MoveSpeed3.label>
+  <TMS_MoveSpeed4.label>MoveSpeed</TMS_MoveSpeed4.label>
+  <TMS_MoveSpeed5.label>MoveSpeed</TMS_MoveSpeed5.label>
+  <TMS_ComfyTemperature1.label>ComfyTemperature</TMS_ComfyTemperature1.label>
+  <TMS_ComfyTemperature2.label>ComfyTemperature</TMS_ComfyTemperature2.label>
+  <TMS_ComfyTemperature3.label>ComfyTemperature</TMS_ComfyTemperature3.label>
+  <TMS_ComfyTemperature4.label>ComfyTemperature</TMS_ComfyTemperature4.label>
+  <TMS_ComfyTemperature5.label>ComfyTemperature</TMS_ComfyTemperature5.label>
+  <TMS_BloodFiltration1.label>BloodFiltration</TMS_BloodFiltration1.label>
+  <TMS_BloodFiltration2.label>BloodFiltration</TMS_BloodFiltration2.label>
+  <TMS_BloodFiltration3.label>BloodFiltration</TMS_BloodFiltration3.label>
+  <TMS_BloodFiltration4.label>BloodFiltration</TMS_BloodFiltration4.label>
+  <TMS_BloodFiltration5.label>BloodFiltration</TMS_BloodFiltration5.label>
+  <TMS_MeleeHitChance1.label>MeleeHitChance</TMS_MeleeHitChance1.label>
+  <TMS_MeleeHitChance2.label>MeleeHitChance</TMS_MeleeHitChance2.label>
+  <TMS_MeleeHitChance3.label>MeleeHitChance</TMS_MeleeHitChance3.label>
+  <TMS_MeleeHitChance4.label>MeleeHitChance</TMS_MeleeHitChance4.label>
+  <TMS_MeleeHitChance5.label>MeleeHitChance</TMS_MeleeHitChance5.label>
+  <TMS_Manipulation1.label>Manipulation</TMS_Manipulation1.label>
+  <TMS_Manipulation2.label>Manipulation</TMS_Manipulation2.label>
+  <TMS_Manipulation3.label>Manipulation</TMS_Manipulation3.label>
+  <TMS_Manipulation4.label>Manipulation</TMS_Manipulation4.label>
+  <TMS_Manipulation5.label>Manipulation</TMS_Manipulation5.label>
+  <TMS_Breathing1.label>Breathing</TMS_Breathing1.label>
+  <TMS_Breathing2.label>Breathing</TMS_Breathing2.label>
+  <TMS_Breathing3.label>Breathing</TMS_Breathing3.label>
+  <TMS_Breathing4.label>Breathing</TMS_Breathing4.label>
+  <TMS_Breathing5.label>Breathing</TMS_Breathing5.label>
+
+
+</LanguageData>
