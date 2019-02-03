@@ -52,6 +52,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="CompProperties_UseEffect.cs" />
     <Compile Include="CompTargetEffect.cs" />
+    <Compile Include="hediff.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

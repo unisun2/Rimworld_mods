@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TMS_Building_Base.label>Inscription Table</TMS_Building_Base.label>
+  <TMS_Building_Base.description>A table with equipments for crafting Runes.</TMS_Building_Base.description>
+  <TMS_Building_Base_Blueprint.label>Inscription Table (blueprint)</TMS_Building_Base_Blueprint.label>
+  <TMS_Building_Base_Blueprint_Install.label>Inscription Table (blueprint)</TMS_Building_Base_Blueprint_Install.label>
+  <TMS_Building_Base_Frame.label>Inscription Table (building)</TMS_Building_Base_Frame.label>
+  <TMS_Building_Base_Frame.description>A table with equipments for crafting Runes.</TMS_Building_Base_Frame.description>
+
+
+</LanguageData>

@@ -3,15 +3,15 @@
 
   <WorkGiverDef>
     <defName>DoBillsTMS</defName>
-    <label>work at TMS</label>
+    <label>Craft Runes</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
     <priorityInType>75</priorityInType>
     <fixedBillGiverDefs>
       <li>TMS_Building_Base</li>
     </fixedBillGiverDefs>
-    <verb>work</verb>
-    <gerund>working at</gerund>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
     <requiredCapacities>
       <li>Manipulation</li>
     </requiredCapacities>

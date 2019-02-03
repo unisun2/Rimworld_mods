@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TMS_Building_Base.label>룬 제작대</TMS_Building_Base.label>
+  <TMS_Building_Base.description>룬을 제작하기 위한 도구들이 있는 작업대입니다.</TMS_Building_Base.description>
+  <TMS_Building_Base_Blueprint.label>룬 제작대 (설계도)</TMS_Building_Base_Blueprint.label>
+  <TMS_Building_Base_Blueprint_Install.label>룬 제작대 (설계도)</TMS_Building_Base_Blueprint_Install.label>
+  <TMS_Building_Base_Frame.label>룬 제작대</TMS_Building_Base_Frame.label>
+  <TMS_Building_Base_Frame.description>룬을 제작하기 위한 도구들이 있는 작업대입니다.</TMS_Building_Base_Frame.description>
+
+
+</LanguageData>

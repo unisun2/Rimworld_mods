@@ -5,11 +5,11 @@
     <defName>TMS_Building_Base</defName>
     <label>Inscription Table</label>
     <thingClass>Building_WorkTable</thingClass>
-    <description>A table with equipments for assembling the makeshift equipments.</description>
+    <description>A table with equipments for crafting Runes.</description>
     <graphicData>
       <texPath>Things/Building/to_my_side_base</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(3.2,3)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -17,13 +17,12 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <size>(3,3)</size>
+    <size>(3,2)</size>
 		<costList>
 			<Steel>20</Steel>
-			<Gold>40</Gold>
 			<Silver>50</Silver>
 			<BlocksGranite>100</BlocksGranite>
-			<WoodLog>100</WoodLog>
+			<WoodLog>200</WoodLog>
 		</costList>
     <constructEffect>ConstructWood</constructEffect>
     <altitudeLayer>Building</altitudeLayer>
@@ -38,7 +37,7 @@
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
     <inspectorTabs>
       <li>ITab_Bills</li>

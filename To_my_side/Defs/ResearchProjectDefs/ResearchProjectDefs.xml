@@ -26,12 +26,12 @@
     <label>To My Side!</label>
     <description>Expert's runestones can be created.</description>
     <baseCost>2000</baseCost>
-    <techLevel>Medieval</techLevel>
-    <researchViewX>0</researchViewX>
-    <researchViewY>2</researchViewY>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
 	<prerequisites>
       <li>To_my_sideone</li>
-	  <li>DrugProduction</li>
+	  <li>PenoxycylineProduction</li>
     </prerequisites>
   </ResearchProjectDef>
   
@@ -41,11 +41,12 @@
     <label>Call of Wild</label>
     <description>Master's runestones can be created.</description>
     <baseCost>2500</baseCost>
-    <techLevel>Medieval</techLevel>
-    <researchViewX>0</researchViewX>
-    <researchViewY>3</researchViewY>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
 	<prerequisites>
       <li>To_my_sidetwo</li>
+	  <li>MultiAnalyzer</li>
     </prerequisites>
   </ResearchProjectDef>
 

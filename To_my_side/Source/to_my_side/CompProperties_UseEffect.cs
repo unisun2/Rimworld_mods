@@ -34,6 +34,10 @@ namespace to_my_side
             {
                 return;
             }
+            else if (pawn.RaceProps.Humanlike)   // no human!
+            {
+                return;
+            }
 
             plusLvHediff(ref pawn, 3);
 
@@ -47,6 +51,10 @@ namespace to_my_side
         {
             Pawn pawn = (Pawn)target;
             if (pawn.Dead)
+            {
+                return;
+            }
+            else if (pawn.RaceProps.Humanlike)   // no human!
             {
                 return;
             }

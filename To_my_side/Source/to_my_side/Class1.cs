@@ -23,8 +23,6 @@ namespace to_my_side
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-
-            //HugsLibController.Instance.DistributedTicker.RegisterTickability(CleanTick, CleaningStationSettings.GetCleanTime(), this);
         }
 
     }
