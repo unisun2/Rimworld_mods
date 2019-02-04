@@ -275,7 +275,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDodgeChance>0.05</MeleeDodgeChance>
+					<MeleeDodgeChance>4</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -287,7 +287,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDodgeChance>0.1</MeleeDodgeChance>
+					<MeleeDodgeChance>8</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -299,7 +299,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDodgeChance>0.15</MeleeDodgeChance>
+					<MeleeDodgeChance>12</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -311,7 +311,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDodgeChance>0.2</MeleeDodgeChance>
+					<MeleeDodgeChance>16</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -323,7 +323,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeDodgeChance>0.25</MeleeDodgeChance>
+					<MeleeDodgeChance>20</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -399,8 +399,8 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ComfyTemperatureMin>-5</ComfyTemperatureMin>
-					<ComfyTemperatureMax>5</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-4</ComfyTemperatureMin>
+					<ComfyTemperatureMax>4</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
 		</stages>
@@ -412,8 +412,8 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-					<ComfyTemperatureMax>10</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+					<ComfyTemperatureMax>8</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
 		</stages>
@@ -425,8 +425,8 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ComfyTemperatureMin>-15</ComfyTemperatureMin>
-					<ComfyTemperatureMax>15</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-12</ComfyTemperatureMin>
+					<ComfyTemperatureMax>12</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
 		</stages>
@@ -438,8 +438,8 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ComfyTemperatureMin>-20</ComfyTemperatureMin>
-					<ComfyTemperatureMax>20</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-16</ComfyTemperatureMin>
+					<ComfyTemperatureMax>16</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
 		</stages>
@@ -451,8 +451,8 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<ComfyTemperatureMin>-25</ComfyTemperatureMin>
-					<ComfyTemperatureMax>25</ComfyTemperatureMax>
+					<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+					<ComfyTemperatureMax>20</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
 		</stages>
@@ -543,7 +543,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeHitChance>0.15</MeleeHitChance>
+					<MeleeHitChance>1.0</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -555,7 +555,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeHitChance>0.3</MeleeHitChance>
+					<MeleeHitChance>2</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -567,7 +567,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeHitChance>0.45</MeleeHitChance>
+					<MeleeHitChance>3</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -579,7 +579,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeHitChance>0.6</MeleeHitChance>
+					<MeleeHitChance>4</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>
@@ -591,7 +591,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MeleeHitChance>0.75</MeleeHitChance>
+					<MeleeHitChance>5</MeleeHitChance>
 				</statOffsets>
 			</li>
 		</stages>
