@@ -18,10 +18,13 @@
       </damageData>
     </graphicData>
     <size>(3,2)</size>
+	<stuffCategories>
+		<li>Stony</li>
+	</stuffCategories>
+	<costStuffCount>100</costStuffCount>
 		<costList>
 			<Steel>20</Steel>
 			<Silver>50</Silver>
-			<BlocksGranite>100</BlocksGranite>
 			<WoodLog>200</WoodLog>
 		</costList>
     <constructEffect>ConstructWood</constructEffect>

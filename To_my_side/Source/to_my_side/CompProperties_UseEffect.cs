@@ -36,6 +36,8 @@ namespace to_my_side
             }
             else if (pawn.RaceProps.Humanlike)   // no human!
             {
+                pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
+                pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
                 return;
             }
 
@@ -56,6 +58,8 @@ namespace to_my_side
             }
             else if (pawn.RaceProps.Humanlike)   // no human!
             {
+                pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
+                pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
                 return;
             }
 

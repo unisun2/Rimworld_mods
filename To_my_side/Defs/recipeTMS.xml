@@ -170,7 +170,7 @@
 			<Intellectual>11</Intellectual>
 			<Crafting>11</Crafting>
         </skillRequirements>
-		<researchPrerequisite>To_my_sidetwo</researchPrerequisite>
+		<researchPrerequisite>To_my_sidethree</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>
