@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TMSArtifactone.label>수습생의 룬스톤</TMSArtifactone.label>
+  <TMSArtifactone.description>동물에게 적은 힘을 부여합니다. 사람에게 쓰지 마시오.</TMSArtifactone.description>
+  <TMSArtifactone.comps.1.useLabel>사용</TMSArtifactone.comps.1.useLabel>
+
+  <TMSArtifacttwo.label>전문가의 룬스톤</TMSArtifacttwo.label>
+  <TMSArtifacttwo.description>동물에게 적은 힘을 부여합니다. 사람에게 쓰지 마시오.</TMSArtifacttwo.description>
+  <TMSArtifacttwo.comps.1.useLabel>사용</TMSArtifacttwo.comps.1.useLabel>
+
+  <TMSArtifactthree.label>대가의 룬스톤</TMSArtifactthree.label>
+  <TMSArtifactthree.description>동물에게 막대한 힘을 부여합니다. 사람에게 쓰지 마시오.</TMSArtifactthree.description>
+  <TMSArtifactthree.comps.1.useLabel>사용</TMSArtifactthree.comps.1.useLabel>
+
+
+</LanguageData>

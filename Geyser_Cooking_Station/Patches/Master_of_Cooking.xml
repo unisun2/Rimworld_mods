@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Master of Cooking</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Make10Pemmican"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Make20Pemmican"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook5MealSimple"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook10MealSimple"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook20MealSimple"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook50MealSimple"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook5MealFine"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook10MealFine"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook20MealFine"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook50MealFine"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook5MealLavish"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook10MealLavish"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook20MealLavish"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook50MealLavish"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook5MealSurvival"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook10MealSurvival"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook20MealSurvival"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cook50MealSurvival"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

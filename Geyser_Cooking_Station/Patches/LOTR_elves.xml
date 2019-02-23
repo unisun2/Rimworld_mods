@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - Elves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="LotRE_BakeElvishBread"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="LotRE_PrepareLembas"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="LotRE_CraftLembasflour"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="LotRE_CraftBulkLembasFlour"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BenchBase">
+		<defName>GCS_Stove</defName>
+		<label>Geyser stove</label>
+		<description>A Stove with geyser. Must be placed on a steam geyser.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<graphicData>
+			<texPath>Things/Building/GCS_Stove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerBL>Damage/Corner</cornerBL>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>		
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>200</costStuffCount>
+		<costList>
+			<Steel>20</Steel>
+			<Silver>50</Silver>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Beauty>20</Beauty>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkTableWorkSpeedFactor>1.2</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(4,4)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>90</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CookMealSimple</li>
+			<li>CookMealFine</li>
+			<li>CookMealLavish</li>
+			<li>CookMealSurvival</li>
+			<li>Make_Pemmican</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+		<!-- 
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0</fuelConsumptionRate>
+				<fuelCapacity>1.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+			-->
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>2</heatPerSecond>
+				<heatPushMaxTemperature>18</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>GeyserCookingone</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>GCS_advStove</defName>
+		<label>Advanced Geyser stove</label>
+		<description>A Stove with geyser. Must be placed on a steam geyser.</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<graphicData>
+			<texPath>Things/Building/GCS_advStove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>		
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<Steel>20</Steel>
+			<Gold>50</Gold>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Beauty>20</Beauty>
+			<WorkToBuild>12000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<WorkTableWorkSpeedFactor>2.0</WorkTableWorkSpeedFactor>
+		</statBases>
+		<size>(4,4)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>90</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CookMealSimple</li>
+			<li>CookMealFine</li>
+			<li>CookMealLavish</li>
+			<li>CookMealSurvival</li>
+			<li>Make_Pemmican</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+		<!-- 
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0</fuelConsumptionRate>
+				<fuelCapacity>1.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+			</li>
+			-->
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>4</heatPerSecond>
+				<heatPushMaxTemperature>18</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<building>
+			<isMealSource>true</isMealSource>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<researchPrerequisites>
+			<li>GeyserCookingtwo</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<placeWorkers>
+			<li>PlaceWorker_OnSteamGeyser</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Defs>

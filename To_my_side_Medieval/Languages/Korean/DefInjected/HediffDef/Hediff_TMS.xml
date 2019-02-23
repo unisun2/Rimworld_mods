@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<TMS_armor_Sharp1.label>방어도_날카로움</TMS_armor_Sharp1.label>
+	<TMS_armor_Sharp2.label>방어도_날카로움</TMS_armor_Sharp2.label>
+	<TMS_armor_Sharp3.label>방어도_날카로움</TMS_armor_Sharp3.label>
+	<TMS_armor_Sharp4.label>방어도_날카로움</TMS_armor_Sharp4.label>
+	<TMS_armor_Sharp5.label>방어도_날카로움</TMS_armor_Sharp5.label>
+	
+	<TMS_armor_Blunt1.label>방어도_둔탁함</TMS_armor_Blunt1.label>
+	<TMS_armor_Blunt2.label>방어도_둔탁함</TMS_armor_Blunt2.label>
+	<TMS_armor_Blunt3.label>방어도_둔탁함</TMS_armor_Blunt3.label>
+	<TMS_armor_Blunt4.label>방어도_둔탁함</TMS_armor_Blunt4.label>
+	<TMS_armor_Blunt5.label>방어도_둔탁함</TMS_armor_Blunt5.label>
+	
+	<TMS_armor_Heat1.label>방어도_열기</TMS_armor_Heat1.label>
+	<TMS_armor_Heat2.label>방어도_열기</TMS_armor_Heat2.label>
+	<TMS_armor_Heat3.label>방어도_열기</TMS_armor_Heat3.label>
+	<TMS_armor_Heat4.label>방어도_열기</TMS_armor_Heat4.label>
+	<TMS_armor_Heat5.label>방어도_열기</TMS_armor_Heat5.label>
+	
+	<TMS_HungerRate1.label>덜 배고픔</TMS_HungerRate1.label>
+	<TMS_HungerRate2.label>덜 배고픔</TMS_HungerRate2.label>
+	<TMS_HungerRate3.label>덜 배고픔</TMS_HungerRate3.label>
+	<TMS_HungerRate4.label>덜 배고픔</TMS_HungerRate4.label>
+	<TMS_HungerRate5.label>덜 배고픔</TMS_HungerRate5.label>
+	
+	<TMS_MeleeDodgeChance1.label>근접 회피율</TMS_MeleeDodgeChance1.label>
+	<TMS_MeleeDodgeChance2.label>근접 회피율</TMS_MeleeDodgeChance2.label>
+	<TMS_MeleeDodgeChance3.label>근접 회피율</TMS_MeleeDodgeChance3.label>
+	<TMS_MeleeDodgeChance4.label>근접 회피율</TMS_MeleeDodgeChance4.label>
+	<TMS_MeleeDodgeChance5.label>근접 회피율</TMS_MeleeDodgeChance5.label>
+	
+	<TMS_MoveSpeed1.label>이동속도</TMS_MoveSpeed1.label>
+	<TMS_MoveSpeed2.label>이동속도</TMS_MoveSpeed2.label>
+	<TMS_MoveSpeed3.label>이동속도</TMS_MoveSpeed3.label>
+	<TMS_MoveSpeed4.label>이동속도</TMS_MoveSpeed4.label>
+	<TMS_MoveSpeed5.label>이동속도</TMS_MoveSpeed5.label>
+	
+	<TMS_ComfyTemperature1.label>적응 온도</TMS_ComfyTemperature1.label>
+	<TMS_ComfyTemperature2.label>적응 온도</TMS_ComfyTemperature2.label>
+	<TMS_ComfyTemperature3.label>적응 온도</TMS_ComfyTemperature3.label>
+	<TMS_ComfyTemperature4.label>적응 온도</TMS_ComfyTemperature4.label>
+	<TMS_ComfyTemperature5.label>적응 온도</TMS_ComfyTemperature5.label>
+	
+	<TMS_BloodFiltration1.label>혈액여과</TMS_BloodFiltration1.label>
+	<TMS_BloodFiltration2.label>혈액여과</TMS_BloodFiltration2.label>
+	<TMS_BloodFiltration3.label>혈액여과</TMS_BloodFiltration3.label>
+	<TMS_BloodFiltration4.label>혈액여과</TMS_BloodFiltration4.label>
+	<TMS_BloodFiltration5.label>혈액여과</TMS_BloodFiltration5.label>
+	
+	<TMS_MeleeHitChance1.label>근접공격 명중률</TMS_MeleeHitChance1.label>
+	<TMS_MeleeHitChance2.label>근접공격 명중률</TMS_MeleeHitChance2.label>
+	<TMS_MeleeHitChance3.label>근접공격 명중률</TMS_MeleeHitChance3.label>
+	<TMS_MeleeHitChance4.label>근접공격 명중률</TMS_MeleeHitChance4.label>
+	<TMS_MeleeHitChance5.label>근접공격 명중률</TMS_MeleeHitChance5.label>
+	
+	<TMS_Manipulation1.label>조작</TMS_Manipulation1.label>
+	<TMS_Manipulation2.label>조작</TMS_Manipulation2.label>
+	<TMS_Manipulation3.label>조작</TMS_Manipulation3.label>
+	<TMS_Manipulation4.label>조작</TMS_Manipulation4.label>
+	<TMS_Manipulation5.label>조작</TMS_Manipulation5.label>
+
+	<TMS_Breathing1.label>호흡</TMS_Breathing1.label>
+	<TMS_Breathing2.label>호흡</TMS_Breathing2.label>
+	<TMS_Breathing3.label>호흡</TMS_Breathing3.label>
+	<TMS_Breathing4.label>호흡</TMS_Breathing4.label>
+	<TMS_Breathing5.label>호흡</TMS_Breathing5.label>
+</LanguageData>

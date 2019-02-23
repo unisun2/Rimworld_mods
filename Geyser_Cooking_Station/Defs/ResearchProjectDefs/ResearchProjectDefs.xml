@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>GeyserCooking</defName>
+		<label>GeyserCooking</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+    <defName>GeyserCookingone</defName>
+	<tab>GeyserCooking</tab>
+    <label>GeyserCooking</label>
+    <description>That geyser looks really hot. Maybe I could use it for cooking?</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+	  <li>Stonecutting</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>GeyserCookingtwo</defName>
+	<tab>GeyserCooking</tab>
+    <label>Advanced GeyserCooking</label>
+    <description>Improved Geyser CookingStation</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+	  <li>GeyserCookingone</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>
+
+

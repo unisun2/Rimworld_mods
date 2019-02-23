@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimCuisine 1.0</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[@Name="RecipeBase"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookMealExtravagant"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookWeakStew"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookHeartyStew"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="RC_MakeTart"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="MakeJuice"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[@Name="RC_PreservationRecipeBase"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="MakePemmicanBulk"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="MakeHardtack"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="MakeHardtackBulk"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Stirfrymeal"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cookstewpot"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="MakePastry"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

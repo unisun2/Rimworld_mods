@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Base -->
+	<HediffDef Name="TMSHediffBase" Abstract="True">
+		<everCurableByItem>false</everCurableByItem>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- buffs 1 -->
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Sharp1</defName>
+		<label>TMS_armor_Sharp1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Sharp2</defName>
+		<label>TMS_armor_Sharp2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Sharp3</defName>
+		<label>TMS_armor_Sharp3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Sharp4</defName>
+		<label>TMS_armor_Sharp4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Sharp5</defName>
+		<label>TMS_armor_Sharp5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Blunt1</defName>
+		<label>TMS_armor_Blunt1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Blunt2</defName>
+		<label>TMS_armor_Blunt2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Blunt3</defName>
+		<label>TMS_armor_Blunt3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Blunt4</defName>
+		<label>TMS_armor_Blunt4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Blunt5</defName>
+		<label>TMS_armor_Blunt5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Heat1</defName>
+		<label>TMS_armor_Heat1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Heat>0.15</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Heat2</defName>
+		<label>TMS_armor_Heat2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Heat>0.3</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Heat3</defName>
+		<label>TMS_armor_Heat3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Heat>0.45</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Heat4</defName>
+		<label>TMS_armor_Heat4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Heat>0.6</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_armor_Heat5</defName>
+		<label>TMS_armor_Heat5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Heat>0.75</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- -->
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_HungerRate1</defName>
+		<label>TMS_HungerRate1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.15</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_HungerRate2</defName>
+		<label>TMS_HungerRate2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.3</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_HungerRate3</defName>
+		<label>TMS_HungerRate3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.45</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_HungerRate4</defName>
+		<label>TMS_HungerRate4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.6</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_HungerRate5</defName>
+		<label>TMS_HungerRate5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<HungerRateMultiplier>-0.75</HungerRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeDodgeChance1</defName>
+		<label>TMS_MeleeDodgeChance1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>4</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeDodgeChance2</defName>
+		<label>TMS_MeleeDodgeChance2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>8</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeDodgeChance3</defName>
+		<label>TMS_MeleeDodgeChance3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>12</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeDodgeChance4</defName>
+		<label>TMS_MeleeDodgeChance4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>16</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeDodgeChance5</defName>
+		<label>TMS_MeleeDodgeChance5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>20</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MoveSpeed1</defName>
+		<label>TMS_MoveSpeed1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.15</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MoveSpeed2</defName>
+		<label>TMS_MoveSpeed2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MoveSpeed3</defName>
+		<label>TMS_MoveSpeed3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.45</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MoveSpeed4</defName>
+		<label>TMS_MoveSpeed4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.6</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MoveSpeed5</defName>
+		<label>TMS_MoveSpeed5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MoveSpeed>0.75</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_ComfyTemperature1</defName>
+		<label>TMS_ComfyTemperature1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-4</ComfyTemperatureMin>
+					<ComfyTemperatureMax>4</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_ComfyTemperature2</defName>
+		<label>TMS_ComfyTemperature2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+					<ComfyTemperatureMax>8</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_ComfyTemperature3</defName>
+		<label>TMS_ComfyTemperature3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-12</ComfyTemperatureMin>
+					<ComfyTemperatureMax>12</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_ComfyTemperature4</defName>
+		<label>TMS_ComfyTemperature4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-16</ComfyTemperatureMin>
+					<ComfyTemperatureMax>16</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_ComfyTemperature5</defName>
+		<label>TMS_ComfyTemperature5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+					<ComfyTemperatureMax>20</ComfyTemperatureMax>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_BloodFiltration1</defName>
+		<label>TMS_BloodFiltration1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_BloodFiltration2</defName>
+		<label>TMS_BloodFiltration2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_BloodFiltration3</defName>
+		<label>TMS_BloodFiltration3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_BloodFiltration4</defName>
+		<label>TMS_BloodFiltration4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.4</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_BloodFiltration5</defName>
+		<label>TMS_BloodFiltration5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeHitChance1</defName>
+		<label>TMS_MeleeHitChance1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>1</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeHitChance2</defName>
+		<label>TMS_MeleeHitChance2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>2</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeHitChance3</defName>
+		<label>TMS_MeleeHitChance3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>3</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeHitChance4</defName>
+		<label>TMS_MeleeHitChance4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>4</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_MeleeHitChance5</defName>
+		<label>TMS_MeleeHitChance5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeHitChance>5</MeleeHitChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Manipulation1</defName>
+		<label>TMS_Manipulation1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Manipulation2</defName>
+		<label>TMS_Manipulation2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Manipulation3</defName>
+		<label>TMS_Manipulation3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.45</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Manipulation4</defName>
+		<label>TMS_Manipulation4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.6</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Manipulation5</defName>
+		<label>TMS_Manipulation5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Breathing1</defName>
+		<label>TMS_Breathing1</label>
+		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Breathing2</defName>
+		<label>TMS_Breathing2</label>
+		<defaultLabelColor>(0.0, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Breathing3</defName>
+		<label>TMS_Breathing3</label>
+		<defaultLabelColor>(0.0, 0.0, 0.9)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.45</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Breathing4</defName>
+		<label>TMS_Breathing4</label>
+		<defaultLabelColor>(0.7, 0.0, 0.6)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.6</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="TMSHediffBase">
+		<defName>TMS_Breathing5</defName>
+		<label>TMS_Breathing5</label>
+		<defaultLabelColor>(0.9, 0.9, 0.0)</defaultLabelColor>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.75</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<!-- -->
+	
+	
+</Defs>

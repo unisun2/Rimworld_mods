@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CraftRuneone.label>Craft Apprentice's runestone</CraftRuneone.label>
+  <CraftRuneone.description>cheap.</CraftRuneone.description>
+  <CraftRuneone.jobString>Crafting Apprentice's runestone.</CraftRuneone.jobString>
+
+  <CraftRunetwo.label>Craft Expert's runestone</CraftRunetwo.label>
+  <CraftRunetwo.description>Moderate power.</CraftRunetwo.description>
+  <CraftRunetwo.jobString>Crafting Expert's runestone.</CraftRunetwo.jobString>
+
+  <CraftRunethree.label>Craft Master's runestone</CraftRunethree.label>
+  <CraftRunethree.description>Great power, but expensive.</CraftRunethree.description>
+  <CraftRunethree.jobString>Crafting Master's runestone.</CraftRunethree.jobString>
+
+
+</LanguageData>

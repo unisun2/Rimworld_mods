@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThingDef[defName="PsychiteTea"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<li>GCS_Stove</li>
+			<li>GCS_advStove</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>GCS_Stove</li>
+			<li>GCS_advStove</li>
+		</value>
+	</Operation>
+</Patch>

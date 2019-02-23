@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>VGP Vegetable Garden</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Fruitdrink"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="BrewCoffee"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="BulkBrewCoffee"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="BrewTea"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="BulkBrewTea"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookMealSimple_Bulk"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookMealFine_Bulk"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookMealLavish_Bulk"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="CookBulkMealSurvival"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Stirfrymeal"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Cookstewpot"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="VG_MakebulkPemmican"]/recipeUsers</xpath>
+					<value>
+						<li>GCS_Stove</li>
+						<li>GCS_advStove</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
