@@ -27,7 +27,6 @@
 			<Silver>50</Silver>
 			<WoodLog>200</WoodLog>
 		</costList>
-    <constructEffect>ConstructWood</constructEffect>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
