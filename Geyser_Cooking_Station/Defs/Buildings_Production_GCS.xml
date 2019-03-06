@@ -19,6 +19,7 @@
 		<staticSunShadowHeight>0</staticSunShadowHeight>		
 		<stuffCategories>
 			<li>Stony</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
 		<costList>
@@ -104,6 +105,7 @@
 		<staticSunShadowHeight>0</staticSunShadowHeight>		
 		<stuffCategories>
 			<li>Stony</li>
+			<li>Metallic</li>
 		</stuffCategories>
 		<costStuffCount>300</costStuffCount>
 		<costList>
@@ -152,7 +154,7 @@
 			-->
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>4</heatPerSecond>
-				<heatPushMaxTemperature>18</heatPushMaxTemperature>
+				<heatPushMaxTemperature>15</heatPushMaxTemperature>
 			</li>
 		</comps>
 		<building>
