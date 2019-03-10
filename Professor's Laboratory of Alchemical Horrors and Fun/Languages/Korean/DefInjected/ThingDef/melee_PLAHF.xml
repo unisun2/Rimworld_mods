@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MeleeWeapon_PLAHF_dagger.label>독 단검</MeleeWeapon_PLAHF_dagger.label>
+  <MeleeWeapon_PLAHF_dagger.description>짧고 단순한 단검. 찌르기 좋다. 초록색으로 빛나고 있다.</MeleeWeapon_PLAHF_dagger.description>
+  <MeleeWeapon_PLAHF_dagger.tools.0.label>손잡이</MeleeWeapon_PLAHF_dagger.tools.0.label>
+  <MeleeWeapon_PLAHF_dagger.tools.1.label>날끝</MeleeWeapon_PLAHF_dagger.tools.1.label>
+
+
+</LanguageData>

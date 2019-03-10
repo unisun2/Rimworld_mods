@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+    <defName>PLAHF_Toxic_Stab</defName>
+    <label>toxic stab</label>
+    <workerClass>DamageWorker_Stab</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stabbed to death.</deathMessage>
+    <hediff>Stab</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+	<additionalHediffs>
+      <li>
+        <hediff>PLAHF_blindingpoison</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="BluntBase">
+    <defName>PLAHF_Toxic_Jab</defName>
+    <label>toxic jab</label>
+    <additionalHediffs>
+      <li>
+        <hediff>PLAHF_blindingpoison</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  
+  <DamageDef ParentName="Bomb">
+    <defName>PLAHF_Toxic_Bomb</defName>
+    <label>toxic Bomb</label>
+	<deathMessage>{0} has died in an explosion of poison.</deathMessage>
+    <additionalHediffs>
+      <li>
+        <hediff>PLAHF_blindingpoison</hediff>
+        <severityPerDamageDealt>0.01</severityPerDamageDealt>
+        <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+      </li>
+    </additionalHediffs>
+  </DamageDef>
+  
+  <DamageDef ParentName="Bomb">
+    <defName>PLAHFManaBomb</defName>
+    <label>mana bomb</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion of mana.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>50</defaultDamage>
+    <defaultStoppingPower>0.5</defaultStoppingPower>
+    <defaultArmorPenetration>0.30</defaultArmorPenetration>
+    <buildingDamageFactor>4</buildingDamageFactor>
+    <plantDamageFactor>4</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellMote>Mote_BlastDry</explosionCellMote>
+    <explosionColorCenter>(0.58, 0.21, 1.0)</explosionColorCenter>
+    <explosionColorEdge>(0.5, 0.4, 1.0)</explosionColorEdge>
+    <soundExplosion>Explosion_Bomb</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+  
+  
+  
+</Defs>

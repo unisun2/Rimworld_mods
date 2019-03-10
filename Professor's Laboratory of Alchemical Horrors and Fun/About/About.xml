@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Professor's Laboratory of Alchemical Horrors and Fun</name>
+	<author>FLASHPOINT55</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<url>https://github.com/unisun2/Rimworld_mods</url>
+	<description>
+Good news, everyone! I think I've perfected a plague that will destroy all life on Rimworld!
+
+Add New Faction, weapons and monsters.
+
+Mod Load Order
+------------------
+Core
+...
+Humanoid Alien Races 2.0
+...
+Wa! Skeleton!
+...
+Professor's Laboratory of Alchemical Horrors and Fun (This Mod!)
+...
+-----------------
+
+	</description>
+</ModMetaData>

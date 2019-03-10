@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Professor's Laboratory of Alchemical Horrors and Fun\Assemblies\PLAHF.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Professor's Laboratory of Alchemical Horrors and Fun\Assemblies\PLAHF.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Professor's Laboratory of Alchemical Horrors and Fun\Source\PLAHF\obj\Debug\PLAHF.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Professor's Laboratory of Alchemical Horrors and Fun\Source\PLAHF\obj\Debug\PLAHF.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Professor's Laboratory of Alchemical Horrors and Fun\Source\PLAHF\obj\Debug\PLAHF.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Professor's Laboratory of Alchemical Horrors and Fun\Source\PLAHF\obj\Debug\PLAHF.pdb

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- PLAHF_Professor	교수 저격
+PLAHF_Associate_Professor	부교수 저격
+PLAHF_Assistant_Professor	조교수 저격
+PLAHF_Lecturer 헤비건.
+PLAHF_Postdoctoral_fellow 포닥 총,근접,수류탄
+PLAHF_Lab_slave	랩노예		총,근접
+PLAHF_Honorary_member	자살폭탄
+PLAHF_test_subjectB		실험체, 근접
+PLAHF_Ooze			느리고 강함
+PLAHF_Zombie_hound	빠르고 약함
+PLAHF_former_Town_Guard	원래 가드랑 비슷 -->
+
+  <PLAHF_former_Town_Guard.label>전 마을 경비병</PLAHF_former_Town_Guard.label>
+  <PLAHF_former_Town_Guard.labelPlural>전 마을 경비병들</PLAHF_former_Town_Guard.labelPlural>
+
+  <PLAHF_test_subjectB.label>실험체 B</PLAHF_test_subjectB.label>
+  <PLAHF_test_subjectB.labelPlural>실험체 B</PLAHF_test_subjectB.labelPlural>
+
+
+  <!-- only melee, suicide attack -->
+
+  <PLAHF_Honorary_member.label>명예 회원</PLAHF_Honorary_member.label>
+  <PLAHF_Honorary_member.labelPlural>명예 회원들</PLAHF_Honorary_member.labelPlural>
+
+  <PLAHF_Lab_slave.label>랩 노예</PLAHF_Lab_slave.label>
+  <PLAHF_Lab_slave.labelPlural>랩 노예들</PLAHF_Lab_slave.labelPlural>
+
+  <PLAHF_Postdoctoral_fellow.label>박사후 연구원</PLAHF_Postdoctoral_fellow.label>
+  <PLAHF_Postdoctoral_fellow.labelPlural>박사후 연구원들</PLAHF_Postdoctoral_fellow.labelPlural>
+
+  <PLAHF_Lecturer.label>강사</PLAHF_Lecturer.label>
+  <PLAHF_Lecturer.labelPlural>강사</PLAHF_Lecturer.labelPlural>
+
+  <PLAHF_Assistant_Professor.label>조교수</PLAHF_Assistant_Professor.label>
+  <PLAHF_Assistant_Professor.labelPlural>조교수들</PLAHF_Assistant_Professor.labelPlural>
+ 
+  <PLAHF_Associate_Professor.label>부교수</PLAHF_Associate_Professor.label>
+  <PLAHF_Associate_Professor.labelPlural>부교수들</PLAHF_Associate_Professor.labelPlural>
+
+  <PLAHF_Professor.label>교수</PLAHF_Professor.label>
+  <PLAHF_Professor.labelPlural>교수들</PLAHF_Professor.labelPlural>
+
+
+</LanguageData>

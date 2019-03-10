@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--
+PLAHF_Professor	교수 저격
+PLAHF_Associate_Professor	부교수 저격
+PLAHF_Assistant_Professor	조교수 저격
+PLAHF_Lecturer 헤비건.
+PLAHF_Postdoctoral_fellow 포닥 총,근접,수류탄
+PLAHF_Lab_slave	랩노예		총,근접
+PLAHF_Honorary_member	자살폭탄
+PLAHF_test_subjectB		실험체, 근접
+PLAHF_Ooze			느리고 강함
+PLAHF_Zombie_hound	빠르고 약함
+PLAHF_former_Town_Guard	원래 가드랑 비슷
+-->
+
+
+	<PawnKindDef Name="PLAHFBase" Abstract="True">
+	<race>DRSKT_Race</race>
+    <defaultFactionType>PLAHF_faction</defaultFactionType>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
+    <maxGenerationAge>1900</maxGenerationAge>
+	<minGenerationAge>700</minGenerationAge>
+    <invNutrition>1.0</invNutrition>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="PLAHF_former_Town_Guard" ParentName="PLAHFBase">
+    <defName>PLAHF_former_Town_Guard</defName>
+    <label>former town guard</label>
+    <combatPower>45</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>
+      <min>0.4</min>
+      <max>0.8</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialMilitaryBasic</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>300</min>
+      <max>600</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponMoney>
+      <min>250</min>
+      <max>400</max>
+    </weaponMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>
+      <min>700</min>
+      <max>1200</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </PawnKindDef>
+  
+
+  <PawnKindDef Name="PLAHF_test_subjectB" ParentName="PLAHFBase">
+    <defName>PLAHF_test_subjectB</defName>
+    <label>test subject B</label>
+	<race>Human</race>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+	<maxGenerationAge>30</maxGenerationAge>
+	<minGenerationAge>25</minGenerationAge>
+    <chemicalAddictionChance>1.0</chemicalAddictionChance>
+    <invNutrition>1.1</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <combatPower>80</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>
+      <min>200</min>
+      <max>1000</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>300</min>
+      <max>2000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+	  <li>PLAHFmelee</li>
+    </weaponTags>
+	<techHediffsChance>0.7</techHediffsChance>
+    <techHediffsMoney>
+		<min>500</min>
+		<max>900</max>
+	</techHediffsMoney>
+	<techHediffsTags>
+		<li>Poor</li>
+		<li>Simple</li>
+	</techHediffsTags>
+  </PawnKindDef>
+
+
+  <!-- only melee, suicide attack -->
+  <PawnKindDef Name="PLAHF_Honorary_member">
+    <defName>PLAHF_Honorary_member</defName>
+    <label>Honorary member</label>
+    <race>DRSKT_Race</race>
+    <combatPower>100</combatPower>
+    <defaultFactionType>PLAHF_faction</defaultFactionType>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <backstoryCategories><li>Slave</li></backstoryCategories>
+    <itemQuality>Poor</itemQuality>
+	<canBeSapper>true</canBeSapper>
+    <gearHealthRange>
+      <min>0.1</min>
+      <max>0.2</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>400</min>
+      <max>600</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>400</min>
+      <max>700</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>PLAHFBomb</li>
+    </weaponTags>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>3</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+
+
+  <PawnKindDef Name="PLAHF_Lab_slave" ParentName="PLAHFBase">
+    <defName>PLAHF_Lab_slave</defName>
+    <label>Lab slave</label>
+    <combatPower>70</combatPower>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelMoney>
+      <min>1200</min>
+      <max>1800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>300</min>
+      <max>700</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>PLAHFMelee</li>
+	  <li>Gun</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.4</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  
+  <PawnKindDef Name="PLAHF_Postdoctoral_fellow" ParentName="PLAHFBase">
+    <defName>PLAHF_Postdoctoral_fellow</defName>
+    <label>Postdoctoral fellow</label>
+    <combatPower>100</combatPower>
+    <baseRecruitDifficulty>0.80</baseRecruitDifficulty>
+	<canBeSapper>true</canBeSapper>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_SmokepopBelt</li>
+    </apparelRequired>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelMoney>
+      <min>2000</min>
+      <max>2800</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1000</min>
+      <max>2000</max>
+    </weaponMoney>
+    <weaponTags>
+	  <li>Gun</li>
+      <li>PLAHFMelee</li>
+	  <li>PLAHFGrenade</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>3000</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.3</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>180</min>
+            <max>400</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+
+  <PawnKindDef Name="PLAHF_Lecturer" ParentName="PLAHFBase">
+    <defName>PLAHF_Lecturer</defName>
+    <label>Lecturer</label>
+    <combatPower>150</combatPower>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <itemQuality>Normal</itemQuality>
+    <combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>2.3</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelMoney>
+      <min>4000</min>
+      <max>5000</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>1000</min>
+      <max>2000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>1000</min>
+      <max>1500</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.003</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+        <li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+  
+  <PawnKindDef Abstract="True" Name="PLAHFEliteTierBase" ParentName="PLAHFBase">
+  <combatPower>200</combatPower>
+    <gearHealthRange>
+      <min>1</min>
+      <max>1</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
+	  <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>4500</min>
+      <max>7500</max>
+    </apparelMoney>
+    <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+    <weaponMoney>
+      <min>1000</min>
+      <max>2400</max>
+    </weaponMoney>
+    <weaponTags>
+		<li>PLAHFsnipe</li>
+    </weaponTags>
+    <techHediffsMoney>
+      <min>2000</min>
+      <max>5200</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.45</techHediffsChance>
+    <combatEnhancingDrugsChance>0.99</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>
+      <min>1</min>
+      <max>3</max>
+    </combatEnhancingDrugsCount>
+  </PawnKindDef>
+  
+  <PawnKindDef Name="PLAHF_Assistant_Professor" ParentName="PLAHFEliteTierBase">
+    <defName>PLAHF_Assistant_Professor</defName>
+    <label>Assistant Professor</label>
+    <labelPlural>Assistant Professors</labelPlural>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <canBeSapper>true</canBeSapper>
+	<weaponTags>
+			<li>GunHeavy</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.01</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+		<li>
+          <thingDef>Gold</thingDef>
+          <countRange>
+            <min>10</min>
+            <max>33</max>
+          </countRange>
+        </li>
+		<li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>1</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	
+  </PawnKindDef>
+  
+  
+  
+  <PawnKindDef Name="PLAHF_Associate_Professor" ParentName="PLAHFEliteTierBase">
+    <defName>PLAHF_Associate_Professor</defName>
+    <label>Associate Professor</label>
+    <labelPlural>Associate Professors</labelPlural>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <canBeSapper>true</canBeSapper>
+    <inventoryOptions>
+      <skipChance>0.01</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+		<li>
+          <thingDef>Gold</thingDef>
+          <countRange>
+            <min>10</min>
+            <max>33</max>
+          </countRange>
+        </li>
+		<li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>2</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+	
+  </PawnKindDef>
+
+  <PawnKindDef Name="PLAHF_Professor" ParentName="PLAHFEliteTierBase">
+    <defName>PLAHF_Professor</defName>
+    <label>Professor</label>
+    <labelPlural>Professors</labelPlural>
+    <factionLeader>true</factionLeader>
+    <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+    <canBeSapper>true</canBeSapper>
+    <inventoryOptions>
+      <skipChance>0.01</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Silver</thingDef>
+          <countRange>
+            <min>50</min>
+            <max>200</max>
+          </countRange>
+        </li>
+		<li>
+          <thingDef>Gold</thingDef>
+          <countRange>
+            <min>10</min>
+            <max>33</max>
+          </countRange>
+        </li>
+		<li>
+          <thingDef>MedicineUltratech</thingDef>
+          <countRange>
+            <min>2</min>
+            <max>3</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+  
+</Defs>

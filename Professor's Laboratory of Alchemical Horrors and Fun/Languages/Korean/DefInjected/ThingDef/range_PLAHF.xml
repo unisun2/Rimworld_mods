@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLAHF_Bullet_PBomb.label>소형 역병 폭탄</PLAHF_Bullet_PBomb.label>
+
+  <PLAHF_PBomb.label>소형 역병 폭탄</PLAHF_PBomb.label>
+  <PLAHF_PBomb.description>자살 공격에 쓰이는 독성 폭발물.\n주의 : 매우 불안정함</PLAHF_PBomb.description>
+
+  <PLAHF_Bullet_volcanicbomb.label>화산 폭탄</PLAHF_Bullet_volcanicbomb.label>
+
+  <PLAHF_volcanicbomb.label>화산 폭탄</PLAHF_volcanicbomb.label>
+  <PLAHF_volcanicbomb.description>자살 공격에 쓰이는 폭발물.\n주의 : 매우 불안정함</PLAHF_volcanicbomb.description>
+
+  <PLAHF_snipe_Experiment.label>저격 실험</PLAHF_snipe_Experiment.label>
+  <PLAHF_snipe_Experiment.description>다음 실험까지 기다리지 못하는 성질 급한 교수님들의 발명품. \n어디에서든 실험을 할 수 있게 해 준다.\n주의 : 매우 불안정함</PLAHF_snipe_Experiment.description>
+  <PLAHF_snipe_Experiment.tools.0.label>개머리판</PLAHF_snipe_Experiment.tools.0.label>
+  <PLAHF_snipe_Experiment.tools.1.label>총열</PLAHF_snipe_Experiment.tools.1.label>
+
+  <Bullet_PLAHFSnipe.label>즉석 실험</Bullet_PLAHFSnipe.label>
+
+  <PLAHF_minimanabomb.label>소형 마나 폭탄</PLAHF_minimanabomb.label>
+  <PLAHF_minimanabomb.description>소형 마나 폭탄.\n주의 : 매우 불안정함</PLAHF_minimanabomb.description>
+  <PLAHF_minimanabomb.verbs.0.label>소형 마나 폭탄 던지기</PLAHF_minimanabomb.verbs.0.label>
+
+  <Proj_minimanabomb.label>소형 마나 폭탄</Proj_minimanabomb.label>
+
+
+</LanguageData>

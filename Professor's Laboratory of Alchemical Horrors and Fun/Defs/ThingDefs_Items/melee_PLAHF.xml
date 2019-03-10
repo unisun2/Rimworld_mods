@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_PLAHF_dagger</defName>
+    <label>poison dagger</label>
+    <description>A short simple dagger. Good for stabbing. It's shining with something green.</description>
+	<menuHidden>True</menuHidden>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Things/PLAHFKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>40</costStuffCount>
+    <weaponTags>
+      <li>PLAHFmelee</li>
+    </weaponTags>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>0.85</Mass>
+	  <MarketValue>550</MarketValue>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>PLAHF_Toxic_Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  
+</Defs>

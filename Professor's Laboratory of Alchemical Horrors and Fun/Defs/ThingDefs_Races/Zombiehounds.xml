@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef ParentName="AnimalThingBase">
+    <defName>PLAHF_Zombie_hound</defName>
+    <label>Zombie hound</label>
+    <description>Hound of undeads. and its bite injects toxic venom into the victim.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <MarketValue>100</MarketValue>
+      <MeatAmount>0</MeatAmount>
+	  <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
+    </statBases>
+    <tools>
+	<li>
+        <label>venom-fangs</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+     <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>9.7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>9.7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.9</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+    <race>
+	  <hasGenders>false</hasGenders>
+	  <needsRest>false</needsRest>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <herdAnimal>false</herdAnimal>
+	  <predator>true</predator>
+      <baseBodySize>0.9</baseBodySize>
+      <baseHungerRate>1.1</baseHungerRate>
+      <baseHealthScale>1.0</baseHealthScale>
+      <foodType>CarnivoreAnimal</foodType>
+	  <leatherDef>Leather_Dog</leatherDef>
+      <gestationPeriodDays>50</gestationPeriodDays>
+      <manhunterOnDamageChance>1</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.9</manhunterOnTameFailChance>
+      <wildness>1.90</wildness>
+      <lifeExpectancy>125</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.1</minAge>
+          <soundWounded>Pawn_Dog_Injured</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Dog_Call</soundCall>
+          <soundAngry>Pawn_Dog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+  	<defaultFactionType>PLAHF_faction</defaultFactionType>
+    <defName>PLAHF_Zombie_hound</defName>
+    <label>Zombie hound</label>
+	<labelPlural>Zombie hounds</labelPlural>
+    <race>PLAHF_Zombie_hound</race>
+    <combatPower>70</combatPower>
+	<canArriveManhunter>true</canArriveManhunter>
+	<wildGroupSize>
+		<min>1</min>
+		<max>3</max>
+	</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Pawn/zh</texPath>
+          <drawSize>1.75</drawSize>
+          <color>(77,77,77)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+
+</Defs>	
+

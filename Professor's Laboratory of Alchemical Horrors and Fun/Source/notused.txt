@@ -1,0 +1,84 @@
+//building_tacticalmanabomb.GetComp<CompSpawnerMechanoidsOnDamaged>().pointsLeft = Mathf.Max(parms.points * 0.9f, 300f);
+
+                /*IncidentParms incidentParms = new IncidentParms();
+                incidentParms.faction = FactionDefOf.PLAHF_faction;  //습격팩션
+                incidentParms.target = map;  //습격 맵
+                incidentParms.points = (float)(parms.points * 0.7); //습격포인트
+                incidentParms.raidArrivalMode = PawnsArrivalModeDefOf.CenterDrop; //습격타입
+                incidentParms.spawnCenter = intVec;  //생성되는 위치
+                incidentParms.raidStrategy = RaidStrategyDefOf.ImmediateAttack; //습격형태
+                incidentParms.raidForceOneIncap = true; //몰라
+                incidentParms.raidNeverFleeIndividual = true; //몰라
+                IncidentDefOf.RaidEnemy.Worker.TryExecute(incidentParms);  //습격 실행 */
+
+                PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
+                parms.faction = FactionDefOf.PLAHF_faction;  //습격팩션
+                parms.points = (float)(parms.points * 0.4); //습격포인트
+                parms.raidArrivalMode = PawnsArrivalModeDefOf.CenterDrop; //습격타입
+                parms.spawnCenter = intVec;  //생성되는 위치
+                parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack; //습격형태
+                //parms.points = IncidentWorker_Raid.AdjustedRaidPoints(parms.points, parms.raidArrivalMode, parms.raidStrategy, parms.faction, combat);
+                parms.raidForceOneIncap = true; //??
+                IncidentDefOf.RaidEnemy.Worker.TryExecute(parms);  //습격 실행
+				
+				
+				 private void SpawnPawns_start()
+				 
+				 
+				 if (!respawningAfterLoad)
+            {
+                this.SpawnPawns_start();
+            }
+			
+			
+			
+        {
+            pointsLeft = spawnpoints;
+            IntVec3 invalid;
+            if (!CellFinder.TryFindRandomCellNear(this.Position, this.Map, 7, (IntVec3 c) => c.Standable(this.Map) && this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)), out invalid, -1))
+            {
+                Log.Error("error Building_TacticalManaBomb. SpawnInitialPawns" + this, false);
+                invalid = IntVec3.Invalid;
+            }
+            else if(spawnpoints <= 100)
+            {
+                Log.Error("error Building_TacticalManaBomb. SpawnInitialPawns no spawnpoints" + this, false);
+                return;
+            }
+
+            Faction faction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("PLAHF_faction"));
+
+            //this.SpawnPawnsUntilPoints(200f, faction);
+
+            //PawnGroupMakerUtility.TryGetRandomFactionForCombatPawnGroup(spawnpoints, out faction, null, false, false, false, true);
+
+            Pawn pawn;
+            int RRR;
+
+            while (pointsLeft > 80)
+            {
+                RRR = Rand.Range(0, 7);
+
+                if (RRR < 1)
+                {
+                    pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("PLAHF_Honorary_member"), faction);
+                }
+                else if (RRR < 2)
+                {
+                    pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("PLAHF_test_subjectB"), faction);
+                }
+                else if(RRR < 5)
+                {
+                    pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("PLAHF_former_Town_Guard"), faction);
+                }
+                else
+                {
+                    pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("PLAHF_Lab_slave"), faction);
+                }
+
+                GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 1, null), base.Map, WipeMode.Vanish);
+
+                pointsLeft -= pawn.kindDef.combatPower;
+            }
+
+        }

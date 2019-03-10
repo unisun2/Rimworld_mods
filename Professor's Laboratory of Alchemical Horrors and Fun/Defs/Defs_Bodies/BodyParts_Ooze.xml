@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Defs>
+  <BodyPartDef>
+    <defName>Ooze_Body</defName>
+    <label>torso</label>
+    <hitPoints>200</hitPoints>
+    <bleedRate>0.5</bleedRate>
+    <skinCovered>true</skinCovered>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Ooze_Top</defName>
+    <label>Top</label>
+    <hitPoints>200</hitPoints>
+    <bleedRate>0.5</bleedRate>
+    <skinCovered>true</skinCovered>
+	<frostbiteVulnerability>0.5</frostbiteVulnerability>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Ooze_middle</defName>
+    <label>Middle</label>
+    <hitPoints>200</hitPoints>
+    <bleedRate>0.5</bleedRate>
+    <skinCovered>true</skinCovered>
+	<frostbiteVulnerability>0.5</frostbiteVulnerability>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Ooze_nucleus</defName>
+    <label>nucleus</label>
+    <hitPoints>20</hitPoints>
+    <bleedRate>5</bleedRate>
+	<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>Ooze_Bottom</defName>
+    <label>Bottom</label>
+    <hitPoints>200</hitPoints>
+    <bleedRate>0.5</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+	<frostbiteVulnerability>0.5</frostbiteVulnerability>
+  </BodyPartDef>
+  
+</Defs>

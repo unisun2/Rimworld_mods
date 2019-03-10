@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+ 
+  <LetterLabelPLAHFTMBAttack>전술 마나 폭탄 침공</LetterLabelPLAHFTMBAttack>
+  <LetterPLAHFTMBAttack>언데드 연구자들이 시제작품 중 하나를 가지고 침공해왔습니다. 이 마나 폭탄을 시간 내에 부수지 않는다면 엄청난 재앙이 닥칠 것입니다.</LetterPLAHFTMBAttack>
+  
+  <LetterLabelPLAHFTMBAttackhalf>마나 폭탄</LetterLabelPLAHFTMBAttackhalf>
+  <LetterPLAHFTMBAttackhalf>마나 폭탄의 진행도가 50%를 돌파하였습니다.</LetterPLAHFTMBAttackhalf>
+</LanguageData>

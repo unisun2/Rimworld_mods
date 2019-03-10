@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+
+<Defs>
+	<BodyDef>
+		<defName>PLAHF_Ooze</defName>
+		<label>Ooze</label>
+		<corePart>
+			<def>Ooze_Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Ooze_middle</def>
+					<coverage>0.3</coverage>
+					<height>Middle</height>
+				</li>
+				<li>
+					<def>Ooze_nucleus</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Ooze_Top</def>
+					<coverage>0.3</coverage>
+					<height>Top</height>
+				</li>
+				<li>
+					<def>Ooze_Bottom</def>
+					<coverage>0.3</coverage>
+					<height>Bottom</height>
+				</li>
+				
+		</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

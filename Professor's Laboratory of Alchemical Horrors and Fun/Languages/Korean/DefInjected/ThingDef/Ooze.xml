@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLAHF_Ooze.label>점액</PLAHF_Ooze.label>
+  <PLAHF_Ooze.description>느리지만 강력합니다. 독도 있습니다.</PLAHF_Ooze.description>
+  <PLAHF_Ooze.tools.0.label>독 주먹</PLAHF_Ooze.tools.0.label>
+  <!-- Meat Amount: 0 -->
+  <PLAHF_Ooze_Corpse.label>점액 시체</PLAHF_Ooze_Corpse.label>
+  <PLAHF_Ooze_Corpse.description>점액의 시체</PLAHF_Ooze_Corpse.description>
+
+
+</LanguageData>

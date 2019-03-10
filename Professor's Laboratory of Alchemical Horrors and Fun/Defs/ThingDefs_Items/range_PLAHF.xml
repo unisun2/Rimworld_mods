@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<ThingDef Name="BasePLAHFGun" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <smeltable>true</smeltable>
+	<tradeability>None</tradeability>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <SellPriceFactor>0.20</SellPriceFactor>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Normal</tickerType>
+    <techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Weapons</li>
+    </thingCategories>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <explosiveRadius>3.0</explosiveRadius>
+        <explosiveDamageType>PLAHF_Toxic_Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>1.0</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+        <wickTicks>
+          <min>30</min>
+          <max>60</max>
+        </wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   <ThingDef ParentName="BaseBullet">
+    <defName>PLAHF_Bullet_PBomb</defName>
+    <label>small plague bomb</label>
+	
+    <graphicData>
+      <texPath>Things/Pbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>PLAHF_Toxic_Bomb</damageDef>
+      <explosionRadius>5</explosionRadius>
+      <damageAmountBase>30</damageAmountBase>
+      <explosionDelay>10</explosionDelay>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Name="PLAHF_PBomb" ParentName="BasePLAHFGun">
+    <defName>PLAHF_PBomb</defName>
+    <label>small plague bomb</label>
+    <weaponTags>
+       <li>PLAHFBomb</li>
+    </weaponTags>
+    <description>Explosive poison for suicide attack. \n Caution : super unstable.</description>
+    <menuHidden>True</menuHidden>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Things/Pbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>.85</drawSize>
+    </graphicData>
+    <soundInteract>Interact_MolotovCocktail</soundInteract>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>4.5</Mass>
+     <MarketValue>400</MarketValue>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.87</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <forcedMissRadius>0.5</forcedMissRadius>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLAHF_Bullet_PBomb</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>2.5</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ThrowMolotovCocktail</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <noiseRadius>8</noiseRadius>
+      </li>
+    </verbs>
+	
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>PLAHF_Bullet_volcanicbomb</defName>
+    <label>volcanic bomb</label>
+	
+    <graphicData>
+      <texPath>Things/Volcanicbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Flame</damageDef>
+      <explosionRadius>5</explosionRadius>
+      <damageAmountBase>50</damageAmountBase>
+      <explosionDelay>10</explosionDelay>
+      <speed>30</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef Name="PLAHF_volcanicbomb" ParentName="BasePLAHFGun">
+    <defName>PLAHF_volcanicbomb</defName>
+    <label>volcanic bomb</label>
+    <weaponTags>
+       <li>PLAHFBomb</li>
+    </weaponTags>
+    <description>Explosives for suicide attacks.\n Caution : super unstable.</description>
+    <menuHidden>True</menuHidden>
+    <tradeability>None</tradeability>
+    <graphicData>
+      <texPath>Things/Volcanicbomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>.85</drawSize>
+    </graphicData>
+    <soundInteract>Interact_MolotovCocktail</soundInteract>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <Mass>4.5</Mass>
+     <MarketValue>400</MarketValue>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.74</AccuracyShort>
+      <AccuracyMedium>0.87</AccuracyMedium>
+      <AccuracyLong>0.9</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <forcedMissRadius>0.5</forcedMissRadius>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>PLAHF_Bullet_PBomb</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>1.5</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>ThrowMolotovCocktail</soundCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <noiseRadius>8</noiseRadius>
+      </li>
+    </verbs>
+	
+  </ThingDef>
+  
+  
+  
+  
+  <ThingDef Name="PLAHF_snipe_Experiment" ParentName="BasePLAHFGun">
+    <defName>PLAHF_snipe_Experiment</defName>
+    <label>snipe experiment</label>
+    <description>Inventions of urgent professors who can not wait for the next experiment. \nThis makes it possible to experiment anywhere.\n Caution : unstable when durability is low.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(200,107,84)</color>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+	<tradeability>None</tradeability>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>7</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>111</Steel>
+      <ComponentIndustrial>12</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_PLAHFSnipe</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>55.9</range>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags Inherit="False">
+      <li>PLAHFsnipe</li>
+    </weaponTags>
+  </ThingDef>
+  
+  
+  <ThingDef Class="PLAHF.ThingDef_experimentBullet" ParentName="BaseBullet">
+    <defName>Bullet_PLAHFSnipe</defName>
+    <label>improvisation experiment</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(200,107,84)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>2.0</stoppingPower>
+      <speed>90</speed>
+    </projectile>
+	<thingClass>PLAHF.Projectile_experimentBullet</thingClass>
+  </ThingDef>
+  
+  
+  <ThingDef Name="PLAHF_minimanabomb" ParentName="BasePLAHFGun">
+		<defName>PLAHF_minimanabomb</defName>
+		<label>mini mana bomb</label>
+		<description>mini size mana bomb. unstable when durability is low.</description>
+		
+		<graphicData>
+			<texPath>Things/minimanabomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.85</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Medieval</techLevel>
+		<statBases>
+			<MarketValue>400</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+      <WorkToMake>12000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <Chemfuel>220</Chemfuel>
+    </costList>
+		<weaponTags>
+			<li>PLAHFGrenade</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw mini mana bomb</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_minimanabomb</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_minimanabomb</defName>
+		<label>mini mana bomb</label>
+		
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/minimanabomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >2.9</explosionRadius >
+			<damageDef>PLAHFManaBomb</damageDef>
+      <!-- Use default damage from explosion def -->
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	</ThingDef>
+  
+
+  
+</Defs>

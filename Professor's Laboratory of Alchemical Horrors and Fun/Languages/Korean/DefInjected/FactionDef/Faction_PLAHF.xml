@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLAHF_faction.label>교수의 연구실</PLAHF_faction.label>
+  <PLAHF_faction.description>공포와 재미가 넘치는 교수의 연금술 실험실이라는 이름의 미친 언데드들의 연구기관.\n항상 새로운 실험 대상을 찾아다닌다고 한다.\n모든 것을 파괴할 수 있는 마나 폭탄이나 역병 폭탄에 대해 연구 중이라는 소문이 있다.</PLAHF_faction.description>
+  <PLAHF_faction.pawnsPlural>연구자들</PLAHF_faction.pawnsPlural>
+  <PLAHF_faction.leaderTitle>교수</PLAHF_faction.leaderTitle>
+
+
+</LanguageData>

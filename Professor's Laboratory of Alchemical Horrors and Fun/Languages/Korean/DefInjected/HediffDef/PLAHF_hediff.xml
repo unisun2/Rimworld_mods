@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLAHF_blindingpoison.label>눈 머는 독</PLAHF_blindingpoison.label>
+  <PLAHF_blindingpoison.stages.0.label>미약함</PLAHF_blindingpoison.stages.0.label>
+  <PLAHF_blindingpoison.stages.1.label>미약함</PLAHF_blindingpoison.stages.1.label>
+  <PLAHF_blindingpoison.stages.2.label>중간</PLAHF_blindingpoison.stages.2.label>
+  <PLAHF_blindingpoison.stages.3.label>심함</PLAHF_blindingpoison.stages.3.label>
+  <PLAHF_blindingpoison.stages.4.label>극심함</PLAHF_blindingpoison.stages.4.label>
+  <PLAHF_blindingpoison.stages.5.label>무력화</PLAHF_blindingpoison.stages.5.label>
+
+  <PLAHF_sleepingpoison.label>수면 독</PLAHF_sleepingpoison.label>
+  <PLAHF_sleepingpoison.stages.0.label>미약함</PLAHF_sleepingpoison.stages.0.label>
+  <PLAHF_sleepingpoison.stages.1.label>미약함</PLAHF_sleepingpoison.stages.1.label>
+  <PLAHF_sleepingpoison.stages.2.label>중간</PLAHF_sleepingpoison.stages.2.label>
+  <PLAHF_sleepingpoison.stages.3.label>심함</PLAHF_sleepingpoison.stages.3.label>
+  <PLAHF_sleepingpoison.stages.4.label>극심함</PLAHF_sleepingpoison.stages.4.label>
+  <PLAHF_sleepingpoison.stages.5.label>무력화</PLAHF_sleepingpoison.stages.5.label>
+
+  <PLAHF_chokingpoison.label>질식 독</PLAHF_chokingpoison.label>
+  <PLAHF_chokingpoison.stages.0.label>미약함</PLAHF_chokingpoison.stages.0.label>
+  <PLAHF_chokingpoison.stages.1.label>미약함</PLAHF_chokingpoison.stages.1.label>
+  <PLAHF_chokingpoison.stages.2.label>중간</PLAHF_chokingpoison.stages.2.label>
+  <PLAHF_chokingpoison.stages.3.label>심함</PLAHF_chokingpoison.stages.3.label>
+  <PLAHF_chokingpoison.stages.4.label>극심함</PLAHF_chokingpoison.stages.4.label>
+  <PLAHF_chokingpoison.stages.5.label>무력화</PLAHF_chokingpoison.stages.5.label>
+
+
+</LanguageData>

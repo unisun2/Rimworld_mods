@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLAHF_Zombie_hound.label>좀비 개</PLAHF_Zombie_hound.label>
+  <PLAHF_Zombie_hound.description>좀비 개. 희생자를 물어 독을 퍼트린다.</PLAHF_Zombie_hound.description>
+  <PLAHF_Zombie_hound.tools.0.label>독성 이빨</PLAHF_Zombie_hound.tools.0.label>
+  <PLAHF_Zombie_hound.tools.1.label>왼발톱</PLAHF_Zombie_hound.tools.1.label>
+  <PLAHF_Zombie_hound.tools.2.label>오른발톱</PLAHF_Zombie_hound.tools.2.label>
+  <PLAHF_Zombie_hound.tools.3.label>머리</PLAHF_Zombie_hound.tools.3.label>
+  <!-- Meat Amount: 0 -->
+  <PLAHF_Zombie_hound_Corpse.label>좀비 개 시체</PLAHF_Zombie_hound_Corpse.label>
+  <PLAHF_Zombie_hound_Corpse.description>좀비 개의 시체</PLAHF_Zombie_hound_Corpse.description>
+
+
+</LanguageData>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>Building_TacticalManaBomb</defName>
+    <label>tactical mana bomb</label>
+    <description>A strange object with blue sphere floating.\n\nMUST destroy this to avoid masive destruction, or run away from this land.</description>
+    <thingClass>PLAHF.Building_TacticalManaBomb</thingClass>
+    <graphicData>
+      <texPath>Things/tmanabomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+	<size>(1,2)</size>
+	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <Plasteel>55</Plasteel>
+      <ChunkSlagSteel>8</ChunkSlagSteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentSpacer>6</ComponentSpacer>
+    </killedLeavings>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+	<building>
+			<claimable>false</claimable>
+			<soundAmbient>CrashedShipPart_Ambience</soundAmbient>
+      <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+    </building>
+   
+   
+   <comps>
+   <li Class="CompProperties_Lifespan">
+        <lifespanTicks>66600</lifespanTicks>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(150,84,200,200)</glowColor>
+      </li>
+    </comps>
+	
+	
+  </ThingDef>
+</Defs>

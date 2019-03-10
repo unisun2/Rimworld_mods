@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - The Third Age</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/PawnKindDef[defName="PLAHF_former_Town_Guard"]/weaponTags</xpath>
+					<value>
+						<li>Neolithic</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/PawnKindDef[defName="PLAHF_Honorary_member"]/weaponTags</xpath>
+					<value>
+						<li>Neolithic</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/PawnKindDef[defName="PLAHF_Lab_slave"]/weaponTags</xpath>
+					<value>
+						<li>Neolithic</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/PawnKindDef[defName="PLAHF_Postdoctoral_fellow"]/weaponTags</xpath>
+					<value>
+						<li>Neolithic</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/PawnKindDef[defName="PLAHF_Lecturer"]/weaponTags</xpath>
+					<value>
+						<li>Neolithic</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+ 
+  <LetterLabelPLAHFTMBAttack>Tactical mana bomb attack</LetterLabelPLAHFTMBAttack>
+  <LetterPLAHFTMBAttack>Undead researchers are raiding us with their prototype weapon. Unless this mana bomb is broken in time, there will be a great disaster.</LetterPLAHFTMBAttack>
+  
+  <LetterLabelPLAHFTMBAttackhalf>Tactical mana bomb</LetterLabelPLAHFTMBAttackhalf>
+  <LetterPLAHFTMBAttackhalf>The progress of the bomb is 50%.</LetterPLAHFTMBAttackhalf>
+
+</LanguageData>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PLAHF_Toxic_Stab.label>독칼</PLAHF_Toxic_Stab.label>
+  <PLAHF_Toxic_Stab.deathMessage>{0} 는 칼에 찔려서 사망함.</PLAHF_Toxic_Stab.deathMessage>
+
+  <PLAHF_Toxic_Jab.label>독 주먹</PLAHF_Toxic_Jab.label>
+  <PLAHF_Toxic_Jab.deathMessage>{0} 는 맞아서 사망함.</PLAHF_Toxic_Jab.deathMessage>
+
+  <PLAHF_Toxic_Bomb.label>독성 폭탄</PLAHF_Toxic_Bomb.label>
+  <PLAHF_Toxic_Bomb.deathMessage>{0} 는 독성 폭발로 사망함.</PLAHF_Toxic_Bomb.deathMessage>
+
+  <PLAHFManaBomb.label>마나 폭탄</PLAHFManaBomb.label>
+  <PLAHFManaBomb.deathMessage>{0} 는 마나 폭발로 사망함.</PLAHFManaBomb.deathMessage>
+
+
+</LanguageData>

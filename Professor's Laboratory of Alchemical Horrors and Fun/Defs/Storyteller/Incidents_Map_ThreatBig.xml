@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<IncidentDef>
+    <defName>PLAHF_RaidWithBomb</defName>
+    <label>raid with tactical mana bombs</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>PLAHF.IncidentWorker_PLAHFmanaboom</workerClass>
+    <baseChance>0.5</baseChance>
+	<category>ThreatBig</category>
+	<tale>Raid</tale>
+    <minRefireDays>50</minRefireDays>
+    <pointsScaleable>true</pointsScaleable>
+   
+  </IncidentDef>
+  
+  
+</Defs>
