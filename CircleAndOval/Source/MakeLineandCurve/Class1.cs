@@ -100,7 +100,7 @@ namespace CircleAndOval
 
             //int x = 0; int y = (int)Math.Ceiling(Radius);
             IntVec3 printVec;
-            bool[,] grid = new bool[FHD, FHD];
+            //bool[,] grid = new bool[FHD, FHD];
             int y = 0;
             int x = 0;
 
@@ -194,7 +194,7 @@ namespace CircleAndOval
 
             //int x = 0; int y = (int)Math.Ceiling(Radius);
             IntVec3 printVec;
-            bool[,] grid = new bool[XX1 * 2 + 1, ZZ1 * 2 + 1];
+            //bool[,] grid = new bool[XX1 * 2 + 1, ZZ1 * 2 + 1];
             int y = 0;
             int x = 0;
 
@@ -251,7 +251,68 @@ namespace CircleAndOval
             return false;
         }
     }
-    
+
+
+    public class Diagonalff : Building
+    {
+        IntVec3 startpoint;
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+
+            foreach (Building b in Current.Game.CurrentMap.listerBuildings.allBuildingsColonist)
+            {
+                if (b.def.defName.Equals("CAOstartpoint"))
+                {
+
+                    startpoint = b.Position;
+                    if(startpoint.x == Position.x || startpoint.z == Position.z)
+                    {
+                        Messages.Message("There is a problem with coordinates. Z axis or X axis is duplicated.".Translate(), MessageTypeDefOf.NeutralEvent);
+                        return;
+                    }
+
+                    MakeD((Position.x - startpoint.x), (Position.z - startpoint.z), Position.x, Position.z);
+                    return;
+                }
+            }
+            // 못찾음
+            Messages.Message("No_CAOstartpoint".Translate(), MessageTypeDefOf.NeutralEvent);
+
+        }
+
+        private void MakeD(int XX1, int ZZ1, int bx, int bz)
+        {
+            Map map = this.Map;
+            int xp, yp;
+
+            if (XX1 > 0)
+                xp = 1;
+            else xp = -1;
+            if (ZZ1 > 0)
+                yp = 1;
+            else yp = -1;
+
+            IntVec3 printVec = startpoint;
+
+            while (true)
+            {
+                printVec.x += xp;
+                printVec.z += yp;
+
+                GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+
+                if(printVec.x == bx || printVec.z == bz)
+                {
+                    return;
+                }
+            }
+            //GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, base.Position, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+        }
+    }
+
+
 
     /*
 
