@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimsenal - Enhanced Vanilla Pack</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="Bow_Compound"]</xpath>
+					<value>
+						<comps>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="Bow_Compound"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Compound</defaultProjectile>
+								<warmupTime>1.8</warmupTime>
+								<range>27</range>
+								<soundCast>Bow_Large</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0.7</accuracyTouch>
+								<accuracyShort>0.87</accuracyShort>
+								<accuracyMedium>0.8</accuracyMedium>
+								<accuracyLong>0.55</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="Bow_Compound"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>Arrow_Compoundm</defaultProjectile>
+								<warmupTime>3.6</warmupTime>
+								<range>27</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>Bow_Large</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>0.4</accuracyTouch>
+								<accuracyShort>0.57</accuracyShort>
+								<accuracyMedium>0.5</accuracyMedium>
+								<accuracyLong>0.25</accuracyLong>
+							</li>
+					</value>
+				</li>
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

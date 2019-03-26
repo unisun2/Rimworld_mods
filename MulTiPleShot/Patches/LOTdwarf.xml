@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - Dwarves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRD_Bow_Dwarven"]</xpath>
+					<value>
+						<comps>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="LotRD_Bow_Dwarven"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRD_Arrow</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>32</range>
+								<soundCast>LotRD_BowDwarf</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0.90</accuracyTouch>
+								<accuracyShort>0.82</accuracyShort>
+								<accuracyMedium>0.80</accuracyMedium>
+								<accuracyLong>0.49</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRD_Bow_Dwarven"]/verbs</xpath>
+					<value>
+						<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRD_Arrowm</defaultProjectile>
+								<warmupTime>3.0</warmupTime>
+								<range>32</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>LotRD_BowDwarf</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>0.60</accuracyTouch>
+								<accuracyShort>0.52</accuracyShort>
+								<accuracyMedium>0.50</accuracyMedium>
+								<accuracyLong>0.19</accuracyLong>
+						</li>
+					</value>
+				</li>
+
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRD_Bow_DwarvenCross"]/comps</xpath>
+						<value>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="LotRD_Bow_DwarvenCross"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRD_Bolt</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>32</range>
+								<soundCast>LotRD_BowDwarf</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0.91</accuracyTouch>
+								<accuracyShort>0.85</accuracyShort>
+								<accuracyMedium>0.81</accuracyMedium>
+								<accuracyLong>0.47</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRD_Bow_DwarvenCross"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRD_Boltm</defaultProjectile>
+								<warmupTime>3.0</warmupTime>
+								<range>32</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>LotRD_BowDwarf</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>0.61</accuracyTouch>
+								<accuracyShort>0.55</accuracyShort>
+								<accuracyMedium>0.51</accuracyMedium>
+								<accuracyLong>0.17</accuracyLong>
+							</li>
+					</value>
+				</li>
+
+
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
