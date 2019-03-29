@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Big_Advancd_Passive_Cooler\Assemblies\BAPC.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Big_Advancd_Passive_Cooler\Assemblies\BAPC.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Big_Advancd_Passive_Cooler\Sources\BAPC\obj\Debug\BAPC.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Big_Advancd_Passive_Cooler\Sources\BAPC\obj\Debug\BAPC.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Big_Advancd_Passive_Cooler\Sources\BAPC\obj\Debug\BAPC.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Big_Advancd_Passive_Cooler\Sources\BAPC\obj\Debug\BAPC.pdb
