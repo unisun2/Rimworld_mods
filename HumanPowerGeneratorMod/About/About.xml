@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Human Power Generator Mod</name>
+	<author>FLASHPOINT55</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<url>https://github.com/unisun2/Rimworld_mods</url>
+	<description>
+This Generator produce 500W per manpower.
+
+pawns can also do exercise together. (increase pawn's melee stat!)
+	</description>
+</ModMetaData>

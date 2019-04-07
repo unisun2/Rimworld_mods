@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<JobDef>
+		<defName>HPGMcycling</defName>
+		<driverClass>Humanpowergeneratormod.JobDriver_HPGMcycling</driverClass>
+		<reportString>cycling at TargetA.</reportString>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
+
+</Defs>
