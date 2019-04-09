@@ -93,10 +93,6 @@ namespace Humanpowergeneratormod
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            if (t.Faction != pawn.Faction)
-            {
-                return false;
-            }
             Building building = t as Building;
             if (building == null)
             {

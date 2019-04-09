@@ -54,7 +54,8 @@ namespace Humanpowergeneratormod
             {
                 Log.Error("Used while CanUseNow is false.", false);
             }
-            statValue = worker.GetStatValue(StatDefOf.WorkSpeedGlobal, true);
+            //statValue = worker.GetStatValue(StatDefOf.MoveSpeed, true);
+            statValue = worker.health.capacities.GetLevel(PawnCapacityDefOf.Moving);
             IsRunning = 100;
         }
 
@@ -64,7 +65,7 @@ namespace Humanpowergeneratormod
 
             if (IsRunning > 0)
             {
-                Verse.Log.Message(IsRunning.ToString(), false);
+                //Verse.Log.Message(IsRunning.ToString(), false);
                 IsRunning--;
                 IsOn = true;
             }
