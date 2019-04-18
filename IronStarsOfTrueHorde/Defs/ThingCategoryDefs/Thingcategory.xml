@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingCategoryDef>
+      <defName>IronStar</defName>
+      <label>Iron Star</label>
+      <parent>Manufactured</parent>
+      <iconPath>UI/Iron_Horde_Emblem</iconPath>
+    </ThingCategoryDef>
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<ThingDef Name="ISOTH_ISbase" ParentName="ResourceBase" Abstract="True">
+
+    <tickerType>Normal</tickerType>
+    <stackLimit>10</stackLimit>
+    <techLevel>Industrial</techLevel>
+	<!--<tradeability>Sellable</tradeability>-->
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>50</Mass>
+      <Flammability>0.3</Flammability>
+      <DeteriorationRate>0.2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>IronStar</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  
+  <recipeMaker>
+	  <researchPrerequisite>ISOTHone</researchPrerequisite>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <workAmount>2000</workAmount>
+      <targetCountAdjustment>1</targetCountAdjustment>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+ 
+  
+  <ThingDef ParentName="ISOTH_ISbase">
+    <defName>ISOTH_IS</defName>
+    <label>Iron Star</label>
+    <description>Iron stars are large weapons of mass destruction first created by Siegecrafter Blackfuse. They are giant rolling bombs that, once primed, will spew flames as they roll and crush or burn anything in their path before exploding with enough force to wipe out whole squadrons.</description>
+    <graphicData>
+      <texPath>Things/ISOTH_item</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.7, 1.7)</drawSize>
+    </graphicData>
+	<soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <projectileWhenLoaded>Bullet_ISIronStar</projectileWhenLoaded>
+
+	<comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>5.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>
+          <min>60</min>
+          <max>90</max>
+        </wickTicks>
+      </li>
+    </comps>
+	
+	<costList>
+      <Steel>10</Steel>
+      <Chemfuel>50</Chemfuel>
+	  <Gold>10</Gold>
+	  <Plasteel>10</Plasteel>
+	  <Uranium>10</Uranium>
+    </costList>
+	
+  </ThingDef>
+ 
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_ISIronStar</defName>
+    <label>Iron Star</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2.0, 2.0)</drawSize>
+    </graphicData>
+    <thingClass>ISOTH.ISOTHIS</thingClass>
+    <projectile>
+	  <!--<flyOverhead>true</flyOverhead>-->
+      <damageDef>Flame</damageDef>
+	  <explosionRadius>6.5</explosionRadius>
+      <damageAmountBase>40</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.9</armorPenetrationBase>
+      <speed>12</speed>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <!--<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>-->
+      <soundAmbient>BTMrolling</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  
+
+  
+</Defs>

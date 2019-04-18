@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>ISOTHone</defName>
+    <label>Iron Star</label>
+    <techLevel>Industrial</techLevel>
+    <description>large weapon of mass destruction. It's so safe that I can't believe Goblin made it.</description>
+    <baseCost>2000</baseCost>
+    <researchViewX>6.5</researchViewX>
+    <researchViewY>4.3</researchViewY>
+		<prerequisites>
+      <li>Mortars</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+
+</Defs>

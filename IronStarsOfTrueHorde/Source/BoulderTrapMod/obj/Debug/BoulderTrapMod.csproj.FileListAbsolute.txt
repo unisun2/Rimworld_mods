@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BoulderTrapMod\Assemblies\BoulderTrapMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BoulderTrapMod\Assemblies\BoulderTrapMod.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BoulderTrapMod\Source\BoulderTrapMod\obj\Debug\BoulderTrapMod.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BoulderTrapMod\Source\BoulderTrapMod\obj\Debug\BoulderTrapMod.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BoulderTrapMod\Source\BoulderTrapMod\obj\Debug\BoulderTrapMod.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BoulderTrapMod\Source\BoulderTrapMod\obj\Debug\BoulderTrapMod.pdb

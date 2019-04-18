@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<SoundDef>
+    <defName>BTMrolling</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/BTMrolling</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>41.7647</min>        
+          <max>42.94118</max>
+        </volumeRange> 
+		<pitchRange>
+          <min>0.95</min>        
+          <max>1.05</max>
+        </pitchRange> 		
+		<sustainLoopDurationRange>
+          <min>999</min>        
+          <max>999</max>
+        </sustainLoopDurationRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
