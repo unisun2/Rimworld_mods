@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<ThingDef Name="BTMBoulderbase" ParentName="ResourceBase" Abstract="True">
+
+    <tickerType>Normal</tickerType>
+    <stackLimit>10</stackLimit>
+    <techLevel>Medieval</techLevel>
+	<tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>33</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Boulders</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+  </ThingDef>
+ 
+  
+  <ThingDef ParentName="BTMBoulderbase">
+    <defName>BTMBoulder_Rock</defName>
+    <label>boulder</label>
+    <description>A round rock. Can be fired from boulder luncher.</description>
+    <graphicData>
+      <texPath>Things/BTMbouldera</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.4, 1.4)</drawSize>
+    </graphicData>
+	<soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <projectileWhenLoaded>Bullet_BTMBoulder_Rock</projectileWhenLoaded>
+
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BTMBoulder_Rock</defName>
+    <label>boulder</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <thingClass>BoulderTrapMod.BTMActivatedboulder</thingClass>
+    <projectile>
+	  <!--<flyOverhead>true</flyOverhead>-->
+      <damageDef>Crush</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>10</speed>
+	  <soundAmbient>BTMrolling</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+
+  
+  
+  <ThingDef ParentName="BTMBoulderbase">
+    <defName>BTMBoulder_explosive</defName>
+    <label>exploding boulder</label>
+    <description>A round rock filled with high explosives. Can be fired from boulder luncher.</description>
+    <graphicData>
+      <texPath>Things/BTMboulderba</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(1.4, 1.4)</drawSize>
+    </graphicData>
+	<soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <projectileWhenLoaded>Bullet_BTMBoulder_explosive</projectileWhenLoaded>
+	
+	
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_BTMBoulder_explosive</defName>
+    <label>exploding boulder</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <thingClass>BoulderTrapMod.BTMExplosiveboulder</thingClass>
+    <projectile>
+	  <!--<flyOverhead>true</flyOverhead>-->
+      <damageDef>Flame</damageDef>
+	  <explosionRadius>2</explosionRadius>
+      <damageAmountBase>25</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
+      <speed>10</speed>
+	  <ai_IsIncendiary>true</ai_IsIncendiary>
+	  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>MortarBomb_Explode</soundExplode>
+      <!--<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>-->
+      <soundAmbient>BTMrolling</soundAmbient>
+    </projectile>
+  </ThingDef>
+  
+  
+  
+</Defs>

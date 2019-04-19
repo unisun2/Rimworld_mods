@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Electric Stonecutting Table</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[@Name="Make_Bouldersfromchunk"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Make_Bouldersfromblocks"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Make_ExpBouldersfromchunk"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/RecipeDef[defName="Make_ExpBouldersfromblocks"]/recipeUsers</xpath>
+					<value>
+						<li>TableStonecutterElectric</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
