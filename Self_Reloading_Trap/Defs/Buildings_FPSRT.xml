@@ -25,7 +25,7 @@
     <statBases>
       <Mass>1.5</Mass>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>9000</WorkToBuild>
+      <WorkToBuild>6000</WorkToBuild>
       <Flammability>0.3</Flammability>
       <Beauty>-18</Beauty>
       <Cleanliness>-5</Cleanliness>
@@ -76,7 +76,7 @@
     <statBases>
       <Mass>1.5</Mass>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>9000</WorkToBuild>
+      <WorkToBuild>6000</WorkToBuild>
       <Flammability>0.3</Flammability>
       <Beauty>-18</Beauty>
       <Cleanliness>-5</Cleanliness>
