@@ -6,6 +6,7 @@ using System.Diagnostics;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
+using HugsLib;
 
 namespace FPSRT
 {
@@ -22,6 +23,7 @@ namespace FPSRT
             {
                 SoundDefOf.TrapArm.PlayOneShot(new TargetInfo(base.Position, map, false));
             }
+            
         }
 
         protected override void SpringSub(Pawn p)
@@ -31,9 +33,9 @@ namespace FPSRT
             {
                 return;
             }
-            float num = this.GetStatValue(StatDefOf.TrapMeleeDamage, true) * Building_FPSRT.DamageRandomFactorRange.RandomInRange;
+            float num = this.GetStatValue(StatDefOf.TrapMeleeDamage, true) * Building_FPSRT.DamageRandomFactorRange.RandomInRange * FPSRT_settings.Gettrapdamage();
             float num2 = num / Building_FPSRT.DamageCount;
-            float armorPenetration = num2 * 0.015f;
+            float armorPenetration = num2 * 0.015f * FPSRT_settings.Getarmorpenetrate();
             int num3 = 0;
             while ((float)num3 < Building_FPSRT.DamageCount)
             {
@@ -49,7 +51,6 @@ namespace FPSRT
             }
             Map map = base.Map;
             IntVec3 loc = this.Position;
-            this.Destroy(DestroyMode.Vanish);
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_FPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
         }

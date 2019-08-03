@@ -5,5 +5,11 @@
 	<supportedVersions><li>1.0</li></supportedVersions>
 	<description>
 add semi-permanent type trap. It cost a lot, but worth it.
+
+you can change traps damage, rechaging time, build cost, armor-penetrate in option setting.
+
+changing build cost need restart game.
+
+this mod use Hugslib.
 	</description>
 </ModMetaData>

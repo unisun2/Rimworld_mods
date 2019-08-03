@@ -14,8 +14,6 @@ namespace FPSRT
     {
         private static readonly FloatRange DamageRandomFactorRange = new FloatRange(0.1f, 0.2f);
 
-        private static readonly float DamageCount = 0f;
-
         public int FPSRT_arming = 0;
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
@@ -34,20 +32,21 @@ namespace FPSRT
 
         public override void Tick()
         {
+            base.Tick();
             if (this.Spawned)
             {
                 FPSRT_arming++;
 
-                if(FPSRT_arming > 600)
+                if (FPSRT_arming > (FPSRT_settings.Gettraparmingtime() * 60))
                 {
                     Map map = base.Map;
                     IntVec3 loc = this.Position;
-                    this.Destroy(DestroyMode.Vanish);
                     Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_FPSRT"), this.Stuff), loc, map, WipeMode.Vanish);
                     thing.SetFaction(Faction.OfPlayer, null);
                 }
             }
         }
+
 
         public override string GetInspectString()
         {
@@ -57,7 +56,7 @@ namespace FPSRT
 
             string newDesc = "";
 
-            newDesc = "charging... : " + (600 - FPSRT_arming).ToStringSecondsFromTicks();
+            newDesc = "charging... : " + ((int)((FPSRT_settings.Gettraparmingtime() * 60 - FPSRT_arming))).ToStringSecondsFromTicks();
 
             stringBuilder.Append(newDesc);
 
