@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase" Name="SRFPSRT_base">
+    <defName>Building_SRFPSRT_Normal</defName>
+    <label>Self reloading trap</label>
+    <description>semi-permanent type trap. It cost a lot, but worth it.</description>
+    <thingClass>SRFPSRT.Building_SRFPSRT</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SRFP_SRT_armed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>100</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(222,222,222,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Building_SRFPSRTunarmed</defName>
+    <label>Self reloading trap(unarmed)</label>
+    <description>secret! What will it be?</description>
+    <thingClass>SRFPSRT.Building_SRFPSRTunarmed</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SRFP_SRT_unarmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>100</TrapMeleeDamage>
+      <TrapSpringChance>0.0</TrapSpringChance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+	<designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="SRFPSRT_base" Name="SRFPSRT_color">
+    <defName>Building_SRFPSRT_flame</defName>
+    <label>Self reloading trap(flame)</label>
+    <description>semi-permanent type trap. It cost a lot, but worth it. When the victim disturbs the trigger, ignite victim.</description>
+    <thingClass>SRFPSRT.Building_SRFPSRT_flame</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SRFP_SRT_flamearmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>40</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+	<building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(222,0,0,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="SRFPSRT_color" >
+    <defName>Building_SRFPSRT_flash</defName>
+    <label>Self reloading trap(flash)</label>
+    <description>semi-permanent type trap. It cost a lot, but worth it. When the victim disturbs the trigger, damage victim's eye.</description>
+    <thingClass>SRFPSRT.Building_SRFPSRT_flash</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SRFP_SRT_flasharmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>40</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+	<building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(0,222,222,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="SRFPSRT_color" >
+    <defName>Building_SRFPSRT_poison</defName>
+    <label>Self reloading trap(poison)</label>
+    <description>semi-permanent type trap. It cost a lot, but worth it. When the victim disturbs the trigger, poison victim.</description>
+    <thingClass>SRFPSRT.Building_SRFPSRT_poison</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SRFP_SRT_poisonarmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>40</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+	<building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(0,222,0,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="SRFPSRT_color" >
+    <defName>Building_SRFPSRT_summon</defName>
+    <label>Self reloading trap(summon)</label>
+    <description>semi-permanent type trap. It cost a lot, but worth it. When the victim disturbs the trigger, summon berserked animal. it will attack everything on its sight. include you, too.</description>
+    <thingClass>SRFPSRT.Building_SRFPSRT_summon</thingClass>
+    <graphicData>
+      <texPath>Things/Building/SRFP_SRT_summonarmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>10</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+	<building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+	<comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(222,0,222,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  
+
+</Defs>
