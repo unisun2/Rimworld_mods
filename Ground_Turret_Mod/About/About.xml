@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Super random Self reloading traps</name>
+	<name>Ground Turret Mod</name>
 	<author>FlashPoint55</author>
 	<supportedVersions><li>1.0</li></supportedVersions>
 	<description>
-Add Command to turret.
+Add Command 'burrow' and 'unburrow' to turret.
+so you can... 
+distract smart enemy's attack route.
+and place turret in home without - beauty.
 	</description>
 </ModMetaData>
