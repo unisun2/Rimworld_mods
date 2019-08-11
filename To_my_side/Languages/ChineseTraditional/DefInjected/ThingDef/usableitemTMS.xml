@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TMSArtifactone.label>學徒級符文石</TMSArtifactone.label>
+  <TMSArtifactone.description>能賦予動物微小力量.人類無法使用！</TMSArtifactone.description>
+  <TMSArtifactone.comps.1.useLabel>激活</TMSArtifactone.comps.1.useLabel>
+
+  <TMSArtifacttwo.label>專家級符文石</TMSArtifacttwo.label>
+  <TMSArtifacttwo.description>能賦予動物力量.人類無法使用！</TMSArtifacttwo.description>
+  <TMSArtifacttwo.comps.1.useLabel>激活</TMSArtifacttwo.comps.1.useLabel>
+
+  <TMSArtifactthree.label>大師級符文石</TMSArtifactthree.label>
+  <TMSArtifactthree.description>能賦予動物龐大力量.人類無法使用！</TMSArtifactthree.description>
+  <TMSArtifactthree.comps.1.useLabel>激活</TMSArtifactthree.comps.1.useLabel>
+
+
+</LanguageData>
