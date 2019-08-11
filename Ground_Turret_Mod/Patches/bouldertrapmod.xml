@@ -3,25 +3,24 @@
   
   <Operation Class="PatchOperationFindMod">
 	<mods>
-		<li>Pulsefire Turret</li>
+		<li>Boulder Trap Mod</li>
 	</mods>
 	<match Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PulsefireTwinCannon"]/comps</xpath>
-			<value>
-				<li Class="FP_GTM.CompProperties_FP_GTM_B">
-				</li>
-			</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="PulsefireTurretGun"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="BTMBoulder_turret"]/comps</xpath>
 			<value>
 				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
 			</value>
 			</li>
-			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="BTMBoulder_turretex"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+			</li>
+
 		</operations>
 	</match>
   </Operation>

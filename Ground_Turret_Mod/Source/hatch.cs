@@ -17,6 +17,13 @@ namespace FP_GTM
         public float insidefuel = -1;
         public bool insideStuff = false;
 
+        static public Texture2D UBcommandicon = ContentFinder<Texture2D>.Get("UI/Commands/GTMunburrow", true);
+        public String customxpath = "";
+        public Material customimg = null;
+        public bool upgradedbyturretextensions;
+        public float TE_HP_Factor = 1;
+        public int TE_HP_Offset = 0;
+
 
         public bool CanUnburrowNow
         {
@@ -31,6 +38,10 @@ namespace FP_GTM
         {
             base.SpawnSetup(map, respawningAfterLoad);
             this.powerComp = base.GetComp<CompPowerTrader>();
+            //if(customxpath != null)
+            //{
+            //    customimg = MaterialPool.MatFrom(this.customxpath);
+            //}
         }
 
         public override void ExposeData()
@@ -39,8 +50,32 @@ namespace FP_GTM
             Scribe_Values.Look<String>(ref this.insideman, "insideman", "", false);
             Scribe_Values.Look<float>(ref this.insidefuel, "insidefuel", 0f, false);
             Scribe_Values.Look<bool>(ref this.insideStuff, "insideStuff", false, false);
+            Scribe_Values.Look<String>(ref this.customxpath, "customxpath", "", false);
+            Scribe_Values.Look<bool>(ref this.upgradedbyturretextensions, "upgradedbyturretextensions", false, false);
+            Scribe_Values.Look<float>(ref this.TE_HP_Factor, "TE_HP_Factor", 1f, false);
+            Scribe_Values.Look<int>(ref this.TE_HP_Offset, "TE_HP_Offset", 0, false);
         }
 
+        public override void Draw()
+        {
+            if(customxpath != "")
+            {
+                if(customimg == null)
+                {
+                    customimg = MaterialPool.MatFrom(this.customxpath);
+                }
+
+                Mesh mesh = MeshPool.GridPlane(this.def.graphicData.drawSize);
+
+                Graphics.DrawMesh(mesh, this.DrawPos, Quaternion.identity, customimg, 0);
+
+            }
+            else
+            {
+                base.Draw();
+            }
+            
+        }
 
         public override string GetInspectString()
         {
@@ -74,7 +109,7 @@ namespace FP_GTM
                 {
                     defaultLabel = "Unburrow".Translate(),
                     defaultDesc = "Unburrow Turret.".Translate(),
-                    icon = ContentFinder<Texture2D>.Get("UI/Commands/GTMunburrow", true),
+                    icon = UBcommandicon,
                     iconAngle = 0,
                     iconOffset = Vector2.zero,
                     iconDrawScale = GenUI.IconDrawScale(this.def),
@@ -97,6 +132,7 @@ namespace FP_GTM
 
             if (insideStuff)
             {
+                
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(insideman), this.Stuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
@@ -106,6 +142,24 @@ namespace FP_GTM
                     refuelableComp.ConsumeFuel(9999);
                     refuelableComp.Refuel((insidefuel / refuelableComp.Props.FuelMultiplierCurrentDifficulty));
                 }
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (upgradedbyturretextensions)
+                        {
+                            TurretExtensions.CompUpgradable compUP = ((ThingWithComps)thing).GetComp<TurretExtensions.CompUpgradable>();
+                            thing.HitPoints = (int)(Math.Ceiling((thing.MaxHitPoints + TE_HP_Offset) * TE_HP_Factor * HPp));
+                            compUP.upgraded = true;
+                            
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in unburrowTurret XP");
+                }
+                
             }
             else
             {
@@ -118,6 +172,24 @@ namespace FP_GTM
                     refuelableComp.ConsumeFuel(9999);
                     refuelableComp.Refuel((insidefuel / refuelableComp.Props.FuelMultiplierCurrentDifficulty));
                 }
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (upgradedbyturretextensions)
+                        {
+                            TurretExtensions.CompUpgradable compUP = ((ThingWithComps)thing).GetComp<TurretExtensions.CompUpgradable>();
+                            thing.HitPoints = (int)(Math.Ceiling((thing.MaxHitPoints + TE_HP_Offset) * TE_HP_Factor * HPp));
+                            compUP.upgraded = true;
+                            
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in unburrowTurret XP");
+                }
+
             }
 
             

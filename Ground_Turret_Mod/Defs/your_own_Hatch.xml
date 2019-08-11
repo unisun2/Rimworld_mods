@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<ThingDef ParentName="BuildingBase" Name="GTM_Hatchbase">
-	<defName>GTM_Hatch</defName>
-    <label>Hatch</label>
-    <description>Hide Turret. even smart enemy never know about this.</description>
+<ThingDef ParentName="BuildingBase" Name="GTM_Hatchbaseqwer">
+	<defName>GTM_Hatchqwer</defName>
+    <label>Hatchqwer</label>
+    <description>Hide Turret. even smart enemy never know about this.qwer</description>
     <thingClass>FP_GTM.GTM_Hatch</thingClass>
     <category>Building</category>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
@@ -44,11 +44,6 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-	<researchPrerequisites>
-      <li>Autodoors</li>
-    </researchPrerequisites>
-	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-
 	<passability>Standable</passability>
 	<graphicData>
       <texPath>Things/Building/GTM_Hatch</texPath>
@@ -59,8 +54,8 @@
     </graphicData>
   </ThingDef>
   
-  <ThingDef ParentName="GTM_Hatchbase">
-  <defName>GTM_Hatch_Big</defName>
+  <ThingDef ParentName="GTM_Hatchbaseqwer">
+  <defName>GTM_Hatch_Bigqwer</defName>
   <size>(2,2)</size>
   <graphicData>
       <texPath>Things/Building/GTM_Hatch</texPath>
@@ -72,8 +67,8 @@
     </graphicData>
   </ThingDef>
   
-  <ThingDef ParentName="GTM_Hatchbase">
-  <defName>GTM_Hatch_XBig</defName>
+  <ThingDef ParentName="GTM_Hatchbaseqwer">
+  <defName>GTM_Hatch_XBigqwer</defName>
   <size>(3,3)</size>
   <graphicData>
       <texPath>Things/Building/GTM_Hatch</texPath>
@@ -85,8 +80,8 @@
     </graphicData>
   </ThingDef>
   
-  <ThingDef ParentName="GTM_Hatchbase">
-  <defName>GTM_Hatch_XXBig</defName>
+  <ThingDef ParentName="GTM_Hatchbaseqwer">
+  <defName>GTM_Hatch_XXBigqwer</defName>
   <size>(4,4)</size>
   <graphicData>
       <texPath>Things/Building/GTM_Hatch</texPath>

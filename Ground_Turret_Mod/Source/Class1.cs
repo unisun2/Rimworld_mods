@@ -12,6 +12,9 @@ namespace FP_GTM
 {
     public class CompProperties_FP_GTM_B : CompProperties
     {
+        public String Customhatch = "";
+        public String CustomxPath = "";
+
         public CompProperties_FP_GTM_B()
         {
             this.compClass = typeof(FP_GTM_Comp);
@@ -39,6 +42,7 @@ namespace FP_GTM
         {
             base.PostSpawnSetup(respawningAfterLoad);
             this.refuelableComp = this.parent.GetComp<CompRefuelable>();
+
 
         }
 
@@ -88,10 +92,12 @@ namespace FP_GTM
                 thatstuff = ThingDefOf.Steel;
                 needStuff = false;
             }
-                
-            if(parent.def.size.x > 3)
+
+
+
+            if (this.Props.Customhatch != "")
             {
-                Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch_XXBig"), thatstuff), loc, map, WipeMode.Vanish);
+                Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(this.Props.Customhatch), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
 
@@ -101,6 +107,92 @@ namespace FP_GTM
                     ((GTM_Hatch)thing).insidefuel = FUEL;
                 }
                 ((GTM_Hatch)thing).insideStuff = needStuff;
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (ModCompatibilityCheck.TurretExtensionsIsActive)
+                        {
+                            TurretExtensions.CompUpgradable comp = this.parent.GetComp<TurretExtensions.CompUpgradable>();
+                            if (comp != null)
+                            {
+                                if (comp.upgraded)
+                                {
+                                    ((GTM_Hatch)thing).upgradedbyturretextensions = true;
+
+                                    if (comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints) != 1f)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Factor = comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints);
+                                    }
+                                    if (comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints) > 0)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Offset = (int)(comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in burrowTurret XP");
+                }
+
+            }
+            else if(parent.def.size.x > 3)
+            {
+                Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch_XXBig"), thatstuff), loc, map, WipeMode.Vanish);
+                thing.SetFaction(Faction.OfPlayer, null);
+                thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+
+                if (this.Props.CustomxPath != "")
+                {
+                    ((GTM_Hatch)thing).customxpath = this.Props.CustomxPath;
+                }
+                ((GTM_Hatch)thing).insideman = name;
+                if (refuelableComp != null)
+                {
+                    ((GTM_Hatch)thing).insidefuel = FUEL;
+                }
+                ((GTM_Hatch)thing).insideStuff = needStuff;
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (ModCompatibilityCheck.TurretExtensionsIsActive)
+                        {
+                            TurretExtensions.CompUpgradable comp = this.parent.GetComp<TurretExtensions.CompUpgradable>();
+                            if (comp != null)
+                            {
+                                if (comp.upgraded)
+                                {
+                                    ((GTM_Hatch)thing).upgradedbyturretextensions = true;
+
+                                    if (comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints) != 1f)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Factor = comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints);
+                                    }
+                                    if (comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints) > 0)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Offset = (int)(comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in burrowTurret XP");
+                }
             }
             else if(parent.def.size.x > 2)
             {
@@ -108,12 +200,50 @@ namespace FP_GTM
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
 
+                if (this.Props.CustomxPath != "")
+                {
+                    ((GTM_Hatch)thing).customxpath = this.Props.CustomxPath;
+                }
                 ((GTM_Hatch)thing).insideman = name;
                 if (refuelableComp != null)
                 {
                     ((GTM_Hatch)thing).insidefuel = FUEL;
                 }
                 ((GTM_Hatch)thing).insideStuff = needStuff;
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (ModCompatibilityCheck.TurretExtensionsIsActive)
+                        {
+                            TurretExtensions.CompUpgradable comp = this.parent.GetComp<TurretExtensions.CompUpgradable>();
+                            if (comp != null)
+                            {
+                                if (comp.upgraded)
+                                {
+                                    ((GTM_Hatch)thing).upgradedbyturretextensions = true;
+
+                                    if (comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints) != 1f)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Factor = comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints);
+                                    }
+                                    if (comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints) > 0)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Offset = (int)(comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in burrowTurret XP");
+                }
             }
             else if (parent.def.Size.x > 1)
             {
@@ -121,24 +251,101 @@ namespace FP_GTM
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
 
+                if (this.Props.CustomxPath != "")
+                {
+                    ((GTM_Hatch)thing).customxpath = this.Props.CustomxPath;
+                }
                 ((GTM_Hatch)thing).insideman = name;
                 if (refuelableComp != null)
                 {
                     ((GTM_Hatch)thing).insidefuel = FUEL;
                 }
                 ((GTM_Hatch)thing).insideStuff = needStuff;
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (ModCompatibilityCheck.TurretExtensionsIsActive)
+                        {
+                            TurretExtensions.CompUpgradable comp = this.parent.GetComp<TurretExtensions.CompUpgradable>();
+                            if (comp != null)
+                            {
+                                if (comp.upgraded)
+                                {
+                                    ((GTM_Hatch)thing).upgradedbyturretextensions = true;
+
+                                    if (comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints) != 1f)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Factor = comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints);
+                                    }
+                                    if (comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints) > 0)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Offset = (int)(comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in burrowTurret XP");
+                }
             }
             else
             {
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch"), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+
+                if (this.Props.CustomxPath != "")
+                {
+                    ((GTM_Hatch)thing).customxpath = this.Props.CustomxPath;
+                }
                 ((GTM_Hatch)thing).insideman = name;
                 if (refuelableComp != null)
                 {
                     ((GTM_Hatch)thing).insidefuel = FUEL;
                 }
                 ((GTM_Hatch)thing).insideStuff = needStuff;
+                try
+                {
+                    ((Action)(() =>
+                    {
+                        if (ModCompatibilityCheck.TurretExtensionsIsActive)
+                        {
+                            TurretExtensions.CompUpgradable comp = this.parent.GetComp<TurretExtensions.CompUpgradable>();
+                            if (comp != null)
+                            {
+                                if (comp.upgraded)
+                                {
+                                    ((GTM_Hatch)thing).upgradedbyturretextensions = true;
+
+                                    if (comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints) != 1f)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Factor = comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints); 
+                                    }
+                                    if (comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints) > 0)
+                                    {
+                                        //Log.Message("GetStatFactorFromList : " + comp.Props.statFactors.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                        ((GTM_Hatch)thing).TE_HP_Offset = (int)(comp.Props.statOffsets.GetStatFactorFromList(StatDefOf.MaxHitPoints));
+                                    }
+
+                                }
+                                    
+                            }
+                        }
+                    }))();
+                }
+                catch (TypeLoadException ex)
+                {
+                    Log.Message("error in burrowTurret XP");
+                }
             }
 
             
