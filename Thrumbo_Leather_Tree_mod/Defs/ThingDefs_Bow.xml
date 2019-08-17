@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Name="BaseWeaponTLTM" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Medieval</techLevel>
+    
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <effectWorking>Smelt</effectWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+  </ThingDef>
+  
+  <ThingDef Name="BaseProjectileTLTM" Abstract="True">
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Bullet</thingClass>
+    <label>arrow</label>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseWeaponTLTM">
+    <defName>TLTM_Bow_ThrumboLeather</defName>
+    <label>thrumbo leather bow</label>
+    <description>A powerful bow. has the power of thrumbo. Fires a heavy arrow long distances.</description>
+    <graphicData>
+      <texPath>Things/Weapon/ThrumboLTM_bowweak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+    <costList>
+	  <Silver>10</Silver>
+	  <Leather_Thrumbo>100</Leather_Thrumbo>
+    </costList>
+	<stuffCategories>
+	  <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>100</costStuffCount>
+    <statBases>
+      <WorkToMake>39000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.61</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.80</AccuracyMedium>
+      <AccuracyLong>0.72</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLTM_Arrow_ThrumboLeather</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>40.9</range>
+        <soundCast>Bow_Large</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ThrumboTreetwo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+	  <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+		<li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileTLTM">
+    <defName>TLTM_Arrow_ThrumboLeather</defName>
+    <label>thrumbo leather arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>19</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.42</armorPenetrationBase>
+      <speed>79</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  
+  
+  <ThingDef ParentName="BaseWeaponTLTM">
+    <defName>TLTM_Bow_ThrumboHorn</defName>
+    <label>thrumbo horn bow</label>
+    <description>A powerful bow. has the power of thrumbo. Fires a heavy arrow twice.</description>
+    <graphicData>
+      <texPath>Things/Weapon/ThrumboLTM_bowstronk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <soundInteract>Bow_Large</soundInteract>
+	<tradeability>Sellable</tradeability>
+    <costList>
+	  <Leather_Thrumbo>150</Leather_Thrumbo>
+	  <Silver>20</Silver>
+	  <ThrumboHorn>2</ThrumboHorn>
+    </costList>
+	<stuffCategories>
+	  <li>Woody</li>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costStuffCount>150</costStuffCount>
+    <statBases>
+      <WorkToMake>59000</WorkToMake>
+      <Mass>3.0</Mass>
+      <AccuracyTouch>0.68</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.78</AccuracyMedium>
+      <AccuracyLong>0.69</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>NeolithicRangedChief</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLTM_Arrow_ThrumboHorn</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>36.9</range>
+        <soundCast>Bow_Large</soundCast>
+		<burstShotCount>2</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+      </li>
+    </verbs>
+    <tools>
+	  <li>
+        <label>point</label>
+        <capacities>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>limb</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ThrumboTreetwo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>13</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileTLTM">
+    <defName>TLTM_Arrow_ThrumboHorn</defName>
+    <label>thrumbo horn arrow</label>
+    <graphicData>
+      <texPath>Things/Projectile/Arrow_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Arrow</damageDef>
+      <damageAmountBase>19</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.42</armorPenetrationBase>
+      <speed>79</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

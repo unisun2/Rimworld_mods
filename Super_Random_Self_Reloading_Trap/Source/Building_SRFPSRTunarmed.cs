@@ -41,7 +41,6 @@ namespace SRFPSRT
                 {
                     Map map = base.Map;
                     IntVec3 loc = this.Position;
-                    this.Destroy(DestroyMode.Vanish);
 
                     int temp = UnityEngine.Random.Range(0, 5);
 

@@ -53,7 +53,6 @@ namespace SRFPSRT
             }
             Map map = base.Map;
             IntVec3 loc = this.Position;
-            this.Destroy(DestroyMode.Vanish);
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_SRFPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
         }
@@ -102,7 +101,6 @@ namespace SRFPSRT
             }
             Map map = base.Map;
             IntVec3 loc = this.Position;
-            this.Destroy(DestroyMode.Vanish);
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_SRFPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
         }
@@ -161,7 +159,6 @@ namespace SRFPSRT
             }
             Map map = base.Map;
             IntVec3 loc = this.Position;
-            this.Destroy(DestroyMode.Vanish);
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_SRFPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
         }
@@ -211,7 +208,6 @@ namespace SRFPSRT
             }
             Map map = base.Map;
             IntVec3 loc = this.Position;
-            this.Destroy(DestroyMode.Vanish);
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_SRFPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
         }
@@ -246,9 +242,9 @@ namespace SRFPSRT
                 {
                     Pawn pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("Rat"), null);
                     pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
-                    Thing spawnedCreature = GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 2, (IntVec3 c) => c.Standable(this.Map) &&
-                      this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false))),
-                    this.Map, WipeMode.Vanish);
+                    IntVec3 spawncell = CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 5, (IntVec3 c) => c.Standable(this.Map) &&
+                      this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)));
+                    Thing spawnedCreature = GenSpawn.Spawn(pawn, spawncell, this.Map, WipeMode.Vanish);
                     pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
                 }
             }
@@ -258,9 +254,9 @@ namespace SRFPSRT
                 {
                     Pawn pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("Cat"), null);
                     pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
-                    Thing spawnedCreature = GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 2, (IntVec3 c) => c.Standable(this.Map) &&
-                      this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false))),
-                    this.Map, WipeMode.Vanish);
+                    IntVec3 spawncell = CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 5, (IntVec3 c) => c.Standable(this.Map) &&
+                      this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)));
+                    Thing spawnedCreature = GenSpawn.Spawn(pawn, spawncell, this.Map, WipeMode.Vanish);
                     pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
                 }
             }
@@ -268,27 +264,27 @@ namespace SRFPSRT
             {
                 Pawn pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("Cougar"), null);
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
-                Thing spawnedCreature = GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 2, (IntVec3 c) => c.Standable(this.Map) &&
-                  this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false))),
-                this.Map, WipeMode.Vanish);
+                IntVec3 spawncell = CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 5, (IntVec3 c) => c.Standable(this.Map) &&
+                  this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)));
+                Thing spawnedCreature = GenSpawn.Spawn(pawn, spawncell, this.Map, WipeMode.Vanish);
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
             }
             else if(temp == 3)
             {
                 Pawn pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("WildBoar"), null);
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
-                Thing spawnedCreature = GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 2, (IntVec3 c) => c.Standable(this.Map) &&
-                  this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false))),
-                this.Map, WipeMode.Vanish);
+                IntVec3 spawncell = CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 5, (IntVec3 c) => c.Standable(this.Map) &&
+                  this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)));
+                Thing spawnedCreature = GenSpawn.Spawn(pawn, spawncell, this.Map, WipeMode.Vanish);
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
             }
             else
             {
                 Pawn pawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("Bear_Grizzly"), null);
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
-                Thing spawnedCreature = GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 2, (IntVec3 c) => c.Standable(this.Map) &&
-                  this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false))),
-                this.Map, WipeMode.Vanish);
+                IntVec3 spawncell = CellFinder.RandomClosewalkCellNear(this.Position, this.Map, 5, (IntVec3 c) => c.Standable(this.Map) &&
+                  this.Map.reachability.CanReach(c, this, PathEndMode.Touch, TraverseParms.For(TraverseMode.PassDoors, Danger.Deadly, false)));
+                Thing spawnedCreature = GenSpawn.Spawn(pawn, spawncell, this.Map, WipeMode.Vanish);
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, null, true, false, null, false);
             }
 
@@ -316,7 +312,6 @@ namespace SRFPSRT
             }
             Map map = base.Map;
             IntVec3 loc = this.Position;
-            this.Destroy(DestroyMode.Vanish);
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_SRFPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
         }
