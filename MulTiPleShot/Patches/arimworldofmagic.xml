@@ -2,7 +2,7 @@
 <Patch>
     <Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Thrumbo Leather Tree Mod + Weapons</li>
+			<li>A RimWorld of Magic</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
