@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Thrumbo Leather Tree Mod + Weapons</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="TLTM_Bow_ThrumboLeather"]</xpath>
+					<value>
+						<comps>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="TLTM_Bow_ThrumboLeather"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>TLTM_Arrow_ThrumboLeather</defaultProjectile>
+								<warmupTime>1.2</warmupTime>
+								<range>40.9</range>
+								<soundCast>Bow_Large</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="TLTM_Bow_ThrumboLeather"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>TLTM_Arrow_ThrumboLeather</defaultProjectile>
+								<warmupTime>3.3</warmupTime>
+								<range>40.9</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>Bow_Large</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
+							</li>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="TLTM_Bow_ThrumboHorn"]</xpath>
+					<value>
+						<comps>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="TLTM_Bow_ThrumboHorn"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>TLTM_Arrow_ThrumboHorn</defaultProjectile>
+								<warmupTime>1.1</warmupTime>
+								<range>36.9</range>
+								<soundCast>Bow_Large</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="TLTM_Bow_ThrumboHorn"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>TLTM_Arrow_ThrumboHorn</defaultProjectile>
+								<warmupTime>3.3</warmupTime>
+								<range>36.9</range>
+								<burstShotCount>10</burstShotCount>
+								<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+								<soundCast>Bow_Large</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
+							</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
