@@ -32,10 +32,10 @@
 								<desc>normal shot</desc>
 								<label>Normal shot</label>
 								<texPath>UI/normalshot</texPath>
-								<accuracyTouch>0.96</accuracyTouch>
-								<accuracyShort>0.87</accuracyShort>
-								<accuracyMedium>0.77</accuracyMedium>
-								<accuracyLong>0.60</accuracyLong>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
 							</li>
 						</verbs>
 					</value>
@@ -47,8 +47,8 @@
 							<li Class="AdditionalVerb.VerbProperties_Custom">
 								<verbClass>Verb_Shoot</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<defaultProjectile>LotRE_Arrow_Mirkwoodm</defaultProjectile>
-								<warmupTime>1.2</warmupTime>
+								<defaultProjectile>LotRE_Arrow_Mirkwood</defaultProjectile>
+								<warmupTime>1.8</warmupTime>
 								<range>38</range>
 								<burstShotCount>5</burstShotCount>
 								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -56,10 +56,10 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>0.66</accuracyTouch>
-								<accuracyShort>0.57</accuracyShort>
-								<accuracyMedium>0.47</accuracyMedium>
-								<accuracyLong>0.30</accuracyLong>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
 							</li>
 					</value>
 				</li>
@@ -89,10 +89,10 @@
 								<desc>normal shot</desc>
 								<label>Normal shot</label>
 								<texPath>UI/normalshot</texPath>
-								<accuracyTouch>0.95</accuracyTouch>
-								<accuracyShort>0.89</accuracyShort>
-								<accuracyMedium>0.82</accuracyMedium>
-								<accuracyLong>0.77</accuracyLong>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
 							</li>
 						</verbs>
 					</value>
@@ -104,8 +104,8 @@
 							<li Class="AdditionalVerb.VerbProperties_Custom">
 								<verbClass>Verb_Shoot</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<defaultProjectile>LotRE_Arrow_Galadhrimm</defaultProjectile>
-								<warmupTime>3.0</warmupTime>
+								<defaultProjectile>LotRE_Arrow_Galadhrim</defaultProjectile>
+								<warmupTime>4.0</warmupTime>
 								<range>44</range>
 								<burstShotCount>5</burstShotCount>
 								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -113,10 +113,10 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>0.65</accuracyTouch>
-								<accuracyShort>0.59</accuracyShort>
-								<accuracyMedium>0.52</accuracyMedium>
-								<accuracyLong>0.47</accuracyLong>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
 							</li>
 					</value>
 				</li>
@@ -145,10 +145,10 @@
 								<desc>normal shot</desc>
 								<label>Normal shot</label>
 								<texPath>UI/normalshot</texPath>
-								<accuracyTouch>0.94</accuracyTouch>
-								<accuracyShort>0.91</accuracyShort>
-								<accuracyMedium>0.86</accuracyMedium>
-								<accuracyLong>0.79</accuracyLong>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
 							</li>
 						</verbs>
 					</value>
@@ -160,8 +160,8 @@
 							<li Class="AdditionalVerb.VerbProperties_Custom">
 								<verbClass>Verb_Shoot</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<defaultProjectile>LotRE_Arrow_Rivendellm</defaultProjectile>
-								<warmupTime>2.8</warmupTime>
+								<defaultProjectile>LotRE_Arrow_Rivendell</defaultProjectile>
+								<warmupTime>4.0</warmupTime>
 								<range>46</range>
 								<burstShotCount>5</burstShotCount>
 								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -169,18 +169,13 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>0.64</accuracyTouch>
-								<accuracyShort>0.61</accuracyShort>
-								<accuracyMedium>0.56</accuracyMedium>
-								<accuracyLong>0.49</accuracyLong>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
 							</li>
 					</value>
 				</li>
-
-
-
-
-
 
 			</operations>
 		</match>

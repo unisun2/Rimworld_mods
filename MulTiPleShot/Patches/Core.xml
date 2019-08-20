@@ -26,10 +26,10 @@
 					<desc>normal shot</desc>
 					<label>Normal shot</label>
 					<texPath>UI/normalshot</texPath>
-					<accuracyTouch>0.75</accuracyTouch>
-					<accuracyShort>0.65</accuracyShort>
-					<accuracyMedium>0.45</accuracyMedium>
-					<accuracyLong>0.25</accuracyLong>
+					<accuracyTouch>0</accuracyTouch>
+					<accuracyShort>0</accuracyShort>
+					<accuracyMedium>0</accuracyMedium>
+					<accuracyLong>0</accuracyLong>
 				</li>
 			</verbs>
 		</value>
@@ -41,8 +41,8 @@
 			<li Class="AdditionalVerb.VerbProperties_Custom">
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Arrow_Shortm</defaultProjectile>
-					<warmupTime>2.7</warmupTime>
+					<defaultProjectile>Arrow_Short</defaultProjectile>
+					<warmupTime>4</warmupTime>
 					<range>22.9</range>
 					<burstShotCount>5</burstShotCount>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -50,10 +50,10 @@
 					<desc>Splits one arrow into several.</desc>
 					<label>Multiple shot</label>
 					<texPath>UI/multipleshot</texPath>
-					<accuracyTouch>0.45</accuracyTouch>
-					<accuracyShort>0.35</accuracyShort>
-					<accuracyMedium>0.15</accuracyMedium>
-					<accuracyLong>0.01</accuracyLong>
+					<accuracyTouch>-0.3</accuracyTouch>
+					<accuracyShort>-0.3</accuracyShort>
+					<accuracyMedium>-0.3</accuracyMedium>
+					<accuracyLong>-0.3</accuracyLong>
 				</li>
 		</value>
     </Operation>
@@ -89,10 +89,10 @@
 					<desc>normal shot</desc>
 					<label>Normal shot</label>
 					<texPath>UI/normalshot</texPath>
-					<accuracyTouch>0.70</accuracyTouch>
-					<accuracyShort>0.78</accuracyShort>
-					<accuracyMedium>0.65</accuracyMedium>
-					<accuracyLong>0.35</accuracyLong>
+					<accuracyTouch>0</accuracyTouch>
+					<accuracyShort>0</accuracyShort>
+					<accuracyMedium>0</accuracyMedium>
+					<accuracyLong>0</accuracyLong>
 				</li>
 			</verbs>
 		</value>
@@ -104,8 +104,8 @@
 			<li Class="AdditionalVerb.VerbProperties_Custom">
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Arrow_Recurvem</defaultProjectile>
-					<warmupTime>2.9</warmupTime>
+					<defaultProjectile>Arrow_Recurve</defaultProjectile>
+					<warmupTime>4.3</warmupTime>
 					<range>25.9</range>
 					<burstShotCount>5</burstShotCount>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -113,10 +113,10 @@
 					<desc>Splits one arrow into several.</desc>
 					<label>Multiple shot</label>
 					<texPath>UI/multipleshot</texPath>
-					<accuracyTouch>0.40</accuracyTouch>
-					<accuracyShort>0.48</accuracyShort>
-					<accuracyMedium>0.35</accuracyMedium>
-					<accuracyLong>0.05</accuracyLong>
+					<accuracyTouch>-0.3</accuracyTouch>
+					<accuracyShort>-0.3</accuracyShort>
+					<accuracyMedium>-0.3</accuracyMedium>
+					<accuracyLong>-0.3</accuracyLong>
 				</li>
 		</value>
     </Operation>
@@ -155,10 +155,10 @@
 					<desc>normal shot</desc>
 					<label>Normal shot</label>
 					<texPath>UI/normalshot</texPath>
-					<accuracyTouch>0.65</accuracyTouch>
-					<accuracyShort>0.85</accuracyShort>
-					<accuracyMedium>0.75</accuracyMedium>
-					<accuracyLong>0.50</accuracyLong>
+					<accuracyTouch>0</accuracyTouch>
+					<accuracyShort>0</accuracyShort>
+					<accuracyMedium>0</accuracyMedium>
+					<accuracyLong>0</accuracyLong>
 				</li>
 			</verbs>
 		</value>
@@ -170,8 +170,8 @@
 			<li Class="AdditionalVerb.VerbProperties_Custom">
 					<verbClass>Verb_Shoot</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Arrow_Greatm</defaultProjectile>
-					<warmupTime>4.0</warmupTime>
+					<defaultProjectile>Arrow_Great</defaultProjectile>
+					<warmupTime>5.0</warmupTime>
 					<range>29.9</range>
 					<burstShotCount>5</burstShotCount>
 					<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -179,10 +179,10 @@
 					<desc>Splits one arrow into several.</desc>
 					<label>Multiple shot</label>
 					<texPath>UI/multipleshot</texPath>
-					<accuracyTouch>0.35</accuracyTouch>
-					<accuracyShort>0.55</accuracyShort>
-					<accuracyMedium>0.45</accuracyMedium>
-					<accuracyLong>0.20</accuracyLong>
+					<accuracyTouch>-0.3</accuracyTouch>
+					<accuracyShort>-0.3</accuracyShort>
+					<accuracyMedium>-0.3</accuracyMedium>
+					<accuracyLong>-0.3</accuracyLong>
 				</li>
 		</value>
     </Operation>

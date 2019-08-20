@@ -32,10 +32,10 @@
 								<desc>normal shot</desc>
 								<label>Normal shot</label>
 								<texPath>UI/normalshot</texPath>
-								<accuracyTouch>0.90</accuracyTouch>
-								<accuracyShort>0.82</accuracyShort>
-								<accuracyMedium>0.80</accuracyMedium>
-								<accuracyLong>0.49</accuracyLong>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
 							</li>
 						</verbs>
 					</value>
@@ -46,8 +46,8 @@
 						<li Class="AdditionalVerb.VerbProperties_Custom">
 								<verbClass>Verb_Shoot</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<defaultProjectile>LotRD_Arrowm</defaultProjectile>
-								<warmupTime>3.0</warmupTime>
+								<defaultProjectile>LotRD_Arrow</defaultProjectile>
+								<warmupTime>4.0</warmupTime>
 								<range>32</range>
 								<burstShotCount>5</burstShotCount>
 								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -55,10 +55,10 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>0.60</accuracyTouch>
-								<accuracyShort>0.52</accuracyShort>
-								<accuracyMedium>0.50</accuracyMedium>
-								<accuracyLong>0.19</accuracyLong>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
 						</li>
 					</value>
 				</li>
@@ -88,10 +88,10 @@
 								<desc>normal shot</desc>
 								<label>Normal shot</label>
 								<texPath>UI/normalshot</texPath>
-								<accuracyTouch>0.91</accuracyTouch>
-								<accuracyShort>0.85</accuracyShort>
-								<accuracyMedium>0.81</accuracyMedium>
-								<accuracyLong>0.47</accuracyLong>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
 							</li>
 						</verbs>
 					</value>
@@ -103,8 +103,8 @@
 							<li Class="AdditionalVerb.VerbProperties_Custom">
 								<verbClass>Verb_Shoot</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<defaultProjectile>LotRD_Boltm</defaultProjectile>
-								<warmupTime>3.0</warmupTime>
+								<defaultProjectile>LotRD_Bolt</defaultProjectile>
+								<warmupTime>4.0</warmupTime>
 								<range>32</range>
 								<burstShotCount>5</burstShotCount>
 								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
@@ -112,21 +112,13 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>0.61</accuracyTouch>
-								<accuracyShort>0.55</accuracyShort>
-								<accuracyMedium>0.51</accuracyMedium>
-								<accuracyLong>0.17</accuracyLong>
+								<accuracyTouch>-0.3</accuracyTouch>
+								<accuracyShort>-0.3</accuracyShort>
+								<accuracyMedium>-0.3</accuracyMedium>
+								<accuracyLong>-0.3</accuracyLong>
 							</li>
 					</value>
 				</li>
-
-
-
-
-
-
-
-
 
 			</operations>
 		</match>
