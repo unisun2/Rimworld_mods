@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GTM_Hatch.label>地下掩体</GTM_Hatch.label>
+  <GTM_Hatch.description>可以隐藏炮塔。即使最聪明的敌人也会被迷惑。</GTM_Hatch.description>
+
+  <GTM_Hatch_Big.label>大型地下掩体</GTM_Hatch_Big.label>
+  <GTM_Hatch_Big.description>可以隐藏炮塔。即使最聪明的敌人也会被迷惑。</GTM_Hatch_Big.description>
+
+  <GTM_Hatch_XBig.label>超大型地下掩体</GTM_Hatch_XBig.label>
+  <GTM_Hatch_XBig.description>可以隐藏炮塔。即使最聪明的敌人也会被迷惑。</GTM_Hatch_XBig.description>
+
+  <GTM_Hatch_XXBig.label>巨型地下掩体</GTM_Hatch_XXBig.label>
+  <GTM_Hatch_XXBig.description>可以隐藏炮塔。即使最聪明的敌人也会被迷惑。</GTM_Hatch_XXBig.description>
+
+
+</LanguageData>
