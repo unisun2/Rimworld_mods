@@ -53,7 +53,7 @@ namespace BombInWall
                         this.compexplosive.StartWick();
                     },
                     defaultDesc = "CommandFPBIWSelfDestruct".Translate(),
-                    icon = ContentFinder<Texture2D>.Get("UI/Commands/TryReconnect", true),
+                    icon = ContentFinder<Texture2D>.Get("UI/Commands/command_SDW_selfdestruct2", true),
                     defaultLabel = "CommandFPBIWSelfDestructLabel".Translate()
                 };
             }

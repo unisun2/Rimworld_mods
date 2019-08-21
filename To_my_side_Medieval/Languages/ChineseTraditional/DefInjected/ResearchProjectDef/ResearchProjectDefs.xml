@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <To_my_sideone.label>動物夥伴</To_my_sideone.label>
+  <To_my_sideone.description>允許製造學徒級符文石.右鍵單擊使用符文石</To_my_sideone.description>
+
+  <To_my_sidetwo.label>伴我身旁!</To_my_sidetwo.label>
+  <To_my_sidetwo.description>允許製造專家級符文石.</To_my_sidetwo.description>
+
+  <To_my_sidethree.label>野性呼喚</To_my_sidethree.label>
+  <To_my_sidethree.description>允許製造大師級符文石.</To_my_sidethree.description>
+
+
+</LanguageData>
