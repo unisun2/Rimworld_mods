@@ -1,0 +1,6 @@
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.csprojAssemblyReference.cache
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.csproj.CoreCompileInputs.cache
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.dll
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.pdb
+C:\Users\khyoo\source\repos\BombInWall\CSMentalShield.dll
+C:\Users\khyoo\source\repos\BombInWall\CSMentalShield.pdb

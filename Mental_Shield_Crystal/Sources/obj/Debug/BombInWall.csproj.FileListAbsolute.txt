@@ -1,0 +1,6 @@
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\BombInWall.csprojAssemblyReference.cache
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\BombInWall.csproj.CoreCompileInputs.cache
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\BombInWall.dll
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\BombInWall.pdb
+C:\Users\khyoo\source\repos\BombInWall\BombInWall.dll
+C:\Users\khyoo\source\repos\BombInWall\BombInWall.pdb
