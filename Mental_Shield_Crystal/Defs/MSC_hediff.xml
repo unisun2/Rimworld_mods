@@ -16,13 +16,9 @@
     </comps>
     <stages>
       <li>
-	  <PsychicSensitivity>-0.90</PsychicSensitivity>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <setMax>0.9</setMax>
-          </li>
-        </capMods>
+	  <statOffsets>
+		  <PsychicSensitivity>-5.55</PsychicSensitivity>
+        </statOffsets>
       </li>
     </stages>
   </HediffDef>

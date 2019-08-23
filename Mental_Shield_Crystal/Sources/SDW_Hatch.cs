@@ -28,14 +28,18 @@ namespace CSMentalShield
 
             if (powerComp.PowerOn)
             {
-                foreach (Thing thing in this.Map.listerThings.AllThings.FindAll((Thing x) => x.def.race.Humanlike))
+                foreach (Thing thing in this.Map.listerThings.AllThings.FindAll((Thing x) => x is Pawn pawn))
                 {
-                    if (this.Position.InHorDistOf(thing.Position, 20f) && thing.Faction == Faction.OfPlayer)
+                    if (thing.def.race.Humanlike)
                     {
-                        Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Psychic_silence, (Pawn)thing, null);
-                        hediff.Severity = 0.1f;
-                        ((Pawn)thing).health.AddHediff(hediff, null, null, null);
+                        if (this.Position.InHorDistOf(thing.Position, 20f) && thing.Faction == Faction.OfPlayer)
+                        {
+                            Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Psychic_silence, (Pawn)thing, null);
+                            hediff.Severity = 0.1f;
+                            ((Pawn)thing).health.AddHediff(hediff, null, null, null);
+                        }
                     }
+                    
                 }
             }
            

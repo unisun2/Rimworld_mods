@@ -8,6 +8,7 @@
 It is very fragile, so be careful.</description>
     <graphicData>
       <texPath>Things/Building/Misc/CSMentalShieldb</texPath>
+	  <drawSize>(2,2)</drawSize>
     </graphicData>
     <costList>
 	  <WoodLog>80</WoodLog>
@@ -17,8 +18,11 @@ It is very fragile, so be careful.</description>
 	  <Jade>80</Jade>
     </costList>
     <statBases>
+	<WorkToBuild>6000</WorkToBuild>
       <Mass>3</Mass>
     </statBases>
+	<size>(2,2)</size>
+	<specialDisplayRadius>20</specialDisplayRadius>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
