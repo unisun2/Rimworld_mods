@@ -56,10 +56,10 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>-0.3</accuracyTouch>
-								<accuracyShort>-0.3</accuracyShort>
-								<accuracyMedium>-0.3</accuracyMedium>
-								<accuracyLong>-0.3</accuracyLong>
+								<accuracyTouch>-0.4</accuracyTouch>
+								<accuracyShort>-0.4</accuracyShort>
+								<accuracyMedium>-0.4</accuracyMedium>
+								<accuracyLong>-0.4</accuracyLong>
 							</li>
 					</value>
 				</li>
@@ -114,10 +114,10 @@
 								<desc>Splits one arrow into several.</desc>
 								<label>Multiple shot</label>
 								<texPath>UI/multipleshot</texPath>
-								<accuracyTouch>-0.3</accuracyTouch>
-								<accuracyShort>-0.3</accuracyShort>
-								<accuracyMedium>-0.3</accuracyMedium>
-								<accuracyLong>-0.3</accuracyLong>
+								<accuracyTouch>-0.4</accuracyTouch>
+								<accuracyShort>-0.4</accuracyShort>
+								<accuracyMedium>-0.4</accuracyMedium>
+								<accuracyLong>-0.4</accuracyLong>
 							</li>
 					</value>
 				</li>
