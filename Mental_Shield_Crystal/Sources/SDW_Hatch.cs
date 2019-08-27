@@ -32,7 +32,7 @@ namespace CSMentalShield
                 {
                     if (thing.def.race.Humanlike)
                     {
-                        if (this.Position.InHorDistOf(thing.Position, 20f) && thing.Faction == Faction.OfPlayer)
+                        if (this.Position.InHorDistOf(thing.Position, 20f) && ((thing.Faction == Faction.OfPlayer) || !((Pawn)thing).HostileTo(Faction.OfPlayer)))
                         {
                             Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.Psychic_silence, (Pawn)thing, null);
                             hediff.Severity = 0.1f;
