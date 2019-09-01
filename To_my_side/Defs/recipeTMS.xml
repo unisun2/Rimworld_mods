@@ -173,4 +173,60 @@
 		<researchPrerequisite>To_my_sidethree</researchPrerequisite>
 	</RecipeDef>
 	
+	<RecipeDef>
+		<defName>CraftRunefour</defName>
+		<label>Craft void runestone</label>
+		<description>unbelievable power</description>
+		<jobString>Crafting Master's runestone.</jobString>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>BurnDrug</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Luciferium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<TMSArtifactthree>1</TMSArtifactthree>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineUltratech</li>
+				<li>Luciferium</li>
+				<li>ThrumboHorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TMS_Building_Base</li>
+		</recipeUsers>
+        <skillRequirements>
+			<Intellectual>13</Intellectual>
+			<Crafting>13</Crafting>
+        </skillRequirements>
+		<researchPrerequisite>To_my_sidefour</researchPrerequisite>
+	</RecipeDef>
+	
 </Defs>

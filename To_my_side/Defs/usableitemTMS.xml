@@ -28,7 +28,7 @@
     <useHitPoints>true</useHitPoints>
     <statBases>
 	  <Mass>0.5</Mass>
-      <MarketValue>550</MarketValue>
+      <MarketValue>1000</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
     </statBases>
     <drawGUIOverlay>false</drawGUIOverlay>
@@ -98,7 +98,25 @@
     </comps>
   </ThingDef>
   
-  
+  <ThingDef ParentName="TMSArtifactBase">
+	<defName>TMSArtifactfour</defName>
+	<label>void runestones</label>
+	<description>It gives a unbelievable power to animals. Do not use to Humans!</description>
+    <graphicData>
+      <texPath>Things/Item/TMSArtifactthree</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    
+    <comps>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_bufffour</compClass>
+      </li>
+    </comps>
+  </ThingDef>
   
 
 </Defs>

@@ -49,7 +49,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="CompProperties_UseEffect.cs" />
     <Compile Include="CompTargetEffect.cs" />
     <Compile Include="hediff.cs" />

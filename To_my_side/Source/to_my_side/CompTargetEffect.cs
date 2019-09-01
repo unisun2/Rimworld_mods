@@ -93,7 +93,7 @@ namespace to_my_side
             /// LV 3 =  9, 40,30,20, 1
             /// LV 4 =  0, 25,40,30, 3 notused
             /// LV 5 =  5, 30,30,30, 5
-            ///
+            /// LV 6 =  0, 20,30,30,20
             /// which one?
             /// hediff = HediffMaker.MakeHediff(HediffDefOf.TMSLV1[randlist[i]], pawn, null); 
             /// hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.TMSLV1[randlist[i]]);
@@ -181,6 +181,26 @@ namespace to_my_side
                         }
 
                         break;
+                    case 7:
+
+                        if (pernum < 20)
+                        {
+                            hediff = HediffMaker.MakeHediff(TMSLV2[randlist[i]], pawn, null);
+                        }
+                        else if (pernum < 50)
+                        {
+                            hediff = HediffMaker.MakeHediff(TMSLV3[randlist[i]], pawn, null);
+                        }
+                        else if (pernum < 80)
+                        {
+                            hediff = HediffMaker.MakeHediff(TMSLV4[randlist[i]], pawn, null);
+                        }
+                        else
+                        {
+                            hediff = HediffMaker.MakeHediff(TMSLV5[randlist[i]], pawn, null);
+                        }
+
+                        break;
                     default:
                         return;
                 }
@@ -202,10 +222,12 @@ namespace to_my_side
             {
                 return;
             }
-            else if(pawn.RaceProps.Humanlike)   // no human!
+            else if(pawn.RaceProps.Humanlike)   // 
             {
                 pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
                 pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
+
+                plusLvHediff(ref pawn, 1);
                 return;
             }
 
