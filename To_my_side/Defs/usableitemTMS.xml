@@ -103,7 +103,7 @@
 	<label>void runestones</label>
 	<description>It gives a unbelievable power to animals. Do not use to Humans!</description>
     <graphicData>
-      <texPath>Things/Item/TMSArtifactthree</texPath>
+      <texPath>Things/Item/TMSArtifactfour</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>0.8</drawSize>
     </graphicData>

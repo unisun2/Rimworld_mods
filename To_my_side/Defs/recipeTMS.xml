@@ -53,8 +53,8 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>5</Intellectual>
-			<Crafting>5</Crafting>
+			<Intellectual>4</Intellectual>
+			<Crafting>4</Crafting>
         </skillRequirements>
 		<researchPrerequisite>To_my_sideone</researchPrerequisite>
 	</RecipeDef>
@@ -110,8 +110,8 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>8</Intellectual>
-			<Crafting>8</Crafting>
+			<Intellectual>6</Intellectual>
+			<Crafting>6</Crafting>
         </skillRequirements>
 		<researchPrerequisite>To_my_sidetwo</researchPrerequisite>
 	</RecipeDef>
@@ -139,14 +139,6 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Luciferium</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
 						<li>ThrumboHorn</li>
 					</thingDefs>
 				</filter>
@@ -159,7 +151,6 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>MedicineUltratech</li>
-				<li>Luciferium</li>
 				<li>ThrumboHorn</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -167,8 +158,8 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>11</Intellectual>
-			<Crafting>11</Crafting>
+			<Intellectual>8</Intellectual>
+			<Crafting>8</Crafting>
         </skillRequirements>
 		<researchPrerequisite>To_my_sidethree</researchPrerequisite>
 	</RecipeDef>
@@ -177,7 +168,7 @@
 		<defName>CraftRunefour</defName>
 		<label>Craft void runestone</label>
 		<description>unbelievable power</description>
-		<jobString>Crafting Master's runestone.</jobString>
+		<jobString>Crafting void runestone.</jobString>
         <workSkill>Crafting</workSkill>
         <effectWorking>BurnDrug</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
@@ -210,7 +201,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<TMSArtifactthree>1</TMSArtifactthree>
+			<TMSArtifactfour>1</TMSArtifactfour>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -223,10 +214,10 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>13</Intellectual>
-			<Crafting>13</Crafting>
+			<Intellectual>10</Intellectual>
+			<Crafting>10</Crafting>
         </skillRequirements>
-		<researchPrerequisite>To_my_sidefour</researchPrerequisite>
+		<researchPrerequisite>To_my_sidethree</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

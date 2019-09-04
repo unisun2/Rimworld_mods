@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>vgp</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>			
+				<li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="Tundra"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="ColdBog"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li>
+				
+				
+				
+				
+				<li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li><li Class="PatchOperationAdd">
+					<xpath>*/BiomeDef[defName="BorealForest"]/wildPlants</xpath>
+					<value>
+						<Plant_HealrootWild>0.16</Plant_HealrootWild>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
