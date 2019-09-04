@@ -38,7 +38,7 @@ namespace to_my_side
             {
                 pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
                 pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
-                plusLvHediff(ref pawn, 3);
+               //plusLvHediff(ref pawn, 3);
                 return;
             }
 
@@ -61,7 +61,7 @@ namespace to_my_side
             {
                 pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
                 pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
-                plusLvHediff(ref pawn, 5);
+                //plusLvHediff(ref pawn, 5);
                 return;
             }
 
@@ -84,6 +84,100 @@ namespace to_my_side
             {
                 pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
                 pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
+                //plusLvHediff(ref pawn, 7);
+                return;
+            }
+
+            plusLvHediff(ref pawn, 7);
+
+        }
+    }
+
+    
+
+    public class CompTargetEffect_TMS_buffoneman : CompTargetEffect_TMS_buffone
+    {
+
+        public override void DoEffectOn(Pawn user, Thing target)
+        {
+            Pawn pawn = (Pawn)target;
+            if (pawn.Dead)
+            {
+                return;
+            }
+            else if (pawn.RaceProps.Humanlike)   // 
+            {
+                pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
+                pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
+                plusLvHediff(ref pawn, 1);
+                return;
+            }
+
+            plusLvHediff(ref pawn, 1);
+
+        }
+    }
+
+    public class CompTargetEffect_TMS_bufftwoman : CompTargetEffect_TMS_buffone
+    {
+
+        public override void DoEffectOn(Pawn user, Thing target)
+        {
+            Pawn pawn = (Pawn)target;
+            if (pawn.Dead)
+            {
+                return;
+            }
+            else if (pawn.RaceProps.Humanlike)   // 
+            {
+                pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
+                pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
+                plusLvHediff(ref pawn, 3);
+                return;
+            }
+
+            plusLvHediff(ref pawn, 3);
+
+        }
+    }
+
+    public class CompTargetEffect_TMS_buffthreeman : CompTargetEffect_TMS_buffone
+    {
+
+        public override void DoEffectOn(Pawn user, Thing target)
+        {
+            Pawn pawn = (Pawn)target;
+            if (pawn.Dead)
+            {
+                return;
+            }
+            else if (pawn.RaceProps.Humanlike)   // 
+            {
+                pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
+                pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
+                plusLvHediff(ref pawn, 5);
+                return;
+            }
+
+            plusLvHediff(ref pawn, 5);
+
+        }
+    }
+
+    public class CompTargetEffect_TMS_bufffourman : CompTargetEffect_TMS_buffone
+    {
+
+        public override void DoEffectOn(Pawn user, Thing target)
+        {
+            Pawn pawn = (Pawn)target;
+            if (pawn.Dead)
+            {
+                return;
+            }
+            else if (pawn.RaceProps.Humanlike)   // 
+            {
+                pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
+                pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
                 plusLvHediff(ref pawn, 7);
                 return;
             }
@@ -92,5 +186,6 @@ namespace to_my_side
 
         }
     }
+
 
 }

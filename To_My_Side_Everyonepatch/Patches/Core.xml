@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+   
+	<Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="TMSArtifactone"]/comps</xpath>
+		<value>
+		<comps>
+			<li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_buffoneman</compClass>
+      </li>
+	  </comps>
+		</value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="TMSArtifacttwo"]/comps</xpath>
+		<value>
+		<comps>
+			<li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_bufftwoman</compClass>
+      </li>
+	  </comps>
+		</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="TMSArtifactthree"]/comps</xpath>
+		<value>
+		<comps>
+			<li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_buffthreeman</compClass>
+      </li>
+	  </comps>
+		</value>
+    </Operation>
+	<Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="TMSArtifactfour"]/comps</xpath>
+		<value>
+		<comps>
+			<li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_bufffourman</compClass>
+      </li>
+	  </comps>
+		</value>
+    </Operation>
+	
+</Patch>

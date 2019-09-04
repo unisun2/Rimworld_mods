@@ -227,12 +227,13 @@ namespace to_my_side
                 pawn.health.AddHediff(RimWorld.HediffDefOf.Hangover);
                 pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
 
-                plusLvHediff(ref pawn, 1);
+                //plusLvHediff(ref pawn, 1);
                 return;
             }
 
             plusLvHediff(ref pawn, 1);
 
         }
+
     }
 }
