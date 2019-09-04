@@ -53,8 +53,8 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>5</Intellectual>
-			<Crafting>5</Crafting>
+			<Intellectual>4</Intellectual>
+			<Crafting>4</Crafting>
         </skillRequirements>
 		<researchPrerequisite>To_my_sideone</researchPrerequisite>
 	</RecipeDef>
@@ -110,8 +110,8 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>8</Intellectual>
-			<Crafting>8</Crafting>
+			<Intellectual>6</Intellectual>
+			<Crafting>6</Crafting>
         </skillRequirements>
 		<researchPrerequisite>To_my_sidetwo</researchPrerequisite>
 	</RecipeDef>
@@ -134,7 +134,7 @@
 						<li>MedicineHerbal</li>
 					</thingDefs>
 				</filter>
-				<count>20</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -142,7 +142,7 @@
 						<li>Gold</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>3</count>
 			</li>
 			<li>
 				<filter>
@@ -167,8 +167,64 @@
 			<li>TMS_Building_Base</li>
 		</recipeUsers>
         <skillRequirements>
-			<Intellectual>11</Intellectual>
-			<Crafting>11</Crafting>
+			<Intellectual>8</Intellectual>
+			<Crafting>8</Crafting>
+        </skillRequirements>
+		<researchPrerequisite>To_my_sidethree</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>CraftRunefour</defName>
+		<label>Craft void runestone</label>
+		<description>unbelievable power</description>
+		<jobString>Crafting void runestone.</jobString>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>BurnDrug</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workAmount>1200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineHerbal</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ThrumboHorn</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<TMSArtifactfour>1</TMSArtifactfour>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MedicineHerbal</li>
+				<li>Gold</li>
+				<li>ThrumboHorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>TMS_Building_Base</li>
+		</recipeUsers>
+        <skillRequirements>
+			<Intellectual>10</Intellectual>
+			<Crafting>10</Crafting>
         </skillRequirements>
 		<researchPrerequisite>To_my_sidethree</researchPrerequisite>
 	</RecipeDef>

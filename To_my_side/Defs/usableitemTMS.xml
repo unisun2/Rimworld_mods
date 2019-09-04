@@ -28,7 +28,6 @@
     <useHitPoints>true</useHitPoints>
     <statBases>
 	  <Mass>0.5</Mass>
-      <MarketValue>1000</MarketValue>
       <MaxHitPoints>80</MaxHitPoints>
     </statBases>
     <drawGUIOverlay>false</drawGUIOverlay>
