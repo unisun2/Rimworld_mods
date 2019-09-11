@@ -13,6 +13,12 @@
       <WorkToBuild>0</WorkToBuild>
       <Flammability>0.0</Flammability>
     </statBases>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>1</costStuffCount>
     <comps>
       <li Class="CompProperties_Breakdownable"/>
 	  <li Class="CompProperties_Glower">
@@ -45,6 +51,13 @@
     <label>FullOval End Point</label>
     <thingClass>CircleAndOval.FullOval</thingClass>
     <description>End of Full Oval. height and width are twice of between `Figure Start Point` and this point.</description>
+  </ThingDef>
+  
+  <ThingDef ParentName="CAOBase">
+    <defName>Diagonalff</defName>
+    <label>45 degree Diagonal End Point</label>
+    <thingClass>CircleAndOval.Diagonalff</thingClass>
+    <description>End of 45 degree Diagonal between `Figure Start Point` and this point.</description>
   </ThingDef>
 	
 	<!--

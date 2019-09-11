@@ -54,7 +54,7 @@ namespace CircleAndOval
                     startpoint = b.Position;
 
                     //Messages.Message((Position.x - startpoint.x) + " " + (Position.z - startpoint.z) + " ", MessageTypeDefOf.NeutralEvent);
-                    MakeFC((Position.x - startpoint.x), (Position.z - startpoint.z), b.Position.x, b.Position.z);
+                    MakeFC((Position.x - startpoint.x), (Position.z - startpoint.z), b.Position.x, b.Position.z, this.Stuff);
 
                     //this.Destroy(DestroyMode.Vanish);
                     return;
@@ -64,7 +64,7 @@ namespace CircleAndOval
             Messages.Message("No_CAOstartpoint".Translate(), MessageTypeDefOf.NeutralEvent);
         }
 
-        private void MakeFC(int XX1, int ZZ1, int bx, int bz)
+        private void MakeFC(int XX1, int ZZ1, int bx, int bz, ThingDef stuff)
         {
             Map map = this.Map;
 
@@ -127,7 +127,7 @@ namespace CircleAndOval
 
                             //Messages.Message(bx + "  " + x  + "  " + bz + "  "+y+ "bphere"+ "  "+ "pv" + printVec.x + " " + printVec.z + " " + Radius + " " + FHD, MessageTypeDefOf.NeutralEvent);
 
-                            GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+                            GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, stuff);
 
                         }
                 }
@@ -171,7 +171,7 @@ namespace CircleAndOval
                 {
                     
                     startpoint = b.Position;
-                    MakeFO(Math.Abs(Position.x - startpoint.x), Math.Abs(Position.z - startpoint.z), b.Position.x, b.Position.z);
+                    MakeFO(Math.Abs(Position.x - startpoint.x), Math.Abs(Position.z - startpoint.z), b.Position.x, b.Position.z, this.Stuff);
                     return;
                 }
             }
@@ -180,7 +180,7 @@ namespace CircleAndOval
 
         }
 
-        private void MakeFO(int XX1, int ZZ1, int bx, int bz)
+        private void MakeFO(int XX1, int ZZ1, int bx, int bz, ThingDef stuff)
         {
             Map map = this.Map;
 
@@ -223,7 +223,7 @@ namespace CircleAndOval
 
                         //Messages.Message(bx + "  " + x  + "  " + bz + "  "+y+ "bphere"+ "  "+ "pv" + printVec.x + " " + printVec.z + " " + XX1 + " " + ZZ1, MessageTypeDefOf.NeutralEvent);
 
-                        GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+                        GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, stuff);
 
                     }
                 }
@@ -273,7 +273,7 @@ namespace CircleAndOval
                         return;
                     }
 
-                    MakeD((Position.x - startpoint.x), (Position.z - startpoint.z), Position.x, Position.z);
+                    MakeD((Position.x - startpoint.x), (Position.z - startpoint.z), Position.x, Position.z, this.Stuff);
                     return;
                 }
             }
@@ -282,7 +282,7 @@ namespace CircleAndOval
 
         }
 
-        private void MakeD(int XX1, int ZZ1, int bx, int bz)
+        private void MakeD(int XX1, int ZZ1, int bx, int bz, ThingDef stuff)
         {
             Map map = this.Map;
             int xp, yp;
@@ -301,7 +301,7 @@ namespace CircleAndOval
                 printVec.x += xp;
                 printVec.z += yp;
 
-                GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+                GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, stuff);
 
                 if(printVec.x == bx || printVec.z == bz)
                 {
