@@ -6,6 +6,7 @@
     <defName>Psychic_silence</defName>
     <label>Psychic silence</label>
     <labelNoun>mental shield</labelNoun>
+	<isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>
