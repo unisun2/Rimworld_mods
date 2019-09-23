@@ -12,20 +12,6 @@ namespace WG_GOM
 {
     public class IncidentWorker_GetOutMod : IncidentWorker
     {
-        //IncidentParms coreIncidentParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.Misc, Find.World);
-        /*
-        IncidentDef q1 = IncidentDefOf.Quest_TradeRequest;
-        IncidentDef q2 = IncidentDefOf.Bandit;
-        IncidentDef q3 = IncidentDefOf.Quest_TradeRequest;
-        IncidentDef q4 = IncidentDefOf.Quest_TradeRequest;
-        IncidentDef q5 = IncidentDefOf.Quest_TradeRequest;
-
-        IncidentWorker_QuestTradeRequest q1 = new IncidentWorker_QuestTradeRequest();
-        IncidentWorker_QuestBanditCamp q2 = new IncidentWorker_QuestBanditCamp();
-        IncidentWorker_QuestItemStash q3 = new IncidentWorker_QuestItemStash();
-        IncidentWorker_QuestDownedRefugee q4 = new IncidentWorker_QuestDownedRefugee();
-        IncidentWorker_QuestPrisonerRescue q5 = new IncidentWorker_QuestPrisonerRescue();
-        */
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
@@ -89,9 +75,6 @@ namespace WG_GOM
             Try_exe_this(localDef, parms);
 
             localDef = DefDatabase<IncidentDef>.GetNamed("QuestDoctorRequestSW", false);
-            Try_exe_this(localDef, parms);
-
-            localDef = DefDatabase<IncidentDef>.GetNamed("PsychicEmitterActivationSW", false);
             Try_exe_this(localDef, parms);
 
             localDef = DefDatabase<IncidentDef>.GetNamed("TradeFairSW", false);
