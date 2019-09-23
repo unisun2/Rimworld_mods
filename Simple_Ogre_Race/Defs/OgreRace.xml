@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>FP_OgreRace</defName>
+    <label>ogre</label>
+    <description>HUGE, tough, strong, have fast regeneration. don't care about eating human meat.</description>
+	<alienRace>
+	  <generalSettings>
+		<maleGenderProbability>1.0</maleGenderProbability>
+		<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
+        <humanRecipeImport>true</humanRecipeImport>
+	    <allowHumanBios>true</allowHumanBios>
+		<immuneToAge>false</immuneToAge>
+			<disallowedTraits>
+				<li>Cannibal</li>
+				<li>Wimp</li>
+			</disallowedTraits>
+            <forcedRaceTraitEntries>
+				<li>
+                    <defName>Bloodlust</defName>
+                    <chance>100</chance>
+                </li>
+                <li>
+                    <defName>Beauty</defName>
+                    <degree>-1</degree>
+                    <chance>30</chance>
+                </li>
+				<li>
+                    <defName>Tough</defName>
+                    <chance>50</chance>
+                </li>
+            </forcedRaceTraitEntries>
+	    <alienPartGenerator>
+		  <aliencrowntypes>
+			<li>Average_Normal</li>
+		  </aliencrowntypes>
+          <alienbodytypes>
+            <li>Fat</li>
+            <li>Hulk</li>
+          </alienbodytypes>
+	      <customDrawSize>(2.0, 2.0)</customDrawSize>
+		  <customHeadDrawSize>(2.0, 2.0)</customHeadDrawSize>
+		  <customPortraitDrawSize>(2.0, 2.0)</customPortraitDrawSize>
+		  <customPortraitHeadDrawSize>(2.0, 2.0)</customPortraitHeadDrawSize>
+
+		</alienPartGenerator>
+		
+	  </generalSettings>
+	  <hairSettings>
+        <hasHair>true</hasHair>	  
+	    <getsGreyAt>150</getsGreyAt>
+	  </hairSettings>
+	  
+	  <raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<onlyUseRaceRestrictedWeapons>true</onlyUseRaceRestrictedWeapons>
+				<apparelList>
+
+				</apparelList>
+				<whiteApparelList>
+					<li>Apparel_TribalHeaddress</li>
+					<li>Apparel_WarMask</li>
+					<li>Apparel_WarVeil</li>
+					<li>Apparel_TribalA</li>
+					<li>Apparel_Parka</li>
+					<li>Apparel_Duster</li>
+					
+					<li>Apparel_ShieldBelt</li>
+					<li>Apparel_SmokepopBelt</li>
+				</whiteApparelList>
+				
+				<weaponList>
+
+				</weaponList>
+				
+				<whiteWeaponList>
+                <li>Pila</li>
+				</whiteWeaponList>
+				
+			</raceRestriction>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>AteWithoutTable</li>
+					<li>SleptInCold</li>
+					<li>SleptInHeat</li>
+					<!-- human -->
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<!-- eat -->
+					<li>AteKibble</li>
+					<li>AteKibble</li>
+					<li>AteKibble</li>
+					<li>AteKibble</li>
+					<li>AteRawFood</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+	  
+	</alienRace>
+    <statBases>
+      <MarketValue>2750</MarketValue>
+      <MoveSpeed>3.8</MoveSpeed>
+      <Flammability>0.8</Flammability>
+	  <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+	  <CarryingCapacity>250</CarryingCapacity>	
+		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+		<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		<ArmorRating_Heat>0.40</ArmorRating_Heat>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+	  <EatingSpeed>1.5</EatingSpeed>
+      <!--<LeatherAmount>25</LeatherAmount>-->
+    </statBases>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.6</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>25</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>	
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>200</lifeExpectancy>
+	  <leatherDef>FP_OGRE_Leather</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>Human</body>
+      <baseBodySize>3</baseBodySize>
+      <baseHealthScale>4</baseHealthScale>
+	  <baseHungerRate>1.8</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1.2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(20,0)</li>
+          <li>(40,20)</li>
+          <li>(100,100)</li>
+		  <li>(140,20)</li>
+          <li>(160,0)</li>
+        </points>
+      </ageGenerationCurve>
+      <hediffGiverSets>
+        <li>FP_OGRE_OgreTraitsGiver</li>
+      </hediffGiverSets>
+    </race>
+  </AlienRace.ThingDef_AlienRace>
+
+
+
+
+
+
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>DRSKT_Race</defName>
+    <label>Skeleton</label>
+    <description></description>
+<!--=============================================================================================================================-->
+    <alienRace>
+		<generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<useOnlyPawnkindBackstories>true</useOnlyPawnkindBackstories>
+			<immuneToAge>true</immuneToAge>
+            <humanRecipeImport>false</humanRecipeImport>
+			<maxDamageForSocialfight>4</maxDamageForSocialfight>
+		<alienPartGenerator>
+            <alienbodytypes>
+                <li>Thin</li>
+				<li>Male</li>
+            </alienbodytypes>
+            <aliencrowntypes>
+                <li>Average_Normal</li>
+				<li>Average_Wa</li>
+            </aliencrowntypes>
+            <useGenderedHeads>false</useGenderedHeads>
+			<useGenderedBodies>false</useGenderedBodies>
+            <alienskincolorgen Class="ColorGenerator_Options">
+                <options>
+                    <li>
+                        <weight>100</weight>
+                        <only>RGBA(1.0,1.0,1.0,1)</only>
+                    </li>
+                </options>
+            </alienskincolorgen>
+		</alienPartGenerator>
+        </generalSettings>
+<!--=============================================================================================================================-->
+        <graphicPaths>
+            <li>
+                <head>DRSKT/Heads/</head>
+                <body>DRSKT/Bodies/</body>
+            </li>
+        </graphicPaths>
+<!--=============================================================================================================================-->
+        <hairSettings>
+            <hasHair>false</hasHair>
+        </hairSettings>
+	</alienRace>
+<!--=============================================================================================================================-->
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-273</ComfyTemperatureMin>
+      <ComfyTemperatureMax>2000</ComfyTemperatureMax>
+      <LeatherAmount>0</LeatherAmount>
+	  <MeatAmount>0</MeatAmount>
+      <Mass>30</Mass>
+	  <WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+	  <ToxicSensitivity>0</ToxicSensitivity>
+	  <PainShockThreshold>1</PainShockThreshold>
+	  <HungerRateMultiplier>0</HungerRateMultiplier>
+    </statBases>
+<!--=============================================================================================================================-->
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>16</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.3</chanceFactor>
+      </li>
+    </tools>
+<!--=============================================================================================================================-->
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>3000</lifeExpectancy>
+      <leatherDef>Leather_Human</leatherDef>
+      <nameCategory>HumanStandard</nameCategory>
+	  <body>DRSKT_Body</body>
+	  <deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+	  <needsRest>false</needsRest>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>0.9</baseHealthScale>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>9999</gestationPeriodDays>
+      <meatMarketValue>0.8</meatMarketValue>
+      <manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.04</manhunterOnTameFailChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>1</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <specialShadowData>
+        <volume>(0.3, 0.8, 0.4)</volume>
+        <offset>(0,0,-0.3)</offset>
+      </specialShadowData>
+      <ageGenerationCurve>
+        <points>
+          <li>(160,0)</li>
+          <li>(500,100)</li>
+          <li>(1000,100)</li>
+          <li>(1500,100)</li>
+          <li>(2000,50)</li>
+          <li>(2500,25)</li>
+          <li>(3000,0)</li>
+        </points>
+      </ageGenerationCurve>
+    </race>
+    <recipes>
+      <li>DRSKT_InstallPegLeg</li>
+      <li>DRSKT_InstallWoodenFoot</li>
+      <li>DRSKT_InstallSimpleProstheticLeg</li>
+      <li>DRSKT_InstallSimpleProstheticArm</li>
+      <li>DRSKT_InstallBionicArm</li>
+      <li>DRSKT_InstallBionicLeg</li>
+      <li>DRSKT_InstallArchotechArm</li>
+      <li>DRSKT_InstallArchotechLeg</li>
+      <li>DRSKT_InstallPowerClaw</li>
+    </recipes>
+</AlienRace.ThingDef_AlienRace>
+</Defs>
