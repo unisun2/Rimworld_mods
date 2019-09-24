@@ -37,7 +37,7 @@
 <AlienRace.BackstoryDef ParentName="LotRE_BackstoryElf">
     <defName>FP_OGRE_BackstoryChildOne</defName>
     <title>Noldor elf-child</title>
-    <baseDescription>Growing up in a time of relative peace but still at odds of war with the mountain roaming Goblins and Orcs, [PAWN_nameDef] spent [PAWN_possessive] childhood practicing combat and crafting while studying during [PAWN_possessive] leisure time.</baseDescription>
+    <baseDescription>Growing up in a peaceful village and  but still at odds of war with the mountain roaming Goblins and Orcs, [PAWN_nameDef] spent [PAWN_possessive] childhood practicing combat and crafting while studying during [PAWN_possessive] leisure time.</baseDescription>
 	<slot>Childhood</slot>
     <skillGains>
       <li>
