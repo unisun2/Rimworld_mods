@@ -92,7 +92,14 @@
 					<li>AteCorpse</li>
 					<li>AteHumanlikeMeatDirect</li>
 					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteRawHumanlikeMeat</li>
 				</cannotReceiveThoughts>
+				<replacerList>
+                <li>
+                    <original>NeedRoomSize</original>
+                    <replacer>FP_OGRE_NeedRoomSize</replacer> 
+                </li>
+            </replacerList>
 			</thoughtSettings>
 	  
 	</alienRace>

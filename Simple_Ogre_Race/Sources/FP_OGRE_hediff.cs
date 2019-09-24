@@ -23,6 +23,7 @@ namespace FP_OGRE
     public class CompOGRERegen : ThingComp
     {
         public int tickCounter = 0;
+        public int healatonce = 3;
 
         public CompProperties_OGRE_Regen Props
         {
@@ -45,28 +46,31 @@ namespace FP_OGRE
         {
             tickCounter++;
 
+
             if (tickCounter >= rateInTicks)
             {
                 Pawn pawn = this.parent as Pawn;
 
                 if (pawn.health != null)
                 {
-                    if (pawn.health.hediffSet.GetBrain() != null)
+
+                    if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                    {
+                        foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
+                        {
+                            injury.Severity = Math.Max(0f, injury.Severity - 1);
+                            healatonce--;
+                            if (healatonce <= 0) break;
+                        }
+                        healatonce = 3;
+                    }
+                    else
                     {
                         Hediff_Injury hediff_Injury = this.FindPermanentInjury(pawn);
                         if (hediff_Injury != null)
                         {
-                            hediff_Injury.Severity = (hediff_Injury.Severity / 2.0f);
-                            return;
-                        }
-                    }
 
-                    if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
-                    {
-
-                        foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
-                        {
-                            injury.Severity = Mathf.Clamp(injury.Severity - 0.1f, 0.0f, 1.0f);
+                            hediff_Injury.Severity = (float)(hediff_Injury.Severity / 1.5f);
                         }
                     }
                 }
