@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\This_is_MINIGUN\Assemblies\ThisisMINIGUN.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\This_is_MINIGUN\Assemblies\ThisisMINIGUN.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\This_is_MINIGUN\Sources\obj\Debug\ThisisMINIGUN.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\This_is_MINIGUN\Sources\obj\Debug\ThisisMINIGUN.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\This_is_MINIGUN\Sources\obj\Debug\ThisisMINIGUN.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\This_is_MINIGUN\Sources\obj\Debug\ThisisMINIGUN.pdb

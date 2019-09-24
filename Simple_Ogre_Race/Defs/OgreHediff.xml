@@ -8,9 +8,13 @@
 	<isBad>false</isBad>
 	<scenarioCanAdd>false</scenarioCanAdd>
 	
-	<defName>FP_OGRE_hediff</defName>
-	<label>Ogre Bonus</label>
-	<stages>
+  </JecsTools.HediffDef>
+  
+  <JecsTools.HediffExpandedDef ParentName="Ogre_RacialBase">
+    <defName>FP_OGRE_hediff</defName>
+	<label>Ogre's power</label>
+	<postListText></postListText>
+    <stages>
       <li>
         <capMods>
           <li>
@@ -24,9 +28,7 @@
         </capMods>
       </li>
     </stages>
-	
-	
-  </JecsTools.HediffDef>
+  </JecsTools.HediffExpandedDef>
  
 
   <HediffGiverSetDef>
