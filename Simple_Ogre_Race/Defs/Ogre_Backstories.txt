@@ -33,28 +33,34 @@
     </disallowedTraits>
 </AlienRace.BackstoryDef>
 
-<!--
 
-<AlienRace.BackstoryDef ParentName="LotRE_BackstoryElf">
+<AlienRace.BackstoryDef ParentName="FP_OGRE_Backstory">
     <defName>FP_OGRE_BackstoryChildOne</defName>
     <title>Noldor elf-child</title>
-    <baseDescription>Growing up in a time of relative peace but still at odds of war with the mountain roaming Goblins and Orcs, [PAWN_nameDef] spent [PAWN_possessive] childhood practicing combat and crafting while studying during [PAWN_possessive] leisure time.</baseDescription>
+    <baseDescription>Growing up in peaceful tribes, [PAWN_nameDef] learned about construction and crafting.</baseDescription>
 	<slot>Childhood</slot>
     <skillGains>
       <li>
         <defName>Melee</defName>
-        <amount>5</amount>
+        <amount>-3</amount>
       </li>
 	  <li>
         <defName>Shooting</defName>
         <amount>-3</amount>
       </li>
       <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
+        <defName>Construction</defName>
+        <amount>3</amount>
+      </li>
+	  <li>
+        <defName>Crafting</defName>
+        <amount>3</amount>
       </li>
     </skillGains>
 </AlienRace.BackstoryDef>
+
+<!--
+
 
 
 <AlienRace.BackstoryDef ParentName="LotRE_BackstoryElf">
