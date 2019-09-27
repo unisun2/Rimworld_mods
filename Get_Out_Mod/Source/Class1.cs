@@ -58,7 +58,8 @@ namespace WG_GOM
             Try_exe_this(localDef, parms);
 
             localDef = DefDatabase<IncidentDef>.GetNamed("NewSettlementLGE", false);
-            Try_exe_this(localDef, parms);
+            if(Rand.Range(0f,1f) > 0.9)
+                Try_exe_this(localDef, parms);
 
             localDef = DefDatabase<IncidentDef>.GetNamed("QuestResearchRequestSW", false);
             Try_exe_this(localDef, parms);

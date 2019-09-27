@@ -82,8 +82,6 @@
 			<thoughtSettings>
 				<cannotReceiveThoughts>
 					<li>AteWithoutTable</li>
-					<li>SleptInCold</li>
-					<li>SleptInHeat</li>
 					<!-- human -->
 					<li>ButcheredHumanlikeCorpse</li>
 					<li>KnowButcheredHumanlikeCorpse</li>
@@ -92,14 +90,7 @@
 					<li>AteCorpse</li>
 					<li>AteHumanlikeMeatDirect</li>
 					<li>AteHumanlikeMeatAsIngredient</li>
-					<li>AteRawHumanlikeMeat</li>
 				</cannotReceiveThoughts>
-				<replacerList>
-                <li>
-                    <original>NeedRoomSize</original>
-                    <replacer>FP_OGRE_NeedRoomSize</replacer> 
-                </li>
-            </replacerList>
 			</thoughtSettings>
 	  
 	</alienRace>
@@ -108,14 +99,14 @@
       <MoveSpeed>3.8</MoveSpeed>
       <Flammability>0.8</Flammability>
 	  <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
-	  <CarryingCapacity>250</CarryingCapacity>	
+	  <!--<CarryingCapacity>250</CarryingCapacity>	-->
 		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
 		<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
 		<ArmorRating_Heat>0.40</ArmorRating_Heat>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>40</ComfyTemperatureMax>
 	  <HungerRateMultiplier>2</HungerRateMultiplier>
-	  
+	  <Mass>50</Mass>
 	  <EatingSpeed>2</EatingSpeed>
 	  <CookSpeed>2</CookSpeed>
 	  <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
@@ -171,7 +162,7 @@
     </tools>
 	<comps>
 		<li Class="FP_OGRE.CompProperties_OGRE_Regen">
-			<rateInTicks>1000</rateInTicks>
+			<rateInTicks>500</rateInTicks>
 		</li>
 
 	</comps>
