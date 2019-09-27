@@ -69,7 +69,7 @@ namespace FP_OGRE
 							Hediff_Injury inj = pawn.health.hediffSet.hediffs[i] as Hediff_Injury;
 
                             if (inj == null) continue;
-                            if (inj.Severity < 1) continue;
+                            //if (inj.Severity < 1) continue;
 
                             inj.Severity = Math.Max(0f, inj.Severity - 1);
                             healatonce--;
@@ -82,8 +82,8 @@ namespace FP_OGRE
                         Hediff_Injury hediff_Injury = this.FindPermanentInjury(pawn);
                         if (hediff_Injury != null)
                         {
-
                             hediff_Injury.Severity = (float)(hediff_Injury.Severity / 1.5f);
+                            if (hediff_Injury.Severity < 0.1) hediff_Injury.Severity = 0;
                         }
                     }
 

@@ -9,7 +9,7 @@
 			<kindDefs>
 				<li>FP_OGRE_Colonist</li>
 			</kindDefs>
-			<chance>30.0</chance>
+			<chance>10.0</chance>
 		</li>
 	</alienslavekinds>
 	
@@ -18,7 +18,7 @@
 			<kindDefs>
 				<li>FP_OGRE_Colonist</li>
 			</kindDefs>
-			<chance>30.0</chance>
+			<chance>10.0</chance>
 		</li>
 	</alienrefugeekinds>
 			
@@ -29,7 +29,7 @@
                     <kindDefs>
                         <li>FP_OGRE_Colonist</li>
                     </kindDefs>
-                    <chance>30.0</chance>
+                    <chance>10.0</chance>
                 </li>
             </pawnKindEntries>
             <factionDefs>
@@ -45,7 +45,7 @@
                     <kindDefs>
                         <li>FP_OGRE_Colonist</li>
                     </kindDefs>
-                    <chance>30.0</chance>
+                    <chance>10.0</chance>
                 </li>
             </pawnKindEntries>
             <factionDefs>

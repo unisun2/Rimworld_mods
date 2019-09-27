@@ -11,9 +11,9 @@
     </graphicData>
     <statBases>
       <MarketValue>15</MarketValue>
-      <StuffPower_Armor_Sharp>1.8</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
 		<StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
-		<StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+		<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
     </statBases>

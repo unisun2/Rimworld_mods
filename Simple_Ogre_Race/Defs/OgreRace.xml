@@ -96,12 +96,12 @@
 	</alienRace>
     <statBases>
       <MarketValue>2450</MarketValue>
-      <MoveSpeed>3.8</MoveSpeed>
+      <MoveSpeed>3.6</MoveSpeed>
       <Flammability>0.8</Flammability>
 	  <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
 	  <!--<CarryingCapacity>250</CarryingCapacity>	-->
 		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-		<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+		<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 		<ArmorRating_Heat>0.40</ArmorRating_Heat>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>40</ComfyTemperatureMax>
@@ -111,7 +111,7 @@
 	  <CookSpeed>2</CookSpeed>
 	  <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
 	  <ResearchSpeed>0.1</ResearchSpeed>
-	  <PlantWorkSpeed>1.5</PlantWorkSpeed>
+	  <!--<PlantWorkSpeed>1.5</PlantWorkSpeed>-->
       <!--<LeatherAmount>25</LeatherAmount>-->
     </statBases>
     <tools>
@@ -154,7 +154,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>10</power>
+        <power>15</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <chanceFactor>0.2</chanceFactor>
