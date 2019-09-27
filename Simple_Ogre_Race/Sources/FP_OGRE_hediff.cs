@@ -56,17 +56,20 @@ namespace FP_OGRE
 
                     if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                     {
-                        foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
+                        /*foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
                         {
                             injury.Severity = Math.Max(0f, injury.Severity - 1);
                             healatonce--;
                             if (healatonce <= 0) break;
                         }
                         healatonce = 3;
-						
+						*/
 						for (int i = 0; i < pawn.health.hediffSet.hediffs.Count; i++)
 						{
 							Hediff_Injury inj = pawn.health.hediffSet.hediffs[i] as Hediff_Injury;
+
+                            if (inj == null) continue;
+                            if (inj.Severity < 1) continue;
 
                             inj.Severity = Math.Max(0f, inj.Severity - 1);
                             healatonce--;
@@ -83,6 +86,7 @@ namespace FP_OGRE
                             hediff_Injury.Severity = (float)(hediff_Injury.Severity / 1.5f);
                         }
                     }
+
                 }
                 tickCounter = 0;
             }
