@@ -63,6 +63,16 @@ namespace FP_OGRE
                             if (healatonce <= 0) break;
                         }
                         healatonce = 3;
+						
+						for (int i = 0; i < pawn.health.hediffSet.hediffs.Count; i++)
+						{
+							Hediff_Injury inj = pawn.health.hediffSet.hediffs[i] as Hediff_Injury;
+
+                            inj.Severity = Math.Max(0f, inj.Severity - 1);
+                            healatonce--;
+                            if (healatonce <= 0) break;
+						}
+						healatonce = 3;
                     }
                     else
                     {

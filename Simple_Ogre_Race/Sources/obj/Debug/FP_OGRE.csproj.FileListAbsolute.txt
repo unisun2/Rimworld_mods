@@ -4,3 +4,8 @@ C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.cspr
 C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.dll
 C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.pdb
 C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.csprojAssemblyReference.cache
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Simple_Ogre_Race\Assemblies\FP_OGRE.dll
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Simple_Ogre_Race\Assemblies\FP_OGRE.pdb
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.csprojResolveAssemblyReference.cache
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.dll
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Simple_Ogre_Race\Sources\obj\Debug\FP_OGRE.pdb
