@@ -57,13 +57,13 @@
     <apparelRequired>
       <li>Apparel_WarMask</li>
     </apparelRequired>
-    <!--<weaponMoney>
+    <weaponMoney>
       <min>300</min>
-      <max>300</max>
+      <max>700</max>
     </weaponMoney>
     <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
-    </weaponTags>-->
+      <li>FP_OGRE_Melee</li>
+    </weaponTags>
   </PawnKindDef>
   
   <PawnKindDef ParentName="FPOGRETribalBase">
@@ -86,13 +86,13 @@
       <min>0</min>
       <max>2</max>
     </combatEnhancingDrugsCount>
-    <!--<weaponMoney>
+    <weaponMoney>
       <min>300</min>
-      <max>300</max>
+      <max>1000</max>
     </weaponMoney>
     <weaponTags>
-      <li>NeolithicMeleeAdvanced</li>
-    </weaponTags>-->
+      <li>FP_OGRE_Melee</li>
+    </weaponTags>
   </PawnKindDef>
 
 

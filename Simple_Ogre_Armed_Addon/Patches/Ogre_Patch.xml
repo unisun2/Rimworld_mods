@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success></success>
+		<operations>
+           <li Class="PatchOperationReplace">
+              <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="FP_OgreRace"]/alienRace/raceRestriction/onlyUseRaceRestrictedApparel</xpath> 
+              <value>
+                  <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+              </value>
+           </li>
+  
+			<li Class="PatchOperationReplace">
+              <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="FP_OgreRace"]/alienRace/raceRestriction/onlyUseRaceRestrictedWeapons</xpath> 
+              <value>
+                  <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+              </value>
+           </li>
+           
+		   
+		</operations>
+	</Operation>
+</Patch>			

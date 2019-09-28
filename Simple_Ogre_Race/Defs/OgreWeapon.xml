@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>FP_OGRE_meleeone</defName>
+    <label>giant club</label>
+    <description>A giant lump of wood.</description>
+	<tradeability>Sellable</tradeability>
+    <graphicData>
+      <texPath>Things/FPOGRE/meleeone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<techLevel>Neolithic</techLevel>
+    <costStuffCount>75</costStuffCount>
+    <statBases>
+      <SellPriceFactor>0.20</SellPriceFactor>
+      <Mass>4.0</Mass>
+      <WorkToMake>8000</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>FP_OGRE_Melee</li>
+    </weaponTags>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		<li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+	  <verticalFlipNorth>true</verticalFlipNorth>
+	  <angleAdjustmentWest>90</angleAdjustmentWest>
+	  <angleAdjustmentEast>-130</angleAdjustmentEast>
+	  <northOffset>(0.30,0,0.2)</northOffset>
+	  <eastOffset>(0,0,-0.1)</eastOffset>
+	  <westOffset>(0,0,-0.1)</westOffset>
+	  <southOffset>(-0.30,0,-0.2)</southOffset>
+	  </li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>FP_OGRE_meleetwo</defName>
+    <label>giant spiked club</label>
+    <description>A giant lump of wood with sharp spikes at one end.</description>
+    <graphicData>
+      <texPath>Things/FPOGRE/meleetwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+	<tradeability>Sellable</tradeability>
+	<techLevel>Neolithic</techLevel>
+    <costStuffCount>75</costStuffCount>
+    <statBases>
+      <SellPriceFactor>0.20</SellPriceFactor>
+      <Mass>4.0</Mass>
+      <WorkToMake>10000</WorkToMake>
+    </statBases>
+    <equippedAngleOffset>-25</equippedAngleOffset>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+	<costList>
+      <Steel>50</Steel>
+    </costList>
+    <weaponTags>
+      <li>FP_OGRE_Melee</li>
+    </weaponTags>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+		<li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+	  <li>
+        <label>spike</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+	  <verticalFlipNorth>true</verticalFlipNorth>
+	  <angleAdjustmentWest>90</angleAdjustmentWest>
+	  <angleAdjustmentEast>-130</angleAdjustmentEast>
+	  <northOffset>(0.30,0,0.2)</northOffset>
+	  <eastOffset>(0,0,-0.1)</eastOffset>
+	  <westOffset>(0,0,-0.1)</westOffset>
+	  <southOffset>(-0.30,0,-0.2)</southOffset>
+	  </li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef Name="FPOGRERangebase" Abstract="true" ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+	<tradeability>Sellable</tradeability>
+    <thingCategories>
+      <li>WeaponsRanged</li>
+    </thingCategories>
+	<weaponTags>
+      <li>FP_OGRE_Range</li>
+    </weaponTags>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="FPOGRERangebase">
+    <defName>FPOGRE_Rock</defName>
+    <label>Large Rock</label>
+    <description>A very large and heavy stone.</description>
+    <graphicData>
+      <texPath>Things/FPOGRE/rangeone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.71</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.32</AccuracyLong>
+      <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>FP_OGRE_rock_Thrown</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <range>18.9</range>
+        <soundCast>ThrowGrenade</soundCast>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>rock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+         <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<comps>
+	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+	  <verticalFlipNorth>true</verticalFlipNorth>
+	  <angleAdjustmentWest>90</angleAdjustmentWest>
+	  <angleAdjustmentEast>-130</angleAdjustmentEast>
+	  <northOffset>(0.30,0,0.2)</northOffset>
+	  <eastOffset>(0,0,-0.1)</eastOffset>
+	  <westOffset>(0,0,-0.1)</westOffset>
+	  <southOffset>(-0.30,0,-0.2)</southOffset>
+	  </li>
+	</comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>FP_OGRE_rock_Thrown</defName>
+    <label>rock</label>
+    <graphicData>
+      <texPath>Things/FPOGRE/rangeone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>2.5</stoppingPower>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <speed>26</speed>
+    </projectile>
+  </ThingDef>
+  
+  
+  
+</Defs>

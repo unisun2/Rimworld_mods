@@ -71,7 +71,9 @@
 				</whiteApparelList>
 				
 				<weaponList>
-
+				<li>FP_OGRE_meleeone</li>
+				<li>FP_OGRE_meleetwo</li>
+				<li>FPOGRE_Rock</li>
 				</weaponList>
 				
 				<whiteWeaponList>
