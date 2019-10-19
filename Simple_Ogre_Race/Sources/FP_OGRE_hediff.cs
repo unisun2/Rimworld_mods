@@ -12,7 +12,7 @@ namespace FP_OGRE
 {
     public class CompProperties_OGRE_Regen : CompProperties
     {
-        public int rateInTicks = 1000;
+        public int rateInTicks = 800;
 
         public CompProperties_OGRE_Regen()
         {
@@ -53,6 +53,13 @@ namespace FP_OGRE
 
                 if (pawn.health != null)
                 {
+                    //Hediff fp = HediffDefOf.FoodPoisoning;
+                    //if(pawn.health.hediffSet.hediffs.Contains(HediffDefOf.FoodPoisoning)
+
+                    Hediff fp = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.FoodPoisoning);
+                    if (fp != null)
+                        pawn.health.hediffSet.hediffs.Remove(fp);
+
 
                     if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                     {
