@@ -58,8 +58,7 @@ namespace FP_OGRE
 
                     Hediff fp = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.FoodPoisoning);
                     if (fp != null)
-                        pawn.health.hediffSet.hediffs.Remove(fp);
-
+                        fp.Severity = Math.Max(0f, fp.Severity - 1);
 
                     if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                     {
@@ -71,9 +70,10 @@ namespace FP_OGRE
                         }
                         healatonce = 3;
 						*/
+
 						for (int i = 0; i < pawn.health.hediffSet.hediffs.Count; i++)
 						{
-							Hediff_Injury inj = pawn.health.hediffSet.hediffs[i] as Hediff_Injury;
+                            Hediff_Injury inj = pawn.health.hediffSet.hediffs[i] as Hediff_Injury;
 
                             if (inj == null) continue;
                             //if (inj.Severity < 1) continue;
@@ -82,7 +82,7 @@ namespace FP_OGRE
                             healatonce--;
                             if (healatonce <= 0) break;
 						}
-						healatonce = 3;
+						healatonce = 4;
                     }
                     else
                     {
