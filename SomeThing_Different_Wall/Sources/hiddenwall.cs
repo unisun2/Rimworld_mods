@@ -10,9 +10,6 @@ using Verse.Sound;
 
 namespace BombInWall
 {
-    class hiddenwall
-    {
-    }
     public class CompProperties_BIWHidingWall : CompProperties
     {
 

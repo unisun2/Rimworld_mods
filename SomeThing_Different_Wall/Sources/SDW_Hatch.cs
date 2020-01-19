@@ -10,11 +10,10 @@ using Verse.Sound;
 
 namespace BombInWall
 {
+
     class SDW_Hatch : Building
     {
         public CompPowerTrader powerComp;
-
-        static public Texture2D UBcommandicon = ContentFinder<Texture2D>.Get("UI/Commands/SDWunburrow", true);
 
 
         public bool CanUnburrowNow
@@ -46,7 +45,7 @@ namespace BombInWall
                 {
                     defaultLabel = "unburrow".Translate(),
                     defaultDesc = "unburrow wall".Translate(),
-                    icon = UBcommandicon,
+                    icon = ContentFinder<Texture2D>.Get("UI/Commands/SDWunburrow", true),
                     iconAngle = 0,
                     iconOffset = Vector2.zero,
                     iconDrawScale = GenUI.IconDrawScale(this.def),

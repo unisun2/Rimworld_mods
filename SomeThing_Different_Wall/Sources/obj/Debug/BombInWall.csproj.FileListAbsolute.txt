@@ -10,3 +10,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SomeThing_Different_
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SomeThing_Different_Wall\Sources\obj\Debug\BombInWall.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SomeThing_Different_Wall\Sources\BombInWall.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SomeThing_Different_Wall\Sources\BombInWall.pdb
+C:\Users\unisu\git\Rimworld_mods\SomeThing_Different_Wall\Sources\obj\Debug\BombInWall.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\SomeThing_Different_Wall\Sources\obj\Debug\BombInWall.dll
+C:\Users\unisu\git\Rimworld_mods\SomeThing_Different_Wall\Sources\obj\Debug\BombInWall.pdb
+C:\Users\unisu\git\Rimworld_mods\SomeThing_Different_Wall\Sources\BombInWall.dll
+C:\Users\unisu\git\Rimworld_mods\SomeThing_Different_Wall\Sources\BombInWall.pdb
