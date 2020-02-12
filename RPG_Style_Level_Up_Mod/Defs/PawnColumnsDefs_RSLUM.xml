@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- things you won't find here: dynamically generated columns such as needs, skills, records, capacities, etc -->
+
+  <PawnColumnDef>
+    <defName>FP_RSLUM_Label</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_Label</workerClass>
+    <widthPriority>100</widthPriority>
+    <sortable>true</sortable>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>FP_RSLUM_Level</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_Level</workerClass>
+    <sortable>true</sortable>
+    <label>Lv</label>
+  </PawnColumnDef>
+
+  <PawnColumnDef>
+    <defName>FP_RSLUM_EXP</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_EXP</workerClass>
+    <!--<sortable>true</sortable>-->
+    <label>EXP</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_Need_EXP</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_Need_EXP</workerClass>
+    <!--<sortable>true</sortable>-->
+    <label>NeedEXP</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_StatPoint</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_StatPoint</workerClass>
+    <sortable>true</sortable>
+    <label>Point</label>
+  </PawnColumnDef>
+  
+
+  <PawnColumnDef>
+    <defName>FP_RSLUM_STR</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_STR</workerClass>
+    <sortable>true</sortable>
+    <label>STR</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_DEX</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_DEX</workerClass>
+    <sortable>true</sortable>
+    <label>DEX</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_AGL</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_AGL</workerClass>
+    <sortable>true</sortable>
+    <label>AGL</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_CON</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_CON</workerClass>
+    <sortable>true</sortable>
+    <label>CON</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_INT</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_INT</workerClass>
+    <sortable>true</sortable>
+    <label>INT</label>
+  </PawnColumnDef>
+  
+  <PawnColumnDef>
+    <defName>FP_RSLUM_CHA</defName>
+    <workerClass>FP_RSLUM.PawnColumnWorker_CHA</workerClass>
+    <sortable>true</sortable>
+    <label>CHA</label>
+  </PawnColumnDef>
+ 
+
+</Defs>

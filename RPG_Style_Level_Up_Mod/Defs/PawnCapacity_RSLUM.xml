@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnCapacityDef>
+    <defName>RSLUM_STR</defName>
+    <label>Strength</label>
+    <listOrder>120</listOrder>
+    <workerClass>FP_RSLUM.PawnCapacityWorker_STR</workerClass>
+	<showOnHumanlikes>false</showOnHumanlikes>
+	<showOnAnimals>false</showOnAnimals>
+	<showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+  
+  <PawnCapacityDef>
+    <defName>RSLUM_DEX</defName>
+    <label>Dexterity</label>
+    <listOrder>121</listOrder>
+    <workerClass>FP_RSLUM.PawnCapacityWorker_DEX</workerClass>
+	<showOnHumanlikes>false</showOnHumanlikes>
+	<showOnAnimals>false</showOnAnimals>
+	<showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+  <PawnCapacityDef>
+    <defName>RSLUM_AGL</defName>
+    <label>Agility</label>
+    <listOrder>122</listOrder>
+    <workerClass>FP_RSLUM.PawnCapacityWorker_AGL</workerClass>
+	<showOnHumanlikes>false</showOnHumanlikes>
+	<showOnAnimals>false</showOnAnimals>
+	<showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+  <PawnCapacityDef>
+    <defName>RSLUM_CON</defName>
+    <label>Constitution</label>
+    <listOrder>123</listOrder>
+    <workerClass>FP_RSLUM.PawnCapacityWorker_CON</workerClass>
+	<showOnHumanlikes>false</showOnHumanlikes>
+	<showOnAnimals>false</showOnAnimals>
+	<showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+  <PawnCapacityDef>
+    <defName>RSLUM_INT</defName>
+    <label>Intelligence</label>
+    <listOrder>124</listOrder>
+    <workerClass>FP_RSLUM.PawnCapacityWorker_INT</workerClass>
+	<showOnHumanlikes>false</showOnHumanlikes>
+	<showOnAnimals>false</showOnAnimals>
+	<showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+  <PawnCapacityDef>
+    <defName>RSLUM_CHA</defName>
+    <label>Charm</label>
+    <listOrder>125</listOrder>
+    <workerClass>FP_RSLUM.PawnCapacityWorker_CHA</workerClass>
+	<showOnHumanlikes>false</showOnHumanlikes>
+	<showOnAnimals>false</showOnAnimals>
+	<showOnMechanoids>false</showOnMechanoids>
+  </PawnCapacityDef>
+
+</Defs>
+
