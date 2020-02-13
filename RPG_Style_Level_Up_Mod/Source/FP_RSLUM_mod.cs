@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UnityEngine;
 using Verse;
+using UnityEngine;
 
 namespace FP_RSLUM
 {
@@ -14,7 +14,7 @@ namespace FP_RSLUM
 
         public FP_RSLUM_mod(ModContentPack content) : base(content)
         {
-            FP_RSLUM_mod.Settings = GetSettings<ModSettings_Embrasures>();
+            FP_RSLUM_mod.Settings = GetSettings<FP_RSLUM_setting>();
         }
 
         public override string SettingsCategory()

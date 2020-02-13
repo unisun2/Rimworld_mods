@@ -38,7 +38,7 @@ namespace FP_RSLUM
                 Pawn pawn = pawninfo.GetValue(__instance) as Pawn;
 
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-                pawnlvcomp.exp += (int)(xp * 100);
+                pawnlvcomp.exp += (int)(xp * FP_RSLUM_setting.ColonistPercent);
                 //Log.Message(pawn.Name + xp.ToString() + " " + ((int)(xp * 100)).ToString());
             }
 

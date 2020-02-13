@@ -4,3 +4,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RPG_Style_Level_Up_M
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.csproj.CopyComplete
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.dll
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.pdb
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\Assemblies\FP_RSLUM.dll
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\Assemblies\FP_RSLUM.pdb
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\Source\obj\Debug\FP_RSLUM.csproj.CopyComplete

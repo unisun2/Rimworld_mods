@@ -29,9 +29,11 @@
 	<StatsReport_STAT_CON>체력</StatsReport_STAT_CON>
 	<StatsReport_STAT_DEX>재주</StatsReport_STAT_DEX>
 	<StatsReport_STAT_INT>지능</StatsReport_STAT_INT>
+
+	<FP_RSLUM_setting_FlatStartingStat>랜덤 스탯 생성 삭제. 모든 스탯이 0에서 시작함.</FP_RSLUM_setting_FlatStartingStat>
 	
-	<StatsReport_STAT_DEX_Reloading>재주</StatsReport_STAT_DEX_Reloading>
-	<StatsReport_STAT_CON_Suppressability>체력</StatsReport_STAT_CON_Suppressability>
+	<FP_RSLUM_setting_ColonistPercent>스킬 경험치 대비 레벨 경험치 얻는 비율. 기본값 = 80</FP_RSLUM_setting_ColonistPercent>
 	
+	<FP_RSLUM_setting_AnimalEXPPerTick>동물이 10초당 얻는 경험치. 기본값 = 500</FP_RSLUM_setting_AnimalEXPPerTick>
 
 </LanguageData>

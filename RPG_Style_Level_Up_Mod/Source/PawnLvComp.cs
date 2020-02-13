@@ -12,13 +12,15 @@ namespace FP_RSLUM
         public int level = -1;
         public int exp = 0;
         public int need_exp = 5000;
-        public int StatPoint = 0;
+        public int StatPoint = 1;
         public int STR = -20;
         public int DEX = -20;
         public int AGL = -20;
         public int CON = -20;
         public int INT = -20;
         public int CHA = -20;
+
+        public int exptick = 0;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -120,7 +122,12 @@ namespace FP_RSLUM
             base.CompTick();
             if (parent.def.race.Animal)
             {
-                exp++;
+                exptick++;
+                if(exptick > 600)
+                {
+                    exptick = 0;
+                    this.exp += FP_RSLUM_setting.AnimalEXPPerTick;
+                }
             }
         }
 

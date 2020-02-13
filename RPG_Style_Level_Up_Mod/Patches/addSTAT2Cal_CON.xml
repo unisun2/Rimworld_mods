@@ -47,26 +47,30 @@
 		</value>
 	</Operation>
 	
-	<!--<operations>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+	<operations>
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
 				<nomatch Class="PatchOperationAdd">
 					<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]</xpath>
 						<value>
 							<parts>
-								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature" />
+								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_min" />
 							</parts>
 						</value>
 				</nomatch>
 				<match Class="PatchOperationAdd">
 				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
 					<value>
-						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature" />
+						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_min" />
 					</value>
 				</match>
 			</li>
 		</operations>
-		
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
@@ -74,18 +78,19 @@
 					<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]</xpath>
 						<value>
 							<parts>
-								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature" />
+								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_max" />
 							</parts>
 						</value>
 				</nomatch>
 				<match Class="PatchOperationAdd">
 				<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
 					<value>
-						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature" />
+						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_max" />
 					</value>
 				</match>
 			</li>
-		</operations-->
+		</operations>
+	</Operation>
 
 	<!--<Operation Class="PatchOperationSequence">
 		<success>Always</success>

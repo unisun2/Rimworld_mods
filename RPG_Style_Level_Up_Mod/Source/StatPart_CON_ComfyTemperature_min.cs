@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using RimWorld;
 using Verse;
-using UnityEngine;
+using RimWorld;
+
 namespace FP_RSLUM
 {
-	class StatPart_CON_CE_Suppressability : StatPart
+    class StatPart_CON_ComfyTemperature_min : StatPart
 	{
 		public override void TransformValue(StatRequest req, ref float val)
 		{
@@ -17,7 +17,7 @@ namespace FP_RSLUM
 				PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
 				if (pawnlvcomp != null)
 				{
-					val *= (float)Math.Max((1 - (0.003 * pawnlvcomp.CON)), 0.5f);
+					val -= (float)(0.3 * pawnlvcomp.CON);
 				}
 			}
 		}
@@ -31,7 +31,7 @@ namespace FP_RSLUM
 				{
 					PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
 					if (pawnlvcomp != null)
-                        return "StatsReport_STAT_CON".Translate() + ": x" + ((float)Math.Max((1 - (0.003 * pawnlvcomp.CON)), 0.5f)).ToStringPercent();
+						return "StatsReport_STAT_CON".Translate() + ": -" + (0.3f * pawnlvcomp.CON).ToStringTemperature();
 				}
 			}
 			return null;

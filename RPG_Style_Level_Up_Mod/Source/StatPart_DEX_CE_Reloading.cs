@@ -32,7 +32,7 @@ namespace FP_RSLUM
 					
 					PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
 					if (pawnlvcomp != null)
-						return "StatsReport_STAT_DEX_Reloading".Translate() + ": x" + ((float)Math.Max((1 - (0.003 * pawnlvcomp.DEX)), 0.5f)).ToStringPercent();
+						return "StatsReport_STAT_DEX".Translate() + ": x" + ((float)Math.Max((1 - (0.003 * pawnlvcomp.DEX)), 0.5f)).ToStringPercent();
 				}
 			}
 			return null;

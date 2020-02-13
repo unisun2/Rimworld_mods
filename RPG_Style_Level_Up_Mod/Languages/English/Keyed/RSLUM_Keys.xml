@@ -30,8 +30,11 @@
 	<StatsReport_STAT_DEX>Dexterity</StatsReport_STAT_DEX>
 	<StatsReport_STAT_INT>Intelligence</StatsReport_STAT_INT>
 	
-	<StatsReport_STAT_DEX_Reloading>Dexterity</StatsReport_STAT_DEX_Reloading>
-	<StatsReport_STAT_CON_Suppressability>Constitution</StatsReport_STAT_CON_Suppressability>
+	<FP_RSLUM_setting_FlatStartingStat>disable randomized stat. all pawns have 0 starting stat.</FP_RSLUM_setting_FlatStartingStat>
+	
+	<FP_RSLUM_setting_ColonistPercent>Colonists will get this percent of their skill experience. default = 80</FP_RSLUM_setting_ColonistPercent>
+	
+	<FP_RSLUM_setting_AnimalEXPPerTick>Animals will get this amount of EXP every 10 seconds. default = 500</FP_RSLUM_setting_AnimalEXPPerTick>
 	
 
 </LanguageData>
