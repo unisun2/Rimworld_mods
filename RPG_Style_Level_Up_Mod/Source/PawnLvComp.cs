@@ -25,7 +25,17 @@ namespace FP_RSLUM
             base.PostSpawnSetup(respawningAfterLoad);
             if (this.level == -1)
             {
-                this.level += 1;
+				if(FP_RSLUM_setting.FlatStartingStat){
+					this.level = 0;
+					STR = 0;
+					DEX = 0;
+					AGL = 0;
+					CON = 0;
+					INT = 0;
+					CHA = 0;
+				}
+				else{
+					this.level += 1;
                 int plus;
 
                 for (int i = 0; i < 50; i++)
@@ -60,6 +70,8 @@ namespace FP_RSLUM
                         default: break;
                     }
                 }
+				}
+                
             }
         }
 
