@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Warpstone Tractor Beam mod</name>
+	<author>FlashPoint55</author>
+	<supportedVersions><li>1.0</li></supportedVersions>
+	<description>
+Add Command to turret.
+	</description>
+</ModMetaData>

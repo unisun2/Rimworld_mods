@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="FP_DrugbreadBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+	<description>A soft, delicious bread. tastes wonderful and produces a subtle mood-increasing chemical high. if eaten too often, it can generate addiction.</description>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+	<tickerType>Rare</tickerType>
+	<socialPropernessMatters>true</socialPropernessMatters>
+	<thingCategories>
+      <li>FoodMeals</li>
+	  <li>Drugs</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.3</Flammability>
+      <DeteriorationRate>10</DeteriorationRate>
+	  <Mass>0.13</Mass>
+	  <Nutrition>0.95</Nutrition>
+    </statBases>
+	<techLevel>Neolithic</techLevel>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>15</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>5</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+		<foodType>Meal</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+	  <preferability>RawBad</preferability>
+			<tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="MealRottable">
+    <defName>MealFine</defName>
+    <label>fine meal</label>
+    <description>A complex dish assembled with care from a variety of ingredients.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/Fine</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>20</MarketValue>
+      <WorkToMake>450</WorkToMake>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+			<tasteThought>AteFineMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</Defs>
