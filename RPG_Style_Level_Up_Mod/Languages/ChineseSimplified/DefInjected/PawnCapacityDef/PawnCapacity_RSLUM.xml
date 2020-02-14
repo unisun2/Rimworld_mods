@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RSLUM_STR.label>力量</RSLUM_STR.label>
+  <RSLUM_DEX.label>灵巧</RSLUM_DEX.label>
+  <RSLUM_AGL.label>敏捷</RSLUM_AGL.label>
+  <RSLUM_CON.label>体质</RSLUM_CON.label>
+  <RSLUM_INT.label>智力</RSLUM_INT.label>
+  <RSLUM_CHA.label>魅力</RSLUM_CHA.label>
+
+
+</LanguageData>

@@ -34,7 +34,7 @@ namespace FP_RSLUM
 						return "StatsReport_STAT_AGL_Aiming".Translate() + ": x" + ((float)Math.Max((1 - (0.003 * pawnlvcomp.AGL)), 0.5f)).ToStringPercent();
 				}
 			}
-			return null;
+			return "";
 		}
 	}
 }

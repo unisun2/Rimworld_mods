@@ -14,7 +14,9 @@ namespace FP_RSLUM
 		{
 			Pawn pawn = diffSet.pawn;
 			PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-			return (float)(1.00f + (0.01 * pawnlvcomp.INT));
+			if (pawnlvcomp != null)
+				return (float)(1.00f + (0.01 * pawnlvcomp.INT));
+			else return 1;
 		}
 
 		public override bool CanHaveCapacity(BodyDef body)

@@ -34,7 +34,7 @@ namespace FP_RSLUM
 						return "StatsReport_STAT_CON".Translate() + ": +" + (0.3f * pawnlvcomp.CON).ToStringTemperature();
 				}
 			}
-			return null;
+			return "";
 		}
 	}
 }

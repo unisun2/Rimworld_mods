@@ -80,16 +80,16 @@ namespace FP_RSLUM
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look<int>(ref this.level, "level", 0, false);
-            Scribe_Values.Look<int>(ref this.exp, "exp", 0, false);
-            Scribe_Values.Look<int>(ref this.need_exp, "need_exp", 10000, false);
-            Scribe_Values.Look<int>(ref this.StatPoint, "StatPoint", 1, false);
-            Scribe_Values.Look<int>(ref this.STR, "STR", 0, false);
-            Scribe_Values.Look<int>(ref this.DEX, "DEX", 0, false);
-            Scribe_Values.Look<int>(ref this.AGL, "AGL", 0, false);
-            Scribe_Values.Look<int>(ref this.CON, "CON", 0, false);
-            Scribe_Values.Look<int>(ref this.INT, "INT", 0, false);
-            Scribe_Values.Look<int>(ref this.CHA, "CHA", 0, false);
+            Scribe_Values.Look<int>(ref this.level, "level", 0, true);
+            Scribe_Values.Look<int>(ref this.exp, "exp", 0, true);
+            Scribe_Values.Look<int>(ref this.need_exp, "need_exp", 10000, true);
+            Scribe_Values.Look<int>(ref this.StatPoint, "StatPoint", 1, true);
+            Scribe_Values.Look<int>(ref this.STR, "STR", 0, true);
+            Scribe_Values.Look<int>(ref this.DEX, "DEX", 0, true);
+            Scribe_Values.Look<int>(ref this.AGL, "AGL", 0, true);
+            Scribe_Values.Look<int>(ref this.CON, "CON", 0, true);
+            Scribe_Values.Look<int>(ref this.INT, "INT", 0, true);
+            Scribe_Values.Look<int>(ref this.CHA, "CHA", 0, true);
         }
 
         public bool canlevelup()

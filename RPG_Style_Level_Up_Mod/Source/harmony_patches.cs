@@ -21,7 +21,16 @@ namespace FP_RSLUM
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.SkillRecord), "Learn"), new HarmonyMethod(typeof(harmony_patches), "LearnPrefix"));
             //harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.MassUtility), "Capacity"), new HarmonyMethod(typeof(harmony_patches), "CapacityPostfix"));
             harmonyInstance.Patch(AccessTools.Method(typeof(Verse.Pawn), "PreApplyDamage"), new HarmonyMethod(typeof(harmony_patches), "PreApplyDamagePrefix"));
+
+            //harmonyInstance.Patch(AccessTools.Method(typeof(Verse.VerbProperties), "AdjustedMeleeDamageAmount"),null, 
+            //    new HarmonyMethod(typeof(harmony_patches), "AdjustedMeleeDamageAmountPostfix", new[] { typeof(Tool), typeof(Pawn), typeof(Thing), typeof(HediffComp_VerbGiver) }));
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.StatWorker_MeleeDPS), "GetMeleeDamage"), null, new HarmonyMethod(typeof(harmony_patches), "GetMeleeDamagePostfix"));
+
+
+            //var meleeharmony = AccessTools.Method(typeof(VerbProperties), nameof(VerbProperties.AdjustedMeleeDamageAmount));
+            //var meleepostfix = AccessTools.Method(typeof(harmony_patches), nameof(harmony_patches.AdjustedMeleeDamageAmountPostfix));
+
+
             var original = AccessTools.Method(typeof(MassUtility), nameof(MassUtility.Capacity));
             var postfix = AccessTools.Method(typeof(harmony_patches), nameof(harmony_patches.CapacityPostfix));
             harmonyInstance.Patch(original, null, new HarmonyMethod(postfix));
@@ -57,7 +66,8 @@ namespace FP_RSLUM
                 //Pawn p = pawninfo2.GetValue(__instance) as Pawn;
                 //Log.Message(p.Name + __result.ToString());
                 PawnLvComp pawnlvcomp = p.TryGetComp<PawnLvComp>();
-                __result *= (float)(1f + (0.01 * pawnlvcomp.STR));
+                if(pawnlvcomp != null)
+                    __result *= (float)(1f + (0.01 * pawnlvcomp.STR));
                 //Log.Message(p.Name + __result.ToString());
             }
 
@@ -71,9 +81,11 @@ namespace FP_RSLUM
             if(pawn != null)
             {
                 float oriAmount = dinfo.Amount;
+                float ff = oriAmount;
                 //Log.Message(pawn.Name + " " + dinfo.Amount);
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-                float ff = oriAmount * ((float)Math.Max(1 - (0.003 * pawnlvcomp.CON), 0.5f));
+                if (pawnlvcomp != null)
+                    ff = oriAmount * ((float)Math.Max(1 - (0.003 * pawnlvcomp.CON), 0.5f));
                 dinfo.SetAmount(ff);
                 //Log.Message(pawn.Name + " " + dinfo.Amount);
             }
@@ -89,10 +101,26 @@ namespace FP_RSLUM
             {
                 //Log.Message(__result.ToString() + "i");
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-                __result *= (float)(1.0f + (0.01 * pawnlvcomp.STR));
+                if (pawnlvcomp != null) 
+                    __result *= (float)(1.0f + (0.01 * pawnlvcomp.STR));
                 //Log.Message(__result.ToString() + "in postfix");
             }
 
         }
+        /*
+        [HarmonyPostfix]
+        public static void AdjustedMeleeDamageAmountPostfix(Tool tool, Pawn attacker, Thing equipment, HediffComp_VerbGiver hediffCompSource, ref float __result)
+        {
+            PawnLvComp pawnlvcomp = attacker.TryGetComp<PawnLvComp>(); 
+            Log.Message(__result.ToString());
+            if (pawnlvcomp != null)
+            {
+                //Log.Message(__result.ToString() + "i");
+                
+                __result *= (float)(1.0f + (0.01 * pawnlvcomp.STR));
+                Log.Message(__result.ToString() + "in postfix");
+            }
+
+        }*/
     }
 }

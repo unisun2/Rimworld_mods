@@ -89,12 +89,13 @@ namespace FP_RSLUM
 			TooltipHandler.TipRegion(rect, Translator.Translate("LvTab_LVUPButtonDesc"));
 			if (Widgets.ButtonText(rect, Translator.Translate("LvTab_LVUPButton")))
 			{
-				IEnumerable<Pawn> Pawns = from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
+				IEnumerable<Pawn> Pawns = from p in Find.CurrentMap.mapPawns.AllPawnsSpawned
 										  select p;
 				foreach(Pawn pawn in Pawns)
 				{
 					PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-					pawnlvcomp.levelup();
+					if (pawnlvcomp != null)
+						pawnlvcomp.levelup();
 				}
 
 				Notify_ResolutionChanged();

@@ -34,7 +34,7 @@ namespace FP_RSLUM
 						return "StatsReport_STAT_STR".Translate() + ": x" + (1.00f + (float)(0.01 * pawnlvcomp.STR)).ToStringPercent();
 				}
 			}
-			return null;
+			return "";
 		}
 	}
 }
