@@ -36,5 +36,9 @@
 	
 	<FP_RSLUM_setting_AnimalEXPPerTick>Animals will get this amount of EXP every 10 seconds. default = 500</FP_RSLUM_setting_AnimalEXPPerTick>
 	
-
+	<FP_RSLUM_setting_Startingstat_min>Random starting stat - min value</FP_RSLUM_setting_Startingstat_min>
+	<FP_RSLUM_setting_Startingstat_max>Random starting stat - max value</FP_RSLUM_setting_Startingstat_max>
+	
+	<LvTab_reroll>reroll stat</LvTab_reroll>
+	
 </LanguageData>

@@ -35,5 +35,10 @@
 	<FP_RSLUM_setting_ColonistPercent>스킬 경험치 대비 레벨 경험치 얻는 비율. 기본값 = 80</FP_RSLUM_setting_ColonistPercent>
 	
 	<FP_RSLUM_setting_AnimalEXPPerTick>동물이 10초당 얻는 경험치. 기본값 = 500</FP_RSLUM_setting_AnimalEXPPerTick>
+	
+	<FP_RSLUM_setting_Startingstat_min>랜덤 시작 스탯 - 최소값</FP_RSLUM_setting_Startingstat_min>
+	<FP_RSLUM_setting_Startingstat_max>랜덤 시작 스탯 - 최대값</FP_RSLUM_setting_Startingstat_max>
+	
+	<LvTab_reroll>스탯 다시 굴리기</LvTab_reroll>
 
 </LanguageData>

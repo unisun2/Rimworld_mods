@@ -22,22 +22,47 @@ namespace FP_RSLUM
 
         public override void DoCell(Rect rect, Pawn pawn, PawnTable table)
         {
-            Rect rect2 = new Rect(rect.x, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
-            String textFor = this.GetTextFor(pawn);
-            if (textFor != null)
+            PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+            if (DebugSettings.godMode && pawnlvcomp != null)
             {
-                Text.Font = GameFont.Small;
-                Text.Anchor = TextAnchor.MiddleCenter;
-                Text.WordWrap = false;
-                Widgets.Label(rect2, textFor);
-                Text.WordWrap = true;
-                Text.Anchor = TextAnchor.UpperLeft;
-                String tip = this.GetTip(pawn);
-                if (!tip.NullOrEmpty())
+                this.DoStatRerollButton(new Rect(rect.x, rect.yMin, 30f, 30f), pawn);
+                Rect rect2 = new Rect(rect.x + 30, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
+                String textFor = this.GetTextFor(pawn);
+                if (textFor != null)
                 {
-                    TooltipHandler.TipRegion(rect2, tip);
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleCenter;
+                    Text.WordWrap = false;
+                    Widgets.Label(rect2, textFor);
+                    Text.WordWrap = true;
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    String tip = this.GetTip(pawn);
+                    if (!tip.NullOrEmpty())
+                    {
+                        TooltipHandler.TipRegion(rect2, tip);
+                    }
                 }
             }
+            else if(pawnlvcomp != null)
+            {
+                Rect rect2 = new Rect(rect.x + 15, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
+                String textFor = this.GetTextFor(pawn);
+                if (textFor != null)
+                {
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleCenter;
+                    Text.WordWrap = false;
+                    Widgets.Label(rect2, textFor);
+                    Text.WordWrap = true;
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    String tip = this.GetTip(pawn);
+                    if (!tip.NullOrEmpty())
+                    {
+                        TooltipHandler.TipRegion(rect2, tip);
+                    }
+                }
+            }
+            
         }
 
         protected String GetTip(Pawn pawn)
@@ -82,5 +107,30 @@ namespace FP_RSLUM
 
         public override int GetMinWidth(PawnTable table)
             => base.GetMinWidth(table) + 20;
+
+
+        public void DoStatRerollButton(Rect rect, Pawn pawn)
+        {
+            TooltipHandler.TipRegion(rect, Translator.Translate("LvTab_reroll"));
+            if (Widgets.ButtonImage(rect, harmony_patches.LVUP_rerollIMG, Color.white, GenUI.SubtleMouseoverColor))
+            {
+                PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+                if (pawnlvcomp != null)
+                {
+                    pawnlvcomp.level = 1;
+                    pawnlvcomp.exp = 0;
+                    pawnlvcomp.need_exp = 5000;
+                    pawnlvcomp.STR = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    pawnlvcomp.DEX = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    pawnlvcomp.AGL = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    pawnlvcomp.CON = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    pawnlvcomp.INT = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    pawnlvcomp.CHA = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                }
+                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.RSLUM_LVUP, pawn, null);
+                hediff.Severity = 0.1f;
+                pawn.health.AddHediff(hediff, null, null, null);
+            }
+        }
     }
 }

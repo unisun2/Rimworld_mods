@@ -14,6 +14,7 @@ namespace FP_RSLUM
     internal static class harmony_patches
     {
         public static readonly Texture2D DistributeIMG = ContentFinder<Texture2D>.Get("UI/Icons/Distribute");
+        public static readonly Texture2D LVUP_rerollIMG = ContentFinder<Texture2D>.Get("UI/Icons/LVUP_reroll");
         static harmony_patches()
         {
             Log.Message("Initializing RPG_Style_Level_Up_Mod_patches...");
@@ -42,7 +43,7 @@ namespace FP_RSLUM
         [HarmonyPrefix]
         static bool LearnPrefix(SkillRecord __instance, float xp, bool direct)
         {
-            if(xp > 0)
+            if (xp > 0)
             {
                 Pawn pawn = pawninfo.GetValue(__instance) as Pawn;
 
@@ -66,7 +67,7 @@ namespace FP_RSLUM
                 //Pawn p = pawninfo2.GetValue(__instance) as Pawn;
                 //Log.Message(p.Name + __result.ToString());
                 PawnLvComp pawnlvcomp = p.TryGetComp<PawnLvComp>();
-                if(pawnlvcomp != null)
+                if (pawnlvcomp != null)
                     __result *= (float)(1f + (0.01 * pawnlvcomp.STR));
                 //Log.Message(p.Name + __result.ToString());
             }
@@ -78,7 +79,7 @@ namespace FP_RSLUM
         {
             absorbed = false;
             Pawn pawn = dinfo.IntendedTarget as Pawn;
-            if(pawn != null)
+            if (pawn != null)
             {
                 float oriAmount = dinfo.Amount;
                 float ff = oriAmount;
@@ -101,7 +102,7 @@ namespace FP_RSLUM
             {
                 //Log.Message(__result.ToString() + "i");
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-                if (pawnlvcomp != null) 
+                if (pawnlvcomp != null)
                     __result *= (float)(1.0f + (0.01 * pawnlvcomp.STR));
                 //Log.Message(__result.ToString() + "in postfix");
             }

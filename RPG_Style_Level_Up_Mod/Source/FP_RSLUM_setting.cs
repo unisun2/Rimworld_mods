@@ -13,6 +13,8 @@ namespace FP_RSLUM
         public static int ColonistPercent = 75;
         public static int AnimalEXPPerTick = 1;
 		public static bool FlatStartingStat = false;
+        public static int Startingstat_min = -50;
+        public static int Startingstat_max = 40;
 
         public override void ExposeData()
         {
@@ -21,6 +23,8 @@ namespace FP_RSLUM
             Scribe_Values.Look<int>(ref ColonistPercent, "ColonistPercent", 80);
             Scribe_Values.Look<int>(ref AnimalEXPPerTick, "AnimalEXPPerTick", 500);
             Scribe_Values.Look<bool>(ref FlatStartingStat, "FlatStartingStat", false, true);
+            Scribe_Values.Look<int>(ref Startingstat_min, "Startingstat_min", -50, true);
+            Scribe_Values.Look<int>(ref Startingstat_max, "Startingstat_max", 40);
         }
         
         public void DoSettingsWindowContents(Rect canvas)
@@ -43,6 +47,16 @@ namespace FP_RSLUM
 			_Listing_Standard.GapLine(12f);
             _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_AnimalEXPPerTick") + " : " + AnimalEXPPerTick);    // Animals will get this amount of EXP every 10 seconds. default = 500
             AnimalEXPPerTick = (int)_Listing_Standard.Slider((float)AnimalEXPPerTick, 1f, 1200f);
+
+            _Listing_Standard.GapLine(12f);
+            _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_Startingstat_min") + " : " + Startingstat_min); // Residents will get this percent of their skill experience. default = 80
+
+            Startingstat_min = (int)_Listing_Standard.Slider((float)Startingstat_min, -50f, 200f);
+
+            _Listing_Standard.GapLine(12f);
+            _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_Startingstat_max") + " : " + Startingstat_max); // Residents will get this percent of their skill experience. default = 80
+
+            Startingstat_max = (int)_Listing_Standard.Slider((float)Startingstat_max, -50f, 200f);
 
 
             _Listing_Standard.End();

@@ -13,12 +13,12 @@ namespace FP_RSLUM
         public int exp = 0;
         public int need_exp = 5000;
         public int StatPoint = 1;
-        public int STR = -20;
-        public int DEX = -20;
-        public int AGL = -20;
-        public int CON = -20;
-        public int INT = -20;
-        public int CHA = -20;
+        public int STR = -40;
+        public int DEX = -40;
+        public int AGL = -40;
+        public int CON = -40;
+        public int INT = -40;
+        public int CHA = -40;
 
         public int exptick = 0;
 
@@ -38,41 +38,14 @@ namespace FP_RSLUM
 				}
 				else{
 					this.level += 1;
-                int plus;
+                    STR = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    DEX = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    AGL = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    CON = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    INT = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    CHA = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
 
-                for (int i = 0; i < 50; i++)
-                {
-                    plus = Rand.Range(0, 24);
-                    switch (plus)
-                    {
-                        case 0: STR++; break;
-                        case 1: DEX++; break;
-                        case 2: AGL++; break;
-                        case 3: CON++; break;
-                        case 4: INT++; break;
-                        case 5: CHA++; break;
-                        case 6: STR += 2; break;
-                        case 7: DEX += 2; break;
-                        case 8: AGL += 2; break;
-                        case 9: CON += 2; break;
-                        case 10: INT += 2; break;
-                        case 11: CHA += 2; break;
-                        case 12: STR += 3; break;
-                        case 13: DEX += 3; break;
-                        case 14: AGL += 3; break;
-                        case 15: CON += 3; break;
-                        case 16: INT += 3; break;
-                        case 17: CHA += 3; break;
-			            case 18: STR += 4; break;
-                        case 19: DEX += 4; break;
-                        case 20: AGL += 4; break;
-                        case 21: CON += 4; break;
-                        case 22: INT += 4; break;
-                        case 23: CHA += 4; break;
-                        default: break;
-                    }
                 }
-				}
                 
             }
         }

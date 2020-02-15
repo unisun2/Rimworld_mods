@@ -22,20 +22,44 @@ namespace FP_RSLUM
 
         public override void DoCell(Rect rect, Pawn pawn, PawnTable table)
         {
-            Rect rect2 = new Rect(rect.x, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
-            String textFor = this.GetTextFor(pawn);
-            if (textFor != null)
+            PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+            if (DebugSettings.godMode && pawnlvcomp != null)
             {
-                Text.Font = GameFont.Small;
-                Text.Anchor = TextAnchor.MiddleCenter;
-                Text.WordWrap = false;
-                Widgets.Label(rect2, textFor);
-                Text.WordWrap = true;
-                Text.Anchor = TextAnchor.UpperLeft;
-                String tip = this.GetTip(pawn);
-                if (!tip.NullOrEmpty())
+                this.DoStatUpButton(new Rect(rect.x, rect.yMin, 30f, 30f), pawn);
+                Rect rect2 = new Rect(rect.x + 30, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
+                String textFor = this.GetTextFor(pawn);
+                if (textFor != null)
                 {
-                    TooltipHandler.TipRegion(rect2, tip);
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleCenter;
+                    Text.WordWrap = false;
+                    Widgets.Label(rect2, textFor);
+                    Text.WordWrap = true;
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    String tip = this.GetTip(pawn);
+                    if (!tip.NullOrEmpty())
+                    {
+                        TooltipHandler.TipRegion(rect2, tip);
+                    }
+                }
+            }
+            else if (pawnlvcomp != null)
+            {
+                Rect rect2 = new Rect(rect.x + 15, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
+                String textFor = this.GetTextFor(pawn);
+                if (textFor != null)
+                {
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleCenter;
+                    Text.WordWrap = false;
+                    Widgets.Label(rect2, textFor);
+                    Text.WordWrap = true;
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    String tip = this.GetTip(pawn);
+                    if (!tip.NullOrEmpty())
+                    {
+                        TooltipHandler.TipRegion(rect2, tip);
+                    }
                 }
             }
         }
@@ -81,5 +105,33 @@ namespace FP_RSLUM
 
         public override int GetMinWidth(PawnTable table)
             => base.GetMinWidth(table) + 20;
+
+
+        public void DoStatUpButton(Rect rect, Pawn pawn)
+        {
+            TooltipHandler.TipRegion(rect, Translator.Translate("LvTab_Distribute"));
+            if (Widgets.ButtonImage(rect, harmony_patches.DistributeIMG, Color.white, GenUI.SubtleMouseoverColor))
+            {
+                PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+                if (pawnlvcomp != null)
+                {
+                    if (Input.GetKey(KeyCode.LeftShift))
+                    {
+                        pawnlvcomp.StatPoint += 10;
+                    }
+                    else if (Input.GetKey(KeyCode.LeftControl))
+                    {
+                        pawnlvcomp.StatPoint += 100;
+                    }
+                    else
+                    {
+                        pawnlvcomp.StatPoint += 1;
+                    }
+                }
+                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.RSLUM_LVUP, pawn, null);
+                hediff.Severity = 0.1f;
+                pawn.health.AddHediff(hediff, null, null, null);
+            }
+        }
     }
 }
