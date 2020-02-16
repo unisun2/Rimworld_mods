@@ -54,7 +54,7 @@ namespace FP_RSLUM
             else
             {
                 // WHAT?
-                Log.Message("error in PawnColumnWorker_EXP GetTextFor. no pawnlvcomp.");
+                Log.Message("error in PawnColumnWorker_EXP GetTextFor.");
                 return "err";
             }
         }
