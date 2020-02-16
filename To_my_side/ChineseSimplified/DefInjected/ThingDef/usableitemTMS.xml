@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <TMSArtifactone.label>学徒级符石</TMSArtifactone.label>
+  <TMSArtifactone.description>予你荣光！噢，即便微弱如烛火。不要用在小人身上！</TMSArtifactone.description>
+  <TMSArtifactone.comps.1.useLabel>激活</TMSArtifactone.comps.1.useLabel>
+
+  <TMSArtifacttwo.label>专家级符石</TMSArtifacttwo.label>
+  <TMSArtifacttwo.description>来我身边，我将赋予你力量！不要用在小人身上！</TMSArtifacttwo.description>
+  <TMSArtifacttwo.comps.1.useLabel>激活</TMSArtifacttwo.comps.1.useLabel>
+
+  <TMSArtifactthree.label>大师级符石</TMSArtifactthree.label>
+  <TMSArtifactthree.description>予你荣耀，予你强大，拥抱力量吧，凡物。不要用在小人身上！</TMSArtifactthree.description>
+  <TMSArtifactthree.comps.1.useLabel>激活</TMSArtifactthree.comps.1.useLabel>
+
+  <TMSArtifactfour.label>虚空符石</TMSArtifactfour.label>
+  <TMSArtifactfour.description>符石所指之物，就是力量的化身！不要用在小人身上！</TMSArtifactfour.description>
+  <TMSArtifactfour.comps.1.useLabel>激活</TMSArtifactfour.comps.1.useLabel>
+
+
+</LanguageData>

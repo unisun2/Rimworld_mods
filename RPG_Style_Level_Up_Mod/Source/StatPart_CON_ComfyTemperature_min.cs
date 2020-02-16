@@ -17,7 +17,7 @@ namespace FP_RSLUM
 				PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
 				if (pawnlvcomp != null)
 				{
-					val -= (float)(0.3 * pawnlvcomp.CON);
+					val -= (float)(0.3 * Math.Max(0, pawnlvcomp.CON));
 				}
 			}
 		}

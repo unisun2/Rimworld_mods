@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <To_my_sideone.label>动物伙伴</To_my_sideone.label>
+  <To_my_sideone.description>可制作学徒级符石。右键使用符石。</To_my_sideone.description>
+
+  <To_my_sidetwo.label>来我身边!</To_my_sidetwo.label>
+  <To_my_sidetwo.description>可制作专家级符石。</To_my_sidetwo.description>
+
+  <To_my_sidethree.label>兽群呼唤</To_my_sidethree.label>
+  <To_my_sidethree.description>可制作大师级符石。</To_my_sidethree.description>
+
+
+</LanguageData>
