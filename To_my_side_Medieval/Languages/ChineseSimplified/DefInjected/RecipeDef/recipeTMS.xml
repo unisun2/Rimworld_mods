@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CraftRuneone.label>制作学徒级符石</CraftRuneone.label>
+  <CraftRuneone.description>廉价货。</CraftRuneone.description>
+  <CraftRuneone.jobString>正在制作学徒级符石。</CraftRuneone.jobString>
+
+  <CraftRunetwo.label>制作专家级符石</CraftRunetwo.label>
+  <CraftRunetwo.description>不多不少，恰到好处。</CraftRunetwo.description>
+  <CraftRunetwo.jobString>正在制作专家级符石。</CraftRunetwo.jobString>
+
+  <CraftRunethree.label>制作大师级符石</CraftRunethree.label>
+  <CraftRunethree.description>蕴含澎湃的能量，但代价同样高昂。</CraftRunethree.description>
+  <CraftRunethree.jobString>正在制作大师级符石。</CraftRunethree.jobString>
+
+  <CraftRunefour.label>制作虚空符石</CraftRunefour.label>
+  <CraftRunefour.description>令人难以置信的能量波动</CraftRunefour.description>
+  <CraftRunefour.jobString>正在制作虚空符石。</CraftRunefour.jobString>
+
+
+</LanguageData>
