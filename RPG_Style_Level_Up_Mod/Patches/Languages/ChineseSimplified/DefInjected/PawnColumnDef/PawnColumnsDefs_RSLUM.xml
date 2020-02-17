@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- things you won't find here: dynamically generated columns such as needs, skills, records, capacities, etc -->
+
+  <FP_RSLUM_Level.label>等级</FP_RSLUM_Level.label>
+  <FP_RSLUM_EXP.label>当前经验</FP_RSLUM_EXP.label>
+  <FP_RSLUM_Need_EXP.label>升级经验</FP_RSLUM_Need_EXP.label>
+  <FP_RSLUM_StatPoint.label>属性点</FP_RSLUM_StatPoint.label>
+  <FP_RSLUM_STR.label>力量</FP_RSLUM_STR.label>
+  <FP_RSLUM_DEX.label>灵巧</FP_RSLUM_DEX.label>
+  <FP_RSLUM_AGL.label>敏捷</FP_RSLUM_AGL.label>
+  <FP_RSLUM_CON.label>体质</FP_RSLUM_CON.label>
+  <FP_RSLUM_INT.label>智力</FP_RSLUM_INT.label>
+  <FP_RSLUM_CHA.label>魅力</FP_RSLUM_CHA.label>
+
+
+</LanguageData>

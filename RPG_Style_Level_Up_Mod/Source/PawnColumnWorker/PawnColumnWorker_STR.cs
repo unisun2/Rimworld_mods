@@ -142,6 +142,14 @@ namespace FP_RSLUM
                             }
                         }
                     }
+                    else if (Input.GetKey(KeyCode.LeftAlt))
+                    {
+                        if (pawnlvcomp.STR > FP_RSLUM_setting.Startingstat_min)
+                        {
+                            pawnlvcomp.StatPoint += 1;
+                            pawnlvcomp.STR -= 1;
+                        }
+                    }
                     else
                     {
                         if (pawnlvcomp.StatPoint > 0)

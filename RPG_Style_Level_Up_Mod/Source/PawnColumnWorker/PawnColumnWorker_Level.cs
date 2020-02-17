@@ -118,12 +118,25 @@ namespace FP_RSLUM
                 if (pawnlvcomp != null)
                 {
                     pawnlvcomp.StatPoint = pawnlvcomp.level;
-                    pawnlvcomp.STR = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
-                    pawnlvcomp.DEX = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
-                    pawnlvcomp.AGL = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
-                    pawnlvcomp.CON = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
-                    pawnlvcomp.INT = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
-                    pawnlvcomp.CHA = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    if (FP_RSLUM_setting.FlatStartingStat)
+                    {
+                        pawnlvcomp.STR = 0;
+                        pawnlvcomp.DEX = 0;
+                        pawnlvcomp.AGL = 0;
+                        pawnlvcomp.CON = 0;
+                        pawnlvcomp.INT = 0;
+                        pawnlvcomp.CHA = 0;
+                    }
+                    else
+                    {
+                        pawnlvcomp.STR = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                        pawnlvcomp.DEX = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                        pawnlvcomp.AGL = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                        pawnlvcomp.CON = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                        pawnlvcomp.INT = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                        pawnlvcomp.CHA = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
+                    }
+                    
                 }
                 Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.RSLUM_LVUP, pawn, null);
                 hediff.Severity = 0.1f;

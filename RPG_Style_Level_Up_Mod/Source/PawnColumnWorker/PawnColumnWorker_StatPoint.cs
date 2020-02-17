@@ -123,6 +123,10 @@ namespace FP_RSLUM
                     {
                         pawnlvcomp.StatPoint += 100;
                     }
+                    else if (Input.GetKey(KeyCode.LeftAlt))
+                    {
+                        pawnlvcomp.StatPoint = 0;
+                    }
                     else
                     {
                         pawnlvcomp.StatPoint += 1;
