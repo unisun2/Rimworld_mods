@@ -65,7 +65,7 @@ namespace FP_RSLUM
         [HarmonyPostfix]
         public static void CapacityPostfix(Pawn p, ref float __result)
         {
-            if (ModCompatibilityCheck.CombatExtendedIsActive)
+            if (ModCompatibilityCheck.CombatExtendedIsActive || ModCompatibilityCheck.CarryCapacityFixIsActive)
             {
                 return;
             }

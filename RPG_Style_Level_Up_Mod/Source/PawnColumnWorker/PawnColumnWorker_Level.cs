@@ -117,9 +117,7 @@ namespace FP_RSLUM
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
                 if (pawnlvcomp != null)
                 {
-                    pawnlvcomp.level = 1;
-                    pawnlvcomp.exp = 0;
-                    pawnlvcomp.need_exp = 5000;
+                    pawnlvcomp.StatPoint = pawnlvcomp.level;
                     pawnlvcomp.STR = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
                     pawnlvcomp.DEX = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
                     pawnlvcomp.AGL = Rand.Range(FP_RSLUM_setting.Startingstat_min, FP_RSLUM_setting.Startingstat_max);
