@@ -21,7 +21,8 @@ namespace FP_RSLUM
             HarmonyInstance harmonyInstance = HarmonyInstance.Create("Flashpoint55.FP_RSLUM");
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.SkillRecord), "Learn"), new HarmonyMethod(typeof(harmony_patches), "LearnPrefix"));
             //harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.MassUtility), "Capacity"), new HarmonyMethod(typeof(harmony_patches), "CapacityPostfix"));
-            harmonyInstance.Patch(AccessTools.Method(typeof(Verse.Pawn), "PreApplyDamage"), new HarmonyMethod(typeof(harmony_patches), "PreApplyDamagePrefix"));
+            //harmonyInstance.Patch(AccessTools.Method(typeof(Verse.Pawn), "PreApplyDamage"), new HarmonyMethod(typeof(harmony_patches), "PreApplyDamagePrefix"));
+            harmonyInstance.Patch(AccessTools.Method(typeof(Verse.Thing), "TakeDamage"), new HarmonyMethod(typeof(harmony_patches), "TakeDamagePrefix"));
 
             //harmonyInstance.Patch(AccessTools.Method(typeof(Verse.VerbProperties), "AdjustedMeleeDamageAmount"),null, 
             //    new HarmonyMethod(typeof(harmony_patches), "AdjustedMeleeDamageAmountPostfix", new[] { typeof(Tool), typeof(Pawn), typeof(Thing), typeof(HediffComp_VerbGiver) }));
@@ -80,7 +81,7 @@ namespace FP_RSLUM
             }
 
         }
-
+        /*
         [HarmonyPrefix]
         public static bool PreApplyDamagePrefix(ref DamageInfo dinfo, out bool absorbed)
         {
@@ -90,12 +91,43 @@ namespace FP_RSLUM
             {
                 float oriAmount = dinfo.Amount;
                 float ff = oriAmount;
-                //Log.Message(pawn.Name + " " + dinfo.Amount);
+                Log.Message(pawn.Name + " " + dinfo.Amount);
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
                 if (pawnlvcomp != null)
                     ff = oriAmount * ((float)Math.Max(1 - (0.003 * pawnlvcomp.CON), 0.5f));
                 dinfo.SetAmount(ff);
+                Log.Message(pawn.Name + " " + dinfo.Amount);
+            }
+            return true;
+        }*/
+        
+        [HarmonyPrefix]
+        [HarmonyPriority(999)]
+        public static bool TakeDamagePrefix(Thing __instance, ref DamageInfo dinfo)
+        {
+            //Log.Message("TakeDamagePrefix");
+            //if(dinfo.IntendedTarget != null)
+            //    Log.Message(dinfo.IntendedTarget.def.defName);
+            //if(dinfo.HitPart != null)
+            //    Log.Message(dinfo.HitPart.def.defName);
+            //Log.Message(dinfo.Amount.ToString());
+            //if(dinfo.Height != null)
+            //   Log.Message(dinfo.Height.ToString());
+            //if (dinfo.Depth != null)
+            //    Log.Message(dinfo.Depth.ToString());
+            Pawn pawn = __instance as Pawn;
+            if (pawn != null)
+            {
+                float oriAmount = dinfo.Amount;
+                float ff = oriAmount;
                 //Log.Message(pawn.Name + " " + dinfo.Amount);
+                PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+                if (pawnlvcomp != null)
+                {
+                    ff = oriAmount * ((float)Math.Max(1 - (0.003 * pawnlvcomp.CON), 0.5f));
+                    dinfo.SetAmount(ff);
+                    //Log.Message(pawn.Name + " " + dinfo.Amount);
+                }
             }
             return true;
         }
