@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Misc. Robots</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[@Class="AIRobot.X2_ThingDef_AIRobot"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[@Class="AIRobot.X2_ThingDef_AIRobot"]</xpath>
+							<value>
+								<comps>
+									<li><compClass>FP_RSLUM.PawnLvComp</compClass></li>
+								</comps>
+							</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[@Class="AIRobot.X2_ThingDef_AIRobot"]/comps</xpath>
+						<value>
+							<li><compClass>FP_RSLUM.PawnLvComp</compClass></li>
+						</value>
+					</match>
+				</li>
+				
+				
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

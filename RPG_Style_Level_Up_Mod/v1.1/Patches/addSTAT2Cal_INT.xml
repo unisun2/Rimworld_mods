@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_INT</capacity>
+			<weight>0.5</weight>
+			<max>2</max>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="MedicalTendQuality"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_INT</capacity>
+			<weight>0.2</weight>
+			<max>1.5</max>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="MedicalOperationSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_INT</capacity>
+			<weight>0.5</weight>
+			<max>2</max>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="MedicalSurgerySuccessChance"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_INT</capacity>
+			<weight>0.2</weight>
+			<max>2</max>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="DrugSynthesisSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_INT</capacity>
+			<weight>0.5</weight>
+			<max>2</max>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ResearchSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_INT</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+
+</Patch>

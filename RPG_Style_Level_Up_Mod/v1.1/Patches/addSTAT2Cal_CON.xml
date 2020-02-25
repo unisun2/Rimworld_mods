@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="UnskilledLaborSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CON</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="SculptingSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CON</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CON</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="ImmunityGainSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CON</capacity>
+			<weight>0.2</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="RestRateMultiplier"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CON</capacity>
+			<weight>0.1</weight>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+	<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_min" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_min" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_max" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_max" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="PlantWorkSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_STR" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_STR" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>-->
+
+</Patch>

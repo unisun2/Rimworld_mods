@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="NegotiationAbility"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CHA</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="SocialImpact"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CHA</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="TameAnimalChance"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CHA</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="TrainAnimalChance"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CHA</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="AnimalGatherSpeed"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CHA</capacity>
+			<weight>0.5</weight>
+		  </li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="AnimalGatherYield"]/capacityFactors</xpath>
+		<value>
+          <li>
+			<capacity>RSLUM_CHA</capacity>
+			<weight>0.8</weight>
+		  </li>
+		</value>
+	</Operation>
+
+
+</Patch>
