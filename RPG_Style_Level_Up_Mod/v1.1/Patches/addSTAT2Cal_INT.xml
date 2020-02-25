@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="MedicalTendSpeed"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_INT</capacity>
-			<weight>0.5</weight>
-			<max>2</max>
-		  </li>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MedicalTendSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MedicalTendSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="MedicalTendSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">

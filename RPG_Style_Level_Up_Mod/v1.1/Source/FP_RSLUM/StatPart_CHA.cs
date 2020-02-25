@@ -9,6 +9,7 @@ namespace FP_RSLUM
 {
     class StatPart_CHA : StatPart
     {
+        public float weight = 1;
         public override void TransformValue(StatRequest req, ref float val)
         {
             if (req.HasThing)
@@ -17,7 +18,7 @@ namespace FP_RSLUM
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
                 if (pawnlvcomp != null)
                 {
-                    val *= (1.00f + (float)(0.01 * pawnlvcomp.CHA));
+                    val *= (1.00f + (float)(0.01 * pawnlvcomp.CHA) * weight);
                 }
             }
         }
@@ -31,7 +32,7 @@ namespace FP_RSLUM
                 {
                     PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
                     if (pawnlvcomp != null)
-                        return "StatsReport_STAT_CHA".Translate() + ": x" + (1.00f + (float)(0.01 * pawnlvcomp.CHA)).ToStringPercent();
+                        return "StatsReport_STAT_CHA".Translate() + ": x" + (1.00f + (float)(0.01 * pawnlvcomp.CHA) * weight).ToStringPercent();
                 }
             }
             return null;

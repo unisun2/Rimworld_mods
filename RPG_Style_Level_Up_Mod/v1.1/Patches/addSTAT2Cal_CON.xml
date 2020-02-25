@@ -1,50 +1,110 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="UnskilledLaborSpeed"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_CON</capacity>
-			<weight>0.5</weight>
-		  </li>
-		</value>
+<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="UnskilledLaborSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="UnskilledLaborSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="UnskilledLaborSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="SculptingSpeed"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_CON</capacity>
-			<weight>0.5</weight>
-		  </li>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="GeneralLaborSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="GeneralLaborSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="GeneralLaborSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="SmeltingSpeed"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_CON</capacity>
-			<weight>0.5</weight>
-		  </li>
-		</value>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.2</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.2</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="ImmunityGainSpeed"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_CON</capacity>
-			<weight>0.2</weight>
-		  </li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="RestRateMultiplier"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_CON</capacity>
-			<weight>0.1</weight>
-		  </li>
-		</value>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="RestRateMultiplier"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="RestRateMultiplier"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.1</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="RestRateMultiplier"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.1</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
 	
 	<Operation Class="PatchOperationSequence">

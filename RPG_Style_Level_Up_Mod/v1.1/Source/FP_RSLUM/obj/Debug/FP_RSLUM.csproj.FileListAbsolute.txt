@@ -3,3 +3,9 @@ C:\Users\khyoo\Downloads\RW\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\Ass
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\Assemblies\FP_RSLUM.pdb
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\FP_RSLUM\obj\Debug\FP_RSLUM.dll
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\FP_RSLUM\obj\Debug\FP_RSLUM.pdb
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\FP_RSLUM\obj\Debug\FP_RSLUM.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\FP_RSLUM\obj\Debug\FP_RSLUM.dll
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\FP_RSLUM\obj\Debug\FP_RSLUM.pdb
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\Assemblies\FP_RSLUM.dll
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\Assemblies\FP_RSLUM.pdb
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\v1.1\Source\FP_RSLUM\obj\Debug\FP_RSLUM.csproj.CopyComplete

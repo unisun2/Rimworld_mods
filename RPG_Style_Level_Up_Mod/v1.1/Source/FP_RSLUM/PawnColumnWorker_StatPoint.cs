@@ -134,9 +134,6 @@ namespace FP_RSLUM
                         pawnlvcomp.StatPoint += 1;
                     }
                 }
-                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.RSLUM_LVUP, pawn, null);
-                hediff.Severity = 0.1f;
-                pawn.health.AddHediff(hediff, null, null, null);
             }
         }
     }

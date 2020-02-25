@@ -83,13 +83,6 @@ namespace FP_RSLUM
                 exp -= need_exp;
                 need_exp = (int)Math.Ceiling(10000 * Math.Log(level + 1) * (1 + 0.01 * level));
             }
-
-            if (needhediff)
-            {
-                Hediff hediff = HediffMaker.MakeHediff(HediffDefOf.RSLUM_LVUP, (Pawn)this.parent, null);
-                hediff.Severity = 0.1f;
-                ((Pawn)this.parent).health.AddHediff(hediff, null, null, null);
-            }
         }
 
         public override void CompTick()

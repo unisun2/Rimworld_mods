@@ -28,47 +28,81 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]/capacityFactors</xpath>
+				<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]/parts</xpath>
 				<nomatch Class="PatchOperationAdd">
 					<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]</xpath>
 						<value>
-							<capacityFactors>
-								<li>
-									<capacity>RSLUM_AGL</capacity>
-									<weight>0.5</weight>
-								  </li>
-							</capacityFactors>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_AGL"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
 						</value>
 				</nomatch>
 				<match Class="PatchOperationAdd">
-				<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]/capacityFactors</xpath>
+				<xpath>/Defs/StatDef[defName="MeleeDodgeChance"]/parts</xpath>
 					<value>
-						<li>
-							<capacity>RSLUM_AGL</capacity>
-							<weight>0.5</weight>
-						  </li>
+						<li Class="FP_RSLUM.StatPart_AGL"> 
+								<weight>0.5</weight>
+								</li>
 					</value>
 				</match>
 			</li>
 		</operations>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="HuntingStealth"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_AGL</capacity>
-			<weight>0.5</weight>
-		  </li>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="HuntingStealth"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="HuntingStealth"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_AGL"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="HuntingStealth"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_AGL"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/StatDef[defName="MoveSpeed"]/capacityFactors</xpath>
-		<value>
-          <li>
-			<capacity>RSLUM_AGL</capacity>
-			<weight>0.5</weight>
-		  </li>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MoveSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_AGL"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="MoveSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_AGL"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
 	</Operation>
 
 
