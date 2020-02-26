@@ -9,7 +9,7 @@ namespace FP_RSLUM
 {
     class StatPart_CHA : StatPart
     {
-        public float weight = 1;
+        public float weight;
         public override void TransformValue(StatRequest req, ref float val)
         {
             if (req.HasThing)

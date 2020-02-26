@@ -2,13 +2,15 @@
 <ModMetaData>
 	<name>RPG Style Level Up Mod</name>
 	<author>FLASHPOINT55</author>
+	<packageId>FLASHPOINT55.RPGStyleLevelUpMod</packageId>
 	<supportedVersions>
-		<li>1.0</li>
-	</supportedVersions>
+        <li>1.0</li>
+        <li>1.1</li>
+    </supportedVersions>
 	<url>https://github.com/unisun2/Rimworld_mods</url>
 	<description>LEVEL UP!
-	
-	
-	
 </description>
+
+<incompatibleWith>louiszei.StaticQualityPlus1.2</incompatibleWith>
+
 </ModMetaData>

@@ -14,14 +14,18 @@
 						<xpath>/Defs/StatDef[defName="CarryWeight"]</xpath>
 							<value>
 								<parts>
-									<li Class="FP_RSLUM.StatPart_STR" />
+									<li Class="FP_RSLUM.StatPart_STR">
+									<weight>1</weight>
+									</li>
 								</parts>
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
 					<xpath>/Defs/StatDef[defName="CarryWeight"]/parts</xpath>
 						<value>
-							<li Class="FP_RSLUM.StatPart_STR" />
+							<li Class="FP_RSLUM.StatPart_STR">
+									<weight>1</weight>
+									</li>
 						</value>
 					</match>
 				</li>
@@ -63,25 +67,23 @@
 				</li>
 				
 				<li Class="PatchOperationConditional">
-					<xpath>/Defs/StatDef[defName="MeleeParryChance"]/capacityFactors</xpath>
+					<xpath>/Defs/StatDef[defName="MeleeParryChance"]/parts</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/StatDef[defName="MeleeParryChance"]</xpath>
 							<value>
-								<capacityFactors>
-									<li>
-									<capacity>RSLUM_DEX</capacity>
+								<parts>
+									<li Class="FP_RSLUM.StatPart_DEX">
 									<weight>0.3</weight>
-								  </li>
-								</capacityFactors>
+									</li>
+								</parts>
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-					<xpath>/Defs/StatDef[defName="MeleeParryChance"]/capacityFactors</xpath>
+					<xpath>/Defs/StatDef[defName="MeleeParryChance"]/parts</xpath>
 						<value>
-							<li>
-							<capacity>RSLUM_DEX</capacity>
-							<weight>0.3</weight>
-						  </li>
+							<li Class="FP_RSLUM.StatPart_DEX">
+									<weight>0.3</weight>
+									</li>
 						</value>
 					</match>
 				</li>
