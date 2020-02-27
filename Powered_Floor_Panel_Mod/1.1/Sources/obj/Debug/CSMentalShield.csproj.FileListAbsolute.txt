@@ -1,0 +1,12 @@
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.csprojAssemblyReference.cache
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.csproj.CoreCompileInputs.cache
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.dll
+C:\Users\khyoo\source\repos\BombInWall\obj\Debug\CSMentalShield.pdb
+C:\Users\khyoo\source\repos\BombInWall\CSMentalShield.dll
+C:\Users\khyoo\source\repos\BombInWall\CSMentalShield.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Mental_Shield_Crystal\Sources\obj\Debug\CSMentalShield.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Mental_Shield_Crystal\Sources\obj\Debug\CSMentalShield.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Mental_Shield_Crystal\Sources\obj\Debug\CSMentalShield.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Mental_Shield_Crystal\Sources\obj\Debug\CSMentalShield.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Mental_Shield_Crystal\Sources\CSMentalShield.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Mental_Shield_Crystal\Sources\CSMentalShield.pdb

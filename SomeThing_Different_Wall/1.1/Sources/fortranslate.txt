@@ -1,0 +1,6 @@
+CommandFPBIWSelfDestruct
+CommandFPBIWSelfDestructLabel
+
+
+
+UI/Commands/TryReconnect

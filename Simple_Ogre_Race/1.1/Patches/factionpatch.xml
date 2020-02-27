@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[@Name="TribeBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+			<value>
+				<FP_OGRE_Tribal_Berserker>0.5</FP_OGRE_Tribal_Berserker>
+			</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
+			<value>
+				<FP_OGRE_Pirate_Berserker>0.5</FP_OGRE_Pirate_Berserker>
+			</value>
+	</Operation>
+
+</Patch>

@@ -4,7 +4,9 @@
 	<author>FLASHPOINT55</author>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
+	<packageID>FLASHPOINT55.Poweredfloorpanelmod</packageID>
 	<url>https://github.com/unisun2/Rimworld_mods</url>
 	<description>Add panels to make pawns move faster.
 </description>

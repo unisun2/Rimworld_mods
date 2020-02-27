@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef Name="Ogre_RacialBase">
+  <defName>FP_OGRE_hediff</defName>
+	<label>Ogre's power</label>
+	<description>POWER!</description>
+    <defaultLabelColor>(0.0, 0.8, 0.0)</defaultLabelColor>
+    <initialSeverity>0.2</initialSeverity>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <postFactor>1.5</postFactor>
+          </li>
+          <li>
+            <capacity>Metabolism</capacity>
+            <postFactor>1.4</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+	
+  </HediffDef>
+  
+
+</Defs>

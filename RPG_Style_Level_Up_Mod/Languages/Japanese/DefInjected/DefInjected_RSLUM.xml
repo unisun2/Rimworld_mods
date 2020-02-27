@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<MainButtonDef.label>レベル</MainButtonDef.label>
+<MainButtonDef.description>レベルとステータスを管理できる。</MainButtonDef.description>
+
+<RSLUM_STR>STR</RSLUM_STR>
+  <RSLUM_DEX>DEX</RSLUM_DEX>
+  <RSLUM_AGL>AGL</RSLUM_AGL>
+  <RSLUM_CON>CON</RSLUM_CON>
+  <RSLUM_INT>INT</RSLUM_INT>
+  <RSLUM_CHA>CHA</RSLUM_CHA>
+
+  <RSLUM_STR.label>STR</RSLUM_STR.label>
+  <RSLUM_DEX.label>DEX</RSLUM_DEX.label>
+  <RSLUM_AGL.label>AGL</RSLUM_AGL.label>
+  <RSLUM_CON.label>CON</RSLUM_CON.label>
+  <RSLUM_INT.label>INT</RSLUM_INT.label>
+  <RSLUM_CHA.label>CHA</RSLUM_CHA.label>
+  
+  <FP_RSLUM_Level.label>LEVEL</FP_RSLUM_Level.label>
+  <FP_RSLUM_STR.label>STR</FP_RSLUM_STR.label>
+  <FP_RSLUM_DEX.label>DEX</FP_RSLUM_DEX.label>
+  <FP_RSLUM_AGL.label>AGL</FP_RSLUM_AGL.label>
+  <FP_RSLUM_CON.label>CON</FP_RSLUM_CON.label>
+  <FP_RSLUM_INT.label>INT</FP_RSLUM_INT.label>
+  <FP_RSLUM_CHA.label>CHA</FP_RSLUM_CHA.label>
+
+</LanguageData>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.RaceSettings>
+<defName>FP_OGRE_RaceSettings</defName>
+<pawnKindSettings>
+	<alienslavekinds>
+		<li>
+			<kindDefs>
+				<li>FP_OGRE_Colonist</li>
+			</kindDefs>
+			<chance>10.0</chance>
+		</li>
+	</alienslavekinds>
+	
+	<alienrefugeekinds>
+		<li>
+			<kindDefs>
+				<li>FP_OGRE_Colonist</li>
+			</kindDefs>
+			<chance>10.0</chance>
+		</li>
+	</alienrefugeekinds>
+			
+    <startingColonists>
+        <li>
+            <pawnKindEntries>
+                <li>
+                    <kindDefs>
+                        <li>FP_OGRE_Colonist</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
+            </pawnKindEntries>
+            <factionDefs>
+                <li>PlayerColony</li>
+				<li>PlayerTribe</li>
+            </factionDefs>
+        </li>
+    </startingColonists>
+			
+    <alienwandererkinds>
+        <li>
+            <pawnKindEntries>
+                <li>
+                    <kindDefs>
+                        <li>FP_OGRE_Colonist</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+                </li>
+            </pawnKindEntries>
+            <factionDefs>
+                <li>PlayerColony</li> 
+				<li>PlayerTribe</li>
+            </factionDefs>
+        </li>
+    </alienwandererkinds>			
+</pawnKindSettings>
+</AlienRace.RaceSettings>
+</Defs>

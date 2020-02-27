@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FP_OGRE", "FP_OGRE.csproj", "{F98E0EC4-6CF2-426B-805D-B427F4FB3BEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F98E0EC4-6CF2-426B-805D-B427F4FB3BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98E0EC4-6CF2-426B-805D-B427F4FB3BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98E0EC4-6CF2-426B-805D-B427F4FB3BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98E0EC4-6CF2-426B-805D-B427F4FB3BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A689C2DF-4685-4D49-8BB1-2B71CD9A68ED}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\Users\unisu\git\Rimworld_mods\Big_Advancd_Passive_Cooler\1.1\Source\FP_BAPC\bin\Debug\FP_BAPC.dll
+C:\Users\unisu\git\Rimworld_mods\Big_Advancd_Passive_Cooler\1.1\Source\FP_BAPC\bin\Debug\FP_BAPC.pdb
+C:\Users\unisu\git\Rimworld_mods\Big_Advancd_Passive_Cooler\1.1\Source\FP_BAPC\obj\Debug\FP_BAPC.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\Big_Advancd_Passive_Cooler\1.1\Source\FP_BAPC\obj\Debug\FP_BAPC.dll
+C:\Users\unisu\git\Rimworld_mods\Big_Advancd_Passive_Cooler\1.1\Source\FP_BAPC\obj\Debug\FP_BAPC.pdb

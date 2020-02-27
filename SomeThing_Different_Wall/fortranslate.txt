@@ -1,7 +1,0 @@
-CommandFPBIWSelfDestruct
-CommandFPBIWSelfDestructLabel
-
-unburrow wall
-unburrow
-burrow
-burrow wall

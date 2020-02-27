@@ -1,0 +1,15 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Block_Mod\Sources\obj\Debug\PFPM_Poweredpanel.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Block_Mod\Assemblies\PFPM_Poweredpanel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Block_Mod\Assemblies\PFPM_Poweredpanel.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Block_Mod\Sources\obj\Debug\PFPM_Poweredpanel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Block_Mod\Sources\obj\Debug\PFPM_Poweredpanel.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Panel_Mod\Assemblies\PFPM_Poweredpanel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Panel_Mod\Assemblies\PFPM_Poweredpanel.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Panel_Mod\Sources\obj\Debug\PFPM_Poweredpanel.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Panel_Mod\Sources\obj\Debug\PFPM_Poweredpanel.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Powered_Floor_Panel_Mod\Sources\obj\Debug\PFPM_Poweredpanel.pdb
+C:\Users\unisu\git\Rimworld_mods\Powered_Floor_Panel_Mod\1.1\Sources\obj\Debug\PFPM_Poweredpanel.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\Powered_Floor_Panel_Mod\1.1\Sources\obj\Debug\PFPM_Poweredpanel.dll
+C:\Users\unisu\git\Rimworld_mods\Powered_Floor_Panel_Mod\1.1\Sources\obj\Debug\PFPM_Poweredpanel.pdb
+C:\Users\unisu\git\Rimworld_mods\Powered_Floor_Panel_Mod\1.1\Assemblies\PFPM_Poweredpanel.dll
+C:\Users\unisu\git\Rimworld_mods\Powered_Floor_Panel_Mod\1.1\Assemblies\PFPM_Poweredpanel.pdb

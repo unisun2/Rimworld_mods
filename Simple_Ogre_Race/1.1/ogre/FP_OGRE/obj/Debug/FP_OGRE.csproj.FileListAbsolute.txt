@@ -1,0 +1,6 @@
+C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\1.1\ogre\FP_OGRE\obj\Debug\FP_OGRE.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\1.1\ogre\FP_OGRE\obj\Debug\FP_OGRE.csproj.CopyComplete
+C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\1.1\ogre\FP_OGRE\obj\Debug\FP_OGRE.dll
+C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\1.1\ogre\FP_OGRE\obj\Debug\FP_OGRE.pdb
+C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\1.1\FP_OGRE.dll
+C:\Users\unisu\git\Rimworld_mods\Simple_Ogre_Race\1.1\FP_OGRE.pdb
