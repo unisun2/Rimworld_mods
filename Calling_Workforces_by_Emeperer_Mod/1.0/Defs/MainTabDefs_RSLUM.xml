@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MainButtonDef>
+    <defName>RSLUM_tab</defName>
+    <label>Level</label>
+    <description>Administrate stat of colonist in here</description>
+    <tabWindowClass>FP_RSLUM.MainTabWindow_Level</tabWindowClass>
+    <order>15</order>
+    <!--<defaultHotKey>L</defaultHotKey>-->
+  </MainButtonDef>
+
+</Defs>

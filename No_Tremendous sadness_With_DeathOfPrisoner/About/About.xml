@@ -4,6 +4,8 @@
   <author>wgflash55</author>
   <supportedVersions>
     <li>1.0</li>
+	<li>1.1</li>
   </supportedVersions>
+  <packageId>wgflash55.NoTremendoussaddnesswithdeathofprisoner</packageId>
   <description>No more madness for dead prisoner.</description>
 </ModMetaData>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnTableDef>
+    <defName>FP_RSLUM_MainTable</defName>
+    <label>Colonists</label>
+    <workerClass>FP_RSLUM.PawnTable_LevelMain</workerClass>
+    <columns>
+      <li>Label</li>
+      <li>FP_RSLUM_Level</li>
+      <li>FP_RSLUM_EXP</li>
+	  <li>FP_RSLUM_Need_EXP</li>
+	  <li>FP_RSLUM_StatPoint</li>
+	  <li>FP_RSLUM_STR</li>
+	  <li>FP_RSLUM_DEX</li>
+	  <li>FP_RSLUM_AGL</li>
+	  <li>FP_RSLUM_CON</li>
+	  <li>FP_RSLUM_INT</li>
+	  <li>FP_RSLUM_CHA</li>
+    </columns>
+    <minWidth>1032</minWidth>
+  </PawnTableDef>
+
+
+</Defs>
+

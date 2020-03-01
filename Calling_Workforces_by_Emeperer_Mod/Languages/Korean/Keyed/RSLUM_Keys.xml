@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<LvTab_Colonist>정착민</LvTab_Colonist>
+	<LvTab_Animal>동물</LvTab_Animal>
+	
+	<LvTab_LVUPButtonDesc>경험치를 소모하여 레벨 업이 가능한 사람들을 레벨 업 시킵니다.</LvTab_LVUPButtonDesc>
+	<LvTab_LVUPButton>레벨업</LvTab_LVUPButton>
+	<LvTab_Distribute>분배
+	왼쪽 시프트키와 같이 누르면 *10,
+	왼쪽 컨트롤키와 같이 누르면 *100
+	왼쪽 ALT키와 같이 누르면 -1</LvTab_Distribute>
+	<FP_RSLUM.LabelHeaderTip>라벨헤더팁</FP_RSLUM.LabelHeaderTip>
+	
+	<PawnColumnWorker_STR_Tip_Desc>힘은 근접공격력 증가, 들 수 있는 무게, 힘든 작업에 영향을 끼칩니다.</PawnColumnWorker_STR_Tip_Desc>
+	<PawnColumnWorker_DEX_Tip_Desc>재주는 명중률 증가, 손재주가 필요한 작업에 영향을 끼칩니다.</PawnColumnWorker_DEX_Tip_Desc>
+	<PawnColumnWorker_CHA_Tip_Desc>매력은 동물 및 사람과의 사교 작업에 영향을 끼칩니다.</PawnColumnWorker_CHA_Tip_Desc>
+	<PawnColumnWorker_CON_Tip_Desc>체력은 받는 데미지 감소, 면역 강화, 끈기가 필요한 작업에 영향을 끼칩니다.</PawnColumnWorker_CON_Tip_Desc>
+	<PawnColumnWorker_AGL_Tip_Desc>민첩성은 이동속도, 근접 회피율, 조준 속도 등을 증가시킵니다.</PawnColumnWorker_AGL_Tip_Desc>
+	<PawnColumnWorker_EXP_Tip_Desc>폰이 스킬 경험치를 얻을 때 레벨 경험치도 같이 얻습니다.</PawnColumnWorker_EXP_Tip_Desc>
+	<PawnColumnWorker_INT_Tip_Desc>지능은 생각이 필요한 작업에 영향을 끼칩니다.</PawnColumnWorker_INT_Tip_Desc>
+	<PawnColumnWorker_Level_Tip_Desc>레벨</PawnColumnWorker_Level_Tip_Desc>
+	<PawnColumnWorker_Need_EXP_Tip_Desc>레벨 업을 하려면 필요 경험치만큼의 경험치가 필요합니다.</PawnColumnWorker_Need_EXP_Tip_Desc>
+	<PawnColumnWorker_StatPoint_Tip_Desc>포인트를 스탯에 분배할 수 있습니다.</PawnColumnWorker_StatPoint_Tip_Desc>
+	
+	<StatsReport_STAT_STR>힘</StatsReport_STAT_STR>
+	<StatsReport_STAT_AGL>민첩성</StatsReport_STAT_AGL>
+	<StatsReport_STAT_AGL_Aiming>민첩성</StatsReport_STAT_AGL_Aiming>
+	<StatsReport_STAT_CHA>매력</StatsReport_STAT_CHA>
+	<StatsReport_STAT_CON>체력</StatsReport_STAT_CON>
+	<StatsReport_STAT_DEX>재주</StatsReport_STAT_DEX>
+	<StatsReport_STAT_INT>지능</StatsReport_STAT_INT>
+
+	<FP_RSLUM_setting_FlatStartingStat>랜덤 스탯 생성 삭제. 모든 스탯이 0에서 시작함.</FP_RSLUM_setting_FlatStartingStat>
+	
+	<FP_RSLUM_setting_ColonistPercent>스킬 경험치 대비 레벨 경험치 얻는 비율. 기본값 = 80</FP_RSLUM_setting_ColonistPercent>
+	
+	<FP_RSLUM_setting_AnimalEXPPerTick>동물이 10초당 얻는 경험치. 기본값 = 500</FP_RSLUM_setting_AnimalEXPPerTick>
+	
+	<FP_RSLUM_setting_Startingstat_min>랜덤 시작 스탯 - 최소값</FP_RSLUM_setting_Startingstat_min>
+	<FP_RSLUM_setting_Startingstat_max>랜덤 시작 스탯 - 최대값</FP_RSLUM_setting_Startingstat_max>
+	
+	<LvTab_reroll>스탯 다시 굴리기</LvTab_reroll>
+
+</LanguageData>

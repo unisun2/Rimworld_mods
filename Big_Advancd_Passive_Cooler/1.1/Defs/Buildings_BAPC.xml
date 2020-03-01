@@ -59,6 +59,7 @@
         <heatPushMinTemperature>1</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Refuelable">
+	    <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelConsumptionRate>20.0</fuelConsumptionRate>
         <fuelCapacity>400.0</fuelCapacity>
         <fuelFilter>
