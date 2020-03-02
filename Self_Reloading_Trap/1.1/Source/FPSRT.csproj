@@ -48,6 +48,8 @@
     <Compile Include="Building_FPSRTunarmed.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="FPSRT_settings.cs" />
+    <Compile Include="FP_SelfReloadTrap_mod.cs" />
+    <Compile Include="FP_SelfReloadTrap_setting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

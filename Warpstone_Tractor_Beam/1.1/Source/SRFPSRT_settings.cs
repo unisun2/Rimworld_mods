@@ -1,6 +1,4 @@
 ﻿using System;
-using HugsLib;
-using HugsLib.Settings;
 using Verse;
 
 namespace SRFPSRT

@@ -5,7 +5,7 @@
     <label>warpstone tractor beam</label>
     <description>Only the most reckless individual would dare attempt to somehow pull celestial objects out of the sky… cue Ikit Claw. The time it takes is somewhat random, and depends on researcher skill.</description>
     <graphicData>
-      <texPath>Things/Building/Misc/LongRangeMineralScanner</texPath>
+      <texPath>Things/Building/Misc/FP_Warpstone_Tractor_Beam</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(4, 4)</drawSize>
       <shadowData>
@@ -14,14 +14,16 @@
       </shadowData>
     </graphicData>
     <costList>
-      <Steel>200</Steel>
-	  <Silver>100</Silver>
+      <Steel>130</Steel>
+	  <Silver>13</Silver>
+	  <Jade>13</Jade>
     </costList>
     <comps>
 
       <li Class="CompProperties_Breakdownable"/>
       <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_LongRangeMineralScanner"/>
+      <!--<li Class="CompProperties_LongRangeMineralScanner"/>-->
+	  <li Class="FP_Warp_TB.CompProperties_FP_WarpstoneTracterBeam"/>
     </comps>
     <placeWorkers>
       <li>PlaceWorker_NotUnderRoof</li>
@@ -29,7 +31,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>130</MaxHitPoints>
-      <WorkToBuild>1300</WorkToBuild>
+      <WorkToBuild>11300</WorkToBuild>
       <Flammability>1.3</Flammability>
     </statBases>
     <fillPercent>0.13</fillPercent>
