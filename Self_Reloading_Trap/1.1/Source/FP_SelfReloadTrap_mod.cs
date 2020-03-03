@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
+using UnityEngine;
 namespace FPSRT
 {
     class FP_SelfReloadTrap_mod : Verse.Mod

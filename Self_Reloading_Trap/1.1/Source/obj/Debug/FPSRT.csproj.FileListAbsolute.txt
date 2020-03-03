@@ -4,3 +4,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.pdb
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.csprojResolveAssemblyReference.cache
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.dll
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Assemblies\FPSRT.dll
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Assemblies\FPSRT.pdb
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.pdb

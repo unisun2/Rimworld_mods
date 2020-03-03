@@ -37,7 +37,7 @@ namespace FPSRT
             {
                 FPSRT_arming++;
 
-                if (FPSRT_arming > (FPSRT_settings.Gettraparmingtime() * 60))
+                if (FPSRT_arming > (FP_SelfReloadTrap_setting.traparmingtime * 60))
                 {
                     Map map = base.Map;
                     IntVec3 loc = this.Position;
@@ -56,7 +56,7 @@ namespace FPSRT
 
             string newDesc = "";
 
-            newDesc = "charging... : " + ((int)((FPSRT_settings.Gettraparmingtime() * 60 - FPSRT_arming))).ToStringSecondsFromTicks();
+            newDesc = "charging... : " + ((int)((FP_SelfReloadTrap_setting.traparmingtime * 60 - FPSRT_arming))).ToStringSecondsFromTicks();
 
             stringBuilder.Append(newDesc);
 

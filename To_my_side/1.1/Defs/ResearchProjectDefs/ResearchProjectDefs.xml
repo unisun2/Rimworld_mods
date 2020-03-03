@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>TMSmod</defName>
+		<label>To_My_Side!</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+    <defName>To_my_sideone</defName>
+	<tab>TMSmod</tab>
+    <label>Animal Companion</label>
+    <description>Apprentice's runestones can be created. Runstones are used by right clicking</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+	  <li>Stonecutting</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>To_my_sidetwo</defName>
+	<tab>TMSmod</tab>
+    <label>To My Side!</label>
+    <description>Expert's runestones can be created.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+	<prerequisites>
+      <li>To_my_sideone</li>
+	  <li>PenoxycylineProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>To_my_sidethree</defName>
+	<tab>TMSmod</tab>
+    <label>Call of Wild</label>
+    <description>Master's runestones can be created.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+	<prerequisites>
+      <li>To_my_sidetwo</li>
+	  <li>MultiAnalyzer</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>
+
+
