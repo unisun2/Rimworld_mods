@@ -4,7 +4,9 @@
 	<author>FLASHPOINT55</author>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
+	<packageId>FLASHPOINT55.ToMySide</packageId>
 	<url>https://github.com/unisun2/Rimworld_mods</url>
 	<description>Make your beasts stronger with a Runestones.</description>
 </ModMetaData>

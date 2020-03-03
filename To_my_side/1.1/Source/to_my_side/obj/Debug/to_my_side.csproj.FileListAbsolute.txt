@@ -15,3 +15,8 @@ C:\Users\khyoo\Downloads\RW\Rimworld_mods\To_my_side\1.1\Source\to_my_side\obj\D
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\To_my_side\1.1\Source\to_my_side\obj\Debug\to_my_side.pdb
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\To_my_side\1.1\Assemblies\to_my_side.dll
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\To_my_side\1.1\Assemblies\to_my_side.pdb
+C:\Users\unisu\git\Rimworld_mods\To_my_side\1.1\Assemblies\to_my_side.dll
+C:\Users\unisu\git\Rimworld_mods\To_my_side\1.1\Assemblies\to_my_side.pdb
+C:\Users\unisu\git\Rimworld_mods\To_my_side\1.1\Source\to_my_side\obj\Debug\to_my_side.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\To_my_side\1.1\Source\to_my_side\obj\Debug\to_my_side.dll
+C:\Users\unisu\git\Rimworld_mods\To_my_side\1.1\Source\to_my_side\obj\Debug\to_my_side.pdb

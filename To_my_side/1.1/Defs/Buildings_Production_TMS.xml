@@ -112,11 +112,6 @@
 			<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
 			<SurgerySuccessChanceFactor>1.2</SurgerySuccessChanceFactor>
 		</statBases>
-		<comps>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
-			</li>
-		</comps>
 		<researchPrerequisites>
       <li>To_my_sidetwo</li>
     </researchPrerequisites>

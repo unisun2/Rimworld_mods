@@ -87,7 +87,7 @@ namespace to_my_side
                 return;
             }
 
-            plusLvHediff(ref pawn, 6);
+            plusLvHediff(ref pawn, 7);
 
         }
     }
@@ -173,7 +173,7 @@ namespace to_my_side
                 pawn.health.AddHediff(RimWorld.HediffDefOf.FoodPoisoning);
             }
 
-            plusLvHediff(ref pawn, 6);
+            plusLvHediff(ref pawn, 7);
 
         }
     }

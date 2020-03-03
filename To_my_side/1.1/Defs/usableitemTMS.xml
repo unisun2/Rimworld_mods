@@ -16,9 +16,6 @@
         <useLabel>Activate</useLabel>
       </li>
       <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_Artifact</compClass>
-      </li>
-      <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_DestroySelf</compClass>
       </li>
     </comps>

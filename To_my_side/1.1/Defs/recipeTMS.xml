@@ -9,7 +9,7 @@
         <workSkill>Crafting</workSkill>
         <effectWorking>BurnDrug</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
-		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workAmount>800</workAmount>
 		<ingredients>
 			<li>
@@ -68,7 +68,7 @@
         <workSkill>Crafting</workSkill>
         <effectWorking>BurnDrug</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
-		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workAmount>1000</workAmount>
 		<ingredients>
 			<li>
@@ -125,7 +125,7 @@
         <workSkill>Crafting</workSkill>
         <effectWorking>BurnDrug</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
-		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workAmount>1200</workAmount>
 		<ingredients>
 			<li>
@@ -172,7 +172,7 @@
         <workSkill>Crafting</workSkill>
         <effectWorking>BurnDrug</effectWorking>
         <soundWorking>Recipe_CookMeal</soundWorking>
-		<workSpeedStat>SculptingSpeed</workSpeedStat>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workAmount>1200</workAmount>
 		<ingredients>
 			<li>

@@ -2,7 +2,8 @@
 <ModMetaData>
 	<name>Self reloading traps</name>
 	<author>FlashPoint55</author>
-	<supportedVersions><li>1.0</li></supportedVersions>
+	<supportedVersions><li>1.0</li>
+	<li>1.1</li></supportedVersions>
 	<description>
 add semi-permanent type trap. It cost a lot, but worth it.
 
@@ -12,4 +13,5 @@ changing build cost need restart game.
 
 this mod need harmony.
 	</description>
+	<packageId>FlashPoint55.Selfreloadingtraps</packageId>
 </ModMetaData>
