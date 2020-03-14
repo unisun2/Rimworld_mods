@@ -11,10 +11,12 @@ namespace FP_RSLUM
     {
 
         public static int ColonistPercent = 40;
-        public static int AnimalEXPPerTick = 1;
+        public static int AnimalEXPPerTick = 500;
         public static bool FlatStartingStat = false;
         public static int Startingstat_min = -50;
         public static int Startingstat_max = 40;
+        public static int KillExpMult = 50;
+        public static int EnemyInitLevelMult = 100;
 
         public override void ExposeData()
         {
@@ -25,6 +27,7 @@ namespace FP_RSLUM
             Scribe_Values.Look<bool>(ref FlatStartingStat, "FP_RSLUM_FlatStartingStat", false, true);
             Scribe_Values.Look<int>(ref Startingstat_min, "FP_RSLUM_Startingstat_min", -50, true);
             Scribe_Values.Look<int>(ref Startingstat_max, "FP_RSLUM_Startingstat_max", 40);
+            Scribe_Values.Look<int>(ref KillExpMult, "FP_RSLUM_KillExpMult", 50);
         }
 
         public void DoSettingsWindowContents(Rect canvas)
@@ -57,6 +60,16 @@ namespace FP_RSLUM
             _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_Startingstat_max") + " : " + Startingstat_max); // Residents will get this percent of their skill experience. default = 80
 
             Startingstat_max = (int)_Listing_Standard.Slider((float)Startingstat_max, -50f, 200f);
+
+            _Listing_Standard.GapLine(12f);
+            _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_KillExpMult") + " : " + KillExpMult.ToString() + "%"); // Residents will get this percent of their skill experience. default = 100
+
+            KillExpMult = (int)_Listing_Standard.Slider((float)KillExpMult, 1f, 300f);
+
+            _Listing_Standard.GapLine(12f);
+            _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_KillExpMult") + " : " + KillExpMult.ToString() + "%"); // Residents will get this percent of their skill experience. default = 100
+
+            KillExpMult = (int)_Listing_Standard.Slider((float)KillExpMult, 1f, 300f);
 
 
             _Listing_Standard.End();

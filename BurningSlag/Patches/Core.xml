@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="ChunkSlagSteel"]/statBases</xpath>
+		<value>
+			<Flammability>0.7</Flammability>
+		</value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>*/RecipeDef[defName="ExtractMetalFromSlag"]/workAmount</xpath>
+		<value>
+			<workAmount>400</workAmount>
+		</value>
+    </Operation>
+
+</Patch>

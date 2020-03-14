@@ -86,7 +86,7 @@
   <ThingDef ParentName="PFPM_base">
 	<thingClass>PFPM_Poweredpanel.PFPM_Poweredpanelftl_building</thingClass>
 	<defName>PFPM_fasterfloorftl</defName>
-    <label>advanaced powered floor</label>
+    <label>advanced powered floor</label>
     <description>Powered floor is used to grant pawns large speed boosts when running around it.</description>
     <graphicData>
 	  <graphicClass>Graphic_Multi</graphicClass>

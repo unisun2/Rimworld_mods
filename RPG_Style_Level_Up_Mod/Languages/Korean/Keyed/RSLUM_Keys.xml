@@ -39,7 +39,9 @@
 	
 	<FP_RSLUM_setting_Startingstat_min>랜덤 시작 스탯 - 최소값</FP_RSLUM_setting_Startingstat_min>
 	<FP_RSLUM_setting_Startingstat_max>랜덤 시작 스탯 - 최대값</FP_RSLUM_setting_Startingstat_max>
-	
+	<FP_RSLUM_setting_KillExpMult>적 사살 경험치 배수</FP_RSLUM_setting_KillExpMult>
 	<LvTab_reroll>스탯 다시 굴리기</LvTab_reroll>
+	
+	
 
 </LanguageData>

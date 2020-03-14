@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Call Workforce Mod</name>
+	<author>FLASHPOINT55</author>
+	<packageId>FLASHPOINT55.CallWorkforceMod</packageId>
+	<supportedVersions>
+        <li>1.1</li>
+    </supportedVersions>
+	<url>https://github.com/unisun2/Rimworld_mods</url>
+	<description>add 2 ability to noble. (equal or higher than knight)
+</description>
+
+</ModMetaData>

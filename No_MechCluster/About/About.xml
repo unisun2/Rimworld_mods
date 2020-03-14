@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>No Mech Cluster</name>
+	<author>FLASHPOINT55</author>
+	<supportedVersions>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>FLASHPOINT55.NoMechCluster</packageId>
+	<url>https://github.com/unisun2/Rimworld_mods</url>
+	<description>No more!
+	this mod don't delete mech cluster of quest. It's your choice.
+	</description>
+</ModMetaData>

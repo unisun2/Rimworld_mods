@@ -24,7 +24,7 @@
 	<PawnColumnWorker_StatPoint_Tip_Desc>You can distribute points to stats.</PawnColumnWorker_StatPoint_Tip_Desc>
 	
 	<StatsReport_STAT_STR>Strength</StatsReport_STAT_STR>
-	<StatsReport_STAT_AGL>Dexterity</StatsReport_STAT_AGL>
+	<StatsReport_STAT_AGL>Agility</StatsReport_STAT_AGL>
 	<StatsReport_STAT_AGL_Aiming>Agility</StatsReport_STAT_AGL_Aiming>
 	<StatsReport_STAT_CHA>Charm</StatsReport_STAT_CHA>
 	<StatsReport_STAT_CON>Constitution</StatsReport_STAT_CON>
@@ -39,6 +39,8 @@
 	
 	<FP_RSLUM_setting_Startingstat_min>Random starting stat - min value</FP_RSLUM_setting_Startingstat_min>
 	<FP_RSLUM_setting_Startingstat_max>Random starting stat - max value</FP_RSLUM_setting_Startingstat_max>
+	
+	<FP_RSLUM_setting_KillExpMult>Kill Exp Multiplier</FP_RSLUM_setting_KillExpMult>
 	
 	<LvTab_reroll>reroll stat</LvTab_reroll>
 	

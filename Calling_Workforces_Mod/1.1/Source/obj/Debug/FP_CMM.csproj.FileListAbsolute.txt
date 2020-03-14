@@ -1,0 +1,5 @@
+C:\Users\unisu\git\Rimworld_mods\Calling_Workforces_Mod\1.1\Assemblies\FP_CMM.dll
+C:\Users\unisu\git\Rimworld_mods\Calling_Workforces_Mod\1.1\Assemblies\FP_CMM.pdb
+C:\Users\unisu\git\Rimworld_mods\Calling_Workforces_Mod\1.1\Source\obj\Debug\FP_CMM.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\Calling_Workforces_Mod\1.1\Source\obj\Debug\FP_CMM.dll
+C:\Users\unisu\git\Rimworld_mods\Calling_Workforces_Mod\1.1\Source\obj\Debug\FP_CMM.pdb

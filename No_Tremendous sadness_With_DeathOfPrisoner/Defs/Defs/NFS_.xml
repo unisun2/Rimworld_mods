@@ -3,7 +3,7 @@
   <ThoughtDef ParentName="DeathMemory">
     <defName>KnowPrisonerDiedInnocent</defName>
     <durationDays>1</durationDays>
-    <stackLimit>3</stackLimit>
+    <stackLimit>2</stackLimit>
     <nullifyingTraits>
       <li>Psychopath</li>
       <li>Bloodlust</li>
@@ -20,7 +20,7 @@
   <ThoughtDef>
     <defName>PrisonerBanishedToDie</defName>
     <durationDays>1</durationDays>
-    <stackLimit>3</stackLimit>
+    <stackLimit>2</stackLimit>
 		<showBubble>true</showBubble>
     <nullifyingTraits>
       <li>Psychopath</li>

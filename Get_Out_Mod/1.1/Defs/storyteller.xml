@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IncidentDef>
+		<defName>Get_Out_Mod</defName>
+		<label>Get Out!</label>
+		<category>WorldQuest</category>
+    <targetTags>
+      <li>World</li>
+    </targetTags>
+		<workerClass>WG_GOM.IncidentWorker_GetOutMod</workerClass>
+		<letterLabel>Get Out!</letterLabel>
+		<letterText>It's time to go outside.</letterText>
+		<letterDef>PositiveEvent</letterDef>
+		<baseChance>8</baseChance>
+	</IncidentDef>
+
+
+</Defs>

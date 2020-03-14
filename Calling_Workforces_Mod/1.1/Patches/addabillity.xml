@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Knight"]/permits</xpath>
+		<value>
+            <li>CallWorkForceone</li>
+			<li>CallPrisoner</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Praetor"]/permits</xpath>
+		<value>
+            <li>CallWorkForceone</li>
+			<li>CallPrisoner</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Baron"]/permits</xpath>
+		<value>
+            <li>CallWorkForceone</li>
+			<li>CallPrisoner</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[defName="Count"]/permits</xpath>
+		<value>
+            <li>CallWorkForceone</li>
+			<li>CallPrisoner</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/permits</xpath>
+		<value>
+            <li>CallWorkForceone</li>
+			<li>CallPrisoner</li>
+		</value>
+	</Operation>
+
+</Patch>

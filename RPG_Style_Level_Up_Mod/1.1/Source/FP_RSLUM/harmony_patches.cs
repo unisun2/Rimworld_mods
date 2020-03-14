@@ -21,11 +21,12 @@ namespace FP_RSLUM
             Harmony harmonyInstance = new Harmony("Flashpoint55.FP_RSLUM");
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.SkillRecord), "Learn"), new HarmonyMethod(typeof(harmony_patches), "LearnPrefix"));
             //harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.MassUtility), "Capacity"), new HarmonyMethod(typeof(harmony_patches), "CapacityPostfix"));
-            harmonyInstance.Patch(AccessTools.Method(typeof(Verse.Pawn), "PreApplyDamage"), new HarmonyMethod(typeof(harmony_patches), "PreApplyDamagePrefix"));
+            //harmonyInstance.Patch(AccessTools.Method(typeof(Verse.Pawn), "PreApplyDamage"), new HarmonyMethod(typeof(harmony_patches), "PreApplyDamagePrefix"));
 
             //harmonyInstance.Patch(AccessTools.Method(typeof(Verse.VerbProperties), "AdjustedMeleeDamageAmount"),null, 
             //    new HarmonyMethod(typeof(harmony_patches), "AdjustedMeleeDamageAmountPostfix", new[] { typeof(Tool), typeof(Pawn), typeof(Thing), typeof(HediffComp_VerbGiver) }));
-            harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.StatWorker_MeleeDPS), "GetMeleeDamage"), null, new HarmonyMethod(typeof(harmony_patches), "GetMeleeDamagePostfix"));
+            harmonyInstance.Patch(AccessTools.Method(typeof(Verse.VerbProperties), "GetDamageFactorFor", new Type[] { typeof(Tool), typeof(Pawn), typeof(HediffComp_VerbGiver)}),
+                null, new HarmonyMethod(typeof(harmony_patches), "GetDamageFactorForPostFix"));
 
 
             //var meleeharmony = AccessTools.Method(typeof(VerbProperties), nameof(VerbProperties.AdjustedMeleeDamageAmount));
@@ -34,6 +35,7 @@ namespace FP_RSLUM
 
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.MassUtility), "Capacity"), null, new HarmonyMethod(typeof(harmony_patches), "CapacityPostfix"));
 
+            harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.RecordsUtility), "Notify_PawnKilled"), null, new HarmonyMethod(typeof(harmony_patches), "Notify_PawnKilledPostfix"));
         }
 
         static FieldInfo pawninfo = AccessTools.Field(typeof(SkillRecord), "pawn");
@@ -76,7 +78,7 @@ namespace FP_RSLUM
             }
 
         }
-
+        /*
         [HarmonyPrefix]
         public static bool PreApplyDamagePrefix(ref DamageInfo dinfo, out bool absorbed)
         {
@@ -94,37 +96,34 @@ namespace FP_RSLUM
                 //Log.Message(pawn.Name + " " + dinfo.Amount);
             }
             return true;
-        }
+        }*/
 
         [HarmonyPostfix]
-        public static void GetMeleeDamagePostfix(StatRequest req, ref float __result)
+        public static void GetDamageFactorForPostFix(Tool tool, Pawn attacker, ref float __result)
         {
-            Pawn pawn = req.Thing as Pawn;
-            //Log.Message(__result.ToString());
-            if (pawn != null)
+            //Verse.Log.Message(attacker.Name + " " + __result.ToString());
+            if(attacker != null)
             {
-                //Log.Message(__result.ToString() + "i");
-                PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+                PawnLvComp pawnlvcomp = attacker.TryGetComp<PawnLvComp>();
                 if (pawnlvcomp != null)
-                    __result *= (float)(1.0f + (0.01 * pawnlvcomp.STR));
-                //Log.Message(__result.ToString() + "in postfix");
+                    __result *= (float)(1.0f + (0.005 * pawnlvcomp.STR));
             }
-
+            //Verse.Log.Message(attacker.Name + " " + __result.ToString());
         }
 
         [HarmonyPostfix]
-        public static void AdjustedMeleeDamageAmountPostfix(Tool tool, Pawn attacker, Thing equipment, HediffComp_VerbGiver hediffCompSource, ref float __result)
+        public static void Notify_PawnKilledPostfix(Pawn killed, Pawn killer)
         {
-            PawnLvComp pawnlvcomp = attacker.TryGetComp<PawnLvComp>();
-            Log.Message(__result.ToString());
-            if (pawnlvcomp != null)
+            if(killer != null)
             {
-                //Log.Message(__result.ToString() + "i");
+                PawnLvComp pawnlvcomp = killer.TryGetComp<PawnLvComp>();
+                if (pawnlvcomp != null)
+                {
+                    pawnlvcomp.exp += (int)killed.kindDef.combatPower * FP_RSLUM_setting.KillExpMult;
+                    Log.Message((killed.kindDef.combatPower * FP_RSLUM_setting.KillExpMult).ToString());
+                }
 
-                __result *= (float)(1.0f + (0.01 * pawnlvcomp.STR));
-                //Log.Message(__result.ToString() + "in postfix");
             }
-
         }
 
         /*[HarmonyPostfix]
