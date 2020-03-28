@@ -10,9 +10,9 @@
   <FP_RSLUM.LabelHeaderTip>标签顶部提示</FP_RSLUM.LabelHeaderTip>
 
   <PawnColumnWorker_STR_Tip_Desc>力量提高近战伤害，负重等能力方面，表现在劳力活动方面的提升。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战伤害\n携带能力\n远征载重能力\n殖民地内的负重(CE)\n挖矿速度\n打磨速度\n建造速度\n种植速度</PawnColumnWorker_STR_Tip_Desc>
-  <PawnColumnWorker_DEX_Tip_Desc>灵巧影响近战/远程命中率及精细工作能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战命中率\n远程命中率\n换弹速度(CE)\n近战格挡率(CE)\n缝制速度\n烹饪速度\n屠宰速度\n酿酒速度</PawnColumnWorker_DEX_Tip_Desc>
-  <PawnColumnWorker_CHA_Tip_Desc>魅力能让角色更好的亲近动物和处理社交活动。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n外交力\n社交效果\n驯服动物成功率\n训练动物成功率\n动物收集速度\n动物收集产出</PawnColumnWorker_CHA_Tip_Desc>
-  <PawnColumnWorker_CON_Tip_Desc>体质影响伤害减免，免疫获取速度和部分简易工作或艺术能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n伤害减免\n免疫获取速度\n火力压制(CE)\n适宜温度\n非专业工作速度\n雕刻速度\n冶炼速度</PawnColumnWorker_CON_Tip_Desc>
+  <PawnColumnWorker_DEX_Tip_Desc>灵巧影响近战/远程命中率及精细工作能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战命中率\n远程命中率\n换弹速度(CE)\n近战格挡率(CE)\n普通工作速度(1.0)\n缝制速度\n锻造速度\n烹饪速度\n屠宰速度\n酿酒速度</PawnColumnWorker_DEX_Tip_Desc>
+  <PawnColumnWorker_CHA_Tip_Desc>魅力能让角色更好的亲近动物和处理社交活动。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n谈判能力\n社交效果\n拘捕成功概率\n驯服动物成功率\n训练动物成功率\n动物收集速度\n动物收集产出</PawnColumnWorker_CHA_Tip_Desc>
+  <PawnColumnWorker_CON_Tip_Desc>体质影响伤害减免，免疫获取速度和部分简易工作或艺术能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n伤害减免\n免疫获取速度\n火力压制(CE)\n适宜温度\n非专业工作速度(1.1)\n若体质属性>200，恢复速度提升</PawnColumnWorker_CON_Tip_Desc>
   <PawnColumnWorker_AGL_Tip_Desc>敏捷影响移动速度，近战闪避率和瞄准速度。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n瞄准时间\n近战格挡成功率\n狩猎隐蔽率\n移动速度</PawnColumnWorker_AGL_Tip_Desc>
   <PawnColumnWorker_EXP_Tip_Desc>角色获得技能经验时，也会获得等级经验(该Mod升级所需经验)。</PawnColumnWorker_EXP_Tip_Desc>
   <PawnColumnWorker_INT_Tip_Desc>智力影响诸如医疗手术这类需求专业知识的工作。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n医疗治疗速度\n医疗治疗质量\n医疗手术速度\n医疗手术成功几率\n研究速度</PawnColumnWorker_INT_Tip_Desc>
@@ -36,6 +36,8 @@
 
   <FP_RSLUM_setting_Startingstat_min>初始随机属性的最小值</FP_RSLUM_setting_Startingstat_min>
   <FP_RSLUM_setting_Startingstat_max>初始随机属性的最大值</FP_RSLUM_setting_Startingstat_max>
+
+  <FP_RSLUM_setting_KillExpMult>杀敌经验比例</FP_RSLUM_setting_KillExpMult>
 
   <LvTab_reroll>重置属性值</LvTab_reroll>
 

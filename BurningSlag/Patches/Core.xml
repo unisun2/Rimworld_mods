@@ -5,6 +5,7 @@
         <xpath>*/ThingDef[defName="ChunkSlagSteel"]/statBases</xpath>
 		<value>
 			<Flammability>0.7</Flammability>
+			<MaxHitPoints>50</MaxHitPoints>
 		</value>
     </Operation>
 	
@@ -14,5 +15,7 @@
 			<workAmount>400</workAmount>
 		</value>
     </Operation>
+	
+	
 
 </Patch>

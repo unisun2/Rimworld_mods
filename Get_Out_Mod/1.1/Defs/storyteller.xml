@@ -4,7 +4,7 @@
   <IncidentDef>
 		<defName>Get_Out_Mod</defName>
 		<label>Get Out!</label>
-		<category>WorldQuest</category>
+		<category>Misc</category>
     <targetTags>
       <li>World</li>
     </targetTags>
