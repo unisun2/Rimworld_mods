@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase" Name="GTM_Hatchbaseqwer">
+	<defName>GTM_Hatchqwer</defName>
+    <label>Hatchqwer</label>
+    <description>Hide Turret. even smart enemy never know about this.qwer</description>
+    <thingClass>FP_GTM.GTM_Hatch</thingClass>
+    <category>Building</category>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <fillPercent>0.2</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<costStuffCount>80</costStuffCount>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+	  <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+			<isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+	<passability>Standable</passability>
+	<graphicData>
+      <texPath>Things/Building/GTM_Hatch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="GTM_Hatchbaseqwer">
+  <defName>GTM_Hatch_Bigqwer</defName>
+  <size>(2,2)</size>
+  <graphicData>
+      <texPath>Things/Building/GTM_Hatch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(2, 2)</drawSize>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="GTM_Hatchbaseqwer">
+  <defName>GTM_Hatch_XBigqwer</defName>
+  <size>(3,3)</size>
+  <graphicData>
+      <texPath>Things/Building/GTM_Hatch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(3, 3)</drawSize>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+  </ThingDef>
+  
+  <ThingDef ParentName="GTM_Hatchbaseqwer">
+  <defName>GTM_Hatch_XXBigqwer</defName>
+  <size>(4,4)</size>
+  <graphicData>
+      <texPath>Things/Building/GTM_Hatch</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>(4, 4)</drawSize>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+  </ThingDef>
+
+
+</Defs>

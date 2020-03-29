@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  
+  <Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Rimsenal - Security pack</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="ShardSentry"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B">
+				</li>
+			</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WaveEmitter"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="SuvTurret"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RocketTurret"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+			</li>
+			
+		</operations>
+	</match>
+  </Operation>
+
+</Patch>

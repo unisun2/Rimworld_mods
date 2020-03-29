@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Turret_MiniTurret"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Turret_Autocannon"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Turret_Sniper"]/comps</xpath>
+			<value>
+				<li Class="FP_GTM.CompProperties_FP_GTM_B"/>
+			</value>
+	</Operation>
+	
+	
+</Patch>
