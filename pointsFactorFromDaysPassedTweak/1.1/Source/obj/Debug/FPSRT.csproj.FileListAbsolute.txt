@@ -1,6 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Assemblies\FPSRT.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Assemblies\FPSRT.pdb
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Self_Reloading_Trap\Source\obj\Debug\FPSRT.pdb
