@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="LampBase">
+	<thingClass>CSMentalShield.CSMentalShield_building</thingClass>
+	<defName>MSC_Building</defName>
+    <label>standing lamp</label>
+    <description>It's a Replica of an ancient race artifact excavated from the ground. Absorb heat and electricity and make Mental shield.
+It is very fragile, so be careful.</description>
+    <graphicData>
+      <texPath>Things/Building/Misc/CSMentalShieldb</texPath>
+	  <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <costList>
+	  <WoodLog>80</WoodLog>
+      <Steel>80</Steel>
+	  <Gold>80</Gold>
+	  <Uranium>80</Uranium>
+	  <Jade>80</Jade>
+    </costList>
+    <statBases>
+	<WorkToBuild>6000</WorkToBuild>
+      <Mass>3</Mass>
+    </statBases>
+	<size>(2,2)</size>
+	<specialDisplayRadius>20</specialDisplayRadius>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1400</basePowerConsumption>
+      </li>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(217,109,208,0)</glowColor>
+      </li>
+	  <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-10</heatPerSecond>
+      </li>
+    </comps>
+	<designationCategory>Misc</designationCategory>
+	<tickerType>Rare</tickerType>
+	<researchPrerequisites>
+      <li>GroundPenetratingScanner</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+</Defs>
