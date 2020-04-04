@@ -66,12 +66,6 @@ namespace FP_RSLUM
 
             KillExpMult = (int)_Listing_Standard.Slider((float)KillExpMult, 1f, 300f);
 
-            _Listing_Standard.GapLine(12f);
-            _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_KillExpMult") + " : " + KillExpMult.ToString() + "%"); // Residents will get this percent of their skill experience. default = 100
-
-            KillExpMult = (int)_Listing_Standard.Slider((float)KillExpMult, 1f, 300f);
-
-
             _Listing_Standard.End();
         }
     }

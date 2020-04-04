@@ -148,7 +148,7 @@
 						<value>
 							<parts>
 								<li Class="FP_RSLUM.StatPart_INT"> 
-								<weight>0.5</weight>
+								<weight>0.2</weight>
 								</li>
 							</parts>
 						</value>
@@ -157,11 +157,87 @@
 				<xpath>/Defs/StatDef[defName="ResearchSpeed"]/parts</xpath>
 					<value>
 						<li Class="FP_RSLUM.StatPart_INT"> 
-								<weight>0.5</weight>
+								<weight>0.2</weight>
 								</li>
 					</value>
 				</match>
 			</li>
 		</operations>
 	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="PlantHarvestYield"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="PlantHarvestYield"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="PlantHarvestYield"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ButcheryFleshEfficiency"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ButcheryFleshEfficiency"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ButcheryFleshEfficiency"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ButcheryMechanoidEfficiency"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	
 </Patch>

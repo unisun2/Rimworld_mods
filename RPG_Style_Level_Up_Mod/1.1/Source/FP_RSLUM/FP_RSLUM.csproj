@@ -332,6 +332,7 @@
     <Compile Include="StatPart_CON_ComfyTemperature_min.cs" />
     <Compile Include="StatPart_DEX.cs" />
     <Compile Include="StatPart_DEX_CE_Reloading.cs" />
+    <Compile Include="StatPart_INT_Yield.cs" />
     <Compile Include="StatPart_INT.cs" />
     <Compile Include="StatPart_STR.cs" />
   </ItemGroup>
