@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BenchBase">
+		<defName>FP_ACMM_building</defName>
+		<label>Atomic coffee maker</label>
+		<description>asdf</description>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<graphicData>
+			<texPath>Things/Building/ACMM_building</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerBL>Damage/Corner</cornerBL>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+		  <li>BuildingsSpecial</li>
+		</thingCategories>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>		
+		<costList>
+		  <Steel>50</Steel>
+		  <ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<MarketValue>1300</MarketValue>
+			<Beauty>10</Beauty>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<WorkTableWorkSpeedFactor>1.2</WorkTableWorkSpeedFactor>
+		</statBases>
+		<thingSetMakerTags>
+		  <li>RewardSpecial</li>
+		</thingSetMakerTags>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>25</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>CookMealSimple</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<heatPerSecond>2</heatPerSecond>
+				<heatPushMaxTemperature>20</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Explosive">
+			<explosiveRadius>12</explosiveRadius>
+			<explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+	
+
+</Defs>

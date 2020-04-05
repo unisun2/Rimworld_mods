@@ -16,13 +16,13 @@
       </damageData>
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <stealable>false</stealable>
     <size>(2,2)</size>
     <passability>PassThroughOnly</passability>
-    <pathCost>100</pathCost>
+    <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
     <thingCategories>
       <li>BuildingsSecurity</li>
@@ -49,9 +49,9 @@
       </li>
     </comps>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0.5</Flammability>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>2000</WorkToBuild>
       <Mass>30</Mass>
       <Beauty>-20</Beauty>
     </statBases>
@@ -59,7 +59,7 @@
       <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
 		<turretBurstCooldownTime>44.0</turretBurstCooldownTime>
 		<turretGunDef>BTMBoulder_Weapon</turretGunDef>
-      <turretTopGraphicPath>Things/turretbbywool</turretTopGraphicPath>
+      <!--<turretTopGraphicPath>Things/turretbbywool</turretTopGraphicPath>-->
 		</building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -71,10 +71,14 @@
     <uiIconScale>1.1</uiIconScale>
   </ThingDef>
 
-  <ThingDef Name="BaseArtilleryWeapon" >
+  <ThingDef>
   <defName>BTMBoulder_Weapon</defName>
     <label>Boulder launcher</label>
     <description>Boulder launcher. powerful but short-ranged.</description>
+	<graphicData>
+      <texPath>Things/turretbbywool</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <useHitPoints>false</useHitPoints>
@@ -205,7 +209,7 @@
 	  <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>gun_BTMBoulder_turret</turretGunDef>
       <turretBurstCooldownTime>1.8</turretBurstCooldownTime>
-      <turretTopGraphicPath>Things/BTMturret</turretTopGraphicPath>
+      <!--<turretTopGraphicPath>Things/BTMturret</turretTopGraphicPath>-->
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -217,7 +221,7 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="BaseHumanGun">
+  <ThingDef ParentName="BaseWeapon">
     <defName>gun_BTMBoulder_turret</defName>
     <label>gun_BTMBoulder_turret</label>
     <description>A simple launcher on a turret.</description>
@@ -344,7 +348,7 @@
 	  <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>gun_BTMBoulder_turretex</turretGunDef>
       <turretBurstCooldownTime>1.8</turretBurstCooldownTime>
-      <turretTopGraphicPath>Things/BTMturretEX</turretTopGraphicPath>
+      <!--<turretTopGraphicPath>Things/BTMturretEX</turretTopGraphicPath>-->
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -356,12 +360,12 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="BaseHumanGun">
+  <ThingDef ParentName="BaseWeapon">
     <defName>gun_BTMBoulder_turretex</defName>
     <label>mini-turret gunex</label>
     <description>A simple launcher on a turret.</description>
     <graphicData>
-      <texPath>Things/BTMturret</texPath>
+      <texPath>Things/BTMturretEX</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>

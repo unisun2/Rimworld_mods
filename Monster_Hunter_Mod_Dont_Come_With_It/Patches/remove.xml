@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Hammer"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Hammer"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Greatsword"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Greatsword"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Longsword"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Longsword"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_SwordandShield"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_SwordandShield"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Dualblades"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Dualblades"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Chargeblade"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Chargeblade"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Lance"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Lance"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Switchaxe"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Switchaxe"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Switchsword"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Switchsword"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Insectglaive"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Insectglaive"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Lightbowgun"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Lightbowgun"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Heavybowgun"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Heavybowgun"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Bow"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Bow"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "MH_Gunlance"]/weaponTags</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef[defName = "MH_Gunlance"]/weaponTags</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+
+
+</Patch>

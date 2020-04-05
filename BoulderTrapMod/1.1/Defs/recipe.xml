@@ -4,7 +4,7 @@
 <RecipeDef Name = "MakeBoulderbase" Abstract="True">
 		<jobString>Making boulders.</jobString>
 		<workAmount>2000</workAmount>
-    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<recipeUsers>

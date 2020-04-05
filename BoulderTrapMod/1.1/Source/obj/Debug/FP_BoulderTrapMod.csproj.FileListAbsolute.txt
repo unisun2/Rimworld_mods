@@ -1,0 +1,5 @@
+C:\Users\unisu\git\Rimworld_mods\BoulderTrapMod\1.1\Source\obj\Debug\FP_BoulderTrapMod.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\BoulderTrapMod\1.1\Assemblies\FP_BoulderTrapMod.dll
+C:\Users\unisu\git\Rimworld_mods\BoulderTrapMod\1.1\Assemblies\FP_BoulderTrapMod.pdb
+C:\Users\unisu\git\Rimworld_mods\BoulderTrapMod\1.1\Source\obj\Debug\FP_BoulderTrapMod.dll
+C:\Users\unisu\git\Rimworld_mods\BoulderTrapMod\1.1\Source\obj\Debug\FP_BoulderTrapMod.pdb

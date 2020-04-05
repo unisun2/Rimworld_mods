@@ -25,7 +25,7 @@ namespace WG_GOM
         {
             for(int i = 0; i < WG_GOM_setting.questnum; i++)
             {
-                QuestUtility.SendLetterQuestAvailable(QuestUtility.GenerateQuestAndMakeAvailable(___def.questScriptDef ?? parms.questScriptDef ?? NaturalRandomQuestChooser.ChooseNaturalRandomQuest(parms.points, parms.target), parms.points));
+                QuestUtility.SendLetterQuestAvailable(QuestUtility.GenerateQuestAndMakeAvailable(NaturalRandomQuestChooser.ChooseNaturalRandomQuest(parms.points, parms.target), parms.points));
             }
             return true;
         }

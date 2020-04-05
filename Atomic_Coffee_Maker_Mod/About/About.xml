@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Atomic Coffee Maker mod</name>
+	<author>FlashPoint55</author>
+	<supportedVersions><li>1.1</li></supportedVersions>
+	<packageId>FlashPoint55.AtomicCoffeeMakermod</packageId>
+	<description>
+Add a quest reward, Atomic coffee maker.
+
+	</description>
+</ModMetaData>
