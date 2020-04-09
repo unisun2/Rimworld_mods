@@ -28,7 +28,7 @@ namespace FP_RSLUM
                 if (pawnlvcomp.StatPoint > 0)
                 {
                     this.DoStatUpButton(new Rect(rect.x, rect.yMin, 30f, 30f), pawn);
-                    Rect rect2 = new Rect(rect.x + 30, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
+                    Rect rect2 = new Rect(rect.x + 50, rect.y, rect.width - 50, Mathf.Min(rect.height, 30f));
                     String textFor = this.GetTextFor(pawn);
                     if (textFor != null)
                     {
@@ -47,7 +47,7 @@ namespace FP_RSLUM
                 }
                 else
                 {
-                    Rect rect2 = new Rect(rect.x + 15, rect.y, rect.width - 30, Mathf.Min(rect.height, 30f));
+                    Rect rect2 = new Rect(rect.x + 35, rect.y, rect.width - 50, Mathf.Min(rect.height, 30f));
                     String textFor = this.GetTextFor(pawn);
                     if (textFor != null)
                     {

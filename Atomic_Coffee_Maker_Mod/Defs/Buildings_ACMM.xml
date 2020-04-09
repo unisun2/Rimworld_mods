@@ -4,12 +4,12 @@
   <ThingDef ParentName="BenchBase">
 		<defName>FP_ACMM_building</defName>
 		<label>Atomic coffee maker</label>
-		<description>asdf</description>
-		<thingClass>Building_WorkTable_HeatPush</thingClass>
+		<description>It make Powerful, delicious coffee. This coffee mechine need no power because it have a small nuclear core inside.</description>
+		<thingClass>Building_Storage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/ACMM_building</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerBL>Damage/Corner</cornerBL>
@@ -31,30 +31,36 @@
 			<MarketValue>1300</MarketValue>
 			<Beauty>10</Beauty>
 			<WorkToBuild>6000</WorkToBuild>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>200</MaxHitPoints>
 			<Flammability>0.2</Flammability>
-			<WorkTableWorkSpeedFactor>1.2</WorkTableWorkSpeedFactor>
 		</statBases>
 		<thingSetMakerTags>
 		  <li>RewardSpecial</li>
 		</thingSetMakerTags>
 		<tickerType>Normal</tickerType>
-		<size>(2,2)</size>
+		<size>(1,1)</size>
+		<building>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
 		<passability>PassThroughOnly</passability>
 		<pathCost>25</pathCost>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		<recipes>
-			<li>CookMealSimple</li>
-		</recipes>
 		<inspectorTabs>
 			<li>ITab_Bills</li>
 		</inspectorTabs>
 		<comps>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>2</heatPerSecond>
-				<heatPushMaxTemperature>20</heatPushMaxTemperature>
+				<heatPushMaxTemperature>10</heatPushMaxTemperature>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Explosive">
@@ -62,9 +68,6 @@
 			<explosiveDamageType>Flame</explosiveDamageType>
       </li>
 		</comps>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		</building>
 		<tradeability>Sellable</tradeability>
 	</ThingDef>
 

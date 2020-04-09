@@ -19,6 +19,12 @@ namespace FP_RSLUM
         public int CON = -40;
         public int INT = -40;
         public int CHA = -40;
+        public bool STRauto = false;
+        public bool DEXauto = false;
+        public bool AGLauto = false;
+        public bool CONauto = false;
+        public bool INTauto = false;
+        public bool CHAauto = false;
 
         public int exptick = 0;
         public int healtick = 0;
@@ -66,6 +72,13 @@ namespace FP_RSLUM
             Scribe_Values.Look<int>(ref this.CON, "FP_RSLUM_CON", 0, true);
             Scribe_Values.Look<int>(ref this.INT, "FP_RSLUM_INT", 0, true);
             Scribe_Values.Look<int>(ref this.CHA, "FP_RSLUM_CHA", 0, true);
+
+            Scribe_Values.Look<bool>(ref this.STRauto, "FP_RSLUM_STRauto", false, true);
+            Scribe_Values.Look<bool>(ref this.DEXauto, "FP_RSLUM_DEXauto", false, true);
+            Scribe_Values.Look<bool>(ref this.AGLauto, "FP_RSLUM_AGLauto", false, true);
+            Scribe_Values.Look<bool>(ref this.CONauto, "FP_RSLUM_CONauto", false, true);
+            Scribe_Values.Look<bool>(ref this.INTauto, "FP_RSLUM_INTauto", false, true);
+            Scribe_Values.Look<bool>(ref this.CHAauto, "FP_RSLUM_CHAauto", false, true);
         }
 
         public bool canlevelup()
@@ -83,6 +96,37 @@ namespace FP_RSLUM
                 this.StatPoint += 1;
                 exp -= need_exp;
                 need_exp = (int)Math.Ceiling(10000 * Math.Log(level + 1) * (1 + 0.01 * level));
+
+                if (this.STRauto)
+                {
+                    this.StatPoint -= 1;
+                    this.STR += 1;
+                }
+                else if (this.DEXauto)
+                {
+                    this.StatPoint -= 1;
+                    this.DEX += 1;
+                }
+                else if (this.AGLauto)
+                {
+                    this.StatPoint -= 1;
+                    this.AGL += 1;
+                }
+                else if (this.CONauto)
+                {
+                    this.StatPoint -= 1;
+                    this.CON += 1;
+                }
+                else if (this.INTauto)
+                {
+                    this.StatPoint -= 1;
+                    this.INT += 1;
+                }
+                else if (this.CHAauto)
+                {
+                    this.StatPoint -= 1;
+                    this.CHA += 1;
+                }
             }
         }
 
