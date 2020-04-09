@@ -5,6 +5,8 @@ using System.Text;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
+using static Verse.Widgets;
 
 namespace FP_RSLUM
 {
@@ -47,6 +49,8 @@ namespace FP_RSLUM
                 }
                 else
                 {
+                    Vector2 topLeft = new Vector2(rect.x, rect.yMin);
+                    statCheckbox(topLeft, ref pawnlvcomp.INTauto, 30f, def.paintable, pawnlvcomp);
                     Rect rect2 = new Rect(rect.x + 35, rect.y, rect.width - 50, Mathf.Min(rect.height, 30f));
                     String textFor = this.GetTextFor(pawn);
                     if (textFor != null)
@@ -66,7 +70,36 @@ namespace FP_RSLUM
                 }
             }
         }
-
+        public void statCheckbox(Vector2 topLeft, ref bool checkOn, float size, bool paintable, PawnLvComp pawnlvcomp)
+        {
+            Rect rect = new Rect(topLeft.x, topLeft.y, size, size);
+            GUI.DrawTexture(image: (!checkOn) ? (CheckboxOffTex) : (CheckboxOnTex), position: new Rect(topLeft.x, topLeft.y, size, size));
+            DraggableResult draggableResult = ButtonInvisibleDraggable(rect);
+            MouseoverSounds.DoRegion(rect);
+            bool flag = false;
+            if (draggableResult == DraggableResult.Pressed)
+            {
+                checkOn = !checkOn;
+                flag = true;
+                pawnlvcomp.AGLauto = false;
+                pawnlvcomp.CHAauto = false;
+                pawnlvcomp.CONauto = false;
+                pawnlvcomp.DEXauto = false;
+                //pawnlvcomp.INTauto = false;
+                pawnlvcomp.STRauto = false;
+            }
+            if (flag)
+            {
+                if (checkOn)
+                {
+                    SoundDefOf.Checkbox_TurnedOn.PlayOneShotOnCamera();
+                }
+                else
+                {
+                    SoundDefOf.Checkbox_TurnedOff.PlayOneShotOnCamera();
+                }
+            }
+        }
         protected String GetTip(Pawn pawn)
         {
             return "PawnColumnWorker_INT_Tip_Desc".Translate();
@@ -111,7 +144,7 @@ namespace FP_RSLUM
 
         public override int GetMinWidth(PawnTable table)
         {
-            return base.GetMinWidth(table) + 30;
+            return base.GetMinWidth(table) + 40;
         }
 
         public void DoStatUpButton(Rect rect, Pawn pawn)
