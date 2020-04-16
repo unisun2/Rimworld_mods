@@ -16,6 +16,8 @@ namespace FPSRT
             : base(content)
         {
             FP_SelfReloadTrap_mod.Settings = GetSettings<FP_SelfReloadTrap_setting>();
+            //ThingDef _mytrap = ThingDef.Named("Building_FPSRT");
+            //_mytrap.costStuffCount = FP_SelfReloadTrap_setting.bulidingcost;
         }
 
         public override string SettingsCategory()

@@ -135,6 +135,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(insideman), this.Stuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
                 if (insidefuel >= 0)
                 {
                     CompRefuelable refuelableComp = ((ThingWithComps)thing).GetComp<CompRefuelable>();
@@ -156,7 +160,7 @@ namespace FP_GTM
                 }
                 catch (TypeLoadException ex)
                 {
-                    Log.Message("error in unburrowTurret XP");
+                    //Log.Message("error in unburrowTurret XP");
                 }
                 
             }
@@ -165,6 +169,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(insideman), null), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
                 if (insidefuel >= 0)
                 {
                     CompRefuelable refuelableComp = ((ThingWithComps)thing).GetComp<CompRefuelable>();

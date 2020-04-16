@@ -9,3 +9,8 @@ C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Deb
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Assemblies\FPSRT.dll
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Assemblies\FPSRT.pdb
 C:\Users\khyoo\Downloads\RW\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.pdb
+C:\Users\unisu\git\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.dll
+C:\Users\unisu\git\Rimworld_mods\Self_Reloading_Trap\1.1\Source\obj\Debug\FPSRT.pdb
+C:\Users\unisu\git\Rimworld_mods\Self_Reloading_Trap\1.1\Assemblies\FPSRT.dll
+C:\Users\unisu\git\Rimworld_mods\Self_Reloading_Trap\1.1\Assemblies\FPSRT.pdb

@@ -4,12 +4,12 @@
   <ThingDef ParentName="BenchBase">
 		<defName>FP_ACMM_building</defName>
 		<label>Atomic coffee maker</label>
-		<description>It make Powerful, delicious coffee. This coffee mechine need no power because it have a small nuclear core inside.</description>
+		<description>It make Powerful, delicious coffee. This coffee mechine need no power because it have a small nuclear core inside.\nBut where does coffee come from?</description>
 		<thingClass>Building_Storage</thingClass>
 		<graphicData>
 			<texPath>Things/Building/ACMM_building</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerBL>Damage/Corner</cornerBL>
@@ -24,14 +24,14 @@
 		  <Steel>50</Steel>
 		  <ComponentSpacer>6</ComponentSpacer>
 		</costList>
-		<altitudeLayer>Building</altitudeLayer>
+		<altitudeLayer>Pawn</altitudeLayer>
 		<fillPercent>0.5</fillPercent>
 		<useHitPoints>True</useHitPoints>
 		<statBases>
 			<MarketValue>1300</MarketValue>
 			<Beauty>10</Beauty>
 			<WorkToBuild>6000</WorkToBuild>
-			<MaxHitPoints>200</MaxHitPoints>
+			<MaxHitPoints>500</MaxHitPoints>
 			<Flammability>0.2</Flammability>
 		</statBases>
 		<thingSetMakerTags>
@@ -44,10 +44,10 @@
       <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
       <defaultStorageSettings>
         <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>Weapons</li>
-          </categories>
+		<filter>
+          <thingDefs>
+            <li>ACMM_atomiccoffee</li>
+          </thingDefs>
         </filter>
       </defaultStorageSettings>
     </building>
@@ -55,9 +55,17 @@
 		<pathCost>25</pathCost>
 		<surfaceType>Item</surfaceType>
 		<inspectorTabs>
-			<li>ITab_Bills</li>
+			<li>ITab_Storage</li>
 		</inspectorTabs>
 		<comps>
+		<li Class="CompProperties_Spawner">
+        <requiresPower>false</requiresPower>
+        <thingToSpawn>ACMM_atomiccoffee</thingToSpawn>
+        <spawnCount>20</spawnCount>
+        <spawnIntervalRange><min>600000</min><max>600000</max></spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>true</showMessageIfOwned>
+      </li>
 			<li Class="CompProperties_HeatPusher">
 				<heatPerSecond>2</heatPerSecond>
 				<heatPushMaxTemperature>10</heatPushMaxTemperature>
@@ -69,6 +77,9 @@
       </li>
 		</comps>
 		<tradeability>Sellable</tradeability>
+		<tradeTags>
+      <li>ExoticBuilding</li>
+    </tradeTags>
 	</ThingDef>
 
 	

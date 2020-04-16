@@ -45,7 +45,7 @@ namespace FP_RSLUM
             }
             else if(pawnlvcomp != null)
             {
-                Rect rect2 = new Rect(rect.x + 35, rect.y, rect.width - 50, Mathf.Min(rect.height, 30f));
+                Rect rect2 = new Rect(rect.x, rect.y, rect.width, Mathf.Min(rect.height, 30f));
                 String textFor = this.GetTextFor(pawn);
                 if (textFor != null)
                 {
@@ -107,7 +107,7 @@ namespace FP_RSLUM
 
         public override int GetMinWidth(PawnTable table)
         {
-            return base.GetMinWidth(table) + 40;
+            return base.GetMinWidth(table) + 50;
         }
 
 

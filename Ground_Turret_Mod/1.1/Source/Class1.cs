@@ -100,6 +100,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(this.Props.Customhatch), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
 
                 ((GTM_Hatch)thing).insideman = name;
                 if (refuelableComp != null)
@@ -148,6 +152,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch_XXBig"), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
 
                 if (this.Props.CustomxPath != "")
                 {
@@ -199,6 +207,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch_XBig"), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
 
                 if (this.Props.CustomxPath != "")
                 {
@@ -250,6 +262,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch_Big"), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
 
                 if (this.Props.CustomxPath != "")
                 {
@@ -301,6 +317,10 @@ namespace FP_GTM
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("GTM_Hatch"), thatstuff), loc, map, WipeMode.Vanish);
                 thing.SetFaction(Faction.OfPlayer, null);
                 thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+                if (thing.HitPoints < thing.MaxHitPoints)
+                {
+                    thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+                }
 
                 if (this.Props.CustomxPath != "")
                 {

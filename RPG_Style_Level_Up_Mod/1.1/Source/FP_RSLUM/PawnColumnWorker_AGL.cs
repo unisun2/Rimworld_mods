@@ -30,12 +30,12 @@ namespace FP_RSLUM
                 if (pawnlvcomp.StatPoint > 0)
                 {
                     this.DoStatUpButton(new Rect(rect.x, rect.yMin, 30f, 30f), pawn);
-                    Rect rect2 = new Rect(rect.x + 50, rect.y, rect.width - 50, Mathf.Min(rect.height, 30f));
+                    Rect rect2 = new Rect(rect.x + 35, rect.y, rect.width - 35, Mathf.Min(rect.height, 30f));
                     String textFor = this.GetTextFor(pawn);
                     if (textFor != null)
                     {
                         Text.Font = GameFont.Small;
-                        Text.Anchor = TextAnchor.MiddleCenter;
+                        Text.Anchor = TextAnchor.MiddleLeft;
                         Text.WordWrap = false;
                         Widgets.Label(rect2, textFor);
                         Text.WordWrap = true;
@@ -51,12 +51,12 @@ namespace FP_RSLUM
                 {
                     Vector2 topLeft = new Vector2(rect.x, rect.yMin);
                     statCheckbox(topLeft, ref pawnlvcomp.AGLauto, 30f, def.paintable, pawnlvcomp);
-                    Rect rect2 = new Rect(rect.x+35, rect.y, rect.width - 50, Mathf.Min(rect.height, 30f));
+                    Rect rect2 = new Rect(rect.x+35, rect.y, rect.width - 35, Mathf.Min(rect.height, 30f));
                     String textFor = this.GetTextFor(pawn);
                     if (textFor != null)
                     {
                         Text.Font = GameFont.Small;
-                        Text.Anchor = TextAnchor.MiddleCenter;
+                        Text.Anchor = TextAnchor.MiddleLeft;
                         Text.WordWrap = false;
                         Widgets.Label(rect2, textFor);
                         Text.WordWrap = true;
@@ -145,7 +145,7 @@ namespace FP_RSLUM
 
         public override int GetMinWidth(PawnTable table)
         {
-            return base.GetMinWidth(table) + 40;
+            return base.GetMinWidth(table) + 50;
         }
 
         public void DoStatUpButton(Rect rect, Pawn pawn)

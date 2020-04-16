@@ -69,6 +69,10 @@ namespace BombInWall
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("FPBIWWWG"), this.Stuff), loc, map, WipeMode.Vanish);
             thing.SetFaction(Faction.OfPlayer, null);
             thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+            if (thing.HitPoints < thing.MaxHitPoints)
+            {
+                thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+            }
 
         }
 

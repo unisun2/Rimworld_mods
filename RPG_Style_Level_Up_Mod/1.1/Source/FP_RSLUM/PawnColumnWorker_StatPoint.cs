@@ -105,7 +105,7 @@ namespace FP_RSLUM
 
         public override int GetMinWidth(PawnTable table)
         {
-            return base.GetMinWidth(table) + 40;
+            return base.GetMinWidth(table) + 50;
         }
 
 

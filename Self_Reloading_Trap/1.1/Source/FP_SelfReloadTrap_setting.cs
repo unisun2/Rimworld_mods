@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using RimWorld;
 
 namespace FPSRT
 {
@@ -13,6 +14,14 @@ namespace FPSRT
         public static int trapdamage = 90;
         public static int armorpenetrate = 30;
         public static int traparmingtime = 10;
+        public static int bulidingcost = 300;
+
+        
+        /*FP_SelfReloadTrap_setting()
+        {
+            ThingDef _mytrap = ThingDef.Named("Building_FPSRT");
+            _mytrap.costStuffCount = bulidingcost;
+        }*/
 
         public override void ExposeData()
         {
@@ -21,6 +30,7 @@ namespace FPSRT
             Scribe_Values.Look<int>(ref trapdamage, "FP_SelfReloadTrap_trapdamage", 90);
             Scribe_Values.Look<int>(ref armorpenetrate, "FP_SelfReloadTrap_armorpenetrate", 30);
             Scribe_Values.Look<int>(ref traparmingtime, "FP_SelfReloadTrap_traparmingtime", 10);
+            Scribe_Values.Look<int>(ref bulidingcost, "FP_SelfReloadTrap_bulidingcost", 300);
         }
 
         public void DoSettingsWindowContents(Rect canvas)
@@ -45,6 +55,12 @@ namespace FPSRT
             _Listing_Standard.Label(Translator.Translate("traparmingtime") + " : " + traparmingtime + " sec"); // Residents will get this percent of their skill experience. default = 80
 
             traparmingtime = (int)_Listing_Standard.Slider((float)traparmingtime, 5, 100);
+
+            _Listing_Standard.GapLine(12f);
+            _Listing_Standard.Label(Translator.Translate("* need restart"));
+            _Listing_Standard.Label(Translator.Translate("bulidingcost") + " : " + bulidingcost + ""); // Residents will get this percent of their skill experience. default = 80
+
+            bulidingcost = (int)_Listing_Standard.Slider((float)bulidingcost, 150, 2000);
 
 
             _Listing_Standard.End();

@@ -4,13 +4,13 @@
   <ThingDef ParentName="DrugBase">
     <defName>ACMM_atomiccoffee</defName>
     <label>atomic coffee</label>
-    <description>This coffee was popular in the apocalyptic world. atomic coffee increases movement speed, and make user forget to sleep.\n\nIt is a little toxic, and abuse can be dangerous. </description>
+    <description>This coffee was popular in the apocalyptic world. atomic coffee increases movement speed, and make user forget to sleep.\n\nIt is a little toxic, and abuse can be dangerous.</description>
     <descriptionHyperlinks>
 	  <HediffDef>ACMM_AtomiccoffeeHigh</HediffDef>
       <HediffDef>ToxicBuildup</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
-      <texPath>Things/Item/Drug/GoJuice</texPath>
+      <texPath>Things/Drug/ACMM_coffee</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
@@ -44,7 +44,7 @@
         </li>
 		<li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>ToxicBuildup</hediffDef>
-          <severity>0.03</severity>
+          <severity>0.10</severity>
         </li>
         <li Class="IngestionOutcomeDoer_OffsetNeed">
           <need>Rest</need>
@@ -52,6 +52,7 @@
         </li>
       </outcomeDoers>
     </ingestible>
+	<surfaceType>Item</surfaceType>
     <comps>
       <li Class="CompProperties_Drug">
         <listOrder>1200</listOrder>
@@ -96,7 +97,7 @@
     <validWhileDespawned>true</validWhileDespawned>
     <stages>
       <li>
-        <label>high on atomic coffee</label>
+        <label>drink atomic coffee</label>
         <description>It's the most delicious coffee I have ever had.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
