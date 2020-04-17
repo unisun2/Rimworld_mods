@@ -1,2 +1,2 @@
 # Rimworld_mods
-mod for Game Rimworld 1.0
+mod for Game Rimworld
