@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+	
+	<IncidentDef>
+    <defName>BBM_RaidEnemy</defName>
+    <label>huge enemy raid</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>WG_BBM.IncidentWorker_BigRaidandFriend</workerClass>
+    <baseChance>4</baseChance>
+	<minRefireDays>60</minRefireDays>
+    <category>ThreatBig</category>
+    <pointsScaleable>true</pointsScaleable>
+	<minThreatPoints>3000</minThreatPoints>
+    <tale>Raid</tale>
+	<letterDef>ThreatBig</letterDef>
+  </IncidentDef>
+
+
+</Defs>
