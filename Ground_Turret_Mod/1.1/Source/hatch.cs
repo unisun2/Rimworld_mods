@@ -128,8 +128,50 @@ namespace FP_GTM
             Map map = base.Map;
             IntVec3 loc = this.Position;
             float HPp = (float)this.HitPoints / (float)this.MaxHitPoints;
+            Thing thing;
 
             if (insideStuff)
+            {
+                thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(insideman), this.Stuff), loc, map, WipeMode.Vanish);
+            }
+            else
+            {
+                thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(insideman), null), loc, map, WipeMode.Vanish);
+            }
+
+            thing.SetFaction(Faction.OfPlayer, null);
+            thing.HitPoints = (int)Math.Ceiling(thing.MaxHitPoints * HPp);
+            if (thing.HitPoints < thing.MaxHitPoints)
+            {
+                thing.Map.listerBuildingsRepairable.Notify_BuildingTookDamage((Building)thing);
+            }
+            if (insidefuel >= 0)
+            {
+                CompRefuelable refuelableComp = ((ThingWithComps)thing).GetComp<CompRefuelable>();
+                refuelableComp.ConsumeFuel(9999);
+                refuelableComp.Refuel((insidefuel / refuelableComp.Props.FuelMultiplierCurrentDifficulty));
+            }
+            try
+            {
+                ((Action)(() =>
+                {
+                    if (upgradedbyturretextensions)
+                    {
+                        TurretExtensions.CompUpgradable compUP = ((ThingWithComps)thing).GetComp<TurretExtensions.CompUpgradable>();
+                        thing.HitPoints = (int)(Math.Ceiling((thing.MaxHitPoints + TE_HP_Offset) * TE_HP_Factor * HPp));
+                        compUP.upgraded = true;
+
+                    }
+                }))();
+            }
+            catch (TypeLoadException ex)
+            {
+                //Log.Message("error in unburrowTurret XP");
+            }
+
+
+
+            /*if (insideStuff)
             {
                 
                 Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named(insideman), this.Stuff), loc, map, WipeMode.Vanish);
@@ -199,7 +241,7 @@ namespace FP_GTM
 
             }
 
-            
+            */
                 
         }
 
