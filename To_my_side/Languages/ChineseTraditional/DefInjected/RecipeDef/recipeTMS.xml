@@ -3,15 +3,19 @@
 
   <CraftRuneone.label>學徒級符文石</CraftRuneone.label>
   <CraftRuneone.description>廉價品.</CraftRuneone.description>
-  <CraftRuneone.jobString>製作中.</CraftRuneone.jobString>
+  <CraftRuneone.jobString>正在製作學徒級符文石中。</CraftRuneone.jobString>
 
   <CraftRunetwo.label>專業級符文石</CraftRunetwo.label>
   <CraftRunetwo.description>適當的力量.</CraftRunetwo.description>
-  <CraftRunetwo.jobString>製作中.</CraftRunetwo.jobString>
+  <CraftRunetwo.jobString>正在製作專業級符文石中。</CraftRunetwo.jobString>
 
   <CraftRunethree.label>大師級符文石</CraftRunethree.label>
   <CraftRunethree.description>力量強大,但十分昂貴.</CraftRunethree.description>
-  <CraftRunethree.jobString>製作中.</CraftRunethree.jobString>
+  <CraftRunethree.jobString>正在製作大師級符文石中。</CraftRunethree.jobString>
+
+  <CraftRunefour.label>虛空級符文石</CraftRunefour.label>
+  <CraftRunefour.description>難以置信的力量</CraftRunefour.description>
+  <CraftRunefour.jobString>正在製作虛空級符文石中。</CraftRunefour.jobString>
 
 
 </LanguageData>
