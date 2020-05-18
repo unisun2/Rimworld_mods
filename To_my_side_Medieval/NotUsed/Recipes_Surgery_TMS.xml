@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>TMS_MakeRune</defName>
+		<label>brew simple coffee</label>
+		<description>Make a cup of simple coffee using cooked coffee beans.</description>
+		<jobString>Brewing simple coffee.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<effectWorking>BurnDrug</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>600</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<recipeUsers>
+			<li>TMS_Building_Base</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>StoneChunks</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PsychoidLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PsychoidLeaves>5</PsychoidLeaves>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>To_my_side1</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TMS_enchanting</defName>
+		<label>shut down and disassemble</label>
+		<description>Shuts down a droid and disassembles for materials.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Shutting down droid and disassembling.</jobString>
+		<soundWorking>Interact_Repair</soundWorking>
+		<workAmount>1600</workAmount>
+		<targetsBodyPart>false</targetsBodyPart>
+		<effectWorking>Repair</effectWorking>
+		<isViolation>true</isViolation>
+		<anesthetize>false</anesthetize>
+		<surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+	</RecipeDef>
+
+</Defs>

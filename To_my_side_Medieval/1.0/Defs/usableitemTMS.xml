@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase" Name="TMSArtifactBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Medieval</techLevel>
+    <thingCategories>
+      <li>Artifacts</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Activate</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+	<resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+	  <Mass>0.5</Mass>
+      <MaxHitPoints>80</MaxHitPoints>
+    </statBases>
+    <drawGUIOverlay>false</drawGUIOverlay>
+	
+  </ThingDef>
+
+			
+<ThingDef ParentName="TMSArtifactBase">
+	<defName>TMSArtifactone</defName>
+	<label>Apprentice's runestones</label>
+	<description>It gives little power to animals. Do not use to Humans!</description>
+    <graphicData>
+      <texPath>Things/Item/TMSArtifactone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    
+    <comps>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_buffone</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="TMSArtifactBase">
+	<defName>TMSArtifacttwo</defName>
+	<label>Expert's runestones</label>
+	<description>It gives power to animals. Do not use to Humans!</description>
+    <graphicData>
+      <texPath>Things/Item/TMSArtifacttwo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    
+    <comps>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_bufftwo</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="TMSArtifactBase">
+	<defName>TMSArtifactthree</defName>
+	<label>Master's runestones</label>
+	<description>It gives a Huge power to animals. Do not use to Humans!</description>
+    <graphicData>
+      <texPath>Things/Item/TMSArtifactthree</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    
+    <comps>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_buffthree</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="TMSArtifactBase">
+	<defName>TMSArtifactfour</defName>
+	<label>void runestones</label>
+	<description>It gives a unbelievable power to animals. Do not use to Humans!</description>
+    <graphicData>
+      <texPath>Things/Item/TMSArtifactfour</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>0.8</drawSize>
+    </graphicData>
+    
+    <comps>
+      <li Class="CompProperties_Targetable">
+        <compClass>CompTargetable_SinglePawn</compClass>
+      </li>
+      <li>
+        <compClass>to_my_side.CompTargetEffect_TMS_bufffour</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+
+</Defs>

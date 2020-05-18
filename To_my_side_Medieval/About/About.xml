@@ -4,8 +4,10 @@
 	<author>FLASHPOINT55</author>
 	<supportedVersions>
 		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
 	<url>https://github.com/unisun2/Rimworld_mods</url>
+	<packageId>FLASHPOINT55.ToMySideMedieval</packageId>
 	<description>Make your beasts stronger with a Runestones.
 
 I changed the techlevel of 'To My Side!' to medieval. and some ingredients changed.

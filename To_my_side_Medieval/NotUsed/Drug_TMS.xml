@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="TMS_DrugBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>50</stackLimit>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>8</chairSearchRadius>
+    </ingestible>
+    <storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+	
+	<recipeMaker>
+	  <recipeUsers>
+        <li>TMS_Building_Base</li>
+	  </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_CookMeal</soundWorking>
+    </recipeMaker>
+	
+  </ThingDef>
+
+
+	<ThingDef ParentName="TMS_DrugBase">
+	<defName>TMS_DrugLv1</defName>
+	<label>TMS_DrugLv1</label>
+	<description>A rune that can make animals stronger. Caution: Do not use to humans.</description>
+	<graphicData>
+		<texPath>Things/Item/Drug/TMSLv1</texPath>
+		<graphicClass>Graphic_StackCount</graphicClass>
+	</graphicData>
+	<rotatable>false</rotatable>
+	<statBases>
+		<WorkToMake>500</WorkToMake>
+		<MarketValue>22</MarketValue>
+		<Mass>0.005</Mass>
+	</statBases>
+	<ingestible>
+		<drugCategory>Medical</drugCategory>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>TMSHedifflv1</hediffDef>
+				<severity>1.0</severity>
+			</li>
+		</outcomeDoers>
+	</ingestible>
+	<costList>
+		<Gold>2</Gold>
+	</costList>
+	<comps>
+		<li Class="CompProperties_Drug">
+			<listOrder>1000</listOrder>
+			<overdoseSeverityOffset>
+				<min>0.08</min>
+				<max>0.14</max>
+			</overdoseSeverityOffset>
+		</li>
+	</comps>
+	</ThingDef>
+
+</Defs>
