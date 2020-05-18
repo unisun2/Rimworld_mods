@@ -3,61 +3,71 @@
 
   <!-- buffs 1 -->
 
-  <TMS_armor_Sharp1.label>銳器防禦1</TMS_armor_Sharp1.label>
-  <TMS_armor_Sharp2.label>銳器防禦2</TMS_armor_Sharp2.label>
-  <TMS_armor_Sharp3.label>銳器防禦3</TMS_armor_Sharp3.label>
-  <TMS_armor_Sharp4.label>銳器防禦4</TMS_armor_Sharp4.label>
-  <TMS_armor_Sharp5.label>銳器防禦5</TMS_armor_Sharp5.label>
-  <TMS_armor_Blunt1.label>鈍器防禦1</TMS_armor_Blunt1.label>
-  <TMS_armor_Blunt2.label>鈍器防禦2</TMS_armor_Blunt2.label>
-  <TMS_armor_Blunt3.label>鈍器防禦3</TMS_armor_Blunt3.label>
-  <TMS_armor_Blunt4.label>鈍器防禦4</TMS_armor_Blunt4.label>
-  <TMS_armor_Blunt5.label>鈍器防禦5</TMS_armor_Blunt5.label>
-  <TMS_armor_Heat1.label>火燄防禦1</TMS_armor_Heat1.label>
-  <TMS_armor_Heat2.label>火燄防禦2</TMS_armor_Heat2.label>
-  <TMS_armor_Heat3.label>火燄防禦3</TMS_armor_Heat3.label>
-  <TMS_armor_Heat4.label>火燄防禦4</TMS_armor_Heat4.label>
-  <TMS_armor_Heat5.label>火燄防禦5</TMS_armor_Heat5.label>
-  <TMS_HungerRate1.label>耐餓1</TMS_HungerRate1.label>
-  <TMS_HungerRate2.label>耐餓2</TMS_HungerRate2.label>
-  <TMS_HungerRate3.label>耐餓3</TMS_HungerRate3.label>
-  <TMS_HungerRate4.label>耐餓4</TMS_HungerRate4.label>
-  <TMS_HungerRate5.label>耐餓5</TMS_HungerRate5.label>
-  <TMS_MeleeDodgeChance1.label>近戰閃避率1</TMS_MeleeDodgeChance1.label>
-  <TMS_MeleeDodgeChance2.label>近戰閃避率2</TMS_MeleeDodgeChance2.label>
-  <TMS_MeleeDodgeChance3.label>近戰閃避率3</TMS_MeleeDodgeChance3.label>
-  <TMS_MeleeDodgeChance4.label>近戰閃避率4</TMS_MeleeDodgeChance4.label>
-  <TMS_MeleeDodgeChance5.label>近戰閃避率5</TMS_MeleeDodgeChance5.label>
-  <TMS_MoveSpeed1.label>移動速度1</TMS_MoveSpeed1.label>
-  <TMS_MoveSpeed2.label>移動速度2</TMS_MoveSpeed2.label>
-  <TMS_MoveSpeed3.label>移動速度3</TMS_MoveSpeed3.label>
-  <TMS_MoveSpeed4.label>移動速度4</TMS_MoveSpeed4.label>
-  <TMS_MoveSpeed5.label>移動速度5</TMS_MoveSpeed5.label>
-  <TMS_ComfyTemperature1.label>溫度耐受性1</TMS_ComfyTemperature1.label>
-  <TMS_ComfyTemperature2.label>溫度耐受性2</TMS_ComfyTemperature2.label>
-  <TMS_ComfyTemperature3.label>溫度耐受性3</TMS_ComfyTemperature3.label>
-  <TMS_ComfyTemperature4.label>溫度耐受性4</TMS_ComfyTemperature4.label>
-  <TMS_ComfyTemperature5.label>溫度耐受性5</TMS_ComfyTemperature5.label>
-  <TMS_BloodFiltration1.label>免疫強化1</TMS_BloodFiltration1.label>
-  <TMS_BloodFiltration2.label>免疫強化2</TMS_BloodFiltration2.label>
-  <TMS_BloodFiltration3.label>免疫強化3</TMS_BloodFiltration3.label>
-  <TMS_BloodFiltration4.label>免疫強化4</TMS_BloodFiltration4.label>
-  <TMS_BloodFiltration5.label>免疫強化5</TMS_BloodFiltration5.label>
-  <TMS_MeleeHitChance1.label>近戰命中率1</TMS_MeleeHitChance1.label>
-  <TMS_MeleeHitChance2.label>近戰命中率2</TMS_MeleeHitChance2.label>
-  <TMS_MeleeHitChance3.label>近戰命中率3</TMS_MeleeHitChance3.label>
-  <TMS_MeleeHitChance4.label>近戰命中率4</TMS_MeleeHitChance4.label>
-  <TMS_MeleeHitChance5.label>近戰命中率5</TMS_MeleeHitChance5.label>
-  <TMS_Manipulation1.label>操作強化1</TMS_Manipulation1.label>
-  <TMS_Manipulation2.label>操作強化2</TMS_Manipulation2.label>
-  <TMS_Manipulation3.label>操作強化3</TMS_Manipulation3.label>
-  <TMS_Manipulation4.label>操作強化4</TMS_Manipulation4.label>
-  <TMS_Manipulation5.label>操作強化5</TMS_Manipulation5.label>
-  <TMS_Breathing1.label>呼吸強化1</TMS_Breathing1.label>
-  <TMS_Breathing2.label>呼吸強化2</TMS_Breathing2.label>
-  <TMS_Breathing3.label>呼吸強化3</TMS_Breathing3.label>
-  <TMS_Breathing4.label>呼吸強化4</TMS_Breathing4.label>
-  <TMS_Breathing5.label>呼吸強化5</TMS_Breathing5.label>
+  <TMS_armor_Sharp1.label>銳器防禦Ⅰ</TMS_armor_Sharp1.label>
+  <TMS_armor_Sharp2.label>銳器防禦Ⅱ</TMS_armor_Sharp2.label>
+  <TMS_armor_Sharp3.label>銳器防禦Ⅲ</TMS_armor_Sharp3.label>
+  <TMS_armor_Sharp4.label>銳器防禦Ⅳ</TMS_armor_Sharp4.label>
+  <TMS_armor_Sharp5.label>銳器防禦Ⅴ</TMS_armor_Sharp5.label>
+
+  <TMS_armor_Blunt1.label>鈍器防禦Ⅰ</TMS_armor_Blunt1.label>
+  <TMS_armor_Blunt2.label>鈍器防禦Ⅱ</TMS_armor_Blunt2.label>
+  <TMS_armor_Blunt3.label>鈍器防禦Ⅲ</TMS_armor_Blunt3.label>
+  <TMS_armor_Blunt4.label>鈍器防禦Ⅳ</TMS_armor_Blunt4.label>
+  <TMS_armor_Blunt5.label>鈍器防禦Ⅴ</TMS_armor_Blunt5.label>
+
+  <TMS_armor_Heat1.label>火燄防禦Ⅰ</TMS_armor_Heat1.label>
+  <TMS_armor_Heat2.label>火燄防禦Ⅱ</TMS_armor_Heat2.label>
+  <TMS_armor_Heat3.label>火燄防禦Ⅲ</TMS_armor_Heat3.label>
+  <TMS_armor_Heat4.label>火燄防禦Ⅳ</TMS_armor_Heat4.label>
+  <TMS_armor_Heat5.label>火燄防禦Ⅴ</TMS_armor_Heat5.label>
+
+  <TMS_HungerRate1.label>耐餓Ⅰ</TMS_HungerRate1.label>
+  <TMS_HungerRate2.label>耐餓Ⅱ</TMS_HungerRate2.label>
+  <TMS_HungerRate3.label>耐餓Ⅲ</TMS_HungerRate3.label>
+  <TMS_HungerRate4.label>耐餓Ⅳ</TMS_HungerRate4.label>
+  <TMS_HungerRate5.label>耐餓Ⅴ</TMS_HungerRate5.label>
+
+  <TMS_MeleeDodgeChance1.label>近戰閃避率Ⅰ</TMS_MeleeDodgeChance1.label>
+  <TMS_MeleeDodgeChance2.label>近戰閃避率Ⅱ</TMS_MeleeDodgeChance2.label>
+  <TMS_MeleeDodgeChance3.label>近戰閃避率Ⅲ</TMS_MeleeDodgeChance3.label>
+  <TMS_MeleeDodgeChance4.label>近戰閃避率Ⅳ</TMS_MeleeDodgeChance4.label>
+  <TMS_MeleeDodgeChance5.label>近戰閃避率Ⅴ</TMS_MeleeDodgeChance5.label>
+
+  <TMS_MoveSpeed1.label>移動速度Ⅰ</TMS_MoveSpeed1.label>
+  <TMS_MoveSpeed2.label>移動速度Ⅱ</TMS_MoveSpeed2.label>
+  <TMS_MoveSpeed3.label>移動速度Ⅲ</TMS_MoveSpeed3.label>
+  <TMS_MoveSpeed4.label>移動速度Ⅳ</TMS_MoveSpeed4.label>
+  <TMS_MoveSpeed5.label>移動速度Ⅴ</TMS_MoveSpeed5.label>
+
+  <TMS_ComfyTemperature1.label>溫度耐受性Ⅰ</TMS_ComfyTemperature1.label>
+  <TMS_ComfyTemperature2.label>溫度耐受性Ⅱ</TMS_ComfyTemperature2.label>
+  <TMS_ComfyTemperature3.label>溫度耐受性Ⅲ</TMS_ComfyTemperature3.label>
+  <TMS_ComfyTemperature4.label>溫度耐受性Ⅳ</TMS_ComfyTemperature4.label>
+  <TMS_ComfyTemperature5.label>溫度耐受性Ⅴ</TMS_ComfyTemperature5.label>
+
+  <TMS_BloodFiltration1.label>免疫強化Ⅰ</TMS_BloodFiltration1.label>
+  <TMS_BloodFiltration2.label>免疫強化Ⅱ</TMS_BloodFiltration2.label>
+  <TMS_BloodFiltration3.label>免疫強化Ⅲ</TMS_BloodFiltration3.label>
+  <TMS_BloodFiltration4.label>免疫強化Ⅳ</TMS_BloodFiltration4.label>
+  <TMS_BloodFiltration5.label>免疫強化Ⅴ</TMS_BloodFiltration5.label>
+
+  <TMS_MeleeHitChance1.label>近戰命中率Ⅰ</TMS_MeleeHitChance1.label>
+  <TMS_MeleeHitChance2.label>近戰命中率Ⅱ</TMS_MeleeHitChance2.label>
+  <TMS_MeleeHitChance3.label>近戰命中率Ⅲ</TMS_MeleeHitChance3.label>
+  <TMS_MeleeHitChance4.label>近戰命中率Ⅳ</TMS_MeleeHitChance4.label>
+  <TMS_MeleeHitChance5.label>近戰命中率Ⅴ</TMS_MeleeHitChance5.label>
+
+  <TMS_Manipulation1.label>操作強化Ⅰ</TMS_Manipulation1.label>
+  <TMS_Manipulation2.label>操作強化Ⅱ</TMS_Manipulation2.label>
+  <TMS_Manipulation3.label>操作強化Ⅲ</TMS_Manipulation3.label>
+  <TMS_Manipulation4.label>操作強化Ⅳ</TMS_Manipulation4.label>
+  <TMS_Manipulation5.label>操作強化Ⅴ</TMS_Manipulation5.label>
+
+  <TMS_Breathing1.label>呼吸強化Ⅰ</TMS_Breathing1.label>
+  <TMS_Breathing2.label>呼吸強化Ⅱ</TMS_Breathing2.label>
+  <TMS_Breathing3.label>呼吸強化Ⅲ</TMS_Breathing3.label>
+  <TMS_Breathing4.label>呼吸強化Ⅳ</TMS_Breathing4.label>
+  <TMS_Breathing5.label>呼吸強化Ⅴ</TMS_Breathing5.label>
 
 
 </LanguageData>
