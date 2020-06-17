@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<hediffClass>Hediff</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.2)</defaultLabelColor>
+		<makesSickThought>true</makesSickThought>
+		<isBad>false</isBad>
+		<tendable>false</tendable>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
+		<defName>HangedManHediff_Hooked</defName>
+		<label>Hooked</label>
+		<labelNoun>Hooked</labelNoun>
+		<description>Hooked</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0</setMax>
+					</li>
+				 </capMods>
+			</li>
+		</stages>	
+	</HediffDef>
+	<HediffDef ParentName="SR_DarkHediffsBase">
+		<defName>SR_Hediff_BondageChains</defName>
+		<label>Chains</label>
+		<labelNoun>Chains</labelNoun>
+		<description>Chains</description>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<setMax>0.8</setMax>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				 </capMods>
+			</li>
+		</stages>	
+	</HediffDef>
+	<HediffDef ParentName="InjuryBase">
+		<defName>SR_Hediff_ElectricChair</defName>
+		<label>electic shock</label>
+		<labelNoun>electic shock</labelNoun>
+		<description>electic shock</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>tended</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.015</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Destroyed</destroyedLabel>
+		</injuryProps>
+  	</HediffDef>
+	<HediffDef ParentName="InjuryBase">
+		<defName>SR_Hediff_Cut</defName>
+		<label>cut</label>
+		<labelNoun>a cut</labelNoun>
+		<description>A cut.</description>
+		<comps>
+		<li Class="HediffCompProperties_TendDuration">
+			<labelTendedWell>bandaged</labelTendedWell>
+			<labelTendedWellInner>sutured</labelTendedWellInner>
+			<labelSolidTendedWell>set</labelSolidTendedWell>
+		</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.5</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<bleedRate>0.06</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Cut off</destroyedLabel>
+			<destroyedOutLabel>Cut out</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
+	
+</Defs>
