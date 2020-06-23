@@ -5,36 +5,71 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using RimWorld;
+using UnityEngine;
 
 namespace HangedMan
 {
     class Building_MeatHook : Building_Bed
     {
-        private List<Pawn> touchingPawns = new List<Pawn>();
+        private bool forPrisonersInt = true;
+
+        private bool medicalInt = false;
+
+
+        public bool ForPrisoners
+        {
+            get
+            {
+                return forPrisonersInt;
+            }
+            set
+            {
+                forPrisonersInt = true;
+            }
+        }
+        public new bool Medical
+        {
+            get
+            {
+                return false;
+            }
+            set
+            {
+                medicalInt = false;
+            }
+        }
+
+        public override Color DrawColorTwo
+        {
+            get
+            {
+                return base.DrawColorTwo;
+            }
+        }
+
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
+        {
+            return null;
+            // no Medical, no interact
+        }
+
 
         public override void Tick()
         {
             base.Tick();
-            if (base.Spawned)
+            if (base.Spawned && base.ForPrisoners)
             {
                 List<Thing> thingList = base.Position.GetThingList(base.Map);
                 for (int i = 0; i < thingList.Count; i++)
                 {
                     Pawn pawn = thingList[i] as Pawn;
-                    if (pawn != null && !touchingPawns.Contains(pawn))
+                    if (pawn != null && pawn.GetPosture() == PawnPosture.LayingInBed && pawn.IsPrisoner)
                     {
-                        touchingPawns.Add(pawn);
-                        CheckSpring(pawn);
+                        Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked,pawn, null);
+                        pawn.health.AddHediff(hediff);
                     }
                 }
-                for (int j = 0; j < touchingPawns.Count; j++)
-                {
-                    Pawn pawn2 = touchingPawns[j];
-                    if (!pawn2.Spawned || pawn2.Position != base.Position)
-                    {
-                        touchingPawns.Remove(pawn2);
-                    }
-                }
+
             }
             
 

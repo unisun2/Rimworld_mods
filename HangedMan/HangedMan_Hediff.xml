@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<HediffDef>
-		<hediffClass>Hediff</hediffClass>
+		<hediffClass>HangedMan.Hediff_MeatHook</hediffClass>
 		<defaultLabelColor>(0.8, 0.8, 0.2)</defaultLabelColor>
 		<makesSickThought>true</makesSickThought>
 		<isBad>false</isBad>
