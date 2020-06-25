@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Verse;
 using RimWorld;
 using UnityEngine;
+using System.Reflection;
 
 namespace HangedMan
 {
@@ -57,7 +58,7 @@ namespace HangedMan
         public override void Tick()
         {
             base.Tick();
-            if (base.Spawned && base.ForPrisoners)
+            if (base.Spawned)
             {
                 List<Thing> thingList = base.Position.GetThingList(base.Map);
                 for (int i = 0; i < thingList.Count; i++)
@@ -71,9 +72,26 @@ namespace HangedMan
                 }
 
             }
-            
+        }
+
+        private void ToggleForPrisonersByInterface()
+        {
+            // do nothing.
+        }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            foreach (Gizmo gizmo in base.GetGizmos())
+            {
+                yield return gizmo;
+            }
+
+            MethodInfo m = typeof(Building).GetMethod("GetGizmos", BindingFlags.Instance | BindingFlags.Public);
+            m.Invoke(this, BindingFlags.Instance, null, null, null);
 
 
+            //// s2 will be the return value from Object.ToString
+            ///string s2 = (string)InvokeNonVirtual(m, new object[] { f });
         }
     }
 }
