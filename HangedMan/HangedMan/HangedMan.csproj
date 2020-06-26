@@ -292,6 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building_MeatHook.cs" />
+    <Compile Include="harmonypatcher.cs" />
     <Compile Include="JobDriver_TakeToMeatHook.cs" />
     <Compile Include="HangedManDefOf.cs" />
     <Compile Include="Hediff_MeatHook.cs" />

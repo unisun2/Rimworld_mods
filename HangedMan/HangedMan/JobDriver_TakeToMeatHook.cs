@@ -17,7 +17,7 @@ namespace HangedMan
 {
 	private const TargetIndex TakeeIndex = TargetIndex.A;
 
-	private const TargetIndex BedIndex = TargetIndex.B;
+	private const TargetIndex HookIndex = TargetIndex.B;
 
 	protected Pawn Takee => (Pawn)job.GetTarget(TargetIndex.A).Thing;
 
@@ -27,7 +27,7 @@ namespace HangedMan
 	{
 		if (pawn.Reserve(Takee, job, 1, -1, null, errorOnFailed))
 		{
-			return pawn.Reserve(DropHook, job, DropHook.SleepingSlotsCount, 0, null, errorOnFailed);
+			return pawn.Reserve(DropHook, job, DropHook.pawncount, 0, null, errorOnFailed);
 		}
 		return false;
 	}

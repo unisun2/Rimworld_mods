@@ -12,47 +12,23 @@ namespace HangedMan
 {
     class Building_MeatHook : Building_Bed
     {
-        private bool forPrisonersInt = true;
+        public int pawncount = 0;
 
-        private bool medicalInt = false;
+        public int killcount = 0;
 
-
-        public bool ForPrisoners
+        public override void ExposeData()
         {
-            get
-            {
-                return forPrisonersInt;
-            }
-            set
-            {
-                forPrisonersInt = true;
-            }
-        }
-        public new bool Medical
-        {
-            get
-            {
-                return false;
-            }
-            set
-            {
-                medicalInt = false;
-            }
+            base.ExposeData();
+
+            Scribe_Values.Look<int>(ref pawncount, "pawncount", defaultValue: 0);
+            Scribe_Values.Look<int>(ref killcount, "killcount", defaultValue: 0);
         }
 
-        public override Color DrawColorTwo
-        {
-            get
-            {
-                return base.DrawColorTwo;
-            }
-        }
-
-        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
-        {
-            return null;
-            // no Medical, no interact
-        }
+        //public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
+        //{
+        //    return null;
+        //    // no Medical, no interact
+        //}
 
 
         public override void Tick()
@@ -70,28 +46,18 @@ namespace HangedMan
                         pawn.health.AddHediff(hediff);
                     }
                 }
-
             }
         }
 
-        private void ToggleForPrisonersByInterface()
+        public override string GetInspectString()
         {
-            // do nothing.
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append(base.GetInspectString());
+
+            stringBuilder.AppendInNewLine("Killcounts".Translate() + ": " + this.killcount.ToString());
+
+            return stringBuilder.ToString();
         }
-
-        public override IEnumerable<Gizmo> GetGizmos()
-        {
-            foreach (Gizmo gizmo in base.GetGizmos())
-            {
-                yield return gizmo;
-            }
-
-            MethodInfo m = typeof(Building).GetMethod("GetGizmos", BindingFlags.Instance | BindingFlags.Public);
-            m.Invoke(this, BindingFlags.Instance, null, null, null);
-
-
-            //// s2 will be the return value from Object.ToString
-            ///string s2 = (string)InvokeNonVirtual(m, new object[] { f });
-        }
+        
     }
 }
