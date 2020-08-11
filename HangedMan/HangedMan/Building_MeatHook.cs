@@ -10,15 +10,19 @@ using System.Reflection;
 
 namespace HangedMan
 {
-    class Building_MeatHook : Building_Bed
+    public class Building_MeatHook : Building
     {
         public int pawncount = 0;
 
+<<<<<<< Updated upstream
         public int killcount = 0;
+=======
+>>>>>>> Stashed changes
 
         public override void ExposeData()
         {
             base.ExposeData();
+<<<<<<< Updated upstream
 
             Scribe_Values.Look<int>(ref pawncount, "pawncount", defaultValue: 0);
             Scribe_Values.Look<int>(ref killcount, "killcount", defaultValue: 0);
@@ -29,6 +33,18 @@ namespace HangedMan
         //    return null;
         //    // no Medical, no interact
         //}
+=======
+
+
+        }
+
+
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
+        {
+            return null;
+            // no Medical, no interact
+        }
+>>>>>>> Stashed changes
 
 
         public override void Tick()
@@ -42,12 +58,13 @@ namespace HangedMan
                     Pawn pawn = thingList[i] as Pawn;
                     if (pawn != null && pawn.GetPosture() == PawnPosture.LayingInBed && pawn.IsPrisoner)
                     {
-                        Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked,pawn, null);
+                        Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked, pawn, null);
                         pawn.health.AddHediff(hediff);
                     }
                 }
             }
         }
+<<<<<<< Updated upstream
 
         public override string GetInspectString()
         {
@@ -59,5 +76,7 @@ namespace HangedMan
             return stringBuilder.ToString();
         }
         
+=======
+>>>>>>> Stashed changes
     }
 }

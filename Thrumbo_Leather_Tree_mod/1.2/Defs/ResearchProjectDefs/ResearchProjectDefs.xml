@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>ThrumboTreetab</defName>
+		<label>ThrumboTree</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+    <defName>ThrumboTree</defName>
+	<tab>ThrumboTreetab</tab>
+    <label>Thrumbo Tree</label>
+    <description>This bark is very similar to thrumbo leather.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+	  <li>Devilstrand</li>
+	  <li>TreeSowing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>ThrumboTreetwo</defName>
+	<tab>ThrumboTreetab</tab>
+    <label>Thrumbo Weapon</label>
+    <description>Draws out the power hidden in the material to create a weapon.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>2</researchViewY>
+	<prerequisites>
+	  <li>ThrumboTree</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>
+
+

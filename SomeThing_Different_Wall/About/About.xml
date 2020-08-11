@@ -5,8 +5,9 @@
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
-	<packageID>FLASHPOINT55.SomethingDifferentWall</packageID>
+	<packageId>FLASHPOINT55.SomethingDifferentWall</packageId>
 	<url>https://github.com/unisun2/Rimworld_mods</url>
 	<description>Add self-destruct wall and burrowing wall.
 you can build panic room, ceiling trap, handy safe to store drugs or etc with these.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>BigAdvancedPassiveCooler</defName>
+		<label>BigAdvancedPassiveCooler</label>
+	</ResearchTabDef>
+	
+	<ResearchProjectDef>
+    <defName>AdvancedPassiveCooler</defName>
+	<tab>BigAdvancedPassiveCooler</tab>
+    <label>AdvancedPassiveCooler</label>
+    <description>Bigger and Cooler!</description>
+    <baseCost>900</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>1</researchViewY>
+	<prerequisites>
+	  <li>PassiveCooler</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+</Defs>
+
+

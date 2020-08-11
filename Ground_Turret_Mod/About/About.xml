@@ -2,7 +2,8 @@
 <ModMetaData>
 	<name>Ground Turret Mod</name>
 	<author>FlashPoint55</author>
-	<supportedVersions><li>1.0</li><li>1.1</li></supportedVersions>
+	<supportedVersions><li>1.0</li><li>1.1</li>
+	<li>1.2</li></supportedVersions>
 	<packageId>FlashPoint55.GroundTurretMod</packageId>
 	<description>
 Add Command 'burrow' and 'unburrow' to turret.

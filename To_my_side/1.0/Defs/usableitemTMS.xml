@@ -3,7 +3,7 @@
 
 	<ThingDef ParentName="ResourceBase" Name="TMSArtifactBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Archotech</techLevel>
     <thingCategories>
       <li>Artifacts</li>
     </thingCategories>
@@ -14,6 +14,9 @@
       <li Class="CompProperties_Usable">
         <useJob>UseArtifact</useJob>
         <useLabel>Activate</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_Artifact</compClass>
       </li>
       <li Class="CompProperties_UseEffect">
         <compClass>CompUseEffect_DestroySelf</compClass>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BoulderBuilding" ParentName="BuildingBase">
+  <defName>BTMBoulder_launcher</defName>
+    <label>Boulder launcher</label>
+    <description>A manned Boulder launcher.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/turretabywool</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.7,1.7)</drawSize>
+      <damageData>
+        <rect>(0.38,0.2,0.56375,0.8)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <stealable>false</stealable>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tickerType>Normal</tickerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<costStuffCount>50</costStuffCount>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+    <inspectorTabs>
+      <li>ITab_Shells</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>2000</WorkToBuild>
+      <Mass>30</Mass>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <building>
+      <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
+		<turretBurstCooldownTime>44.0</turretBurstCooldownTime>
+		<turretGunDef>BTMBoulder_Weapon</turretGunDef>
+      <!--<turretTopGraphicPath>Things/turretbbywool</turretTopGraphicPath>-->
+		</building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>BTMboulderweaponone</li>
+    </researchPrerequisites>
+	<uiIconPath>Things/turretbbywool</uiIconPath>
+    <uiIconScale>1.1</uiIconScale>
+  </ThingDef>
+
+  <ThingDef>
+  <defName>BTMBoulder_Weapon</defName>
+    <label>Boulder launcher</label>
+    <description>Boulder launcher. powerful but short-ranged.</description>
+	<graphicData>
+      <texPath>Things/turretbbywool</texPath>
+	  <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <useHitPoints>false</useHitPoints>
+    <equipmentType>Primary</equipmentType>
+    <tickerType>Never</tickerType>
+    <techLevel>Medieval</techLevel>
+    <destroyOnDrop>True</destroyOnDrop>
+    <menuHidden>True</menuHidden>
+    <tradeability>None</tradeability>
+    <!--<weaponTags>
+      <li>Artillery</li>
+    </weaponTags>-->
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_ChangeableProjectile" />
+    </comps>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Boulders</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>Boulders</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+	<verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>3.0</warmupTime>
+        <forcedMissRadius>2</forcedMissRadius>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>1.9</minRange>
+        <range>30</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>BTMBoulder_turret</defName>
+    <label>boulder turret</label>
+    <description>A portable boulder turret. Once it fires, it breaks.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.4,0.4)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/BTMturret</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.1</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+	  <li Class="BoulderTrapMod.CompProperties_BTM"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>BTMBoulder_Rock</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>1</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <BTMBoulder_Rock>1</BTMBoulder_Rock>
+	  <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>30.0</specialDisplayRadius>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+	  <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>gun_BTMBoulder_turret</turretGunDef>
+      <turretBurstCooldownTime>1.8</turretBurstCooldownTime>
+      <!--<turretTopGraphicPath>Things/BTMturret</turretTopGraphicPath>-->
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>BTMboulderweapononet</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>gun_BTMBoulder_turret</defName>
+    <label>gun_BTMBoulder_turret</label>
+    <description>A simple launcher on a turret.</description>
+    <graphicData>
+      <texPath>Things/BTMturret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <menuHidden>true</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.01</AccuracyTouch>
+      <AccuracyShort>0.01</AccuracyShort>
+      <AccuracyMedium>0.01</AccuracyMedium>
+      <AccuracyLong>0.01</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BTMBoulder_Rock</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>30.0</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+
+		<requireLineOfSight>false</requireLineOfSight>
+		<minRange>3.9</minRange>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+	
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>BTMBoulder_turretex</defName>
+    <label>explosive boulder turret</label>
+    <description>A portable explosive boulder turret. Once it fires, it breaks.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.4,0.4)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/BTMturretEX</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.1</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+	  <li Class="BoulderTrapMod.CompProperties_BTM"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <fuelFilter>
+          <thingDefs>
+            <li>BTMBoulder_explosive</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>1</fuelCapacity>
+        <initialFuelPercent>1</initialFuelPercent>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <fuelMultiplier>1</fuelMultiplier>
+        <factorByDifficulty>false</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <BTMBoulder_explosive>1</BTMBoulder_explosive>
+	  <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <specialDisplayRadius>30.0</specialDisplayRadius>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+	  <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>gun_BTMBoulder_turretex</turretGunDef>
+      <turretBurstCooldownTime>1.8</turretBurstCooldownTime>
+      <!--<turretTopGraphicPath>Things/BTMturretEX</turretTopGraphicPath>-->
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>BTMboulderweapontwot</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BaseWeapon">
+    <defName>gun_BTMBoulder_turretex</defName>
+    <label>mini-turret gunex</label>
+    <description>A simple launcher on a turret.</description>
+    <graphicData>
+      <texPath>Things/BTMturretEX</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <menuHidden>true</menuHidden>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <AccuracyTouch>0.01</AccuracyTouch>
+      <AccuracyShort>0.01</AccuracyShort>
+      <AccuracyMedium>0.01</AccuracyMedium>
+      <AccuracyLong>0.01</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags Inherit="false">
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BTMBoulder_explosive</defaultProjectile>
+        <warmupTime>2.0</warmupTime>
+        <range>30.0</range>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+
+		<requireLineOfSight>false</requireLineOfSight>
+		<minRange>3.9</minRange>
+		<targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+	
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

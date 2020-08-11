@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef Abstract="True" Name = "CAOBase" ParentName="BuildingBase" >
+    <graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.5</drawSize>
+    </graphicData>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <Flammability>0.0</Flammability>
+    </statBases>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<costStuffCount>1</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Breakdownable"/>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>8</glowRadius>
+        <glowColor>(255,117,108,0)</glowColor>
+      </li>
+    </comps>
+    <designationCategory>Structure</designationCategory>
+	<passability>Standable</passability>
+    <rotatable>false</rotatable>
+	<tickerType>Normal</tickerType>
+  </ThingDef>
+  
+  <ThingDef ParentName="CAOBase">
+    <defName>CAOstartpoint</defName>
+    <label>Figure Start Point</label>
+    <thingClass>CircleAndOval.CAOstartpoint</thingClass>
+    <description>Start of Figures.</description>
+  </ThingDef>
+  
+  <ThingDef ParentName="CAOBase">
+    <defName>FullCircle</defName>
+    <label>FullCircle End Point</label>
+    <thingClass>CircleAndOval.FullCircle</thingClass>
+    <description>End of Full Circle. radius is between 'Figure Start Point' and this point.</description>
+  </ThingDef>
+	
+	<ThingDef ParentName="CAOBase">
+    <defName>FullOval</defName>
+    <label>FullOval End Point</label>
+    <thingClass>CircleAndOval.FullOval</thingClass>
+    <description>End of Full Oval. height and width are twice of between `Figure Start Point` and this point.</description>
+  </ThingDef>
+  
+  <ThingDef ParentName="CAOBase">
+    <defName>Diagonalff</defName>
+    <label>45 degree Diagonal End Point</label>
+    <thingClass>CircleAndOval.Diagonalff</thingClass>
+    <description>End of 45 degree Diagonal between `Figure Start Point` and this point.</description>
+  </ThingDef>
+	
+	<!--
+	
+	<ThingDef ParentName="CAOBase">
+    <defName>CurveendpointL</defName>
+    <label>Left Curve end Point</label>
+    <thingClass>MakeLineandCurve.CurveendpointL</thingClass>
+    <description>End of Curve.</description>
+	<graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="CAOBase">
+    <defName>CurveendpointR</defName>
+    <label>Right Curve end Point</label>
+    <thingClass>MakeLineandCurve.CurveendpointR</thingClass>
+    <description>End of Curve.</description>
+	<graphicData>
+      <texPath>Things/Building/Misc/DropBeacon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  -->
+
+</Defs>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============================= Permits from royal titles ============================= -->
+
+  
+
+  <RoyalTitlePermitDef>
+    <defName>CallWorkForceone</defName>
+    <label>call 1 colonist</label>
+    <workerClass>FP_CMM.FPCMM_RoyalTitlePermitWorker_CallAid_C1</workerClass>
+    <royalAid>
+      <favorCost>5</favorCost>
+      <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+      <pawnCount>1</pawnCount>
+    </royalAid>
+    <cooldownDays>45</cooldownDays>
+  </RoyalTitlePermitDef>
+  
+  <RoyalTitlePermitDef>
+    <defName>CallPrisoner</defName>
+    <label>call 1 prisoner</label>
+    <workerClass>FP_CMM.FPCMM_RoyalTitlePermitWorker_CallAid_P1</workerClass>
+    <royalAid>
+      <favorCost>3</favorCost>
+      <pawnKindDef>Drifter</pawnKindDef>
+      <pawnCount>1</pawnCount>
+    </royalAid>
+    <cooldownDays>45</cooldownDays>
+  </RoyalTitlePermitDef>
+
+</Defs>
+

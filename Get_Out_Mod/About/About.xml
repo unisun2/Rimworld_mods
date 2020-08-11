@@ -5,10 +5,11 @@
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<packageId>FLASHPOINT55.GetOut</packageId>
 	<url>https://github.com/unisun2/Rimworld_mods</url>
 	<description>Add an event that triggers another world map quest at once.
-	
+	More Quest for the Quest God! patched. configuable in mod setting.
 </description>
 </ModMetaData>

@@ -4,7 +4,10 @@
   <author>wgflash55</author>
   <supportedVersions>
     <li>1.0</li>
+	<li>1.1</li>
+	<li>1.2</li>
   </supportedVersions>
+  <packageId>FLASHPOINT55.MagicalPotionOfMedieval</packageId>
   <description>here are healer mech serum and resurrector mech serum for medieval players.
 they both are acquirable by quest like original.</description>
 </ModMetaData>

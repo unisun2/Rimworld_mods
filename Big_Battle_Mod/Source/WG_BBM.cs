@@ -11,11 +11,13 @@ namespace WG_BBM
 {
     public class IncidentWorker_BigRaidandFriend : IncidentWorker
     {
-        Faction friend = null;
-        Faction enemyf = null;
+        static Faction friend;
+        static Faction enemyf;
 
         protected override bool CanFireNowSub(IncidentParms parms)
         {
+            friend = null;
+            enemyf = null;
             Map map = Find.CurrentMap;
 
             //Log.Message("CanFireNowSub " + wgbbm_settings.Getenemypoints() + " " + wgbbm_settings.Getfriendspoints1() + " " + wgbbm_settings.Getfriendspoints2());

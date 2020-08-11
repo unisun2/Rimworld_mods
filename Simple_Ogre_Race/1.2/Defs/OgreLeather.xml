@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="LeatherBase">
+    <defName>FP_OGRE_Leather</defName>
+    <label>ogre leather</label>
+    <description>Tanned, dried, scraped ogre skin.</description>
+    <graphicData>
+      <color>(211,194,143)</color>
+      <colorTwo>(211,194,143)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+		<StuffPower_Armor_Blunt>1.4</StuffPower_Armor_Blunt>
+		<StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(211,194,143)</color>
+      <commonality>0.0001</commonality>
+	<statOffsets>
+		<Insulation_Cold>8</Insulation_Cold>
+		<Insulation_Heat>8</Insulation_Heat>
+	</statOffsets>
+	<statFactors>
+		<MaxHitPoints>2</MaxHitPoints>
+	</statFactors>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>

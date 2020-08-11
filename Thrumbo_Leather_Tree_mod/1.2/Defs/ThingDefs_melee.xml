@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>TLTM_LongSword</defName>
+    <label>thrumbo longsword</label>
+    <description>A big sword. has the power of thrumbo.</description>
+    <graphicData>
+      <texPath>Things/Weapon/ThrumboLTM_LS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>1.2</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <costStuffCount>185</costStuffCount>
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+    <equippedAngleOffset>60</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costList>
+	  <Leather_Thrumbo>100</Leather_Thrumbo>
+	  <Gold>2</Gold>
+    </costList>
+	<!--<comps>
+	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+	  <verticalFlipNorth>true</verticalFlipNorth>
+	  <angleAdjustmentWest>90</angleAdjustmentWest>
+	  <angleAdjustmentEast>-130</angleAdjustmentEast>
+	  <northOffset>(0.30,0,0.2)</northOffset>
+	  <eastOffset>(0,0,-0.1)</eastOffset>
+	  <westOffset>(0,0,-0.1)</westOffset>
+	  <southOffset>(-0.30,0,-0.2)</southOffset>
+	  </li>
+	</comps>-->
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ThrumboTreetwo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>	
+  </ThingDef>  
+  
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+	<defName>TLTM_Hammer</defName>
+	<label>thrumbo hammer</label>
+	<description>A big hammer. has the power of thrumbo.</description>
+	<graphicData>
+		<texPath>Things/Weapon/ThrumboLTM_WH</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		<drawSize>1.2</drawSize>
+	</graphicData>
+    <techLevel>Medieval</techLevel>
+	<tradeability>Sellable</tradeability>
+    <costStuffCount>165</costStuffCount>
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <Mass>3.0</Mass>
+    </statBases>
+    <equippedAngleOffset>60</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<costList>
+	  <Leather_Thrumbo>150</Leather_Thrumbo>
+	  <ThrumboHorn>1</ThrumboHorn>
+	  <Gold>2</Gold>
+    </costList>
+	<!--<comps>
+	  from jec's tools
+	  <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
+		  <verticalFlipNorth>true</verticalFlipNorth>
+		  <angleAdjustmentWest>90</angleAdjustmentWest>
+		  <angleAdjustmentEast>-130</angleAdjustmentEast>
+		  <northOffset>(0.30,0,0.2)</northOffset>
+		  <eastOffset>(0,0,-0.1)</eastOffset>
+		  <westOffset>(0,0,-0.1)</westOffset>
+		  <southOffset>(-0.30,0,-0.2)</southOffset>
+	  </li>
+	</comps>-->
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>25</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+	  <li>
+        <label>claw</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>ThrumboTreetwo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>13</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef> 
+
+</Defs>

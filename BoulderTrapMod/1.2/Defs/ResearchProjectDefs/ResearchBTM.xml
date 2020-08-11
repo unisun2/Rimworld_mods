@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ResearchTabDef>
+		<defName>BTMboulders</defName>
+		<label>Boulder Trap Mod</label>
+	</ResearchTabDef>
+
+
+  <ResearchProjectDef>
+    <defName>BTMboulderweaponone</defName>
+    <label>Simple boulder manned trap</label>
+    <techLevel>Medieval</techLevel>
+    <description>Simple but powerful.</description>
+    <baseCost>1000</baseCost>
+	<tab>BTMboulders</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>BTMboulderweapononet</defName>
+    <label>Simple boulder turret type trap</label>
+    <techLevel>Medieval</techLevel>
+    <description>Unlocks boulder turret.</description>
+    <baseCost>500</baseCost>
+	<tab>BTMboulders</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2</researchViewY>
+		<prerequisites>
+      <li>BTMboulderweaponone</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+
+  <ResearchProjectDef>
+    <defName>BTMboulderweapontwo</defName>
+    <label>boulder turret type trap</label>
+    <techLevel>Medieval</techLevel>
+    <description>can make Explosive, destructive boulder.</description>
+    <baseCost>1000</baseCost>
+	<tab>BTMboulders</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+      <li>BTMboulderweaponone</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>BTMboulderweapontwot</defName>
+    <label>explosive boulder turret type trap</label>
+    <techLevel>Medieval</techLevel>
+    <description>Unlocks explosive boulder turret.</description>
+    <baseCost>500</baseCost>
+	<tab>BTMboulders</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+		<prerequisites>
+      <li>BTMboulderweapontwo</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+
+</Defs>

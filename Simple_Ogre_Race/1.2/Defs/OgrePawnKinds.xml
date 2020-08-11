@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="FPOGRETribalBase" Abstract="True">
+    <race>FP_OgreRace</race>
+    <defaultFactionType>TribeCivil</defaultFactionType>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+	<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+    <maxGenerationAge>150</maxGenerationAge>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>3.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+	<isFighter>true</isFighter>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FPOGRETribalBase">
+	<defName>FP_OGRE_Colonist</defName>
+    <label>ogre colonist</label>
+    <combatPower>40</combatPower>
+	<defaultFactionType>TribeCivil</defaultFactionType>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>
+      <min>200</min>
+      <max>500</max>
+    </apparelMoney>
+  </PawnKindDef>
+  
+  
+
+  <!-- Poverty tier - penitent -->
+
+  <!-- Mid tier - warrior, hunter, trader -->
+  
+  <!-- High tier - berserker, heavy archer, chief melee, chief ranged -->
+
+  <PawnKindDef ParentName="FPOGRETribalBase">
+    <defName>FP_OGRE_Tribal_Berserker</defName>
+    <label>ogre berserker</label>
+    <combatPower>300</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <apparelMoney>
+      <min>500</min>
+      <max>1000</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>300</min>
+      <max>700</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>FP_OGRE_Melee</li>
+    </weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="FPOGRETribalBase">
+    <defName>FP_OGRE_Pirate_Berserker</defName>
+    <label>ogre berserker</label>
+    <combatPower>500</combatPower>
+	<defaultFactionType>Pirate</defaultFactionType>
+    <canBeSapper>true</canBeSapper>
+	<chemicalAddictionChance>0.7</chemicalAddictionChance>
+    <apparelMoney>
+      <min>1000</min>
+      <max>2000</max>
+    </apparelMoney>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+	   <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+	<combatEnhancingDrugsChance>0.35</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>
+      <min>0</min>
+      <max>2</max>
+    </combatEnhancingDrugsCount>
+    <weaponMoney>
+      <min>300</min>
+      <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>FP_OGRE_Melee</li>
+    </weaponTags>
+  </PawnKindDef>
+
+
+</Defs>
