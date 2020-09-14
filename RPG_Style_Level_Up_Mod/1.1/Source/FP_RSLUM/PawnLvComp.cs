@@ -56,6 +56,81 @@ namespace FP_RSLUM
 
                 }
 
+                if (FP_RSLUM_setting.FP_RSLUM_LvAv == -1)
+                {
+                    int templv = 0;
+                    int tempcount = 0;
+                    IEnumerable<Pawn> Pawns = from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
+                           where p.IsColonist
+                           select p;
+                           
+                    foreach (Pawn pawn in Pawns)
+                    {
+                        PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+                        if (pawnlvcomp != null)
+                        {
+                            templv += pawnlvcomp.level;
+                            tempcount++;
+                        }
+                    }
+                    if (tempcount == 0) // no mans. sky.
+                    {
+                        FP_RSLUM_setting.FP_RSLUM_LvAv = 0;
+                    }
+                    else // yes mans.
+                    {
+                        FP_RSLUM_setting.FP_RSLUM_LvAv = (templv / tempcount) * FP_RSLUM_setting.LevelScaling / 100;
+                    }
+                }
+
+                if (FP_RSLUM_setting.FP_RSLUM_LvAv > 0)
+                {
+                    this.level = FP_RSLUM_setting.FP_RSLUM_LvAv;
+
+                    int tempstat = FP_RSLUM_setting.FP_RSLUM_LvAv;
+
+                    while (true)
+                    {
+                        this.STR += FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex];
+                        tempstat -= FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex++];
+                        if (FP_RSLUM_setting.piindex == 1000)
+                            FP_RSLUM_setting.piindex = 0;
+                        if (tempstat <= 0)
+                            break;
+                        this.DEX += FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex];
+                        tempstat -= FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex++];
+                        if (FP_RSLUM_setting.piindex == 1000)
+                            FP_RSLUM_setting.piindex = 0;
+                        if (tempstat <= 0)
+                            break;
+                        this.AGL += FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex];
+                        tempstat -= FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex++];
+                        if (FP_RSLUM_setting.piindex == 1000)
+                            FP_RSLUM_setting.piindex = 0;
+                        if (tempstat <= 0)
+                            break;
+                        this.CON += FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex];
+                        tempstat -= FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex++];
+                        if (FP_RSLUM_setting.piindex == 1000)
+                            FP_RSLUM_setting.piindex = 0;
+                        if (tempstat <= 0)
+                            break;
+                        this.INT += FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex];
+                        tempstat -= FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex++];
+                        if (FP_RSLUM_setting.piindex == 1000)
+                            FP_RSLUM_setting.piindex = 0;
+                        if (tempstat <= 0)
+                            break;
+                        this.CHA += FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex];
+                        tempstat -= FP_RSLUM_setting.thisispi[FP_RSLUM_setting.piindex++];
+                        if (FP_RSLUM_setting.piindex == 1000)
+                            FP_RSLUM_setting.piindex = 0;
+                        if (tempstat <= 0)
+                            break;
+                    }
+
+                }
+
             }
         }
 
@@ -81,17 +156,15 @@ namespace FP_RSLUM
             Scribe_Values.Look<bool>(ref this.CHAauto, "FP_RSLUM_CHAauto", false, true);
         }
 
-        public bool canlevelup()
-        {
-            return exp > need_exp;
-        }
 
         public void levelup()
         {
-            bool needhediff = (exp > need_exp);
-
+            
             while (exp > need_exp)
             {
+                if (level >= FP_RSLUM_setting.MaxLevel)
+                    return; // max level !
+
                 this.level += 1;
                 this.StatPoint += 1;
                 exp -= need_exp;
@@ -140,40 +213,39 @@ namespace FP_RSLUM
                 {
                     exptick = 0;
                     this.exp += FP_RSLUM_setting.AnimalEXPPerTick;
+                    FP_RSLUM_setting.FP_RSLUM_LvAv = -1;
+                    if (this.exp > this.need_exp)
+                        this.levelup();
                 }
             }
-            healtick++;
-            if(healtick > 1200)
+
+            if (this.CON > 200)
             {
-                if(this.CON < 200)
+                healtick++;
+                if (healtick > 1200)
                 {
                     healtick = 0;
-                    return;
-                }
-                Pawn pawn = this.parent as Pawn;
-                if (pawn.health != null)
-                {
-
-                    if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                    Pawn pawn = this.parent as Pawn;
+                    if (pawn.health != null)
                     {
-                        foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
+                        if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                         {
-                            if (injury.Bleeding)
+                            foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
                             {
-                                //float temp = injury.BleedRate;
+                                if (injury.Bleeding)
+                                {
+                                    //float temp = injury.BleedRate;
 
-                                injury.Severity = (float)Math.Max(0f, injury.Severity - (0.01 * (this.CON - 100)));
-                                //Log.Message(temp.ToString() + " -> " + injury.BleedRate.ToString());
-                                break;
+                                    injury.Severity = (float)Math.Max(0f, injury.Severity - (0.01 * (this.CON - 100)));
+                                    //Log.Message(temp.ToString() + " -> " + injury.BleedRate.ToString());
+                                    break;
+                                }
                             }
-                        }
 
+                        }
                     }
                 }
-                healtick = 0;
             }
         }
-
-
     }
 }

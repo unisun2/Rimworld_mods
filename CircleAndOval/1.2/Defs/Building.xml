@@ -10,7 +10,7 @@
     </graphicData>
     <altitudeLayer>Blueprint</altitudeLayer>
     <statBases>
-      <WorkToBuild>0</WorkToBuild>
+      <WorkToBuild>-99</WorkToBuild>
       <Flammability>0.0</Flammability>
     </statBases>
 	<stuffCategories>

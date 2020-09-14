@@ -57,12 +57,12 @@ namespace WG_BBM
 
 
             _Listing_Standard.GapLine(12f);
-            _Listing_Standard.Label(Translator.Translate("Enemy raid point") + " : " + enemypersent * 100f + " % "); // 
+            _Listing_Standard.Label(Translator.Translate("Enemy's strength") + " : " + enemypersent * 100f + " % "); // 
 
             enemypersent = (float)_Listing_Standard.Slider((float)enemypersent, 1f, 3);
 
             _Listing_Standard.GapLine(12f);
-            _Listing_Standard.Label(Translator.Translate("Enemy raid point") + " : " + friendpersent * 100f + " % "); // 
+            _Listing_Standard.Label(Translator.Translate("Friend's strength") + " : " + friendpersent * 100f + " % "); // 
 
             friendpersent = (float)_Listing_Standard.Slider((float)friendpersent, 0.1f, 2);
 

@@ -12,6 +12,6 @@ namespace FP_RSLUM
     {
         public static bool CombatExtendedIsActive = ModsConfig.ActiveModsInLoadOrder.Any(m => m.Name == "Combat Extended");
         public static bool CarryCapacityFixIsActive = ModsConfig.ActiveModsInLoadOrder.Any(m => m.Name == "Carry Capacity Fix");
-
+        
     }
 }

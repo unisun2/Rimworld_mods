@@ -52,6 +52,11 @@ namespace FP_RSLUM
                 if (pawnlvcomp != null)
                 {
                     pawnlvcomp.exp += (int)(xp * FP_RSLUM_setting.ColonistPercent * (1f + (0.01 * pawnlvcomp.INT)));
+
+                    if ((pawnlvcomp.exp > pawnlvcomp.need_exp) && (pawnlvcomp.level < FP_RSLUM_setting.MaxLevel))
+                    {
+                        pawnlvcomp.levelup();
+                    }
                 }
 
                 //Log.Message(pawn.Name + xp.ToString() + " " + ((int)(xp * 100)).ToString());
