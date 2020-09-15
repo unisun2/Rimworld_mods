@@ -44,4 +44,7 @@
 	
 	<LvTab_reroll>reroll stat</LvTab_reroll>
 	
+	<FP_RSLUM_setting_MaxLevel>Max level</FP_RSLUM_setting_MaxLevel>
+	<FP_RSLUM_setting_LevelScaling>level scaling % (Depends on colonists average level) :</FP_RSLUM_setting_LevelScaling>
+	
 </LanguageData>

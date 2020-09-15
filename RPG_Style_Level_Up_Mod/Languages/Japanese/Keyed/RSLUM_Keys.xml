@@ -41,5 +41,8 @@
 	<FP_RSLUM_setting_Startingstat_max>ランダムな初期ステータス最大値</FP_RSLUM_setting_Startingstat_max>
 	<FP_RSLUM_setting_KillExpMult>敵射殺で得られる経験値</FP_RSLUM_setting_KillExpMult>
 	<LvTab_reroll>REROLL</LvTab_reroll>
+	
+	<FP_RSLUM_setting_MaxLevel>最大レベル</FP_RSLUM_setting_MaxLevel>
+	<FP_RSLUM_setting_LevelScaling>レベル・スケーリングパーセント(味方平均レベル比例) :</FP_RSLUM_setting_LevelScaling>
 
 </LanguageData>

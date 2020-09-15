@@ -101,12 +101,14 @@ namespace FP_RSLUM
             _Listing_Standard.GapLine(12f);
             _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_MaxLevel") + " : " + MaxLevel.ToString()); // Max level. default = 9999
 
-            _Listing_Standard.IntAdjuster(ref MaxLevel, 1, 1);
+            Widgets.TextField(new Rect(320, 40, 100, 20))
+            // 직접 수정해가면서 위치를 구해야함.....
+            //_Listing_Standard.IntAdjuster(ref MaxLevel, 1, 1);
 
             _Listing_Standard.GapLine(12f);
             _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_LevelScaling") + " : " + LevelScaling.ToString() + "%"); // Newcomers get a level at this percentage of our people's level average. default = 0
 
-            LevelScaling = (int)_Listing_Standard.Slider((float)LevelScaling, 1f, 100f);
+            LevelScaling = (int)_Listing_Standard.Slider((float)LevelScaling, 0f, 100f);
 
 
 
