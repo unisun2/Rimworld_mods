@@ -7,7 +7,7 @@ using RimWorld;
 using Verse;
 
 
-namespace HangedMan
+namespace FPDBDHook
 {
     [DefOf]
     class HangedManDefOf

@@ -7,44 +7,35 @@ using Verse;
 using RimWorld;
 using UnityEngine;
 using System.Reflection;
+using Verse.AI;
 
-namespace HangedMan
+
+namespace FPDBDHook
 {
     public class Building_MeatHook : Building
     {
         public int pawncount = 0;
 
-<<<<<<< Updated upstream
         public int killcount = 0;
-=======
->>>>>>> Stashed changes
+        
+        public CompForbiddable forbiddable;
 
         public override void ExposeData()
         {
             base.ExposeData();
-<<<<<<< Updated upstream
-
             Scribe_Values.Look<int>(ref pawncount, "pawncount", defaultValue: 0);
             Scribe_Values.Look<int>(ref killcount, "killcount", defaultValue: 0);
         }
 
-        //public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
-        //{
-        //    return null;
-        //    // no Medical, no interact
-        //}
-=======
+        public bool HasAnyContents => pawncount > 0;
 
-
-        }
-
-
-        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
-            return null;
-            // no Medical, no interact
+            base.SpawnSetup(map, respawningAfterLoad);
+
+            forbiddable = GetComp<CompForbiddable>();
+
         }
->>>>>>> Stashed changes
 
 
         public override void Tick()
@@ -64,7 +55,6 @@ namespace HangedMan
                 }
             }
         }
-<<<<<<< Updated upstream
 
         public override string GetInspectString()
         {
@@ -75,8 +65,39 @@ namespace HangedMan
 
             return stringBuilder.ToString();
         }
-        
-=======
->>>>>>> Stashed changes
+
+
+
+        public static Building_MeatHook FindBioReactorFor(Pawn p, Pawn traveler, bool ignoreOtherReservations = false)
+        {
+            IEnumerable<ThingDef> enumerable = from def in DefDatabase<ThingDef>.AllDefs
+                                               where typeof(Building_MeatHook).IsAssignableFrom(def.thingClass)
+                                               select def;
+
+            foreach (ThingDef singleDef in enumerable)
+            {
+                Building_MeatHook building_MeatHook = (Building_MeatHook)GenClosest.ClosestThingReachable(p.Position, p.Map, ThingRequest.ForDef(singleDef), PathEndMode.InteractionCell, TraverseParms.For(traveler, Danger.Deadly, TraverseMode.ByPawn, false), 9999f, delegate(Thing x)
+                {
+                    bool result;
+                    if (!((Building_MeatHook)x).HasAnyContents)
+                    {
+                        Pawn traveler2 = traveler;
+                        LocalTargetInfo target = x;
+                        bool ignoreOtherReservations2 = ignoreOtherReservations;
+                        result = traveler2.CanReserve(target, 1, -1, null, ignoreOtherReservations2);
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+                    return result;
+                }, null, 0, -1, false, RegionType.Set_Passable, false);
+                if (building_MeatHook != null && !building_MeatHook.forbiddable.Forbidden)
+                {
+                    return building_BioReactor;
+                }
+            }
+            return null;
+        }
     }
 }

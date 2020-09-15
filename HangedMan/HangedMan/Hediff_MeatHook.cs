@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 
-namespace HangedMan
+namespace FPDBDHook
 {
     class Hediff_MeatHook : HediffWithComps
     {
