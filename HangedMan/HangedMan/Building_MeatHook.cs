@@ -49,7 +49,7 @@ namespace FPDBDHook
             return true;
         }
 
-        public override bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
+        public bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
         {
             HookSoundDef.FPDBDHooksound.PlayOneShot(new TargetInfo(this.Position, base.Map, false));
             Pawn pawn = thing as Pawn;
@@ -59,7 +59,7 @@ namespace FPDBDHook
                 this.hangedman = pawn;
                 if(pawn.RaceProps.Humanlike)
                     pawn.needs.mood.thoughts.memories.TryGainMemory(HookThoughtDef.FPDBDHooked, null);
-                Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked, pawn, null);
+                Hediff hediff = HediffMaker.MakeHediff(HookHediffDef.FPDBDHookhediff, pawn, null);
                 pawn.health.AddHediff(hediff);
                 pawn.jobs.posture = PawnPosture.Standing;
                 pawn.Rotation = Rot4.South;
@@ -120,7 +120,7 @@ namespace FPDBDHook
                     Pawn pawn = thingList[i] as Pawn;
                     if (pawn == this.hangedman)
                     {
-                        Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked, pawn, null);
+                        Hediff hediff = HediffMaker.MakeHediff(HookHediffDef.FPDBDHookhediff, pawn, null);
                         pawn.health.AddHediff(hediff);
                         victimcheck = false;
                         break;

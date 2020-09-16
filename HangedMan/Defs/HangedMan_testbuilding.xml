@@ -39,10 +39,6 @@
 			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-		<building>
-			<bed_showSleeperBody>False</bed_showSleeperBody>
-			<bed_healPerDay>4</bed_healPerDay>
-		</building>
 		<fillPercent>0.4</fillPercent>
 		<pathCost>60</pathCost>
 		<staticSunShadowHeight>0.17</staticSunShadowHeight>

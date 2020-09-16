@@ -20,6 +20,9 @@ namespace FP_RSLUM
         public static int MaxLevel = 9999;
         public static int LevelScaling = 0;
 
+        string MaxLevelbuffer = "";
+        //int MaxLeveltemp = 0;
+
         public static int FP_RSLUM_LvAv = -1;
         public static byte[] thisispi = { 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 3, 2, 3, 8, 4, 6, 2, 6, 4, 3, 3, 8, 3, 2, 7, 9, 5, 0, 2, 8, 8, 4, 1, 9, 7, 1, 6, 
                                             9, 3, 9, 9, 3, 7, 5, 1, 0, 5, 8, 2, 0, 9, 7, 4, 9, 4, 4, 5, 9, 2, 3, 0, 7, 8, 1, 6, 4, 0, 6, 2, 8, 6, 2, 0, 8, 9, 9, 8, 6, 
@@ -60,6 +63,10 @@ namespace FP_RSLUM
             Scribe_Values.Look<int>(ref KillExpMult, "FP_RSLUM_KillExpMult", 50);
             Scribe_Values.Look<int>(ref MaxLevel, "FP_RSLUM_MaxLevel", 9999);
             Scribe_Values.Look<int>(ref LevelScaling, "FP_RSLUM_LevelScaling", 0);
+
+            MaxLevelbuffer = MaxLevel.ToString();
+            //MaxLeveltemp = MaxLevel;
+
         }
 
         public void DoSettingsWindowContents(Rect canvas)
@@ -99,9 +106,28 @@ namespace FP_RSLUM
             KillExpMult = (int)_Listing_Standard.Slider((float)KillExpMult, 1f, 300f);
 
             _Listing_Standard.GapLine(12f);
-            _Listing_Standard.Label(Translator.Translate("FP_RSLUM_setting_MaxLevel") + " : " + MaxLevel.ToString()); // Max level. default = 9999
+            //_Listing_Standard.Label(Translator.Translate("") + " : " + MaxLevel.ToString()); // Max level. default = 9999
 
-            Widgets.TextField(new Rect(320, 40, 100, 20))
+            _Listing_Standard.TextFieldNumericLabeled((Translator.Translate("FP_RSLUM_setting_MaxLevel") + " : "), ref MaxLevel, ref MaxLevelbuffer);
+
+            if(MaxLevelbuffer != "")
+            {
+                try
+                {
+                    int temp = Int32.Parse(MaxLevelbuffer);
+                    if (temp > 1)
+                        MaxLevel = temp;
+                }
+                catch
+                {
+                    // nothing.
+                }
+            }
+ //           if (Int32.TryParse(MaxLevelbuffer, out MaxLeveltemp))
+ //               if (MaxLeveltemp > 0)
+ //                   MaxLevel = MaxLeveltemp;
+
+
             // 직접 수정해가면서 위치를 구해야함.....
             //_Listing_Standard.IntAdjuster(ref MaxLevel, 1, 1);
 

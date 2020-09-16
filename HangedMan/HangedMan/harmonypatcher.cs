@@ -30,6 +30,7 @@ namespace FPDBDHook
         }
 
 
+        [HarmonyPrefix]
         // TaleUtility.Notify_PawnDied(this, dinfo);
         public static void Pre_Notify_PawnDied(ref Pawn __victim, ref DamageInfo? dinfo)
         {
@@ -55,6 +56,7 @@ namespace FPDBDHook
             }
         }
 
+        [HarmonyPrefix]
         public static bool Prefix_AddHumanlikeOrders(Vector3 clickPos, Pawn pawn, List<FloatMenuOption> opts)
         {
             if (pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))

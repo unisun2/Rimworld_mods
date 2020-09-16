@@ -31,6 +31,7 @@ namespace FP_RSLUM
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
+
             base.PostSpawnSetup(respawningAfterLoad);
             if (this.level == -1)
             {
@@ -56,32 +57,39 @@ namespace FP_RSLUM
 
                 }
 
-                if (FP_RSLUM_setting.FP_RSLUM_LvAv == -1)
+                if (FP_RSLUM_setting.FP_RSLUM_LvAv == -1 && FP_RSLUM_setting.LevelScaling != 0)
                 {
+
+
                     int templv = 0;
                     int tempcount = 0;
-                    IEnumerable<Pawn> Pawns = from p in Find.CurrentMap.mapPawns.PawnsInFaction(Faction.OfPlayer)
-                           where p.IsColonist
+                    IEnumerable<Pawn> Pawns = from p in Find.World.worldPawns.AllPawnsAlive
+                           where p.IsColonist && (p.Faction == Faction.OfPlayer)
                            select p;
                            
-                    foreach (Pawn pawn in Pawns)
+                    if(Pawns.Count() != 0)
                     {
-                        PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
-                        if (pawnlvcomp != null)
+                        foreach (Pawn pawn in Pawns)
                         {
-                            templv += pawnlvcomp.level;
-                            tempcount++;
+                            PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
+                            if (pawnlvcomp != null)
+                            {
+                                templv += pawnlvcomp.level;
+                                tempcount++;
+                            }
                         }
+                        FP_RSLUM_setting.FP_RSLUM_LvAv = (templv / tempcount) * FP_RSLUM_setting.LevelScaling / 100;
                     }
-                    if (tempcount == 0) // no mans. sky.
+                    else
                     {
                         FP_RSLUM_setting.FP_RSLUM_LvAv = 0;
                     }
-                    else // yes mans.
-                    {
-                        FP_RSLUM_setting.FP_RSLUM_LvAv = (templv / tempcount) * FP_RSLUM_setting.LevelScaling / 100;
-                    }
                 }
+                else
+                {
+                    FP_RSLUM_setting.FP_RSLUM_LvAv = 0;
+                }
+
 
                 if (FP_RSLUM_setting.FP_RSLUM_LvAv > 0)
                 {
@@ -130,7 +138,6 @@ namespace FP_RSLUM
                     }
 
                 }
-
             }
         }
 
@@ -206,46 +213,50 @@ namespace FP_RSLUM
         public override void CompTick()
         {
             base.CompTick();
-            if (parent.def.race.Animal)
+            if (parent.Spawned)
             {
-                exptick++;
-                if (exptick > 600)
+                if (parent.def.race.Animal)
                 {
-                    exptick = 0;
-                    this.exp += FP_RSLUM_setting.AnimalEXPPerTick;
-                    FP_RSLUM_setting.FP_RSLUM_LvAv = -1;
-                    if (this.exp > this.need_exp)
-                        this.levelup();
-                }
-            }
-
-            if (this.CON > 200)
-            {
-                healtick++;
-                if (healtick > 1200)
-                {
-                    healtick = 0;
-                    Pawn pawn = this.parent as Pawn;
-                    if (pawn.health != null)
+                    exptick++;
+                    if (exptick > 600)
                     {
-                        if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                        exptick = 0;
+                        this.exp += FP_RSLUM_setting.AnimalEXPPerTick;
+                        FP_RSLUM_setting.FP_RSLUM_LvAv = -1;
+                        if (this.exp > this.need_exp)
+                            this.levelup();
+                    }
+                }
+
+                if (this.CON > 200)
+                {
+                    healtick++;
+                    if (healtick > 1200)
+                    {
+                        healtick = 0;
+                        Pawn pawn = this.parent as Pawn;
+                        if (pawn.health != null)
                         {
-                            foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
+                            if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                             {
-                                if (injury.Bleeding)
+                                foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
                                 {
-                                    //float temp = injury.BleedRate;
+                                    if (injury.Bleeding)
+                                    {
+                                        //float temp = injury.BleedRate;
 
-                                    injury.Severity = (float)Math.Max(0f, injury.Severity - (0.01 * (this.CON - 100)));
-                                    //Log.Message(temp.ToString() + " -> " + injury.BleedRate.ToString());
-                                    break;
+                                        injury.Severity = (float)Math.Max(0f, injury.Severity - (0.01 * (this.CON - 100)));
+                                        //Log.Message(temp.ToString() + " -> " + injury.BleedRate.ToString());
+                                        break;
+                                    }
                                 }
-                            }
 
+                            }
                         }
                     }
                 }
             }
+            
         }
     }
 }

@@ -34,5 +34,11 @@ namespace FPDBDHook
         public static SoundDef FPDBDHooksound;
     }
 
+    [DefOf]
+    public static class HookHediffDef
+    {
+        public static HediffDef FPDBDHookhediff;
+    }
+
 
 }
