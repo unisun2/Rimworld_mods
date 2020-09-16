@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>KnowFPDBDHookedHumanlike</defName>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+			<li>Bloodlust</li>
+			<li>Cannibal</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>We Hooked human alive.</label>
+				<description>That scream is terrible.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>KnowFPDBDHookedHumanlikeCannibal</defName>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<requiredTraits>
+			<li>Cannibal</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>We Hooked human alive.</label>
+				<description>Ahh, fresh meat!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>KnowFPDBDHookedHumanlikeBloodlust</defName>
+		<durationDays>3</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+		<requiredTraits>
+			<li>Bloodlust</li>
+		</requiredTraits>
+		<stages>
+			<li>
+				<label>We Hooked human alive.</label>
+				<description>I wish I could hear this scream every morning.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>FPDBDHooked</defName>
+		<durationDays>5</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>Hung over the hook.</label>
+				<description>Aaaaaaaaaaah!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

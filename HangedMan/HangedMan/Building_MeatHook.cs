@@ -8,6 +8,8 @@ using RimWorld;
 using UnityEngine;
 using System.Reflection;
 using Verse.AI;
+using RimWorld.Planet;
+using Verse.Sound;
 
 
 namespace FPDBDHook
@@ -15,7 +17,7 @@ namespace FPDBDHook
     public class Building_MeatHook : Building
     {
         public int pawncount = 0;
-
+        public Pawn hangedman = null;
         public int killcount = 0;
         
         public CompForbiddable forbiddable;
@@ -23,11 +25,13 @@ namespace FPDBDHook
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look<int>(ref pawncount, "pawncount", defaultValue: 0);
-            Scribe_Values.Look<int>(ref killcount, "killcount", defaultValue: 0);
+            Scribe_Values.Look<int>(ref pawncount, "FPDBDHookpawncount", defaultValue: 0);
+            Scribe_Values.Look<int>(ref killcount, "FPDBDHookkillcount", defaultValue: 0);
+            Scribe_Values.Look<Pawn>(ref hangedman, "FPDBDHookhangedman", defaultValue: null);
         }
 
         public bool HasAnyContents => pawncount > 0;
+
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -37,21 +41,94 @@ namespace FPDBDHook
 
         }
 
+        public bool Accepts(){
+            if(pawncount > 0 && hangedman != null){
+                if(hangedman.Spawned)
+                    return false;
+            }
+            return true;
+        }
 
-        public override void Tick()
+        public override bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
         {
-            base.Tick();
+            HookSoundDef.FPDBDHooksound.PlayOneShot(new TargetInfo(this.Position, base.Map, false));
+            Pawn pawn = thing as Pawn;
+            if(pawn !=null)
+            {
+                this.pawncount = 1;
+                this.hangedman = pawn;
+                if(pawn.RaceProps.Humanlike)
+                    pawn.needs.mood.thoughts.memories.TryGainMemory(HookThoughtDef.FPDBDHooked, null);
+                Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked, pawn, null);
+                pawn.health.AddHediff(hediff);
+                pawn.jobs.posture = PawnPosture.Standing;
+                pawn.Rotation = Rot4.South;
+                if(pawn.RaceProps.Humanlike){
+                    foreach (Pawn p in this.Map.mapPawns.SpawnedPawnsInFaction(Faction))
+                        {
+                            if (p.needs != null && p.needs.mood != null && p.needs.mood.thoughts != null)
+                            {
+                                p.needs.mood.thoughts.memories.TryGainMemory(HookThoughtDef.KnowFPDBDHookedHumanlike, null);
+                                p.needs.mood.thoughts.memories.TryGainMemory(HookThoughtDef.KnowFPDBDHookedHumanlikeCannibal, null);
+                                p.needs.mood.thoughts.memories.TryGainMemory(HookThoughtDef.KnowFPDBDHookedHumanlikeBloodlust, null);
+                            }
+                        }
+                }
+
+
+            }
+            return true;
+        }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+	        foreach (Gizmo gizmo in base.GetGizmos())
+	        {
+		        yield return gizmo;
+	        }
+	        if (base.Faction == Faction.OfPlayer && this.pawncount > 0)
+	        {
+		        Command_Action command_Action = new Command_Action();
+		        command_Action.action = unhook;
+		        command_Action.defaultLabel = "FPDBDUnhook".Translate();
+		        command_Action.defaultDesc = "FPDBDUnhook".Translate();
+		        if (this.pawncount == 0)
+		        {
+			        command_Action.Disable("FPDBDUnhookFailEmpty".Translate());
+		        }
+		        command_Action.hotKey = KeyBindingDefOf.Misc8;
+		        command_Action.icon = ContentFinder<Texture2D>.Get("UI/Commands/PodEject");
+		        yield return command_Action;
+	        }
+        }
+
+        public void unhook(){
+            this.hangedman = null;
+            this.pawncount = 0;
+        }
+
+
+        public override void TickRare()
+        {
+            bool victimcheck = true;
+            base.TickRare();
             if (base.Spawned)
             {
                 List<Thing> thingList = base.Position.GetThingList(base.Map);
                 for (int i = 0; i < thingList.Count; i++)
                 {
                     Pawn pawn = thingList[i] as Pawn;
-                    if (pawn != null && pawn.GetPosture() == PawnPosture.LayingInBed && pawn.IsPrisoner)
+                    if (pawn == this.hangedman)
                     {
                         Hediff hediff = HediffMaker.MakeHediff(HangedManDefOf.HangedManHediff_Hooked, pawn, null);
                         pawn.health.AddHediff(hediff);
+                        victimcheck = false;
+                        break;
                     }
+                }
+                if (victimcheck){
+                    this.hangedman = null;
+                    this.pawncount = 0;
                 }
             }
         }
@@ -61,14 +138,17 @@ namespace FPDBDHook
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.Append(base.GetInspectString());
 
-            stringBuilder.AppendInNewLine("Killcounts".Translate() + ": " + this.killcount.ToString());
+            String hangedmanname = (this.hangedman != null)? (hangedman.Name).ToString() : "None";
+
+            stringBuilder.AppendInNewLine("FPDBDHookKillcounts".Translate() + " : " + this.killcount.ToString());
+            stringBuilder.AppendInNewLine("FPDBDHookVictim".Translate() + " : " + hangedmanname);
 
             return stringBuilder.ToString();
         }
 
 
 
-        public static Building_MeatHook FindBioReactorFor(Pawn p, Pawn traveler, bool ignoreOtherReservations = false)
+        public static Building_MeatHook FindHookFor(Pawn p, Pawn traveler, bool ignoreOtherReservations = false)
         {
             IEnumerable<ThingDef> enumerable = from def in DefDatabase<ThingDef>.AllDefs
                                                where typeof(Building_MeatHook).IsAssignableFrom(def.thingClass)
@@ -94,7 +174,7 @@ namespace FPDBDHook
                 }, null, 0, -1, false, RegionType.Set_Passable, false);
                 if (building_MeatHook != null && !building_MeatHook.forbiddable.Forbidden)
                 {
-                    return building_BioReactor;
+                    return building_MeatHook;
                 }
             }
             return null;

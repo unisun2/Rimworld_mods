@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<FPDBDUnhook>Unhook</FPDBDUnhook>
+	<FPDBDUnhookFailEmpty>Unhook failed. there is nothing.</FPDBDUnhookFailEmpty>
+	<FPDBDHookKillcounts>kill counts</FPDBDHookKillcounts>
+	<FPDBDHookVictim>victim</FPDBDHookVictim>
+	
+	<CarryToDBDHook>carry to hook</CarryToDBDHook>
+	<CannotCarryToDBDHook>cannot carry to hook</CannotCarryToDBDHook>
+	<NoDBDHook>no hook</NoDBDHook>
+	
+	
+	
+	
+
+</LanguageData>

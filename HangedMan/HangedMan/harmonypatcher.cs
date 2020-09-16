@@ -22,9 +22,9 @@ namespace FPDBDHook
             Log.Message("Initializing FPDBD_Hook_patches...");
             Harmony harmonyInstance = new Harmony("Flashpoint55.FPDBDHook");
 
-            harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.TaleUtility), "Notify_PawnDied"), new HarmonyMethod(typeof(harmony_patches), "Prefix_AddHumanlikeOrders"));
+            harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.TaleUtility), "Notify_PawnDied"), new HarmonyMethod(typeof(harmony_patches), "Pre_Notify_PawnDied"));
 
-            harmonyInstance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), new HarmonyMethod(typeof(harmony_patches), "Pre_Notify_PawnDied"));
+            harmonyInstance.Patch(AccessTools.Method(typeof(FloatMenuMakerMap), "AddHumanlikeOrders"), new HarmonyMethod(typeof(harmony_patches), "Prefix_AddHumanlikeOrders"));
 
 
         }
@@ -40,9 +40,15 @@ namespace FPDBDHook
                 {
                     Pawn pawn = thingList[i] as Pawn;
 
-                    Building_MeatHook building_meathook = thingList[i] as Building_MeatHook;
-                    if(building_meathook != null){
-                        building_meathook.killcount++;
+                    Building_MeatHook Building_MeatHook = thingList[i] as Building_MeatHook;
+                    if(Building_MeatHook != null){
+                        if (Building_MeatHook.hangedman == __victim)
+                        {
+                            Building_MeatHook.hangedman = null;
+                            Building_MeatHook.killcount++;
+                            break;
+                        }
+                        
                     }
 
                 }
@@ -57,23 +63,23 @@ namespace FPDBDHook
                 {
                     LocalTargetInfo localTargetInfo4 = localTargetInfo3;
                     Pawn victim = (Pawn)localTargetInfo4.Thing;
-                    if (victim.Downed && pawn.CanReserveAndReach(victim, PathEndMode.OnCell, Danger.Deadly, 1, -1, null, true) && Building_BioReactor.FindBioReactorFor(victim, pawn, true) != null)
+                    if (victim.Downed && pawn.CanReserveAndReach(victim, PathEndMode.OnCell, Danger.Deadly, 1, -1, null, true) && Building_MeatHook.FindHookFor(victim, pawn, true) != null)
                     {
-                        string text4 = "CarryToBioReactor".Translate(localTargetInfo4.Thing.LabelCap, localTargetInfo4.Thing);
-                        JobDef jDef = Bio_JobDefOf.CarryToBioReactor;
+                        string text4 = "CarryToDBDHook".Translate(localTargetInfo4.Thing.LabelCap, localTargetInfo4.Thing);
+                        JobDef jDef = Hook_JobDefOf.FPDBDTakeToMeatHook;
                         Action action3 = delegate()
                         {
-                            Building_BioReactor building_BioReactor = Building_BioReactor.FindBioReactorFor(victim, pawn, false);
-                            if (building_BioReactor == null)
+                            Building_MeatHook building_MeatHook = Building_MeatHook.FindHookFor(victim, pawn, false);
+                            if (building_MeatHook == null)
                             {
-                                building_BioReactor = Building_BioReactor.FindBioReactorFor(victim, pawn, true);
+                                building_MeatHook = Building_MeatHook.FindHookFor(victim, pawn, true);
                             }
-                            if (building_BioReactor == null)
+                            if (building_MeatHook == null)
                             {
-                                Messages.Message("CannotCarryToBioReactor".Translate() + ": " + "NoBioReactor".Translate(), victim, MessageTypeDefOf.RejectInput, false);
+                                Messages.Message("CannotCarryToDBDHook".Translate() + ": " + "NoDBDHook".Translate(), victim, MessageTypeDefOf.RejectInput, false);
                                 return;
                             }
-                            Job job = new Job(jDef, victim, building_BioReactor);
+                            Job job = new Job(jDef, victim, building_MeatHook);
                             job.count = 1;
                             pawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
                         };
