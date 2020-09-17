@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BedWithQualityBase">
+	<ThingDef ParentName="ArtableFurnitureBase">
 
 		<thingClass>FPDBDHook.Building_MeatHook</thingClass>
 		<altitudeLayer>Building</altitudeLayer>
 		<defName>FPDBDHook_Building_MeatHook</defName>
 		<label>MeatHook</label>
-		<description>A cozy mattress and sheets on a frame for resting.</description>
+		<description>zonna appa</description>
 		<graphicData>
 			<texPath>Things/Building/Furniture/Bed/Bed</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -19,20 +19,15 @@
 		</graphicData>
 		<tickerType>Rare</tickerType>
 		<comps>
-
 		</comps>
 		<statBases>
-			<MaxHitPoints>140</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<Beauty>1</Beauty>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Beauty>0</Beauty>
 			<WorkToBuild>800</WorkToBuild>
-			<Mass>30</Mass>
-			<BedRestEffectiveness>1</BedRestEffectiveness>
-			<Comfort>0.75</Comfort>
-			<ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+			<Mass>10</Mass>
 		</statBases>
-		<size>(1,2)</size>
+		<size>(1,1)</size>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>

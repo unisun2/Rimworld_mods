@@ -7,8 +7,8 @@
     <ProjectGuid>{3EEC4F96-5F16-422F-B0D5-80E4B4A39B97}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FP_Warp_TB</RootNamespace>
-    <AssemblyName>FP_Warp_TB</AssemblyName>
+    <RootNamespace>FPMC</RootNamespace>
+    <AssemblyName>FPMC</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

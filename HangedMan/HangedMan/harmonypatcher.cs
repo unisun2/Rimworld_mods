@@ -32,18 +32,18 @@ namespace FPDBDHook
 
         [HarmonyPrefix]
         // TaleUtility.Notify_PawnDied(this, dinfo);
-        public static void Pre_Notify_PawnDied(ref Pawn __victim, ref DamageInfo? dinfo)
+        public static void Pre_Notify_PawnDied(ref Pawn victim, ref DamageInfo? dinfo)
         {
-            if (__victim.Spawned && __victim.Map != null)
+            if (victim.Spawned && victim.Map != null)
             {
-                List<Thing> thingList = __victim.Position.GetThingList(__victim.Map);
+                List<Thing> thingList = victim.Position.GetThingList(victim.Map);
                 for (int i = 0; i < thingList.Count; i++)
                 {
                     Pawn pawn = thingList[i] as Pawn;
 
                     Building_MeatHook Building_MeatHook = thingList[i] as Building_MeatHook;
                     if(Building_MeatHook != null){
-                        if (Building_MeatHook.hangedman == __victim)
+                        if (Building_MeatHook.hangedman == victim)
                         {
                             Building_MeatHook.hangedman = null;
                             Building_MeatHook.killcount++;
