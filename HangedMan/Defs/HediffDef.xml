@@ -3,11 +3,11 @@
 
 	<HediffDef>
 		<hediffClass>FPDBDHook.Hediff_MeatHook</hediffClass>
-		<defaultLabelColor>(0.5, 0.1, 0.5)</defaultLabelColor>
+		<defaultLabelColor>(0.78, 0.0, 0.0)</defaultLabelColor>
 		<defName>FPDBDHookhediff</defName>
-		<description>POWER!</description>
-		<label>Psychic silence</label>
-		<labelNoun>mental shield</labelNoun>
+		<description>hooked and bleeding.</description>
+		<label>hooked</label>
+		<labelNoun>hooked</labelNoun>
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
@@ -20,7 +20,7 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<PsychicSensitivity>-5.55</PsychicSensitivity>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
 				</statOffsets>
 			</li>
 		</stages>

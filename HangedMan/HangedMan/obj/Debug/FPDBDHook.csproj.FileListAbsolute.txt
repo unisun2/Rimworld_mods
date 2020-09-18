@@ -3,3 +3,8 @@ C:\Users\unisu\git\Rimworld_mods\HangedMan\Assemblies\FPDBDHook.dll
 C:\Users\unisu\git\Rimworld_mods\HangedMan\Assemblies\FPDBDHook.pdb
 C:\Users\unisu\git\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.dll
 C:\Users\unisu\git\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.pdb
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\HangedMan\Assemblies\FPDBDHook.dll
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\HangedMan\Assemblies\FPDBDHook.pdb
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.csprojResolveAssemblyReference.cache
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.dll
+C:\Users\khyoo\Downloads\RW\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.pdb
