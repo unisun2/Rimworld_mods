@@ -2,48 +2,53 @@
 <Defs>
 
 	<ThingDef ParentName="ArtableFurnitureBase">
-
 		<thingClass>FPDBDHook.Building_MeatHook</thingClass>
-		<altitudeLayer>Building</altitudeLayer>
-		<defName>FPDBDHook_Building_MeatHook</defName>
-		<label>MeatHook</label>
-		<description>zonna appa</description>
+		<defName>FPDBDHook</defName>
+		<label>meat hook</label>
+		<description>jonna appa</description>
 		<graphicData>
-			<texPath>Things/Building/Furniture/Bed/Bed</texPath>
+			<texPath>Things/Building/Furniture/DiningChair</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 			<damageData>
-				<rect>(0,0.05,1,1.95)</rect>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
 			</damageData>
+			<tickerType>Rare</tickerType>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
 		</graphicData>
-		<tickerType>Rare</tickerType>
 		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="FPDBDHook.CompProperties_SecondLayer"/>
 		</comps>
+		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>0.5</Flammability>
+			<MaxHitPoints>170</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
 			<Beauty>0</Beauty>
-			<WorkToBuild>800</WorkToBuild>
-			<Mass>10</Mass>
 		</statBases>
-		<size>(1,1)</size>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
-			<li>Stony</li>
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
-		<fillPercent>0.4</fillPercent>
-		<pathCost>60</pathCost>
-		<staticSunShadowHeight>0.17</staticSunShadowHeight>
-		<castEdgeShadows>True</castEdgeShadows>
-		<designationHotKey>Misc2</designationHotKey>
-		<techLevel>Medieval</techLevel>
+		<pathCost>13</pathCost>
+		<designationHotKey>Misc7</designationHotKey>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+
+		</building>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>ComplexFurniture</li>
 		</researchPrerequisites>
-		<uiIconScale>0.90</uiIconScale>
 	</ThingDef>
 </Defs>
 

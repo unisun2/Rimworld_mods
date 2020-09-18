@@ -30,9 +30,6 @@ namespace FPDBDHook
             Scribe_Values.Look<Pawn>(ref hangedman, "FPDBDHookhangedman", defaultValue: null);
         }
 
-        public bool HasAnyContents => pawncount > 0;
-
-
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
@@ -159,7 +156,7 @@ namespace FPDBDHook
                 Building_MeatHook building_MeatHook = (Building_MeatHook)GenClosest.ClosestThingReachable(p.Position, p.Map, ThingRequest.ForDef(singleDef), PathEndMode.InteractionCell, TraverseParms.For(traveler, Danger.Deadly, TraverseMode.ByPawn, false), 9999f, delegate(Thing x)
                 {
                     bool result;
-                    if (!((Building_MeatHook)x).HasAnyContents)
+                    if (!((Building_MeatHook)x).Accepts())
                     {
                         Pawn traveler2 = traveler;
                         LocalTargetInfo target = x;
