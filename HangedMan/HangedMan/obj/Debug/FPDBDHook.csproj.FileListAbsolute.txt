@@ -1,6 +1,5 @@
 C:\Users\unisu\git\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.csprojAssemblyReference.cache
 C:\Users\unisu\git\Rimworld_mods\HangedMan\Assemblies\FPDBDHook.dll
 C:\Users\unisu\git\Rimworld_mods\HangedMan\Assemblies\FPDBDHook.pdb
-C:\Users\unisu\git\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.csproj.CopyComplete
 C:\Users\unisu\git\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.dll
 C:\Users\unisu\git\Rimworld_mods\HangedMan\HangedMan\obj\Debug\FPDBDHook.pdb

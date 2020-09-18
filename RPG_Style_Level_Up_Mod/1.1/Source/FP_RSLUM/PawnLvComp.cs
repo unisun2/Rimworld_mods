@@ -57,7 +57,7 @@ namespace FP_RSLUM
 
                 }
 
-                if (FP_RSLUM_setting.FP_RSLUM_LvAv == -1 && FP_RSLUM_setting.LevelScaling != 0)
+                if (FP_RSLUM_setting.FP_RSLUM_LvAv == -1 && FP_RSLUM_setting.LevelScaling != 0 && Find.World != null)
                 {
 
 

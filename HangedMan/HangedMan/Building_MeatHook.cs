@@ -112,7 +112,7 @@ namespace FPDBDHook
         {
             bool victimcheck = true;
             base.TickRare();
-            if (base.Spawned)
+            if (this.Spawned && this.hangedman != null && this.pawncount > 0)
             {
                 List<Thing> thingList = base.Position.GetThingList(base.Map);
                 for (int i = 0; i < thingList.Count; i++)
