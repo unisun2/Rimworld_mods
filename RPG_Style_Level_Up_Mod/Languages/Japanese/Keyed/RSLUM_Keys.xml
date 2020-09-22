@@ -27,9 +27,9 @@
 	<StatsReport_STAT_AGL>AGL</StatsReport_STAT_AGL>
 	<StatsReport_STAT_AGL_Aiming>AGL</StatsReport_STAT_AGL_Aiming>
 	<StatsReport_STAT_CHA>CHA</StatsReport_STAT_CHA>
-	<StatsReport_STAT_CON>체력</StatsReport_STAT_CON>
-	<StatsReport_STAT_DEX>재주</StatsReport_STAT_DEX>
-	<StatsReport_STAT_INT>지능</StatsReport_STAT_INT>
+	<StatsReport_STAT_CON>CON</StatsReport_STAT_CON>
+	<StatsReport_STAT_DEX>DEX</StatsReport_STAT_DEX>
+	<StatsReport_STAT_INT>INT</StatsReport_STAT_INT>
 
 	<FP_RSLUM_setting_FlatStartingStat>ランダムな初期ステータス削除。すべてのステータスが０から始まる。</FP_RSLUM_setting_FlatStartingStat>
 	
@@ -44,5 +44,7 @@
 	
 	<FP_RSLUM_setting_MaxLevel>最大レベル</FP_RSLUM_setting_MaxLevel>
 	<FP_RSLUM_setting_LevelScaling>レベル・スケーリングパーセント(味方平均レベル比例) :</FP_RSLUM_setting_LevelScaling>
+
+	<TabRSLUM>Level</TabRSLUM>
 
 </LanguageData>

@@ -21,7 +21,7 @@ namespace FP_RSLUM
 
         public ITab_Pawn_RSLUM()
         {
-            labelKey = "TabRSLUM";
+            labelKey = "TabRSLUM".Translate();
             tutorTag = "LevelUp";
         }
 

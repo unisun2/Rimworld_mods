@@ -27,6 +27,13 @@
 					</match>
 				</li>
 				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[thingClass="Pawn"]/inspectorTabs</xpath>
+					<value>
+						<li>FP_RSLUM.ITab_Pawn_RSLUM</li>
+					</value>
+				</li>
+				
 				
 				
 			</operations>

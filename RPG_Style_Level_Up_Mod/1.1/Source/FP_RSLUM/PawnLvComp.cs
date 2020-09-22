@@ -60,7 +60,6 @@ namespace FP_RSLUM
                 if (FP_RSLUM_setting.FP_RSLUM_LvAv == -1 && FP_RSLUM_setting.LevelScaling != 0 && Find.World != null)
                 {
 
-
                     int templv = 0;
                     int tempcount = 0;
                     IEnumerable<Pawn> Pawns = from p in Find.World.worldPawns.AllPawnsAlive
