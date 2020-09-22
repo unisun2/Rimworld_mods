@@ -36,6 +36,7 @@ namespace FP_RSLUM
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.MassUtility), "Capacity"), null, new HarmonyMethod(typeof(harmony_patches), "CapacityPostfix"));
 
             harmonyInstance.Patch(AccessTools.Method(typeof(RimWorld.RecordsUtility), "Notify_PawnKilled"), null, new HarmonyMethod(typeof(harmony_patches), "Notify_PawnKilledPostfix"));
+
         }
 
         static FieldInfo pawninfo = AccessTools.Field(typeof(SkillRecord), "pawn");
@@ -131,35 +132,5 @@ namespace FP_RSLUM
             }
         }
 
-        /*[HarmonyPostfix]
-        public static void GatheredPostfix(CompHasGatherableBodyResource __instance, Pawn doer)
-        {
-            Log.Message(doer.Name.ToStringFull);
-
-            if (!Rand.Chance(doer.GetStatValue(StatDefOf.AnimalGatherYield, true)))
-            {
-                Vector3 loc = (doer.DrawPos + __instance.parent.DrawPos) / 2f;
-                MoteMaker.ThrowText(loc, __instance.parent.Map, "TextMote_ProductWasted".Translate(), 3.65f);
-            }
-            else
-            {
-                PawnLvComp pawnlvcomp = __instance.parent.TryGetComp<PawnLvComp>();
-                if(pawnlvcomp != null)
-                {
-                    int Re_Am = (int)pawninfo_ResourceAmount.GetValue(__instance);
-                    ThingDef Re_Def = pawninfo_ResourceDef.GetValue(__instance) as ThingDef;
-                    int i = (int)(Re_Am * (1 + 0.02 * pawnlvcomp.CHA));
-                    while (i > 0)
-                    {
-                        int num = Mathf.Clamp(i, 1, Re_Def.stackLimit);
-                        i -= num;
-                        Thing thing = ThingMaker.MakeThing(Re_Def, null);
-                        thing.stackCount = num;
-                        GenPlace.TryPlaceThing(thing, doer.Position, doer.Map, ThingPlaceMode.Near, null, null);
-                    }
-                }
-                
-            }
-        }*/
     }
 }
