@@ -125,8 +125,12 @@ namespace FP_RSLUM
                 PawnLvComp pawnlvcomp = killer.TryGetComp<PawnLvComp>();
                 if (pawnlvcomp != null)
                 {
-                    pawnlvcomp.exp += (int)killed.kindDef.combatPower * FP_RSLUM_setting.KillExpMult;
-                    Log.Message((killed.kindDef.combatPower * FP_RSLUM_setting.KillExpMult).ToString());
+                    // hard-cap exp gain from monster...
+                    int temp = (int)Math.Min(killed.kindDef.combatPower, 1000) * FP_RSLUM_setting.KillExpMult;
+                    pawnlvcomp.exp += temp;
+                    //Log.Message((killed.kindDef.combatPower * FP_RSLUM_setting.KillExpMult).ToString());
+                    if (pawnlvcomp.need_exp < pawnlvcomp.exp)
+                        pawnlvcomp.levelup();
                 }
 
             }
