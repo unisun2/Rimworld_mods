@@ -23,7 +23,7 @@ namespace FPSRT
         {
             ThingDef mytrap = ThingDef.Named("Building_FPSRT");
             mytrap.costStuffCount = FP_SelfReloadTrap_setting.bulidingcost;
-            
+
         }
 
     }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+    <defName>PFPM_researchone</defName>
+    <label>powered panel</label>
+    <tab>PFPM_tab</tab>
+    <techLevel>Industrial</techLevel>
+    <description>Allows you to build the Powered panel.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Autodoors</li>
+    </prerequisites>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>PFPM_researchtwo</defName>
+    <label>advanced powered panel</label>
+    <tab>PFPM_tab</tab>
+    <techLevel>Spacer</techLevel>
+    <description>Allows you to build the advanced powered panel.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>PFPM_researchone</li>
+	  <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+	
+	<ResearchTabDef>
+		<defName>PFPM_tab</defName>
+		<label>powered floor</label>
+	</ResearchTabDef>
+
+</Defs>

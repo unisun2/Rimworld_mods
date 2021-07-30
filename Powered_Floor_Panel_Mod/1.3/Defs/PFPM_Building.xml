@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef Abstract="True" Name="PFPM_base" ParentName="BuildingBase">
+    <category>Building</category>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <selectable>true</selectable>
+    <fillPercent>0.10</fillPercent>
+    <pathCost>0</pathCost>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <designationCategory>Misc</designationCategory>
+    <uiIconOffset>(0, 0.03)</uiIconOffset>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <graphicData>
+	  <shaderType>CutoutComplex</shaderType>
+      <!--<shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>-->
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+	  <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(200,200,200,0)</glowColor>
+      </li>
+	  <li Class="CompProperties_Flickable"/>
+	  <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>1.0</Flammability>
+	  <Mass>3</Mass>
+    </statBases>
+	<size>(1,1)</size>
+	<specialDisplayRadius>3</specialDisplayRadius>
+	<tickerType>Normal</tickerType>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+	<tradeTags>
+		<li>Furniture</li>
+	</tradeTags>
+  </ThingDef>
+
+<ThingDef ParentName="PFPM_base">
+	<thingClass>PFPM_Poweredpanel.PFPM_Poweredpanel_building</thingClass>
+	<defName>PFPM_fasterfloor</defName>
+    <label>powered floor</label>
+    <description>Powered floor is used to grant pawns large speed boosts when running around it.</description>
+    <graphicData>
+	  <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Misc/PFPM_panel</texPath>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+	  <Silver>50</Silver>
+	  <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+	<costStuffCount>30</costStuffCount>
+	<stuffCategories>
+        <li>Metallic</li>
+        <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>PFPM_researchone</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="PFPM_base">
+	<thingClass>PFPM_Poweredpanel.PFPM_Poweredpanelftl_building</thingClass>
+	<defName>PFPM_fasterfloorftl</defName>
+    <label>advanced powered floor</label>
+    <description>Powered floor is used to grant pawns large speed boosts when running around it.</description>
+    <graphicData>
+	  <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Building/Misc/PFPM_advpanel2</texPath>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+	  <Silver>100</Silver>
+	  <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+	<costStuffCount>60</costStuffCount>
+	<stuffCategories>
+        <li>Metallic</li>
+        <li>Woody</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+    </comps>
+	<researchPrerequisites>
+      <li>PFPM_researchtwo</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  
+</Defs>

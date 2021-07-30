@@ -35,7 +35,7 @@
 	
 	<FP_RSLUM_setting_ColonistPercent>スキル経験値に対してレベル経験値を得る割合。デフォルト= 80</FP_RSLUM_setting_ColonistPercent>
 	
-	<FP_RSLUM_setting_AnimalEXPPerTick>動物が10秒に得る経験値。デフォルト= 500</FP_RSLUM_setting_AnimalEXPPerTick>
+	<FP_RSLUM_setting_AnimalEXPPerTick>動物が10秒に得る経験値。デフォルト= 5.00</FP_RSLUM_setting_AnimalEXPPerTick>
 	
 	<FP_RSLUM_setting_Startingstat_min>ランダムな初期ステータス最低値</FP_RSLUM_setting_Startingstat_min>
 	<FP_RSLUM_setting_Startingstat_max>ランダムな初期ステータス最大値</FP_RSLUM_setting_Startingstat_max>

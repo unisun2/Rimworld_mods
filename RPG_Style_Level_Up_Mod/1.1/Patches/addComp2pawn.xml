@@ -7,12 +7,5 @@
             <li><compClass>FP_RSLUM.PawnLvComp</compClass></li>
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[thingClass="Pawn"]/inspectorTabs</xpath>
-		<value>
-            <li>FP_RSLUM.ITab_Pawn_RSLUM</li>
-		</value>
-	</Operation>
 
 </Patch>

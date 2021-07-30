@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>FP_WatchSomeLov</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>20</stackLimit>
+		<stackedEffectMultiplier>0.9</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Asexual</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>watched some lovin'</label>
+				<description>:pogchamp:</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

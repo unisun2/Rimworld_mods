@@ -32,22 +32,21 @@ namespace FPSRT
             {
                 return;
             }
-            float num = this.GetStatValue(StatDefOf.TrapMeleeDamage, true) * Building_FPSRT.DamageRandomFactorRange.RandomInRange * (float)FP_SelfReloadTrap_setting.trapdamage / 100f;
-            float num2 = num / Building_FPSRT.DamageCount;
-            float armorPenetration = num2 * 0.015f * (float)FP_SelfReloadTrap_setting.armorpenetrate / 100f;
-            int num3 = 0;
-            while ((float)num3 < Building_FPSRT.DamageCount)
-            {
-                DamageInfo dinfo = new DamageInfo(DamageDefOf.Stab, num2, armorPenetration, -1f, this, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null);
-                DamageWorker.DamageResult damageResult = p.TakeDamage(dinfo);
-                if (num3 == 0)
-                {
-                    BattleLogEntry_DamageTaken battleLogEntry_DamageTaken = new BattleLogEntry_DamageTaken(p, RulePackDefOf.DamageEvent_TrapSpike, null);
-                    Find.BattleLog.Add(battleLogEntry_DamageTaken);
-                    damageResult.AssociateWithLog(battleLogEntry_DamageTaken);
-                }
-                num3++;
-            }
+
+            float num = this.GetStatValue(StatDefOf.TrapMeleeDamage) * Building_FPSRT.DamageRandomFactorRange.RandomInRange * ((float)FP_SelfReloadTrap_setting.trapdamage / 100f) / DamageCount;
+		    float armorPenetration = num * 0.015f * (float)FP_SelfReloadTrap_setting.armorpenetrate / 100f;
+		    for (int i = 0; (float)i < DamageCount; i++)
+		    {
+			    DamageInfo dinfo = new DamageInfo(DamageDefOf.Stab, num, armorPenetration, -1f, this);
+			    DamageWorker.DamageResult damageResult = p.TakeDamage(dinfo);
+			    if (i == 0)
+			    {
+				    BattleLogEntry_DamageTaken battleLogEntry_DamageTaken = new BattleLogEntry_DamageTaken(p, RulePackDefOf.DamageEvent_TrapSpike);
+				    Find.BattleLog.Add(battleLogEntry_DamageTaken);
+				    damageResult.AssociateWithLog(battleLogEntry_DamageTaken);
+			    }
+		    }
+
             Map map = base.Map;
             IntVec3 loc = this.Position;
             Thing thing = GenSpawn.Spawn(ThingMaker.MakeThing(ThingDef.Named("Building_FPSRTunarmed"), this.Stuff), loc, map, WipeMode.Vanish);

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<HediffDef>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.5, 0.1, 0.5)</defaultLabelColor>
+    <defName>PFPM_faster</defName>
+    <label>faster!</label>
+    <labelNoun>faster!</labelNoun>
+	<description>faster!</description>
+	<isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>1000</min>
+          <max>1000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	  <statOffsets>
+		  <MoveSpeed>4.00</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <HediffDef>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(0.5, 0.1, 0.5)</defaultLabelColor>
+    <defName>PFPM_fasterthanlight</defName>
+    <label>ftl!</label>
+    <labelNoun>ftl!</labelNoun>
+	<description>ftl!</description>
+	<isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>800</min>
+          <max>800</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+	  <statOffsets>
+		  <MoveSpeed>12.00</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+</Defs>

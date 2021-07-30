@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Watch_Lovin_Mod\Source\obj\Debug\FP_WSL.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Watch_Lovin_Mod\Assemblies\FP_WSL.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Watch_Lovin_Mod\Assemblies\FP_WSL.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Watch_Lovin_Mod\Source\obj\Debug\FP_WSL.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Watch_Lovin_Mod\Source\obj\Debug\FP_WSL.pdb

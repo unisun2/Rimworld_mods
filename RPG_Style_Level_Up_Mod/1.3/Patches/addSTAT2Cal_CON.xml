@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="UnskilledLaborSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="UnskilledLaborSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="UnskilledLaborSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.2</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ImmunityGainSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.2</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="RestRateMultiplier"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="RestRateMultiplier"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.1</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="RestRateMultiplier"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON"> 
+								<weight>0.1</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+	<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_min" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMin"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_min" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_max" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ComfyTemperatureMax"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON_ComfyTemperature_max" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="IncomingDamageFactor"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="IncomingDamageFactor"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON_CE_Suppressability" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="IncomingDamageFactor"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CON_CE_Suppressability" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<!--<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="PlantWorkSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_STR" />
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="PlantWorkSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_STR" />
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>-->
+
+</Patch>

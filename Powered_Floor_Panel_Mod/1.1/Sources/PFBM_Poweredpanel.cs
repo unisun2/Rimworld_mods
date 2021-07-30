@@ -28,7 +28,7 @@ namespace PFPM_Poweredpanel
             {
                 if (powerComp.PowerOn)
                 {
-                    foreach (Thing thing in this.Map.listerThings.AllThings.FindAll((Thing x) => x is Pawn pawn))
+                    foreach (Thing thing in this.Map.mapPawns.AllPawns)
                     {
                         if (this.Position.InHorDistOf(thing.Position, 3f))
                         {
@@ -65,7 +65,7 @@ namespace PFPM_Poweredpanel
             {
                 if (powerComp.PowerOn)
                 {
-                    foreach (Thing thing in this.Map.listerThings.AllThings.FindAll((Thing x) => x is Pawn pawn))
+                    foreach (Thing thing in this.Map.mapPawns.AllPawns)
                     {
                         if (this.Position.InHorDistOf(thing.Position, 3f))
                         {

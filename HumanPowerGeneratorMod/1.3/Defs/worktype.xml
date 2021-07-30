@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkTypeDef>
+    <defName>HPGMGenerate</defName>
+    <labelShort>Cycle</labelShort>
+    <pawnLabel>Worker</pawnLabel>
+    <gerundLabel>producing power</gerundLabel>
+    <description>Cycling and Produce power.</description>
+    <verb>Working at</verb>
+    <naturalPriority>50</naturalPriority>
+    <workTags>
+      <li>ManualDumb</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

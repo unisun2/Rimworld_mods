@@ -1,44 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <LvTab_Colonist>殖民者</LvTab_Colonist>
-  <LvTab_Animal>动物</LvTab_Animal>
+	<LvTab_Colonist>殖民者</LvTab_Colonist>
+	<LvTab_Animal>动物</LvTab_Animal>
 
-  <LvTab_LVUPButtonDesc>角色经验足够时消耗经验升级。</LvTab_LVUPButtonDesc>
-  <LvTab_LVUPButton>升级</LvTab_LVUPButton>
-  <LvTab_Distribute>分配属性点\n按住左Shift键分配10点\n按住左Ctrl键分配100点</LvTab_Distribute>
-  <FP_RSLUM.LabelHeaderTip>标签顶部提示</FP_RSLUM.LabelHeaderTip>
+	<LvTab_LVUPButtonDesc>角色经验足够时消耗经验升级。</LvTab_LVUPButtonDesc>
+	<LvTab_LVUPButton>升级</LvTab_LVUPButton>
+	<LvTab_Distribute>分配属性点\n按住左Shift键分配10点\n按住左Ctrl键分配100点\n按住左Alt取回1点属性</LvTab_Distribute>
+	<FP_RSLUM.LabelHeaderTip>标签顶部提示</FP_RSLUM.LabelHeaderTip>
 
-  <PawnColumnWorker_STR_Tip_Desc>力量提高近战伤害，负重等能力方面，表现在劳力活动方面的提升。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战伤害\n携带能力\n远征载重能力\n殖民地内的负重(CE)\n挖矿速度\n打磨速度\n建造速度\n种植速度</PawnColumnWorker_STR_Tip_Desc>
-  <PawnColumnWorker_DEX_Tip_Desc>灵巧影响近战/远程命中率及精细工作能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战命中率\n远程命中率\n换弹速度(CE)\n近战格挡率(CE)\n普通工作速度(1.0)\n缝制速度\n锻造速度\n烹饪速度\n屠宰速度\n酿酒速度</PawnColumnWorker_DEX_Tip_Desc>
-  <PawnColumnWorker_CHA_Tip_Desc>魅力能让角色更好的亲近动物和处理社交活动。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n谈判能力\n社交效果\n拘捕成功概率\n驯服动物成功率\n训练动物成功率\n动物收集速度\n动物收集产出</PawnColumnWorker_CHA_Tip_Desc>
-  <PawnColumnWorker_CON_Tip_Desc>体质影响伤害减免，免疫获取速度和部分简易工作或艺术能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n伤害减免\n免疫获取速度\n火力压制(CE)\n适宜温度\n非专业工作速度(1.1)\n若体质属性>200，恢复速度提升</PawnColumnWorker_CON_Tip_Desc>
-  <PawnColumnWorker_AGL_Tip_Desc>敏捷影响移动速度，近战闪避率和瞄准速度。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n瞄准时间\n近战格挡成功率\n狩猎隐蔽率\n移动速度</PawnColumnWorker_AGL_Tip_Desc>
-  <PawnColumnWorker_EXP_Tip_Desc>角色获得技能经验时，也会获得等级经验(该Mod升级所需经验)。</PawnColumnWorker_EXP_Tip_Desc>
-  <PawnColumnWorker_INT_Tip_Desc>智力影响诸如医疗手术这类需求专业知识的工作。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n医疗治疗速度\n医疗治疗质量\n医疗手术速度\n医疗手术成功几率\n研究速度</PawnColumnWorker_INT_Tip_Desc>
-  <PawnColumnWorker_Level_Tip_Desc>等级</PawnColumnWorker_Level_Tip_Desc>
-  <PawnColumnWorker_Need_EXP_Tip_Desc>升级所需经验数值。</PawnColumnWorker_Need_EXP_Tip_Desc>
-  <PawnColumnWorker_StatPoint_Tip_Desc>允许分配到各属性的属性点。</PawnColumnWorker_StatPoint_Tip_Desc>
+	<PawnColumnWorker_STR_Tip_Desc>力量提高近战伤害，负重等能力方面，表现在劳力活动方面的提升。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战伤害\n携带能力\n远征载重能力\n殖民地内的负重(CE)\n挖矿速度\n打磨速度\n建造速度\n种植速度</PawnColumnWorker_STR_Tip_Desc>
+	<PawnColumnWorker_DEX_Tip_Desc>灵巧影响近战/远程命中率及精细工作能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n近战命中率\n远程命中率\n换弹速度(CE)\n近战格挡率(CE)\n普通工作速度(1.0)\n缝制速度\n锻造速度\n烹饪速度\n屠宰速度\n酿酒速度</PawnColumnWorker_DEX_Tip_Desc>
+	<PawnColumnWorker_CHA_Tip_Desc>魅力能让角色更好的亲近动物和处理社交活动。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n谈判能力\n社交效果\n拘捕成功概率\n驯服动物成功率\n训练动物成功率\n动物收集速度\n动物收集产出</PawnColumnWorker_CHA_Tip_Desc>
+	<PawnColumnWorker_CON_Tip_Desc>体质影响伤害减免，免疫获取速度和部分简易工作或艺术能力。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n伤害减免\n免疫获取速度\n火力压制(CE)\n适宜温度\n非专业工作速度(1.1)\n若体质属性>200，恢复速度提升</PawnColumnWorker_CON_Tip_Desc>
+	<PawnColumnWorker_AGL_Tip_Desc>敏捷影响移动速度，近战闪避率和瞄准速度。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n瞄准时间\n近战格挡成功率\n狩猎隐蔽率\n移动速度</PawnColumnWorker_AGL_Tip_Desc>
+	<PawnColumnWorker_EXP_Tip_Desc>角色获得技能经验时，也会获得等级经验(该Mod升级所需经验)。</PawnColumnWorker_EXP_Tip_Desc>
+	<PawnColumnWorker_INT_Tip_Desc>智力影响诸如医疗手术这类需求专业知识的工作。\n\n译者注：根据作者Mod页面信息(经实际观察，部分对不上)，提升以下方面能力：\n医疗治疗速度\n医疗治疗质量\n医疗手术速度\n医疗手术成功几率\n研究速度</PawnColumnWorker_INT_Tip_Desc>
+	<PawnColumnWorker_Level_Tip_Desc>等级</PawnColumnWorker_Level_Tip_Desc>
+	<PawnColumnWorker_Need_EXP_Tip_Desc>升级所需经验数值。</PawnColumnWorker_Need_EXP_Tip_Desc>
+	<PawnColumnWorker_StatPoint_Tip_Desc>允许分配到各属性的属性点。</PawnColumnWorker_StatPoint_Tip_Desc>
 
-  <StatsReport_STAT_STR>力量</StatsReport_STAT_STR>
-  <StatsReport_STAT_AGL>敏捷</StatsReport_STAT_AGL>
-  <StatsReport_STAT_AGL_Aiming>敏捷</StatsReport_STAT_AGL_Aiming>
-  <StatsReport_STAT_CHA>魅力</StatsReport_STAT_CHA>
-  <StatsReport_STAT_CON>体质</StatsReport_STAT_CON>
-  <StatsReport_STAT_DEX>灵巧</StatsReport_STAT_DEX>
-  <StatsReport_STAT_INT>智力</StatsReport_STAT_INT>
+	<StatsReport_STAT_STR>力量</StatsReport_STAT_STR>
+	<StatsReport_STAT_AGL>敏捷</StatsReport_STAT_AGL>
+	<StatsReport_STAT_AGL_Aiming>敏捷</StatsReport_STAT_AGL_Aiming>
+	<StatsReport_STAT_CHA>魅力</StatsReport_STAT_CHA>
+	<StatsReport_STAT_CON>体质</StatsReport_STAT_CON>
+	<StatsReport_STAT_DEX>灵巧</StatsReport_STAT_DEX>
+	<StatsReport_STAT_INT>智力</StatsReport_STAT_INT>
 
-  <FP_RSLUM_setting_FlatStartingStat>禁用初始随机属性。所有角色初始属性都为0。</FP_RSLUM_setting_FlatStartingStat>
+	<FP_RSLUM_setting_FlatStartingStat>禁用初始随机属性。所有角色初始属性都为0。</FP_RSLUM_setting_FlatStartingStat>
 
-  <FP_RSLUM_setting_ColonistPercent>角色从技能经验获得设定比例的升级经验。默认为80%。设定值</FP_RSLUM_setting_ColonistPercent>
+	<FP_RSLUM_setting_ColonistPercent>角色从技能经验获得设定比例的升级经验。默认为80%。设定值</FP_RSLUM_setting_ColonistPercent>
 
-  <FP_RSLUM_setting_AnimalEXPPerTick>动物每十秒获得设定数值的升级经验。默认为500。设定值</FP_RSLUM_setting_AnimalEXPPerTick>
+	<FP_RSLUM_setting_AnimalEXPPerTick>动物每十秒获得设定数值的升级经验。默认为5.00。设定值</FP_RSLUM_setting_AnimalEXPPerTick>
 
-  <FP_RSLUM_setting_Startingstat_min>初始随机属性的最小值</FP_RSLUM_setting_Startingstat_min>
-  <FP_RSLUM_setting_Startingstat_max>初始随机属性的最大值</FP_RSLUM_setting_Startingstat_max>
+	<FP_RSLUM_setting_Startingstat_min>初始随机属性的最小值</FP_RSLUM_setting_Startingstat_min>
+	<FP_RSLUM_setting_Startingstat_max>初始随机属性的最大值</FP_RSLUM_setting_Startingstat_max>
 
-  <FP_RSLUM_setting_KillExpMult>杀敌经验比例</FP_RSLUM_setting_KillExpMult>
+	<FP_RSLUM_setting_KillExpMult>杀敌经验比例</FP_RSLUM_setting_KillExpMult>
 
-  <LvTab_reroll>重置属性值</LvTab_reroll>
+	<LvTab_reroll>重随属性值</LvTab_reroll>
+	<FP_RSLUM_setting_MaxLevel>等级上限</FP_RSLUM_setting_MaxLevel>
+	<FP_RSLUM_setting_LevelScaling>新殖民者等级共享比例 % (取决于旧殖民者的平均等级*设定百分比) :</FP_RSLUM_setting_LevelScaling>
+
+	<TabRSLUM>等级</TabRSLUM>
 
 </LanguageData>

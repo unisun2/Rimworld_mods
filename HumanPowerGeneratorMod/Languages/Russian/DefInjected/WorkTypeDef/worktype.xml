@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <HPGMGenerate.label>Крутить</HPGMGenerate.label>
+  <HPGMGenerate.description>Крутить велогенератор</HPGMGenerate.description>
+  <HPGMGenerate.labelShort>Крутить</HPGMGenerate.labelShort>
+  <HPGMGenerate.pawnLabel>Работа</HPGMGenerate.pawnLabel>
+  <HPGMGenerate.gerundLabel>производить энергию</HPGMGenerate.gerundLabel>
+  <HPGMGenerate.verb>Работает с</HPGMGenerate.verb>
+
+
+</LanguageData>

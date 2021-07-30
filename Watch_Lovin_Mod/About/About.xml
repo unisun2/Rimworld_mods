@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name></name>
+	<author>FLASHPOINT55</author>
+	<supportedVersions>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>flashpoint55.watchlovinmod</packageId>
+	<url>https://github.com/unisun2/Rimworld_mods</url>
+	<description>
+Watching lovin' makes people happy.
+	</description>
+</ModMetaData>

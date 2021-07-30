@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BuildingBase">
+    <defName>Building_FPSRT</defName>
+    <label>Self reloading trap</label>
+    <description>semi-permanent type trap. It cost a lot, but worth it.</description>
+    <thingClass>FPSRT.Building_FPSRT</thingClass>
+    <graphicData>
+      <texPath>Things/Building/FP_SRT_armed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>100</TrapMeleeDamage>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>300</costStuffCount>
+    <designationCategory>Security</designationCategory>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Building_FPSRTunarmed</defName>
+    <label>Self reloading trap(unarmed)</label>
+    <description>wait just 10 sec.</description>
+    <thingClass>FPSRT.Building_FPSRTunarmed</thingClass>
+    <graphicData>
+      <texPath>Things/Building/FP_SRT_unarmed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0,0,1,0.15)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>1.5</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.3</Flammability>
+      <Beauty>-18</Beauty>
+      <Cleanliness>-5</Cleanliness>
+      <TrapMeleeDamage>100</TrapMeleeDamage>
+      <TrapSpringChance>0.0</TrapSpringChance>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>150</costStuffCount>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>false</trapDestroyOnSpring>
+      <trapDamageCategory>Sharp</trapDamageCategory>
+      <expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>
