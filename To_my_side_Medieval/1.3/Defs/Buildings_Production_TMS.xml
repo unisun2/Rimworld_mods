@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>TMS_Building_Base</defName>
+		<label>Inscription Table</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>A table with equipments for crafting Runes.</description>
+		<graphicData>
+			<texPath>Things/Building/to_my_side_base</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.2,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<size>(3,2)</size>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<Steel>20</Steel>
+			<Silver>50</Silver>
+			<WoodLog>200</WoodLog>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(250,204,129,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>To_my_sideone</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>TMS_AnimalBed</defName>
+		<thingClass>Building_Bed</thingClass>
+		<label>runic animal bed</label>
+		<description>A runic bed for animals to sleep on. helps animal recover. Fits any animal.</description>
+		<rotatable>false</rotatable>
+		<fillPercent>0.15</fillPercent>
+		<pathCost>20</pathCost>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<graphicData>
+			<texPath>Things/Item/TMSArtifacttwo</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<castEdgeShadows>true</castEdgeShadows>
+		<uiIconScale>0.80</uiIconScale>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<MedicineHerbal>2</MedicineHerbal>
+			<PsychoidLeaves>2</PsychoidLeaves>
+			<Silver>50</Silver>
+		</costList>
+		<building>
+			<bed_humanlike>false</bed_humanlike>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>10</bed_healPerDay>
+		</building>
+		<comps>
+			<li Class="CompProperties_AssignableToPawn">
+				<drawAssignmentOverlay>false</drawAssignmentOverlay>
+				<compClass>CompAssignableToPawn_Bed</compClass>
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>2000</WorkToBuild>
+			<Mass>5</Mass>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.75</Comfort>
+			<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1.2</SurgerySuccessChanceFactor>
+		</statBases>
+		<researchPrerequisites>
+			<li>To_my_sidetwo</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	</ThingDef>
+
+
+</Defs>
