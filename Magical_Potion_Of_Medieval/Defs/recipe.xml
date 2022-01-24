@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<RecipeDef>
+  <RecipeDef>
     <defName>MPOMAdministerhealingpotion</defName>
     <label>administer healing potion.</label>
     <description>Administer a healing potion.</description>
@@ -28,5 +27,4 @@
       </thingDefs>
     </fixedIngredientFilter>
   </RecipeDef>
-
 </Defs>
