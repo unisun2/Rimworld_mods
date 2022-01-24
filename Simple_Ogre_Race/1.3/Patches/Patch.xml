@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name = "MealBaseIngredientless"]/ingestible/maxNumToIngestAtOnce</xpath>
+    <value>
+      <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name = "MealLavishBase"]/statBases/Nutrition</xpath>
+    <value>
+      <Nutrition>2</Nutrition>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>VGP Vegetable Garden</li>
+      <li>VGP Garden Gourmet</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[@Name = "VG_MealBase"]/ingestible/maxNumToIngestAtOnce</xpath>
+      <value>
+        <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>GouRIMet</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[@Name = "MealBaseGRM"]/ingestible/maxNumToIngestAtOnce</xpath>
+      <value>
+        <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>【ZP】Rice cultivating civilization【1.0】</li>
+      <li>1610302046</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[@Name = "ZPMealBase"]/ingestible/maxNumToIngestAtOnce</xpath>
+      <value>
+        <maxNumToIngestAtOnce>2</maxNumToIngestAtOnce>
+      </value>
+    </match>
+  </Operation>
+</Patch>
