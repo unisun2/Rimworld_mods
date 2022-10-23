@@ -15,3 +15,5 @@ C:\Users\unisu\git\Rimworld_mods\CircleAndOval\1.1\Assemblies\MakeLineandCurve.p
 C:\Users\unisu\git\Rimworld_mods\CircleAndOval\1.1\Source\MakeLineandCurve\obj\Debug\CircleAndOval.csprojAssemblyReference.cache
 C:\Users\unisu\git\Rimworld_mods\CircleAndOval\1.1\Source\MakeLineandCurve\obj\Debug\MakeLineandCurve.dll
 C:\Users\unisu\git\Rimworld_mods\CircleAndOval\1.1\Source\MakeLineandCurve\obj\Debug\MakeLineandCurve.pdb
+C:\Users\unisu\git\Rimworld_mods\CircleAndOval\1.1\Source\MakeLineandCurve\MakeLineandCurve.dll
+C:\Users\unisu\git\Rimworld_mods\CircleAndOval\1.1\Source\MakeLineandCurve\MakeLineandCurve.pdb

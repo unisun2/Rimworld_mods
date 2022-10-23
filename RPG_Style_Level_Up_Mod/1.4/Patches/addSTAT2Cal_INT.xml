@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MedicalTendSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MedicalTendSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="MedicalTendSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MedicalTendQuality"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MedicalTendQuality"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.1</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="MedicalTendQuality"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.1</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MedicalOperationSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MedicalOperationSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="MedicalOperationSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="MedicalSurgerySuccessChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="MedicalSurgerySuccessChance"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.1</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="MedicalSurgerySuccessChance"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.1</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="DrugSynthesisSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="DrugSynthesisSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="DrugSynthesisSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+
+<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ResearchSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ResearchSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.2</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ResearchSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT"> 
+								<weight>0.2</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="PlantHarvestYield"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="PlantHarvestYield"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="PlantHarvestYield"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ButcheryFleshEfficiency"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ButcheryFleshEfficiency"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ButcheryFleshEfficiency"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ButcheryMechanoidEfficiency"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ButcheryMechanoidEfficiency"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_INT_Yield"> 
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+</Patch>

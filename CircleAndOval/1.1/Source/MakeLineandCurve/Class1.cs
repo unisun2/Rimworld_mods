@@ -119,20 +119,19 @@ namespace CircleAndOval
 
                     if (is_ellipse(Radius, x - (Radius), y - (Radius))) // 체크!
                     {
-                            // 블루프린트 설치
-                            //grid[y, x] = true;
-                            printVec = this.Position;
-                            printVec.x = bx - Radius + x;
-                            printVec.z = bz - Radius + y;
+                        // 블루프린트 설치
+                        //grid[y, x] = true;
+                        printVec = this.Position;
+                        printVec.x = bx - Radius + x;
+                        printVec.z = bz - Radius + y;
 
-                            //Messages.Message(bx + "  " + x  + "  " + bz + "  "+y+ "bphere"+ "  "+ "pv" + printVec.x + " " + printVec.z + " " + Radius + " " + FHD, MessageTypeDefOf.NeutralEvent);
+                        //Messages.Message(bx + "  " + x  + "  " + bz + "  "+y+ "bphere"+ "  "+ "pv" + printVec.x + " " + printVec.z + " " + Radius + " " + FHD, MessageTypeDefOf.NeutralEvent);
 
-                            GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, stuff);
-
-                        }
+                        base.Map.designationManager.TryRemoveDesignation(printVec, DesignationDefOf.Plan);
+                        base.Map.designationManager.AddDesignation(new Designation(printVec, DesignationDefOf.Plan));
+                    }
                 }
             }
-            //GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, base.Position, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
         }
 
         private bool is_ellipse(int Radius, double x, double y)
@@ -223,12 +222,12 @@ namespace CircleAndOval
 
                         //Messages.Message(bx + "  " + x  + "  " + bz + "  "+y+ "bphere"+ "  "+ "pv" + printVec.x + " " + printVec.z + " " + XX1 + " " + ZZ1, MessageTypeDefOf.NeutralEvent);
 
-                        GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, stuff);
-
+                        base.Map.designationManager.TryRemoveDesignation(printVec, DesignationDefOf.Plan);
+                        base.Map.designationManager.AddDesignation(new Designation(printVec, DesignationDefOf.Plan));
                     }
                 }
             }
-            //GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, base.Position, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+
         }
 
         private bool is_ellipse(double a, double b, double x, double y)
@@ -301,137 +300,16 @@ namespace CircleAndOval
                 printVec.x += xp;
                 printVec.z += yp;
 
-                GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, stuff);
+                base.Map.designationManager.TryRemoveDesignation(printVec, DesignationDefOf.Plan);
+                base.Map.designationManager.AddDesignation(new Designation(printVec, DesignationDefOf.Plan));
 
-                if(printVec.x == bx || printVec.z == bz)
+                if (printVec.x == bx || printVec.z == bz)
                 {
                     return;
                 }
             }
-            //GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, base.Position, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
+
         }
     }
-
-
-
-    /*
-
-
-    public class CurveendpointR : Building
-    {
-        IntVec3 startpoint;
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            base.SpawnSetup(map, respawningAfterLoad);
-
-            foreach (Building b in Current.Game.CurrentMap.listerBuildings.allBuildingsColonist)
-            {
-                if (b.def.defName.Equals("MLCstartpoint"))
-                {
-
-                    startpoint = b.Position;
-                    MakeCR((Position.x - startpoint.x), (Position.z - startpoint.z), b.Position.x, b.Position.z);
-                    return;
-                }
-            }
-        }
-
-        private void MakeCR(int XX1, int ZZ1, int bx, int bz)
-        {
-            Map map = this.Map;
-
-            int Rec;
-            if(XX1 < 0)
-            {
-                if (ZZ1 < 0)
-                {
-                    Rec = 3;
-                }
-                else Rec = 4;
-            }
-            else
-            {
-                if (ZZ1 < 0)
-                {
-                    Rec = 2;
-                }
-                else Rec = 1;
-            }
-
-            IntVec3 printVec;
-            bool[,] grid = new bool[XX1 + 1, ZZ1 + 1];
-            int y = 0;
-            int x = 0;
-
-            for (y = 0; y < ZZ1 +1; y++)
-            {
-                for (x = 0; x < XX1 + 1; x++)
-                {
-
-                    if (is_ellipse(XX1, ZZ1, x - XX1, y - ZZ1)) // 체크!
-                    {
-                        // 블루프린트 설치
-                        //grid[y, x] = true;
-                        printVec = this.Position;
-                        printVec.x = bx + x;
-                        printVec.z = bz + y;
-
-                        //Messages.Message(bx + "  " + x + "  " + bz + "  " + y + "bphere" + "  " + "pv" + printVec.x + " " + printVec.z + " " + XX1 + " " + ZZ1, MessageTypeDefOf.NeutralEvent);
-
-                        GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, printVec, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
-
-                    }
-                }
-            }
-            //GenConstruct.PlaceBlueprintForBuild(ThingDefOf.Wall, base.Position, this.Map, base.Rotation, Faction.OfPlayer, ThingDefOf.WoodLog);
-        }
-
-        private bool is_ellipse(double a, double b, double x, double y)
-        {
-            //EPSILON : change errors.
-            const float EPSILON = 0.5f;
-            double tmp1, tmp2;
-
-            if (a < x) return false;
-            tmp1 = (b / a) * Math.Sqrt(a * a - x * x);
-            tmp2 = (b / a) * Math.Sqrt(a * a - x * x) * -1;
-            if (Math.Abs(tmp1 - y) < EPSILON) return true;
-            else if (Math.Abs(tmp2 - y) < EPSILON) return true;
-
-            if (b < y) return false;
-            tmp1 = (a / b) * Math.Sqrt(b * b - y * y);
-            tmp2 = (a / b) * Math.Sqrt(b * b - y * y) * -1;
-            if (Math.Abs(tmp1 - x) < EPSILON) return true;
-            else if (Math.Abs(tmp2 - x) < EPSILON) return true;
-            return false;
-        }
-    }
-
-
-
-
-    public class CurveendpointL : Building
-    {
-        IntVec3 startpoint;
-
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            base.SpawnSetup(map, respawningAfterLoad);
-
-            foreach (Building b in Current.Game.CurrentMap.listerBuildings.allBuildingsColonist)
-            {
-                if (b.def.defName.Equals("MLCstartpoint"))
-                {
-                    startpoint = b.Position;
-                    break;
-                }
-            }
-        }
-
-
-    }
-    
-    */
-
 
 }

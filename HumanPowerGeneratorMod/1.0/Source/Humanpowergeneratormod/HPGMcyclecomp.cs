@@ -50,12 +50,9 @@ namespace Humanpowergeneratormod
         
         public void Used(Pawn worker)
         {
-            if (!this.CanUseNow)
-            {
-                Log.Error("Used while CanUseNow is false.", false);
-            }
             //statValue = worker.GetStatValue(StatDefOf.MoveSpeed, true);
-            statValue = worker.health.capacities.GetLevel(PawnCapacityDefOf.Moving);
+            //statValue = worker.health.capacities.GetLevel(PawnCapacityDefOf.Moving);
+            statValue = (worker.GetStatValue(StatDefOf.MoveSpeed)) / 4.6f;
             IsRunning = 100;
         }
 
@@ -74,7 +71,7 @@ namespace Humanpowergeneratormod
         }
 
         public bool IsOn;
-        private int IsRunning = 0;
+        public int IsRunning = 0;
         public float statValue;
 
 

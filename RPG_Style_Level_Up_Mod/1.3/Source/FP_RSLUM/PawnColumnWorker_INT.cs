@@ -155,7 +155,16 @@ namespace FP_RSLUM
                 PawnLvComp pawnlvcomp = pawn.TryGetComp<PawnLvComp>();
                 if (pawnlvcomp != null)
                 {
-                    if (Input.GetKey(KeyCode.LeftShift))
+                    if(Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftControl))
+                    {
+                        int tempv = Math.Min(pawnlvcomp.INT - FP_RSLUM_setting.Startingstat_min, 100);
+                        if (pawnlvcomp.INT > FP_RSLUM_setting.Startingstat_min)
+                        {
+                            pawnlvcomp.StatPoint += tempv;
+                            pawnlvcomp.INT -= tempv;
+                        }
+                    }
+                    else if (Input.GetKey(KeyCode.LeftShift))
                     {
                         for (int i = 0; i < 10; i++)
                         {
@@ -182,15 +191,6 @@ namespace FP_RSLUM
                         if (Input.GetKey(KeyCode.LeftShift))
                         {
                             int tempv = Math.Min(pawnlvcomp.INT - FP_RSLUM_setting.Startingstat_min, 10);
-                            if (pawnlvcomp.INT > FP_RSLUM_setting.Startingstat_min)
-                            {
-                                pawnlvcomp.StatPoint += tempv;
-                                pawnlvcomp.INT -= tempv;
-                            }
-                        }
-                        else if (Input.GetKey(KeyCode.LeftControl))
-                        {
-                            int tempv = Math.Min(pawnlvcomp.INT - FP_RSLUM_setting.Startingstat_min, 100);
                             if (pawnlvcomp.INT > FP_RSLUM_setting.Startingstat_min)
                             {
                                 pawnlvcomp.StatPoint += tempv;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<WorkGiverDef>
+    <defName>HPGMCycle</defName>
+    <label>cycling generator</label>
+    <giverClass>Humanpowergeneratormod.WorkGiver_HPGMcycling</giverClass>
+    <workType>HPGMGenerate</workType>
+    <priorityInType>50</priorityInType>
+    <verb>cycle</verb>
+    <gerund>cycling at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

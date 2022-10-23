@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Atomic Coffee Maker mod</name>
 	<author>FlashPoint55</author>
-	<supportedVersions><li>1.1</li><li>1.2</li></supportedVersions>
+	<supportedVersions><li>1.1</li><li>1.2</li><li>1.3</li></supportedVersions>
 	<packageId>FlashPoint55.AtomicCoffeeMakermod</packageId>
 	<description>
 Add a quest reward, Atomic coffee maker.

@@ -1,0 +1,5 @@
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.3\s2\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.3\s2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.3\s2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.3\s2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.3\s2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

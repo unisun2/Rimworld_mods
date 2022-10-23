@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/StatDef[defName="CarryWeight"]/parts</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="CarryWeight"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_STR">
+									<weight>1</weight>
+								</li>
+							</parts>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="CarryWeight"]/parts</xpath>
+						<value>
+							<li Class="FP_RSLUM.StatPart_STR">
+								<weight>1</weight>
+							</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/StatDef[defName="ReloadSpeed"]/parts</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="ReloadSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_DEX_CE_Reloading" />
+							</parts>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="ReloadSpeed"]/parts</xpath>
+						<value>
+							<li Class="FP_RSLUM.StatPart_DEX_CE_Reloading" />
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/StatDef[defName="Suppressability"]/parts</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="Suppressability"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CON_CE_Suppressability" />
+							</parts>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="Suppressability"]/parts</xpath>
+						<value>
+							<li Class="FP_RSLUM.StatPart_CON_CE_Suppressability" />
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/StatDef[defName="MeleeParryChance"]/parts</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="MeleeParryChance"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_DEX">
+									<weight>0.3</weight>
+								</li>
+							</parts>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="MeleeParryChance"]/parts</xpath>
+						<value>
+							<li Class="FP_RSLUM.StatPart_DEX">
+								<weight>0.3</weight>
+							</li>
+						</value>
+					</match>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/StatDef[defName="AimingDelayFactor"]/parts/li[Class="FP_RSLUM.StatPart_AGL_Aiming"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="AimingDelayFactor"]/parts</xpath>
+					<value>
+							<li Class="FP_RSLUM.StatPart_AGL">
+								<weight>0.1</weight>
+							</li>
+						</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

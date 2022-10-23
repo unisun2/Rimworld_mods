@@ -6,3 +6,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HumanPowerGeneratorM
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HumanPowerGeneratorMod\Source\Humanpowergeneratormod\obj\Debug\Humanpowergeneratormod.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HumanPowerGeneratorMod\Assemblies\Humanpowergeneratormod.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HumanPowerGeneratorMod\Assemblies\Humanpowergeneratormod.pdb
+C:\Users\unisu\git\Rimworld_mods\HumanPowerGeneratorMod\1.0\Source\Humanpowergeneratormod\obj\Debug\Humanpowergeneratormod.csprojAssemblyReference.cache
+C:\Users\unisu\git\Rimworld_mods\HumanPowerGeneratorMod\1.0\Source\Humanpowergeneratormod\obj\Debug\Humanpowergeneratormod.dll
+C:\Users\unisu\git\Rimworld_mods\HumanPowerGeneratorMod\1.0\Source\Humanpowergeneratormod\obj\Debug\Humanpowergeneratormod.pdb
+C:\Users\unisu\git\Rimworld_mods\HumanPowerGeneratorMod\1.0\Source\Humanpowergeneratormod\Humanpowergeneratormod.dll
+C:\Users\unisu\git\Rimworld_mods\HumanPowerGeneratorMod\1.0\Source\Humanpowergeneratormod\Humanpowergeneratormod.pdb

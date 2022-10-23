@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="NegotiationAbility"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="NegotiationAbility"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="NegotiationAbility"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="TameAnimalChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="TameAnimalChance"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="TameAnimalChance"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="TrainAnimalChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="TrainAnimalChance"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="TrainAnimalChance"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="AnimalGatherSpeed"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="AnimalGatherSpeed"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="AnimalGatherSpeed"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.5</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="AnimalGatherYield"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="AnimalGatherYield"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.8</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="AnimalGatherYield"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.8</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/StatDef[defName="ArrestSuccessChance"]/parts</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="ArrestSuccessChance"]</xpath>
+						<value>
+							<parts>
+								<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.1</weight>
+								</li>
+							</parts>
+						</value>
+				</nomatch>
+				<match Class="PatchOperationAdd">
+				<xpath>/Defs/StatDef[defName="ArrestSuccessChance"]/parts</xpath>
+					<value>
+						<li Class="FP_RSLUM.StatPart_CHA"> 
+								<weight>0.1</weight>
+								</li>
+					</value>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

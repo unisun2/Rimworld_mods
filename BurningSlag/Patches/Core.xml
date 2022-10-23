@@ -12,7 +12,7 @@
 	<Operation Class="PatchOperationReplace">
         <xpath>*/RecipeDef[defName="ExtractMetalFromSlag"]/workAmount</xpath>
 		<value>
-			<workAmount>400</workAmount>
+			<workAmount>100</workAmount>
 		</value>
     </Operation>
 	

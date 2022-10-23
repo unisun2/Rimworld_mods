@@ -8,18 +8,19 @@ using Verse;
 namespace Humanpowergeneratormod
 {
 
-    public class HPGMP : CompPowerTrader
+    public class HPGMP : CompPowerPlant
     {
         //protected CompMannable mannableComp;
         protected HPGMcyclecomp hpgmcyclecomp;
 
-        protected CompBreakdownable breakdownableComp;
+        protected CompBreakdownable breakdownableComp55;
 
-        protected virtual float DesiredPowerOutput
+        protected override float DesiredPowerOutput
         {
             get
             {
-                return -base.Props.basePowerConsumption;
+                //Verse.Log.Message("isrunning : " + hpgmcyclecomp.IsRunning + " ..." + hpgmcyclecomp.statValue);
+                return 500 * (hpgmcyclecomp.IsRunning / 100f) * (hpgmcyclecomp.statValue);
             }
         }
 
@@ -27,9 +28,9 @@ namespace Humanpowergeneratormod
         {
             base.PostSpawnSetup(respawningAfterLoad);
             //this.mannableComp = this.parent.GetComp<CompMannable>();
-            this.breakdownableComp = this.parent.GetComp<CompBreakdownable>();
+            this.breakdownableComp55 = this.parent.GetComp<CompBreakdownable>();
             this.hpgmcyclecomp = this.parent.GetComp<HPGMcyclecomp>();
-            if (base.Props.basePowerConsumption < 0f && !this.parent.IsBrokenDown() && FlickUtility.WantsToBeOn(this.parent))
+            if (!this.parent.IsBrokenDown() && FlickUtility.WantsToBeOn(this.parent))
             {
                 base.PowerOn = true;
             }
@@ -39,20 +40,6 @@ namespace Humanpowergeneratormod
         {
             base.CompTick();
             this.UpdateDesiredPowerOutput();
-        }
-
-        public void UpdateDesiredPowerOutput()
-        {
-            if ((this.breakdownableComp != null && this.breakdownableComp.BrokenDown) || !hpgmcyclecomp.IsOn)
-            {
-                //(this.mannableComp != null && !this.mannableComp.MannedNow)
-                base.PowerOutput = 0f;
-            }
-            else
-            {
-
-                base.PowerOutput = this.DesiredPowerOutput * hpgmcyclecomp.statValue;
-            }
         }
     }
 }

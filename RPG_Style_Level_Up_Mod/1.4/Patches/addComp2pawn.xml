@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[thingClass="Pawn"]/comps</xpath>
+		<value>
+            <li><compClass>FP_RSLUM.PawnLvComp</compClass></li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[thingClass="Pawn"]/inspectorTabs</xpath>
+		<value>
+            <li>FP_RSLUM.ITab_Pawn_RSLUM</li>
+		</value>
+	</Operation>
+
+</Patch>

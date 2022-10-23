@@ -202,9 +202,9 @@ namespace FP_RSLUM
 
 
         public void levelup()
-        {
+        {this.
 
-            while (exp > need_exp && (this.level < FP_RSLUM_setting.MaxLevel) || FP_RSLUM_setting.MaxLevel == 0)
+            while (exp > need_exp && (this.level < FP_RSLUM_setting.MaxLevel || FP_RSLUM_setting.MaxLevel == 0))
             {
                 this.level += 1;
                 this.StatPoint += 1;

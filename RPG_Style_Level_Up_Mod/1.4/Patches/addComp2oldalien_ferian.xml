@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ferian Race</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[thingClass="Pawn"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[thingClass="Pawn"]</xpath>
+							<value>
+								<comps>
+									<li><compClass>FP_RSLUM.PawnLvComp</compClass></li>
+								</comps>
+							</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[thingClass="Pawn"]/comps</xpath>
+						<value>
+							<li><compClass>FP_RSLUM.PawnLvComp</compClass></li>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[thingClass="Pawn"]/inspectorTabs</xpath>
+					<value>
+						<li>FP_RSLUM.ITab_Pawn_RSLUM</li>
+					</value>
+				</li>
+				
+				
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

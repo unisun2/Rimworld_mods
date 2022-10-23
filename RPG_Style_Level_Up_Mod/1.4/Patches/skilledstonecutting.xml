@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Skilled Stonecutting</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/StatDef[defName="StonecuttingSpeed"]/parts</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/StatDef[defName="StonecuttingSpeed"]</xpath>
+							<value>
+								<parts>
+									<li Class="FP_RSLUM.StatPart_CON">
+									<weight>0.5</weight>
+									</li>
+								</parts>
+							</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+					<xpath>/Defs/StatDef[defName="StonecuttingSpeed"]/parts</xpath>
+						<value>
+							<li Class="FP_RSLUM.StatPart_CON">
+									<weight>0.5</weight>
+									</li>
+						</value>
+					</match>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
