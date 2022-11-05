@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <EnemyRaidPoints>Enemy raid-points: {0}%</EnemyRaidPoints>
+  <FriendlyRaidPoints>Friendlies raid-points: {0}%</FriendlyRaidPoints>
+</LanguageData>

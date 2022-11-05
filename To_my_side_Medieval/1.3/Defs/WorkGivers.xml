@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>DoBillsTMS</defName>
+    <label>Craft Runes</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TMS_Building_Base</li>
+    </fixedBillGiverDefs>
+    <verb>craft</verb>
+    <gerund>crafting at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</Defs>

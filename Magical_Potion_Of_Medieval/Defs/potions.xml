@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<ThingDef ParentName="ResourceBase" Name="MPOMFlaskBase" Abstract="True">
+  <ThingDef ParentName="ResourceBase" Name="MPOMFlaskBase" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <useHitPoints>true</useHitPoints>
@@ -19,7 +18,6 @@
       <li>ExoticMisc</li>
     </tradeTags>
   </ThingDef>
-  
   <ThingDef ParentName="MPOMFlaskBase">
     <defName>MPOMhealingpotion</defName>
     <label>healing Potion</label>
@@ -50,7 +48,6 @@
       <li>RewardSpecial</li>
     </thingSetMakerTags>
   </ThingDef>
-  
   <ThingDef ParentName="MPOMFlaskBase">
     <defName>MPOMresurrectionpotion</defName>
     <label>resurrection potion</label>
@@ -83,6 +80,4 @@
       <li>RewardSpecial</li>
     </thingSetMakerTags>
   </ThingDef>
-  
-  
 </Defs>
