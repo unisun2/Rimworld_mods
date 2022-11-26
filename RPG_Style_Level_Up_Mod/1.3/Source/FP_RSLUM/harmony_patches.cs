@@ -43,7 +43,7 @@ namespace FP_RSLUM
         static FieldInfo pawninfo2 = AccessTools.Field(typeof(MassUtility), "pawn");
 
         [HarmonyPrefix]
-        static bool LearnPrefix(SkillRecord __instance, float xp, bool direct)
+        static void LearnPrefix(SkillRecord __instance, float xp, bool direct)
         {
             if (xp > 0)
             {
@@ -63,7 +63,6 @@ namespace FP_RSLUM
                 //Log.Message(pawn.Name + xp.ToString() + " " + ((int)(xp * 100)).ToString());
             }
 
-            return true;
         }
 
         [HarmonyPostfix]
